@@ -1,0 +1,16 @@
+pip==9.0.1
+httpie==0.9.6
+jedi==0.9.0
+pdbpp==0.8.3
+bumpversion==0.5.3
+wheel==0.30.0a0
+watchdog==0.8.3
+flake8==3.0.4
+tox==2.4.1
+coverage==4.2
+Sphinx==1.4.8
+pytest==3.0.3
+pytest-cov==2.4.0
+pytest-sugar==0.7.1
+cryptography==1.4
+PyYAML==3.11
