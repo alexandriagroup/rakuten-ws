@@ -15,8 +15,8 @@ Python Rakuten Web Service
     :target: http://codecov.io/github/alexandriagroup/rakuten-ws?branch=master
     :alt: Coverage Status
 
-.. image:: https://readthedocs.org/projects/rakuten-ws/badge/?version=latest
-    :target: https://readthedocs.org/projects/rakuten-ws/?badge=latest
+.. image:: https://readthedocs.org/projects/python-rakuten-web-service/badge/?version=latest
+    :target: http://python-rakuten-web-service.readthedocs.io/en/latest/?badge=latest
     :alt: Documentation Status
 
 
