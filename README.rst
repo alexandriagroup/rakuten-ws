@@ -19,13 +19,6 @@ Python Rakuten Web Service
     :target: https://readthedocs.org/projects/rakuten-ws/?badge=latest
     :alt: Documentation Status
 
-.. image:: https://landscape.io/github/alexandriagroup/rakuten-ws/master/landscape.svg?style=flat
-    :target: https://landscape.io/github/alexandriagroup/rakuten-ws/master
-    :alt: Code Health
-
-.. image:: https://pyup.io/repos/github/alexandriagroup/rakuten-ws/shield.svg
-     :target: https://pyup.io/repos/github/alexandriagroup/rakuten-ws/
-     :alt: Updates
 
 Unofficial Python Client for Rakuten Web Service
 
