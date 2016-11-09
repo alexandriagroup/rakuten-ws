@@ -8,6 +8,7 @@ test_rakuten_ws
 
 Tests for `rakuten_ws` module.
 """
+import pytest
 
 from rakuten_ws import rakuten_ws
 
