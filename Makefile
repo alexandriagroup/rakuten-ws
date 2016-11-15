@@ -31,7 +31,7 @@ help:  ## This help dialog.
 init:  ## Install the project in development mode (using virtualenv is highly recommended)
 	pip install -e .
 	pip install -U setuptools pip
-	pip install -r requirements_dev.txt
+	pip install -r requirements-dev.txt
 
 clean: clean-build clean-pyc clean-test  ## Remove all build, test, coverage and Python artifacts
 
