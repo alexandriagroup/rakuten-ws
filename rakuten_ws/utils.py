@@ -3,31 +3,30 @@ import re
 from .compat import iteritems
 
 
-def camelize_dict(data):
+def camelize_dict(data, uppercase_first_letter=False):
     """ Returns a dict with camel case keys.
 
     >>> d = {'a_simple_key': '1', 'Another_key': '2', 'CamelKey': '3'}
     >>> sorted(camelize_dict(d).keys())
-    ['ASimpleKey', 'AnotherKey', 'CamelKey']
-    >>> camelize_dict(d)['ASimpleKey']
+    ['aSimpleKey', 'anotherKey', 'camelKey']
+    >>> camelize_dict(d)['aSimpleKey']
     '1'
     """
-    return {camelize(k): v for (k, v) in iteritems(data)}
+    return {camelize(k, uppercase_first_letter): v for (k, v) in iteritems(data)}
 
 
 def camelize(string, uppercase_first_letter=True):
     """
     Convert strings to CamelCase.
 
-    From inflection lib: https://github.com/jpvanhal/inflection
+    From inflection package: https://github.com/jpvanhal/inflection
 
     Examples::
 
     >>> camelize("device_type")
     'DeviceType'
-    >>> camelize("python_version", False)
-    'pythonVersion'
-
+    >>> camelize("device_type", False)
+    'deviceType'
     """
     if uppercase_first_letter:
         return re.sub(r"(?:^|_)(.)", lambda m: m.group(1).upper(), string)
