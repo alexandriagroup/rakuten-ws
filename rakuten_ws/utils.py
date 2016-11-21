@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 import re
+from collections import OrderedDict
 from .compat import iteritems
 
 
@@ -12,7 +13,8 @@ def camelize_dict(data, uppercase_first_letter=False):
     >>> camelize_dict(d)['aSimpleKey']
     '1'
     """
-    return {camelize(k, uppercase_first_letter): v for (k, v) in iteritems(data)}
+    return {camelize(k, uppercase_first_letter):
+            v for (k, v) in iteritems(data)}
 
 
 def camelize(string, uppercase_first_letter=True):
@@ -32,3 +34,16 @@ def camelize(string, uppercase_first_letter=True):
         return re.sub(r"(?:^|_)(.)", lambda m: m.group(1).upper(), string)
     else:
         return string[0].lower() + camelize(string)[1:]
+
+
+def sorted_dict(d):
+    """ Sort dict by keys.
+
+    Examples::
+
+    >>> sorted_dict({'3': 3, '1': 10})
+    OrderedDict([('1', 10), ('3', 3)])
+    >>> sorted_dict({'1': 10, '3': 3})
+    OrderedDict([('1', 10), ('3', 3)])
+    """
+    return OrderedDict(sorted(iteritems(d)))
