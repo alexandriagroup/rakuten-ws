@@ -9,8 +9,21 @@ class IchibaAPI(RakutenAPI):
     product = RakutenAPIEndpoint(methods=['search'], api_endpoint="Product")
 
 
+class BooksAPI(RakutenAPI):
+    total = RakutenAPIEndpoint(methods=['search'])
+    book = RakutenAPIEndpoint(methods=['search'])
+    cd = RakutenAPIEndpoint(name='CD', methods=['search'])
+    dvd = RakutenAPIEndpoint(name='DVD', methods=['search'])
+    foreign_book = RakutenAPIEndpoint(methods=['search'])
+    magazine = RakutenAPIEndpoint(methods=['search'])
+    game = RakutenAPIEndpoint(methods=['search'])
+    software = RakutenAPIEndpoint(methods=['search'])
+    genre = RakutenAPIEndpoint(methods=['search'])
+
+
 class RakutenWebservice(BaseWebservice):
     api_url = "https://app.rakuten.co.jp/services/api"
     api_version = "20140222"
 
     ichiba = IchibaAPI()
+    books = BooksAPI()
