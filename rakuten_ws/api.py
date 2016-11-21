@@ -3,6 +3,7 @@ from .base import RakutenAPIEndpoint, RakutenAPI, BaseWebservice
 
 
 class IchibaAPI(RakutenAPI):
+    api_version = "20140222"
     item = RakutenAPIEndpoint(methods=['search', 'ranking'])
     genre = RakutenAPIEndpoint(methods=['search'])
     tag = RakutenAPIEndpoint(methods=['search'])
@@ -10,6 +11,7 @@ class IchibaAPI(RakutenAPI):
 
 
 class BooksAPI(RakutenAPI):
+    api_version = "20130522"
     total = RakutenAPIEndpoint(methods=['search'])
     book = RakutenAPIEndpoint(methods=['search'])
     cd = RakutenAPIEndpoint(name='CD', methods=['search'])
@@ -23,7 +25,6 @@ class BooksAPI(RakutenAPI):
 
 class RakutenWebservice(BaseWebservice):
     api_url = "https://app.rakuten.co.jp/services/api"
-    api_version = "20140222"
 
     ichiba = IchibaAPI()
     books = BooksAPI()

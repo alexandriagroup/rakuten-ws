@@ -16,13 +16,13 @@ class RakutenAPIRequest(object):
 
     def build_url(self, *args, **kwargs):
         # creating new instance of url request
-        api_request = furl(self.endpoint.api_obj.url)
+        api_request = furl(self.endpoint.api_obj.api_url)
         api_endpoint = self.endpoint.api_endpoint
         method_endpoint = camelize(self.method_name)
 
         api_request.path.segments.append(api_endpoint)
         api_request.path.segments.append(method_endpoint)
-        api_request.path.segments.append(self.endpoint.api_obj.version)
+        api_request.path.segments.append(self.endpoint.api_obj.api_version)
         api_request.path.normalize()
 
         application_id = self.endpoint.api_obj.webservice_obj.application_id
@@ -92,10 +92,8 @@ class RakutenAPI(object):
         if webservice_obj is not None:
             if self.webservice_obj is None:
                 self.webservice_obj = webservice_obj
-                if getattr(self, 'version', None) is None:
-                    self.version = self.webservice_obj.api_version
-                if getattr(self, 'url', None) is None:
-                    self.url = self.webservice_obj.api_url
+                if getattr(self, 'api_url', None) is None:
+                    self.api_url = self.webservice_obj.api_url
             return self
         return self.__class__
 
