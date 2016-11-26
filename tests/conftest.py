@@ -68,6 +68,25 @@ def use_vcr(request, monkeypatch):
                               filter_post_data_parameters=filter_post) as cassette:
             yield cassette
 
+
+@pytest.fixture()
+def no_requests(monkeypatch):
+    online_funcs = [
+        'requests.sessions.Session.request',
+    ]
+
+    if sys.version_info[0] == 2:
+        online_funcs.extend(['httplib.HTTPConnection.request',
+                             'httplib.HTTPSConnection.request'])
+    else:
+        online_funcs.extend(['http.client.HTTPConnection.request',
+                             'http.client.HTTPSConnection.request'])
+
+    for func in online_funcs:
+        monkeypatch.setattr(func, mock.Mock(side_effect=Exception('Online tests should use @pytest.mark.online')))
+
+
+@pytest.fixture
 def credentials():
     return {'application_id': os.environ['RAKUTEN_APP_ID']}
 
