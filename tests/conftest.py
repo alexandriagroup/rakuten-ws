@@ -27,6 +27,13 @@ def pytest_configure(config):
                             'online: mark a test that goes online. VCR will automatically be used.')
 
 
+def pytest_runtest_setup(item):
+    # Add the online marker to tests that will go online
+    if item.get_marker('online'):
+        item.fixturenames.append('use_vcr')
+    else:
+        item.fixturenames.append('no_requests')
+
 
 @pytest.yield_fixture()
 def use_vcr(request, monkeypatch):
