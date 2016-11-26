@@ -62,13 +62,12 @@ class RakutenAPIEndpoint(object):
 
     def __get__(self, api_obj, cls):
         if api_obj is not None:
-            if self.api_obj is None:
-                self.api_obj = api_obj
-                if getattr(self, 'api_endpoint', None) is None:
-                    self.api_endpoint = \
-                        camelize("%s_%s" % (self.api_obj.name, self.name))
-                for name in self.methods:
-                    setattr(self, name, RakutenAPIRequest(self, name))
+            self.api_obj = api_obj
+            if getattr(self, 'api_endpoint', None) is None:
+                self.api_endpoint = \
+                    camelize("%s_%s" % (self.api_obj.name, self.name))
+            for name in self.methods:
+                setattr(self, name, RakutenAPIRequest(self, name))
             return self
         return self.__class__
 
@@ -90,10 +89,8 @@ class RakutenAPI(object):
 
     def __get__(self, webservice_obj, cls):
         if webservice_obj is not None:
-            if self.webservice_obj is None:
-                self.webservice_obj = webservice_obj
-                if getattr(self, 'api_url', None) is None:
-                    self.api_url = self.webservice_obj.api_url
+            self.webservice_obj = webservice_obj
+            self.api_url = self.webservice_obj.api_url
             return self
         return self.__class__
 
