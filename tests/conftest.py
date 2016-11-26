@@ -94,9 +94,9 @@ def no_requests(monkeypatch):
 
 @pytest.fixture
 def credentials():
-    return {'application_id': os.environ['RAKUTEN_APP_ID']}
+    return {'application_id': os.environ.get('RAKUTEN_APP_ID', '<RAKUTEN_APP_ID>')}
 
 
 @pytest.fixture
 def fake_credentials():
-    return {'application_id': "fake_app_id_V877461Q206195"}
+    return {'application_id': "FAKE_RAKUTEN_APP_ID"}
