@@ -21,6 +21,11 @@ vcr = VCR(
 )
 
 
+def pytest_configure(config):
+    # register the online marker
+    config.addinivalue_line('markers',
+                            'online: mark a test that goes online. VCR will automatically be used.')
+
 
 
 @pytest.yield_fixture()
