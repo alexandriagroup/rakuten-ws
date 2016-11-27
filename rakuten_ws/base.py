@@ -26,7 +26,7 @@ class RakutenAPIRequest(object):
         api_request.path.normalize()
 
         application_id = self.endpoint.api_obj.webservice_obj.application_id
-        format_version = self.endpoint.api_obj.webservice_obj.format_version
+        format_version = self.endpoint.api_obj.format_version
 
         request_params = {
             'applicationId': application_id,
@@ -73,6 +73,9 @@ class RakutenAPIEndpoint(object):
 
 
 class RakutenAPI(object):
+    api_url = "https://app.rakuten.co.jp/services/api"
+    format_version = 2
+
     def __new__(cls, *args, **kwargs):
         instance = super(RakutenAPI, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
@@ -104,10 +107,6 @@ class BaseWebservice(object):
                     and getattr(attr, 'name', None) is None:
                 setattr(attr, 'name', name)
         return instance
-
-    api_url = None
-    api_version = None
-    format_version = 2
 
     def __init__(self, application_id, **kwargs):
         for key in dict(kwargs).keys():

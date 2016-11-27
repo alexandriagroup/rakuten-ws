@@ -24,7 +24,5 @@ class BooksAPI(RakutenAPI):
 
 
 class RakutenWebservice(BaseWebservice):
-    api_url = "https://app.rakuten.co.jp/services/api"
-
     ichiba = IchibaAPI()
     books = BooksAPI()
