@@ -4,7 +4,9 @@ from rakuten_ws.base import (RakutenAPI, RakutenAPIEndpoint, BaseWebService,
 
 
 class SimpleAPI(RakutenAPI):
+    api_url = "https://testapi"
     api_version = "20140222"
+    format_version = 2
 
     item = RakutenAPIEndpoint(methods=['search', 'ranking'])
     product = RakutenAPIEndpoint(methods=['get'], api_endpoint="Product")
@@ -13,9 +15,6 @@ class SimpleAPI(RakutenAPI):
 class SimpleWebService(BaseWebService):
 
     test_api = SimpleAPI()
-
-    api_url = "https://testapi"
-    format_version = 2
 
 
 def test_class_api_description():

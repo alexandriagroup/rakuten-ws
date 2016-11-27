@@ -93,7 +93,6 @@ class RakutenAPI(object):
     def __get__(self, webservice_obj, cls):
         if webservice_obj is not None:
             self.webservice_obj = webservice_obj
-            self.api_url = self.webservice_obj.api_url
             return self
         return self.__class__
 
