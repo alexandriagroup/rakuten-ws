@@ -98,10 +98,10 @@ class RakutenAPI(object):
         return self.__class__
 
 
-class BaseWebservice(object):
+class BaseWebService(object):
 
     def __new__(cls, *args, **kwargs):
-        instance = super(BaseWebservice, cls).__new__(cls)
+        instance = super(BaseWebService, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
             if isinstance(attr, RakutenAPI) \
                     and getattr(attr, 'name', None) is None:

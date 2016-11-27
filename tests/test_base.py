@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from rakuten_ws.base import (RakutenAPI, RakutenAPIEndpoint, BaseWebservice,
+from rakuten_ws.base import (RakutenAPI, RakutenAPIEndpoint, BaseWebService,
                              RakutenAPIRequest)
 
 
@@ -10,7 +10,7 @@ class SimpleAPI(RakutenAPI):
     product = RakutenAPIEndpoint(methods=['get'], api_endpoint="Product")
 
 
-class SimpleWebservice(BaseWebservice):
+class SimpleWebService(BaseWebService):
 
     test_api = SimpleAPI()
 
@@ -19,7 +19,7 @@ class SimpleWebservice(BaseWebservice):
 
 
 def test_class_api_description():
-    ws = SimpleWebservice(application_id="4K95553C260362")
+    ws = SimpleWebService(application_id="4K95553C260362")
     assert ws.test_api.name == "test_api"
     assert ws.test_api.api_version == "20140222"
     assert ws.test_api.api_url == "https://testapi"
@@ -31,7 +31,7 @@ def test_class_api_description():
 
 
 def test_multiple_credentials():
-    ws = SimpleWebservice(application_id="4K95553C260362")
+    ws = SimpleWebService(application_id="4K95553C260362")
     assert ws.test_api.item.search.build_url(item_id=23) == 'https://testapi/TestApiItem/Search/20140222?applicationId=4K95553C260362&formatVersion=2&itemId=23'  # noqa
-    ws = SimpleWebservice(application_id="TOTOOTOTOTO")
+    ws = SimpleWebService(application_id="TOTOOTOTOTO")
     assert ws.test_api.item.search.build_url(item_id=23) == 'https://testapi/TestApiItem/Search/20140222?applicationId=TOTOOTOTOTO&formatVersion=2&itemId=23'  # noqa

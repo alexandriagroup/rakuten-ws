@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from .base import RakutenAPIEndpoint, RakutenAPI, BaseWebservice
+from .base import RakutenAPIEndpoint, RakutenAPI, BaseWebService
 
 
 class IchibaAPI(RakutenAPI):
@@ -23,6 +23,6 @@ class BooksAPI(RakutenAPI):
     genre = RakutenAPIEndpoint(methods=['search'])
 
 
-class RakutenWebservice(BaseWebservice):
+class RakutenWebService(BaseWebService):
     ichiba = IchibaAPI()
     books = BooksAPI()
