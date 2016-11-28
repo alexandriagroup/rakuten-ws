@@ -1,5 +1,6 @@
-# -*- coding: utf-8 -*-
-from .base import RakutenAPIEndpoint, RakutenAPI, BaseWebService
+# coding: utf-8
+from __future__ import unicode_literals
+from .base import RakutenAPIEndpoint, RakutenAPI, BaseWebService, RmsSoapApi, RmsRestApi, WebServiceDescriptor
 
 
 class IchibaAPI(RakutenAPI):
@@ -23,6 +24,21 @@ class BooksAPI(RakutenAPI):
     genre = RakutenAPIEndpoint(methods=['search'])
 
 
+class RmsOrderAPI(RmsSoapApi):
+    wsdl_url = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
+
+
+class RmsItemAPI(RmsRestApi):
+    wsdl_url = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
+
+
+class RmsClient(WebServiceDescriptor):
+    order = RmsOrderAPI()
+    item = RmsItemAPI()
+
+
 class RakutenWebService(BaseWebService):
+
     ichiba = IchibaAPI()
     books = BooksAPI()
+    rms = RmsClient()
