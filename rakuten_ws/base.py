@@ -15,8 +15,8 @@ from .compat import to_unicode
 class ZeepTransport(zeep.transports.Transport):
 
     def create_session(self):
-        return super(ZeepTransport, self).create_session()
         self.http_headers = requests.Session().headers.copy()
+        return super(ZeepTransport, self).create_session()
 
     # Patch Zeep methods to send custom headers
     def get(self, address, params, headers):
