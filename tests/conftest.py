@@ -1,5 +1,5 @@
 # coding: utf-8
-from __future__ import unicode_literals, division, absolute_import
+from __future__ import unicode_literals
 
 import re
 import os
@@ -17,7 +17,7 @@ VCR_RECORD_MODE = os.environ.get('VCR_RECORD_MODE', 'once')
 
 def before_record_cb(request):
     if request.body:
-        request.body = re.sub('<authKey>.+</authKey>', '<authKey>XXXXXX</authKey>', request.body)
+        request.body = re.sub('<authKey>.+</authKey>', '<authKey>XXXXXX</authKey>', request.body.decode('utf-8'))
     return request
 
 
