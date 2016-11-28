@@ -1,0 +1,31 @@
+interactions:
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<soap-env:Envelope xmlns:soap-env=\"\
+      http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap-env:Body>\n    <ns0:getRequestId\
+      \ xmlns:ns0=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\">\n \
+      \     <arg0>\n        <authKey>XXXXXX</authKey>\n        <shopUrl></shopUrl>\n\
+      \        <userName></userName>\n      </arg0>\n    </ns0:getRequestId>\n  </soap-env:Body>\n\
+      </soap-env:Envelope>\n"
+    headers:
+      Content-Length: ['476']
+      Content-Type: [text/xml; charset=utf-8]
+      SOAPAction: ['""']
+      User-Agent: [Zeep/0.23.0 (www.python-zeep.org)]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/order/ws
+  response:
+    body: {string: "<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\"\
+        ><S:Body><ns2:getRequestIdResponse xmlns:ns2=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\"\
+        ><return><errorCode>N00-000</errorCode><message>\u6B63\u5E38\u7D42\u4E86</message><requestId>180079360</requestId></return></ns2:getRequestIdResponse></S:Body></S:Envelope>"}
+    headers:
+      Connection: [close]
+      Content-Length: ['363']
+      Content-Type: [text/xml;charset="utf-8"]
+      Date: ['Mon, 28 Nov 2016 17:50:02 GMT']
+      Server: [nginx]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+      requestId: [f8edffb1-b0fd-4fb2-8355-65b0d6eec64f]
+      timeStamp: ['2016-11-28T17:50:01']
+    status: {code: 200, message: OK}
+version: 1

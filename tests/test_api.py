@@ -21,3 +21,9 @@ def test_fake_credentials(fake_credentials, request):
     result = ws.ichiba.item.search(item_code="book:17924463")
     assert result['error_description'] == 'specify valid applicationId'
     assert result['error'] == 'wrong_parameter'
+
+
+@pytest.mark.online
+def test_rms_order(credentials):
+    ws = RakutenWebService(**credentials)
+    assert ws.rms.order.getRequestId()['message'] == "正常終了"

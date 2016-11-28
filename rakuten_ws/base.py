@@ -9,6 +9,7 @@ import zeep.transports
 from furl import furl
 
 from .utils import camelize, camelize_dict, sorted_dict
+from .compat import to_unicode
 
 
 class ZeepTransport(zeep.transports.Transport):
@@ -141,7 +142,8 @@ class RmsApi(object):
 
     @property
     def esa_key(self):
-        return b"ESA " + base64.b64encode(("SECRET_SERVICE" + ":" + "LICENSE_KEY").encode('utf-8'))
+        key = b"ESA " + base64.b64encode(("SECRET_SERVICE" + ":" + "LICENSE_KEY").encode('utf-8'))
+        return to_unicode(key)
 
     def __get__(self, client_instance, cls):
         if client_instance is not None:
