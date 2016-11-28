@@ -1,7 +1,7 @@
 # coding: utf-8
 from __future__ import unicode_literals, division, absolute_import
 
-
+import re
 import os
 import sys
 
@@ -15,9 +15,16 @@ VCR_CASSETTE_DIR = os.path.join(os.path.dirname(__file__), 'cassettes')
 VCR_RECORD_MODE = os.environ.get('VCR_RECORD_MODE', 'once')
 
 
+def before_record_cb(request):
+    if request.body:
+        request.body = re.sub('<authKey>.+</authKey>', '<authKey>XXXXXX</authKey>', request.body)
+    return request
+
+
 vcr = VCR(
     cassette_library_dir=VCR_CASSETTE_DIR,
-    record_mode=VCR_RECORD_MODE
+    record_mode=VCR_RECORD_MODE,
+    before_record=before_record_cb,
 )
 
 
