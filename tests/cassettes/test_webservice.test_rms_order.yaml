@@ -7,25 +7,33 @@ interactions:
       \        <userName></userName>\n      </arg0>\n    </ns0:getRequestId>\n  </soap-env:Body>\n\
       </soap-env:Envelope>\n"
     headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
       Content-Length: ['476']
       Content-Type: [text/xml; charset=utf-8]
       SOAPAction: ['""']
-      User-Agent: [Zeep/0.23.0 (www.python-zeep.org)]
+      User-Agent: [python-requests/2.12.0]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/order/ws
   response:
-    body: {string: "<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\"\
-        ><S:Body><ns2:getRequestIdResponse xmlns:ns2=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\"\
-        ><return><errorCode>N00-000</errorCode><message>\u6B63\u5E38\u7D42\u4E86</message><requestId>180079360</requestId></return></ns2:getRequestIdResponse></S:Body></S:Envelope>"}
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3WQO07DQBCGr2KlcZWdtSUky1pvJBBINBQJHGBljxyD98HOOkBLwUWoKZEizsPj
+        GqyVGFd0v77555+HWD3qPtmhp86aKs0YTxM0tW0601bpzfXFskhXUmzKc7PD3jpMot9QuakW2xBc
+        CUD1FrUiFjlZ5Zj1LYwC8NgBi7H/1DZPUhjKyxbDGu8HpHDZrJGcNTSlxvJfrvUNeuU65jUxr+6G
+        gIbVlt06iAS06vuDB6IJHihO8RgGb6RA760/sw3KK86XnHMBMxIaiVSL8vvt9Wu//3l//vx4ETDR
+        GHLcTWYF50V2kucCZjjqwxT475hYmu6F+XHyF2ZhWU1rAQAA
     headers:
       Connection: [close]
-      Content-Length: ['363']
+      Content-Encoding: [gzip]
+      Content-Length: ['264']
       Content-Type: [text/xml;charset="utf-8"]
-      Date: ['Mon, 28 Nov 2016 17:50:02 GMT']
+      Date: ['Mon, 28 Nov 2016 17:56:04 GMT']
       Server: [nginx]
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
-      requestId: [f8edffb1-b0fd-4fb2-8355-65b0d6eec64f]
-      timeStamp: ['2016-11-28T17:50:01']
+      requestId: [a71fc89b-5202-4b0b-b749-f686503ea1af]
+      timeStamp: ['2016-11-28T17:56:04']
     status: {code: 200, message: OK}
 version: 1
