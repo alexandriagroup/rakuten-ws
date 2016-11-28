@@ -1,9 +1,38 @@
-# -*- coding: utf-8 -*-
-from furl import furl
-from requests import Session
+# coding: utf-8
+from __future__ import unicode_literals
+import base64
 
+import requests
+import zeep
+import zeep.transports
+
+from furl import furl
 
 from .utils import camelize, camelize_dict, sorted_dict
+
+
+class ZeepTransport(zeep.transports.Transport):
+
+    def create_session(self):
+        return super(ZeepTransport, self).create_session()
+        self.http_headers = requests.Session().headers.copy()
+
+    # Patch Zeep methods to send custom headers
+    def get(self, address, params, headers):
+        headers.update(self.http_headers.copy())
+        return super(ZeepTransport, self).get(address, params, headers)
+
+    def post(self, address, params, headers):
+        headers.update(self.http_headers.copy())
+        return super(ZeepTransport, self).post(address, params, headers)
+
+
+class WebServiceDescriptor(object):
+    def __get__(self, webservice_obj, cls):
+        if webservice_obj is not None:
+            self.webservice_obj = webservice_obj
+            return self
+        return self.__class__
 
 
 class RakutenAPIRequest(object):
@@ -72,7 +101,7 @@ class RakutenAPIEndpoint(object):
         return self.__class__
 
 
-class RakutenAPI(object):
+class RakutenAPI(WebServiceDescriptor):
     api_url = "https://app.rakuten.co.jp/services/api"
     format_version = 2
 
@@ -90,12 +119,6 @@ class RakutenAPI(object):
         for key in dict(kwargs).keys():
             setattr(self, key, kwargs[key])
 
-    def __get__(self, webservice_obj, cls):
-        if webservice_obj is not None:
-            self.webservice_obj = webservice_obj
-            return self
-        return self.__class__
-
 
 class BaseWebService(object):
 
@@ -111,4 +134,48 @@ class BaseWebService(object):
         for key in dict(kwargs).keys():
             setattr(self, key, kwargs[key])
         self.application_id = application_id
-        self.session = Session()
+        self.session = requests.Session()
+
+
+class RmsApi(object):
+
+    @property
+    def esa_key(self):
+        return b"ESA " + base64.b64encode(("SECRET_SERVICE" + ":" + "LICENSE_KEY").encode('utf-8'))
+
+    def __get__(self, client_instance, cls):
+        if client_instance is not None:
+            self.client = client_instance
+            return self
+        return self.__class__
+
+
+class RmsSoapApi(RmsApi):
+    wsdl_url = None
+
+    @property
+    def user_auth_model(self):
+        return {
+            "authKey": self.esa_key,
+            "shopUrl": "",
+            "userName": ""
+        }
+
+    def __init__(self, **kwargs):
+        self.zeep_client = zeep.Client(wsdl=self.wsdl_url, transport=ZeepTransport())
+
+    def __send_request(self, name, **proxy_kwargs):
+        kwargs = {'arg0': self.user_auth_model}
+        if proxy_kwargs:
+            kwargs['arg1'] = kwargs
+        return getattr(self.zeep_client.service, name)(**kwargs)
+
+    def __getattr__(self, name):
+        return lambda **proxy_kwargs: self.__send_request(name, **proxy_kwargs)
+
+
+class RmsRestApi(RmsApi):
+
+    def __init__(self, **kwargs):
+        session = requests.Session()
+        session.headers['Authorization'] = self.esa_key
