@@ -44,6 +44,13 @@ class RakutenAPIRequest(object):
         for key in dict(kwargs).keys():
             setattr(self, key, kwargs[key])
 
+    @property
+    def application_id(self, *args, **kwargs):
+        app_id = self.endpoint.api_obj.webservice_obj.application_id
+        if app_id is None:
+            raise Exception("An 'application_id' must be provided")
+        return app_id
+
     def build_url(self, *args, **kwargs):
         # creating new instance of url request
         api_request = furl(self.endpoint.api_obj.api_url)
@@ -55,12 +62,9 @@ class RakutenAPIRequest(object):
         api_request.path.segments.append(self.endpoint.api_obj.api_version)
         api_request.path.normalize()
 
-        application_id = self.endpoint.api_obj.webservice_obj.application_id
-        format_version = self.endpoint.api_obj.format_version
-
         request_params = {
-            'applicationId': application_id,
-            'formatVersion': format_version
+            'applicationId': self.application_id,
+            'formatVersion': self.endpoint.api_obj.format_version
         }
 
         request_params.update(camelize_dict(kwargs))
