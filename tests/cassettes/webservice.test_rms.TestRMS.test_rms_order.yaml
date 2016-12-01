@@ -10,7 +10,7 @@ interactions:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['476']
+      Content-Length: ['444']
       Content-Type: [text/xml; charset=utf-8]
       SOAPAction: ['""']
       User-Agent: [python-requests/2.12.0]
@@ -19,21 +19,20 @@ interactions:
   response:
     body:
       string: !!binary |
-        H4sIAAAAAAAAA3WQO07DQBCGr2KlcZWdtSUky1pvJBBINBQJHGBljxyD98HOOkBLwUWoKZEizsPj
-        GqyVGFd0v77555+HWD3qPtmhp86aKs0YTxM0tW0601bpzfXFskhXUmzKc7PD3jpMot9QuakW2xBc
-        CUD1FrUiFjlZ5Zj1LYwC8NgBi7H/1DZPUhjKyxbDGu8HpHDZrJGcNTSlxvJfrvUNeuU65jUxr+6G
-        gIbVlt06iAS06vuDB6IJHihO8RgGb6RA760/sw3KK86XnHMBMxIaiVSL8vvt9Wu//3l//vx4ETDR
-        GHLcTWYF50V2kucCZjjqwxT475hYmu6F+XHyF2ZhWU1rAQAA
+        H4sIAAAAAAAAA3VQPU8DMQz9K6g78dExChlAHVh7vyDqWVfgEgc7x8dYOjMiRhaEEEwsTBV/JgL1
+        ZxAKRyck68l6tt/Ts6n1JJxjRxF3Ln0XRNf7o3lKUQPIbI7eiSq8kIuKuIXvBvD3AkbW1PqAmitr
+        gox1i2mKZz1KOmqmKJGCDKpl/KdL3CC7eKzYi2J32icMakbqJEJhwLuu+9mBsgQXUlwYU8/BGmQm
+        PqQG7aQa71bVnoEtZTyKuBZtXj7m5SpfvxVcP9+sn1Z58fLx8Pp5e5cXpd43eG9gODAwGMB/Ocpo
+        iArbn9kvnMMqTUABAAA=
     headers:
       Connection: [close]
       Content-Encoding: [gzip]
-      Content-Length: ['264']
-      Content-Type: [text/xml;charset="utf-8"]
-      Date: ['Mon, 28 Nov 2016 17:56:04 GMT']
+      Content-Length: ['242']
+      Content-Type: [text/xml;charset=UTF-8]
+      Date: ['Thu, 01 Dec 2016 16:51:22 GMT']
       Server: [nginx]
       Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
-      requestId: [a71fc89b-5202-4b0b-b749-f686503ea1af]
-      timeStamp: ['2016-11-28T17:56:04']
+      requestId: [d38edac0-6b74-47a0-b5bb-0ee2018d1040]
+      timeStamp: ['2016-12-01T16:51:22']
     status: {code: 200, message: OK}
 version: 1
