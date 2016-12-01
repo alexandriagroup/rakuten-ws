@@ -8,8 +8,8 @@ import zeep.transports
 
 from furl import furl
 
-from .utils import camelize, camelize_dict, sorted_dict
-from .compat import to_unicode
+from .utils import camelize, camelize_dict, sorted_dict, clean_python_variable_name
+from .compat import to_unicode, iteritems
 
 
 class ZeepTransport(zeep.transports.Transport):
@@ -100,8 +100,14 @@ class RakutenAPIEndpoint(object):
             if getattr(self, 'api_endpoint', None) is None:
                 self.api_endpoint = \
                     camelize("%s_%s" % (self.api_obj.name, self.name))
-            for name in self.methods:
-                setattr(self, name, RakutenAPIRequest(self, name))
+            if isinstance(self.methods, dict):
+                methods = dict((clean_python_variable_name(key), name) for key, name in iteritems(self.methods))
+            elif isinstance(self.methods, (list, tuple)):
+                methods = dict((clean_python_variable_name(name), name) for name in self.methods)
+            else:
+                raise Exception("'methods' parameter must be a list or a dictionary")
+            for key, name in iteritems(methods):
+                setattr(self, key, RakutenAPIRequest(self, name))
             return self
         return self.__class__
 

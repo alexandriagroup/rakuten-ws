@@ -2,6 +2,7 @@
 from __future__ import unicode_literals
 
 import re
+
 from collections import OrderedDict
 from .compat import iteritems
 
@@ -49,3 +50,18 @@ def sorted_dict(d):
     OrderedDict([('1', 10), ('3', 3)])
     """
     return OrderedDict(sorted(iteritems(d)))
+
+
+def clean_python_variable_name(s):
+    """ Convert a string to a valid python variable name.
+
+    Examples::
+
+    >>> clean_python_variable_name("    ")
+    '____'
+    >>> clean_python_variable_name("my 2@_'-\"'メーシ_é'\"(")
+    'my_2____メーシ_é_'
+    >>> clean_python_variable_name("my superS@---variable")
+    'my_superS____variable'
+    """
+    return re.sub('\W|^(?=\d)', '_', s)
