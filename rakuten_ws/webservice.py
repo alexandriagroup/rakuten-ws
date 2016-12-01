@@ -24,6 +24,17 @@ class BooksAPI(RakutenAPI):
     genre = RakutenAPIEndpoint(methods=['search'])
 
 
+class TravelAPI(RakutenAPI):
+    api_version = "20131024"
+    hotel = RakutenAPIEndpoint(methods={'simple_search': 'simple_hotel_search',
+                                        'detail_search': 'hotel_detail_search',
+                                        'search_vacant': 'vacant_hotel_search',
+                                        'ranking': 'hotel_ranking',
+                                        'get_chain_list': 'get_hotel_chain_list',
+                                        'keyword_search': 'keyword_hotel_search'}, api_endpoint="Travel")
+    area = RakutenAPIEndpoint(methods={'get_class': 'get_area_class'}, api_endpoint="Travel")
+
+
 class RmsOrderAPI(RmsSoapApi):
     wsdl_url = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
@@ -39,6 +50,8 @@ class RmsClient(WebServiceDescriptor):
 
 class RakutenWebService(BaseWebService):
 
+    rms = RmsClient()
+
     ichiba = IchibaAPI()
     books = BooksAPI()
-    rms = RmsClient()
+    travel = TravelAPI()
