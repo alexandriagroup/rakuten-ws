@@ -141,10 +141,10 @@ class BaseWebService(object):
                 setattr(attr, 'name', name)
         return instance
 
-    def __init__(self, application_id, **kwargs):
-        for key in dict(kwargs).keys():
-            setattr(self, key, kwargs[key])
+    def __init__(self, application_id=None, license_key=None, secret_service=None):
         self.application_id = application_id
+        self.license_key = license_key
+        self.secret_service = secret_service
         self.session = requests.Session()
 
 
@@ -152,8 +152,13 @@ class RmsApi(object):
 
     @property
     def esa_key(self):
-        key = b"ESA " + base64.b64encode(("SECRET_SERVICE" + ":" + "LICENSE_KEY").encode('utf-8'))
-        return to_unicode(key)
+        if hasattr(self, 'client'):
+            license_key = self.client.webservice_obj.license_key
+            secret_service = self.client.webservice_obj.secret_service
+            if license_key is None or secret_service is None:
+                raise Exception("An 'license_key' and 'secret_service' must be provided")
+            key = b"ESA " + base64.b64encode((secret_service + ":" + license_key).encode('utf-8'))
+            return to_unicode(key)
 
     def __get__(self, client_instance, cls):
         if client_instance is not None:
@@ -189,5 +194,5 @@ class RmsSoapApi(RmsApi):
 class RmsRestApi(RmsApi):
 
     def __init__(self, **kwargs):
-        session = requests.Session()
-        session.headers['Authorization'] = self.esa_key
+        pass
+        # session = requests.Session()

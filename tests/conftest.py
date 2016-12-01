@@ -101,9 +101,17 @@ def no_requests(monkeypatch):
 
 @pytest.fixture
 def credentials():
-    return {'application_id': os.environ.get('RAKUTEN_APP_ID', '<RAKUTEN_APP_ID>')}
+    return {
+        'application_id': os.environ.get('RAKUTEN_APP_ID', '<RAKUTEN_APP_ID>'),
+        'license_key': os.environ.get('RMS_LICENSE_KEY', '<RMS_LICENSE_KEY>'),
+        'secret_service': os.environ.get('RMS_SECRET_SERVICE', '<RMS_SECRET_SERVICE>'),
+    }
 
 
 @pytest.fixture
 def fake_credentials():
-    return {'application_id': "FAKE_RAKUTEN_APP_ID"}
+    return {
+        'application_id': '<RAKUTEN_APP_ID>',
+        'license_key': '<RMS_LICENSE_KEY>',
+        'secret_service': '<RMS_SECRET_SERVICE>',
+    }
