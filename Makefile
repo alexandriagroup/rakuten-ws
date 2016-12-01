@@ -1,5 +1,7 @@
 SHELL := /bin/bash
 
+ROOT_DIR:=$(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
+
 # these files should pass flakes8
 FLAKE8_WHITELIST=$(shell find . -name "*.py" \
                     ! -path "./docs/*" ! -path "./.tox/*" \
@@ -55,6 +57,13 @@ clean-test:  ## Eemove test and coverage artifacts
 
 test:  ## Run tests quickly with the default Python
 	py.test
+
+test-no-vcr:
+	VCR_RECORD_MODE=off py.test
+
+test-renew-vcr-records:
+	@rm -vf $(ROOT_DIR)/tests/cassettes/*.yaml
+	VCR_RECORD_MODE=once py.test
 
 test-all:  ## Run tests on every Python version with tox
 	tox
