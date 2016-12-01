@@ -59,8 +59,8 @@ def clean_python_variable_name(s):
 
     >>> clean_python_variable_name("    ")
     '____'
-    >>> clean_python_variable_name("my 2@_'-\"'メーシ_é'\"(")
-    'my_2____メーシ_é_'
+    >>> clean_python_variable_name("my 2@'(")
+    'my_2___'
     >>> clean_python_variable_name("my superS@---variable")
     'my_superS____variable'
     """
