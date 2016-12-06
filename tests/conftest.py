@@ -37,7 +37,7 @@ def pytest_configure(config):
 
 def pytest_runtest_setup(item):
     # Add the online marker to tests that will go online
-    if item.get_marker('online'):
+    if item.get_marker('online') or ('ws' in item.fixturenames):
         item.fixturenames.append('use_vcr')
     else:
         item.fixturenames.append('no_requests')
