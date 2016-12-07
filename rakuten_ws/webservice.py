@@ -87,3 +87,8 @@ class RakutenWebService(BaseWebService):
     ichiba = IchibaAPI()
     books = BooksAPI()
     travel = TravelAPI()
+    auction = AuctionAPI()
+    kobo = KoboAPI()
+    gora = GoraAPI()
+    recipe = RecipeAPI()
+    other = OtherAPI()
