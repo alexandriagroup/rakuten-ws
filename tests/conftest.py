@@ -9,6 +9,7 @@ import mock
 import pytest
 
 from vcr import VCR
+from rakuten_ws import RakutenWebService
 
 
 VCR_CASSETTE_DIR = os.path.join(os.path.dirname(__file__), 'cassettes')
@@ -36,7 +37,7 @@ def pytest_configure(config):
 
 def pytest_runtest_setup(item):
     # Add the online marker to tests that will go online
-    if item.get_marker('online'):
+    if item.get_marker('online') or ('ws' in item.fixturenames):
         item.fixturenames.append('use_vcr')
     else:
         item.fixturenames.append('no_requests')
@@ -115,3 +116,8 @@ def fake_credentials():
         'license_key': '<RMS_LICENSE_KEY>',
         'secret_service': '<RMS_SECRET_SERVICE>',
     }
+
+
+@pytest.fixture
+def ws(credentials, request):
+    return RakutenWebService(**credentials)
