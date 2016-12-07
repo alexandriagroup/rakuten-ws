@@ -28,6 +28,28 @@ class ZeepTransport(zeep.transports.Transport):
         return super(ZeepTransport, self).post(address, params, headers)
 
 
+class RakutenAPIResponse(dict):
+    def __init__(self, session, url):
+        self.session = session
+        self.url = url
+        self.response = self.session.get(self.url).json()
+        super(RakutenAPIResponse, self).__init__(self.response)
+
+    def get_json_response(self, url):
+        return self.session.get(url).json()
+
+    def __iter__(self):
+        return iter(self.get_json_response(self.url))
+
+    def pages(self, start=1):
+        page_number = start
+        while page_number < self.response['pageCount']:
+            api_request = furl(self.url)
+            api_request.add({'page': page_number})
+            page_number += 1
+            yield self.session.get(api_request.url).json()
+        
+
 class WebServiceDescriptor(object):
     def __get__(self, webservice_obj, cls):
         if webservice_obj is not None:
@@ -64,8 +86,10 @@ class RakutenAPIRequest(object):
 
         request_params = {
             'applicationId': self.application_id,
-            'formatVersion': self.endpoint.api_obj.format_version
+            'formatVersion': self.endpoint.api_obj.format_version,
         }
+        if 'page' in kwargs:
+            request_params.update(page=kwargs['page'])
 
         request_params.update(camelize_dict(kwargs))
         api_request.add(sorted_dict(request_params))
@@ -73,7 +97,8 @@ class RakutenAPIRequest(object):
 
     def __call__(self, *args, **kwargs):
         url = self.build_url(*args, **kwargs)
-        return self.endpoint.api_obj.webservice_obj.session.get(url).json()
+        session = self.endpoint.api_obj.webservice_obj.session
+        return RakutenAPIResponse(session, url)
 
 
 class RakutenAPIEndpoint(object):
