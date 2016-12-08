@@ -30,5 +30,5 @@ def test_item_pages(credentials):
     # within a generator
     assert isinstance(items, types.GeneratorType)
     # The iteration should switch to the next page
-    assert items.next()['page'] == 1
-    assert items.next()['page'] == 2
+    assert next(items)['page'] == 1
+    assert next(items)['page'] == 2
