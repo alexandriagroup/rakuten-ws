@@ -22,33 +22,45 @@ def assert_response_is_valid(response, endpoint_method):
     assert set(response.keys()) == set(valid_keys[endpoint_method])
 
 
+def assert_responses_are_valid(responses, endpoint_method):
+    for i in range(1, 3):
+        response = next(responses)
+        assert response['page'] == i
+        assert_response_is_valid(response, endpoint_method)
+
+
 # TODO Test all the other parameters
-@pytest.mark.online
 def test_item_search(ws):
-    assert_response_is_valid(ws.ichiba.item.search(keyword="Naruto"), 'IchibaItem/Search')
+    assert_response_is_valid(ws.ichiba.item.search(keyword="Naruto"),
+                             'IchibaItem/Search')
 
 
 def test_item_search_pages(ws):
     responses = ws.ichiba.item.search(keyword="Naruto").pages()
-    for i in range(1, 3):
-        response = next(responses)
-        assert response['page'] == i
-        assert_response_is_valid(response, 'IchibaItem/Search')
+    assert_responses_are_valid(responses, 'IchibaItem/Search')
 
 
-@pytest.mark.online
 def test_item_ranking(ws):
-    assert_response_is_valid(ws.ichiba.item.ranking(carrier=0), 'IchibaItem/Ranking')
+    assert_response_is_valid(ws.ichiba.item.ranking(carrier=0),
+                             'IchibaItem/Ranking')
 
 
 def test_genre_search(ws):
-    assert_response_is_valid(ws.ichiba.genre.search(genreId=0, genrePath=1), 'IchibaGenre/Search')
+    assert_response_is_valid(ws.ichiba.genre.search(genreId=0, genrePath=1),
+                             'IchibaGenre/Search')
 
 
 def test_tag_search(ws):
-    assert_response_is_valid(ws.ichiba.tag.search(tagId=1000943), 'IchibaTag/Search')
+    assert_response_is_valid(ws.ichiba.tag.search(tagId=1000943),
+                             'IchibaTag/Search')
 
 
 def test_product_search(ws):
     assert_response_is_valid(ws.ichiba.product.search(keyword='Naruto'),
                              'IchibaProduct/Search')
+
+
+def test_product_search_pages(ws):
+    responses = ws.ichiba.product.search(keyword="Naruto").pages()
+    assert_responses_are_valid(responses, 'IchibaProduct/Search')
+
