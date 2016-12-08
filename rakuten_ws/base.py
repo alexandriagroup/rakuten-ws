@@ -45,9 +45,6 @@ class RakutenAPIResponse(dict):
     def get_json_response(self, url):
         return self.session.get(url).json()
 
-    def __iter__(self):
-        return iter(self.get_json_response(self.url))
-
     def pages(self, start=1):
         page_number = start
         while page_number < self.response['pageCount']:
