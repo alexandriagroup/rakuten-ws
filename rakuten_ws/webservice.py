@@ -9,7 +9,7 @@ class IchibaAPI(RakutenAPI):
                               ApiMethod('ranking', api_version='20120927'))
     genre = RakutenAPIEndpoint(ApiMethod('search', api_version='20120723'))
     tag = RakutenAPIEndpoint(ApiMethod('search', api_version='20140222'))
-    product = RakutenAPIEndpoint(ApiMethod('search', '20140305'), api_endpoint='Product')
+    product = RakutenAPIEndpoint(ApiMethod('search', api_version='20140305'), api_endpoint='Product')
 
 
 class BooksAPI(RakutenAPI):
