@@ -6,12 +6,12 @@ def test_golf_search(ws):
     response = ws.gora.golf.search(latitude="35.9061664",
                                    longitude="140.0397556")
     expected_keys = [
-        'highway', 'golfCorseDetailrl', 'golfCorseId', 'golfCorseCaption',
-        'golfCorseImagerl', 'latitde', 'longitde', 'address', 'evalation',
-        'ratingrl', 'golfCorseAbbr', 'reserveCalrl', 'golfCorseNameKana',
+        'highway', 'golfCourseDetailUrl', 'golfCourseId', 'golfCourseCaption',
+        'golfCourseImageUrl', 'latitude', 'longitude', 'address', 'evaluation',
+        'ratingUrl', 'golfCourseAbbr', 'reserveCalUrl', 'golfCourseNameKana',
         'golfCourseName'
     ]
-    assert response['Items'][0].keys() == expected_keys
+    assert set(response['Items'][0].keys()) == set(expected_keys)
 
 
 def test_golf_detail(ws):
@@ -35,7 +35,7 @@ def test_golf_detail(ws):
         'course', 'latitude', 'golfCourseImageUrl1', 'golfCourseImageUrl2',
         'golfCourseImageUrl3', 'golfCourseImageUrl4', 'golfCourseImageUrl5'
     ]
-    assert result['Item'].keys() == expected_keys
+    assert set(result['Item'].keys()) == set(expected_keys)
 
 
 def test_plan_detail(ws):
