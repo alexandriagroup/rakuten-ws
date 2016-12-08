@@ -9,7 +9,7 @@ import zeep.transports
 from furl import furl
 
 from .utils import camelize, camelize_dict, sorted_dict, clean_python_variable_name
-from .compat import to_unicode, iteritems
+from .compat import to_unicode
 
 
 class ApiMethod(object):
@@ -17,7 +17,7 @@ class ApiMethod(object):
         self.name = name
         self.alias = alias or name
         self.api_version = api_version
-        
+
 
 class ZeepTransport(zeep.transports.Transport):
 
@@ -55,7 +55,7 @@ class RakutenAPIResponse(dict):
             api_request.add({'page': page_number})
             page_number += 1
             yield self.session.get(api_request.url).json()
-        
+
 
 class WebServiceDescriptor(object):
     def __get__(self, webservice_obj, cls):
@@ -119,11 +119,11 @@ class RakutenAPIEndpoint(object):
                 setattr(attr, 'name', name)
         return instance
 
-    def __init__(self, name=None, api_endpoint=None, methods=[], *args, **kwargs):
+    def __init__(self, *methods, **kwargs):
         self.api_obj = None
-        self.name = name
-        self.methods = methods or []
-        self.api_endpoint = api_endpoint
+        self.name = kwargs.get('name', None)
+        self.methods = methods
+        self.api_endpoint = kwargs.get('api_endpoint', None)
         for key in dict(kwargs).keys():
             setattr(self, key, kwargs[key])
 
@@ -132,15 +132,14 @@ class RakutenAPIEndpoint(object):
             self.api_obj = api_obj
             if getattr(self, 'api_endpoint', None) is None:
                 self.api_endpoint = camelize("%s_%s" % (self.api_obj.name, self.name))
-            if isinstance(self.methods, (list, tuple)):
-                methods = dict((clean_python_variable_name(m.name), m.alias) for m in self.methods)
-            else:
-                raise Exception("'methods' parameter must be a list of ApiMethods.")
+            # if isinstance(self.methods, (list, tuple)):
+            #     methods = dict((clean_python_variable_name(m.name), m.alias) for m in self.methods)
+            # else:
+            #     raise Exception("'methods' parameter must be a list of ApiMethods.")
             for method in self.methods:
                 api_version = method.api_version or self.api_obj.api_version
-                setattr(self, method.name, RakutenAPIRequest(self,
-                                                             method.alias,
-                                                             api_version))
+                method_name = clean_python_variable_name(method.name)
+                setattr(self, method_name, RakutenAPIRequest(self, method.alias, api_version))
 
             return self
         return self.__class__
