@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from rakuten_ws.base import (RakutenAPI, RakutenAPIEndpoint, BaseWebService,
-                             RakutenAPIRequest)
+                             RakutenAPIRequest, ApiMethod)
 
 
 class SimpleAPI(RakutenAPI):
@@ -9,8 +9,8 @@ class SimpleAPI(RakutenAPI):
     api_version = "20140222"
     format_version = 2
 
-    item = RakutenAPIEndpoint(methods=['search', 'ranking'])
-    product = RakutenAPIEndpoint(methods=['get'], api_endpoint="Product")
+    item = RakutenAPIEndpoint(methods=[ApiMethod('search'), ApiMethod('ranking')])
+    product = RakutenAPIEndpoint(methods=[ApiMethod('get')], api_endpoint="Product")
 
 
 class SimpleWebService(BaseWebService):
@@ -41,8 +41,8 @@ def test_aliases_methods():
 
     class AnotherAPI(RakutenAPI):
         api_version = "20131024"
-        endpoint = RakutenAPIEndpoint(methods={'simple_search': 'simple_hotel_search',
-                                               'detail_search': 'hotel_detail_search'},
+        endpoint = RakutenAPIEndpoint(methods=[ApiMethod('simple_search', 'simple_hotel_search'),
+                                               ApiMethod('detail_search', 'hotel_detail_search')],
                                       api_endpoint="Custom")
 
     class SimpleWebService(BaseWebService):
