@@ -12,6 +12,13 @@ from .utils import camelize, camelize_dict, sorted_dict, clean_python_variable_n
 from .compat import to_unicode, iteritems
 
 
+class ApiMethod(object):
+    def __init__(self, name, alias=None, api_version=None):
+        self.name = name
+        self.alias = alias or name
+        self.api_version = api_version
+        
+
 class ZeepTransport(zeep.transports.Transport):
 
     def create_session(self):
@@ -60,9 +67,10 @@ class WebServiceDescriptor(object):
 
 class RakutenAPIRequest(object):
 
-    def __init__(self, endpoint, method_name, **kwargs):
+    def __init__(self, endpoint, method_name, api_version, **kwargs):
         self.endpoint = endpoint
         self.method_name = method_name
+        self.api_version = api_version
         for key in dict(kwargs).keys():
             setattr(self, key, kwargs[key])
 
@@ -81,7 +89,7 @@ class RakutenAPIRequest(object):
 
         api_request.path.segments.append(api_endpoint)
         api_request.path.segments.append(method_endpoint)
-        api_request.path.segments.append(self.endpoint.api_obj.api_version)
+        api_request.path.segments.append(self.api_version)
         api_request.path.normalize()
 
         request_params = {
@@ -111,7 +119,7 @@ class RakutenAPIEndpoint(object):
                 setattr(attr, 'name', name)
         return instance
 
-    def __init__(self, name=None, methods=None, api_endpoint=None, **kwargs):
+    def __init__(self, name=None, api_endpoint=None, methods=[], *args, **kwargs):
         self.api_obj = None
         self.name = name
         self.methods = methods or []
@@ -123,16 +131,17 @@ class RakutenAPIEndpoint(object):
         if api_obj is not None:
             self.api_obj = api_obj
             if getattr(self, 'api_endpoint', None) is None:
-                self.api_endpoint = \
-                    camelize("%s_%s" % (self.api_obj.name, self.name))
-            if isinstance(self.methods, dict):
-                methods = dict((clean_python_variable_name(key), name) for key, name in iteritems(self.methods))
-            elif isinstance(self.methods, (list, tuple)):
-                methods = dict((clean_python_variable_name(name), name) for name in self.methods)
+                self.api_endpoint = camelize("%s_%s" % (self.api_obj.name, self.name))
+            if isinstance(self.methods, (list, tuple)):
+                methods = dict((clean_python_variable_name(m.name), m.alias) for m in self.methods)
             else:
-                raise Exception("'methods' parameter must be a list or a dictionary")
-            for key, name in iteritems(methods):
-                setattr(self, key, RakutenAPIRequest(self, name))
+                raise Exception("'methods' parameter must be a list of ApiMethods.")
+            for method in self.methods:
+                api_version = method.api_version or self.api_obj.api_version
+                setattr(self, method.name, RakutenAPIRequest(self,
+                                                             method.alias,
+                                                             api_version))
+
             return self
         return self.__class__
 
