@@ -310,14 +310,14 @@ interactions:
         JfguVnLhu3zJhe9iBQm+i5Zc+CqSi4rkoiK5uCTJBcy0f6MEDd83NtVXM/77z3D3G0hTeO+//z9I
         SWBF1WsBAA==
     headers:
-      access-control-allow-origin: ['*']
-      cache-control: [no-store]
-      connection: [close]
-      content-encoding: [gzip]
-      content-language: [ja-JP]
-      content-length: ['16936']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 09 Dec 2016 10:18:16 GMT']
-      vary: [Accept-Encoding]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['16936']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Fri, 09 Dec 2016 11:40:58 GMT']
+      Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

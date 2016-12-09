@@ -14,14 +14,14 @@ interactions:
         H4sIAAAAAAAAA6tWSs4vzStRsjLQUSpITE9VsjLUUUrLLCqGCOUkQhkZmSXFYEZyYlFRZmoRXIMz
         XLtnSWouUE10rI6Se2peUapnXlp+UW5iSWZ+HkQ0JDEdTawWAFBfpIt/AAAA
     headers:
-      access-control-allow-origin: ['*']
-      cache-control: [no-store]
-      connection: [close]
-      content-encoding: [gzip]
-      content-language: [ja-JP]
-      content-length: ['102']
-      content-type: [application/json;charset=UTF-8]
-      date: ['Fri, 09 Dec 2016 10:18:15 GMT']
-      vary: [Accept-Encoding]
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['102']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Fri, 09 Dec 2016 11:40:57 GMT']
+      Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

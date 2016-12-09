@@ -31,7 +31,7 @@ def assert_responses_are_valid(responses, endpoint_method):
         assert_response_is_valid(response, endpoint_method)
 
 
-testdata = [
+item_search_data = [
     {'keyword': 'Naruto'},
     {'genreId': 101240},
     # {'shopCode': ?},
@@ -57,7 +57,7 @@ testdata = [
     {'carrier': 2},
     {'imageFlag': 1},
     {'orFlag': 1, 'maxPrice': 10000},
-    {'NGKeyword': 'Ninja', 'maxPrice': 10000},
+    {'NGKeyword': 'Ninja'},
     {'purchaseType': 1},
     {'shipOverseasFlag': 1},
     # {'shipOverseasArea': ?},
@@ -81,10 +81,10 @@ testdata = [
 ]
 
 def idfn(val):
-    return '_with_{}'.format(val.keys()[0])
+    return '_with_{}'.format('_'.join(val.keys()))
 
 
-@pytest.mark.parametrize('params', testdata, ids=idfn)
+@pytest.mark.parametrize('params', item_search_data, ids=idfn)
 def test_item_search(ws, params):
     params.update(keyword='Naruto')
     assert_response_is_valid(ws.ichiba.item.search(**params), 'IchibaItem/Search')
