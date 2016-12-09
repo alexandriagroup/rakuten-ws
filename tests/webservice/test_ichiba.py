@@ -77,8 +77,36 @@ item_search_data = [
     {'genreInformationFlag': 1},
     {'tagInformationFlag': 1},
     # {'affiliateId': ?},
-
 ]
+
+item_ranking_data = [
+    # {'genreId', ?}
+    {'age': 20},
+    {'sex': 1},
+    {'carrier': 0},
+    {'page': 2},
+    {'period': 'realtime'},
+]
+
+genre_search_data = [
+    {'genrePath': 1},
+]
+
+product_search_data = [
+    {'genreId': 101240},
+    # {'productId': ?},
+    {'hits': 15},
+    {'page': 2},
+    {'sort': '-releaseDate'},
+    {'sort': '-seller'},
+    {'sort': '-satisfied'},
+    {'sort': 'standard'},
+    {'minPrice': 10000},
+    {'maxPrice': 100000},
+    {'orFlag': 1, 'maxPrice': 10000},
+    {'genreInformationFlag': 0},
+]
+
 
 def idfn(val):
     return '_with_{}'.format('_'.join(val.keys()))
@@ -95,13 +123,16 @@ def test_item_search_pages(ws):
     assert_responses_are_valid(responses, 'IchibaItem/Search')
 
 
-def test_item_ranking(ws):
-    assert_response_is_valid(ws.ichiba.item.ranking(carrier=0),
+@pytest.mark.parametrize('params', item_ranking_data, ids=idfn)
+def test_item_ranking(ws, params):
+    assert_response_is_valid(ws.ichiba.item.ranking(**params),
                              'IchibaItem/Ranking')
 
 
-def test_genre_search(ws):
-    assert_response_is_valid(ws.ichiba.genre.search(genreId=0, genrePath=1),
+@pytest.mark.parametrize('params', genre_search_data, ids=idfn)
+def test_genre_search(ws, params):
+    params.update(genreId=0)
+    assert_response_is_valid(ws.ichiba.genre.search(**params),
                              'IchibaGenre/Search')
 
 
@@ -110,8 +141,10 @@ def test_tag_search(ws):
                              'IchibaTag/Search')
 
 
-def test_product_search(ws):
-    assert_response_is_valid(ws.ichiba.product.search(keyword='Naruto'),
+@pytest.mark.parametrize('params', product_search_data, ids=idfn)
+def test_product_search(ws, params):
+    params.update(keyword='Naruto')
+    assert_response_is_valid(ws.ichiba.product.search(**params),
                              'IchibaProduct/Search')
 
 
