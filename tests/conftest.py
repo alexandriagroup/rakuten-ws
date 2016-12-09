@@ -58,7 +58,19 @@ def use_vcr(request, monkeypatch):
             cassette_name += request.module.__name__.split('tests.')[-1] + '.'
         if request.cls is not None:
             cassette_name += request.cls.__name__ + '.'
-        cassette_name += request.function.__name__ + '.yaml'
+
+        # Take into account the parametrization set by pytest
+        # to create many tests from a single function with many parameters.
+        request_keywords = request.keywords.keys()
+        if 'parametrize' in request_keywords:
+            try:
+                param_name = [x for x in request_keywords if x.startswith('_with_')][0]
+            except IndexError:
+                param_name = ''
+        else:
+            param_name = ''
+
+        cassette_name += request.function.__name__ + param_name + '.yaml'
 
         cassette_path = os.path.join(VCR_CASSETTE_DIR, cassette_name)
 

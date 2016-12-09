@@ -1,0 +1,89 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.1]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?applicationId=XXXXXX&formatVersion=2&keyword=Naruto&sort=-updateTimestamp
+  response:
+    body:
+      string: !!binary |
+        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
+        A+6QAAA=
+    headers:
+      access-control-allow-origin: ['*']
+      cache-control: [no-store]
+      connection: [close]
+      content-encoding: [gzip]
+      content-language: [ja-JP]
+      content-length: ['3596']
+      content-type: [application/json;charset=UTF-8]
+      date: ['Fri, 09 Dec 2016 10:14:22 GMT']
+      vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1
