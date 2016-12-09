@@ -34,9 +34,9 @@ def assert_responses_are_valid(responses, endpoint_method):
 item_search_data = [
     {'keyword': 'Naruto'},
     {'genreId': 101240},
-    # {'shopCode': ?},
-    # {'itemCode': ?},
-    # {'tagId': ?},
+    {'shopCode': 'book'},
+    {'itemCode': 'book:17924463'},
+    {'tagId': 1000943},
     {'hits': 10},
     {'page': 2},
     {'sort': '+affiliateRate'},
@@ -59,8 +59,8 @@ item_search_data = [
     {'orFlag': 1, 'maxPrice': 10000},
     {'NGKeyword': 'Ninja'},
     {'purchaseType': 1},
-    {'shipOverseasFlag': 1},
-    # {'shipOverseasArea': ?},
+    {'shipOverseasFlag': 0},
+    {'shipOverseasArea': 'ALL', 'shipOverseasFlag': 1},
     {'asurakuFlag': 1},
     {'pointRateFlag': 1},
     {'pointRateFlag': 1, 'pointRate': 2},
@@ -73,10 +73,8 @@ item_search_data = [
     {'hasMovieFlag': 1},
     {'pamphletFlag': 1},
     {'appointDeliveryDateFlag': 1},
-    # {'elements': ?},
     {'genreInformationFlag': 1},
     {'tagInformationFlag': 1},
-    # {'affiliateId': ?},
 ]
 
 item_ranking_data = [
@@ -87,6 +85,7 @@ item_ranking_data = [
     {'page': 2},
     {'period': 'realtime'},
 ]
+
 
 genre_search_data = [
     {'genrePath': 1},
@@ -118,6 +117,14 @@ def test_item_search(ws, params):
     assert_response_is_valid(ws.ichiba.item.search(**params), 'IchibaItem/Search')
 
 
+def test_item_search_error_response_with_invalid_param(ws):
+    assert 'error' in ws.ichiba.item.search(ninja='Naruto')
+
+
+def test_item_search_error_response_without_required_param(ws):
+    assert 'error' in ws.ichiba.item.search(page=1)
+
+
 def test_item_search_pages(ws):
     responses = ws.ichiba.item.search(keyword="Naruto").pages()
     assert_responses_are_valid(responses, 'IchibaItem/Search')
@@ -136,6 +143,10 @@ def test_genre_search(ws, params):
                              'IchibaGenre/Search')
 
 
+def test_genre_search_error_response_without_required_param(ws):
+    assert 'error' in ws.ichiba.genre.search(genrePath=1)
+
+
 def test_tag_search(ws):
     assert_response_is_valid(ws.ichiba.tag.search(tagId=1000943),
                              'IchibaTag/Search')
@@ -151,3 +162,7 @@ def test_product_search(ws, params):
 def test_product_search_pages(ws):
     responses = ws.ichiba.product.search(keyword="Naruto").pages()
     assert_responses_are_valid(responses, 'IchibaProduct/Search')
+
+
+def test_product_search_error_response_without_required_param(ws):
+    assert 'error' in ws.ichiba.product.search(page=1)
