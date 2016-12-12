@@ -1,9 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-import os
+
 import pytest
-from rakuten_ws.webservice import RakutenWebService, IchibaAPI
-from rakuten_ws.base import RakutenAPIResponse 
 
 
 # TODO Be more precise on the differences between the 2 sets of keys
@@ -20,7 +18,7 @@ def assert_response_is_valid(response, endpoint_method):
     valid_keys['IchibaProduct/Search'] = [u'count', u'hits', u'last',
                                           u'pageCount', u'GenreInformation',
                                           u'Products', u'page', u'first']
-    
+
     assert set(response.keys()) == set(valid_keys[endpoint_method])
 
 

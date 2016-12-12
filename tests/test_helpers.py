@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 import pytest
 import types
 from rakuten_ws.webservice import RakutenWebService
-from rakuten_ws.base import RakutenAPIResponse 
+from rakuten_ws.base import RakutenAPIResponse
 
 
 @pytest.mark.online

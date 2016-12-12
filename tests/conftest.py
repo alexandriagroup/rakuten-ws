@@ -59,7 +59,7 @@ def use_vcr(request, monkeypatch):
         if request.cls is not None:
             cassette_name += request.cls.__name__ + '.'
 
-        # Take into account the parametrization set by pytest
+        # Take into account the parametrization set by pytest
         # to create many tests from a single function with many parameters.
         request_keywords = request.keywords.keys()
         if 'parametrize' in request_keywords:
