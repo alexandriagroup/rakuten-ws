@@ -2,7 +2,6 @@
 from __future__ import unicode_literals
 
 from collections import OrderedDict
-
 from rakuten_ws.utils import xml2dict, dict2xml
 
 
@@ -47,5 +46,9 @@ def test_dict2xml():
                                               ('itemUrl', 'test123')]))])
     data = OrderedDict([('itemUpdateRequest', item)])
 
-    xml_string = dict2xml(data, root="request", pretty_print=True).replace('"', "'")
+    xml_string = dict2xml(data, root="request", pretty_print=True)
     assert expected_xml_string == xml_string.strip()
+    expected_no_pretty_xml_string = expected_xml_string.replace('  ', '')\
+                                                       .replace('\n', '')\
+                                                       .replace('?>', '?>\n')
+    assert expected_no_pretty_xml_string == dict2xml(data, root="request", pretty_print=False)

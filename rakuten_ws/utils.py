@@ -4,17 +4,11 @@ import re
 
 from collections import OrderedDict
 
-from xml.dom import minidom
 from xmljson import parker, Parker
 
-try:
-    from lxml.etree import Element, fromstring, tostring
-    LXML_ENABLED = True
-except ImportError:
-    from xml.etree.ElementTree import Element, fromstring, tostring  # noqa
-    LXML_ENABLED = False
+from lxml.etree import Element, fromstring, tostring
 
-from .compat import iteritems
+from .compat import iteritems, to_unicode
 
 
 def camelize_dict(data, uppercase_first_letter=False):
@@ -84,19 +78,13 @@ def xml2dict(xml_string, dict_type=None):
     return parker.data(fromstring(xml_string))
 
 
-def xml_prettify(elem, encoding='utf-8'):
-    if LXML_ENABLED:
-        return tostring(elem, pretty_print=True, xml_declaration=True, encoding=encoding)
-    else:
-        return minidom.parseString(tostring(elem)).toprettyxml(encoding=encoding, indent="  ")
-
-
-def dict2xml(data, root='request', pretty_print=True, encoding='utf-8'):
+def dict2xml(data, root='request', pretty_print=True, xml_declaration=True, encoding='utf-8'):
     """ Convert a dictionary to xml string."""
     root_element = Element(root)
     xml_element = parker.etree(data, root=root_element)
 
-    if not pretty_print:
-        return '<?xml version="1.0" encoding="UTF-8"?>' % tostring(xml_element)
-    else:
-        return xml_prettify(xml_element, encoding=encoding)
+    xml_string = tostring(xml_element,
+                          pretty_print=pretty_print,
+                          xml_declaration=xml_declaration,
+                          encoding=encoding)
+    return to_unicode(xml_string, encoding=encoding)
