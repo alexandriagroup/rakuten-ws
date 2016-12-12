@@ -1,9 +1,19 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-
 import re
 
 from collections import OrderedDict
+
+from xml.dom import minidom
+from xmljson import parker, Parker
+
+try:
+    from lxml.etree import Element, fromstring, tostring
+    LXML_ENABLED = True
+except ImportError:
+    from xml.etree.ElementTree import Element, fromstring, tostring  # noqa
+    LXML_ENABLED = False
+
 from .compat import iteritems
 
 
@@ -65,3 +75,28 @@ def clean_python_variable_name(s):
     'my_superS____variable'
     """
     return re.sub('\W|^(?=\d)', '_', s)
+
+
+def xml2dict(xml_string, dict_type=None):
+    """ Convert an xml string to a python dictionary."""
+    if dict_type is not None:
+        return Parker(dict_type=dict_type).data(fromstring(xml_string))
+    return parker.data(fromstring(xml_string))
+
+
+def xml_prettify(elem, encoding='utf-8'):
+    if LXML_ENABLED:
+        return tostring(elem, pretty_print=True, xml_declaration=True, encoding=encoding)
+    else:
+        return minidom.parseString(tostring(elem)).toprettyxml(encoding=encoding, indent="  ")
+
+
+def dict2xml(data, root='request', pretty_print=True, encoding='utf-8'):
+    """ Convert a dictionary to xml string."""
+    root_element = Element(root)
+    xml_element = parker.etree(data, root=root_element)
+
+    if not pretty_print:
+        return '<?xml version="1.0" encoding="UTF-8"?>' % tostring(xml_element)
+    else:
+        return xml_prettify(xml_element, encoding=encoding)
