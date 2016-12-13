@@ -32,7 +32,7 @@ class ZeepTransport(zeep.transports.Transport):
         return super(ZeepTransport, self).post(address, params, headers)
 
 
-class RmsClient(object):
+class BaseRmsClient(object):
 
     @property
     def esa_key(self):

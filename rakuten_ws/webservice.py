@@ -85,7 +85,7 @@ class RmsOrderAPI(RmsSoapApi):
     wsdl_url = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
 
-class RmsClient(WebServiceDescriptor):
+class RmsClient(BaseRmsClient):
     order = RmsOrderAPI()
     # item = RmsRestEndpoint(RmsRestMethod('get', type='GET'),
     #                        RmsRestMethod('insert', type='POST'),

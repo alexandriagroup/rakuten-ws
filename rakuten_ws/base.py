@@ -34,14 +34,6 @@ class RakutenAPIResponse(dict):
             yield self.session.get(api_request.url).json()
 
 
-class WebServiceDescriptor(object):
-    def __get__(self, webservice_obj, cls):
-        if webservice_obj is not None:
-            self.webservice_obj = webservice_obj
-            return self
-        return self.__class__
-
-
 class RakutenAPIRequest(object):
 
     def __init__(self, endpoint, method_name, api_version, **kwargs):
@@ -122,7 +114,7 @@ class RakutenAPIEndpoint(object):
         return self.__class__
 
 
-class RakutenAPI(WebServiceDescriptor):
+class RakutenAPI(object):
     api_url = "https://app.rakuten.co.jp/services/api"
     format_version = 2
 
@@ -139,6 +131,12 @@ class RakutenAPI(WebServiceDescriptor):
         self.webservice_obj = None
         for key in dict(kwargs).keys():
             setattr(self, key, kwargs[key])
+
+    def __get__(self, webservice_obj, cls):
+        if webservice_obj is not None:
+            self.webservice_obj = webservice_obj
+            return self
+        return self.__class__
 
 
 class BaseWebService(object):
