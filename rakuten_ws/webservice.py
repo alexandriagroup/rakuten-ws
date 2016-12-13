@@ -1,7 +1,8 @@
 # coding: utf-8
 from __future__ import unicode_literals
-from .base import (RakutenAPIEndpoint, RakutenAPI, BaseWebService, RmsSoapApi,
-                   RmsRestApi, WebServiceDescriptor, ApiMethod)
+from .base import (RakutenAPIEndpoint, RakutenAPI, BaseWebService, WebServiceDescriptor, ApiMethod)
+
+from .rms import RmsSoapApi
 
 
 class IchibaAPI(RakutenAPI):
@@ -52,10 +53,8 @@ class AuctionAPI(RakutenAPI):
 class KoboAPI(RakutenAPI):
     api_version = "20131010"
 
-    genre = RakutenAPIEndpoint(
-        ApiMethod('search', 'genre_search'), api_endpoint="Kobo")
-    ebook = RakutenAPIEndpoint(
-        ApiMethod('search', 'ebook_search'), api_endpoint="Kobo")
+    genre = RakutenAPIEndpoint(ApiMethod('search', 'genre_search'), api_endpoint="Kobo")
+    ebook = RakutenAPIEndpoint(ApiMethod('search', 'ebook_search'), api_endpoint="Kobo")
 
 
 class GoraAPI(RakutenAPI):
@@ -86,13 +85,14 @@ class RmsOrderAPI(RmsSoapApi):
     wsdl_url = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
 
-class RmsItemAPI(RmsRestApi):
-    wsdl_url = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
-
-
 class RmsClient(WebServiceDescriptor):
     order = RmsOrderAPI()
-    item = RmsItemAPI()
+    # item = RmsRestEndpoint(RmsRestMethod('get', type='GET'),
+    #                        RmsRestMethod('insert', type='POST'),
+    #                        RmsRestMethod('update', type='POST'),
+    #                        RmsRestMethod('delete', type='POST'),
+    #                        RmsRestMethod('search', type='GET'))
+    # items = RmsRestEndpoint(RmsRestMethod('update', type='POST'))
 
 
 class RakutenWebService(BaseWebService):
