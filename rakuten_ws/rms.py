@@ -6,9 +6,6 @@ import requests
 import zeep
 import zeep.transports
 
-from furl import furl
-
-from .utils import camelize, camelize_dict, sorted_dict, clean_python_variable_name
 from .compat import to_unicode
 
 

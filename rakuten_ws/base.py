@@ -1,15 +1,11 @@
 # coding: utf-8
 from __future__ import unicode_literals
-import base64
 
 import requests
-import zeep
-import zeep.transports
 
 from furl import furl
 
 from .utils import camelize, camelize_dict, sorted_dict, clean_python_variable_name
-from .compat import to_unicode
 
 
 class ApiMethod(object):
@@ -17,22 +13,6 @@ class ApiMethod(object):
         self.name = name
         self.alias = alias or name
         self.api_version = api_version
-
-
-class ZeepTransport(zeep.transports.Transport):
-
-    def create_session(self):
-        self.http_headers = requests.Session().headers.copy()
-        return super(ZeepTransport, self).create_session()
-
-    # Patch Zeep methods to send custom headers
-    def get(self, address, params, headers):
-        headers.update(self.http_headers.copy())
-        return super(ZeepTransport, self).get(address, params, headers)
-
-    def post(self, address, params, headers):
-        headers.update(self.http_headers.copy())
-        return super(ZeepTransport, self).post(address, params, headers)
 
 
 class RakutenAPIResponse(dict):

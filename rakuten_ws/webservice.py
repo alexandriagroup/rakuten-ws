@@ -1,8 +1,8 @@
 # coding: utf-8
 from __future__ import unicode_literals
-from .base import (RakutenAPIEndpoint, RakutenAPI, BaseWebService, WebServiceDescriptor, ApiMethod)
+from .base import (RakutenAPIEndpoint, RakutenAPI, BaseWebService, ApiMethod)
 
-from .rms import RmsSoapApi
+from .rms import BaseRmsClient, RmsSoapApi
 
 
 class IchibaAPI(RakutenAPI):
