@@ -3,14 +3,14 @@ from __future__ import unicode_literals
 import pytest
 import types
 from rakuten_ws.webservice import RakutenWebService
-from rakuten_ws.base import RakutenAPIResponse
+from rakuten_ws.api import ApiResponse
 
 
 @pytest.mark.online
 def test_response(credentials):
     ws = RakutenWebService(**credentials)
     response = ws.ichiba.item.search(keyword="Naruto")
-    assert isinstance(response, RakutenAPIResponse)
+    assert isinstance(response, ApiResponse)
 
 
 @pytest.mark.online

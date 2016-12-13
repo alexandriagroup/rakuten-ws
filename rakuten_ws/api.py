@@ -15,12 +15,12 @@ class ApiMethod(object):
         self.api_version = api_version
 
 
-class RakutenAPIResponse(dict):
+class ApiResponse(dict):
     def __init__(self, session, url):
         self.session = session
         self.url = url
         self.response = self.session.get(self.url).json()
-        super(RakutenAPIResponse, self).__init__(self.response)
+        super(ApiResponse, self).__init__(self.response)
 
     def get_json_response(self, url):
         return self.session.get(url).json()
@@ -34,7 +34,7 @@ class RakutenAPIResponse(dict):
             yield self.session.get(api_request.url).json()
 
 
-class RakutenAPIRequest(object):
+class ApiRequest(object):
 
     def __init__(self, endpoint, method_name, api_version, **kwargs):
         self.endpoint = endpoint
@@ -75,15 +75,15 @@ class RakutenAPIRequest(object):
     def __call__(self, *args, **kwargs):
         url = self.build_url(*args, **kwargs)
         session = self.endpoint.api_obj.webservice_obj.session
-        return RakutenAPIResponse(session, url)
+        return ApiResponse(session, url)
 
 
-class RakutenAPIEndpoint(object):
+class ApiEndpoint(object):
 
     def __new__(cls, *args, **kwargs):
-        instance = super(RakutenAPIEndpoint, cls).__new__(cls)
+        instance = super(ApiEndpoint, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
-            if isinstance(attr, RakutenAPIEndpoint) \
+            if isinstance(attr, ApiEndpoint) \
                     and getattr(attr, 'name', None) is None:
                 setattr(attr, 'name', name)
         return instance
@@ -108,20 +108,20 @@ class RakutenAPIEndpoint(object):
             for method in self.methods:
                 api_version = method.api_version or self.api_obj.api_version
                 method_name = clean_python_variable_name(method.name)
-                setattr(self, method_name, RakutenAPIRequest(self, method.alias, api_version))
+                setattr(self, method_name, ApiRequest(self, method.alias, api_version))
 
             return self
         return self.__class__
 
 
-class RakutenAPI(object):
+class ApiService(object):
     api_url = "https://app.rakuten.co.jp/services/api"
     format_version = 2
 
     def __new__(cls, *args, **kwargs):
-        instance = super(RakutenAPI, cls).__new__(cls)
+        instance = super(ApiService, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
-            if isinstance(attr, RakutenAPIEndpoint):
+            if isinstance(attr, ApiEndpoint):
                 if getattr(attr, 'name', None) is None:
                     setattr(attr, 'name', name)
         return instance
@@ -144,7 +144,7 @@ class BaseWebService(object):
     def __new__(cls, *args, **kwargs):
         instance = super(BaseWebService, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
-            if isinstance(attr, RakutenAPI) \
+            if isinstance(attr, ApiService) \
                     and getattr(attr, 'name', None) is None:
                 setattr(attr, 'name', name)
         return instance
