@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from rakuten_ws.api import BaseWebService
-from rakuten_ws.rms import RestClient, RestMethod, BaseRmsService
+from rakuten_ws.baseapi import BaseWebService
+from rakuten_ws.baserms import RestClient, RestMethod, BaseRmsService
 
 
 class SimpleRmsItemsAPI(RestClient):

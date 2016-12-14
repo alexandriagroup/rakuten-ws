@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
-from rakuten_ws.api import ApiService, ApiEndpoint, BaseWebService, ApiRequest, ApiMethod
+from rakuten_ws.baseapi import ApiService, ApiEndpoint, BaseWebService, ApiRequest, ApiMethod
 
 
 class SimpleAPI(ApiService):

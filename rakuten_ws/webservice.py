@@ -1,8 +1,8 @@
 # coding: utf-8
 from __future__ import unicode_literals
-from .api import ApiEndpoint, ApiService, BaseWebService, ApiMethod
+from .baseapi import ApiEndpoint, ApiService, BaseWebService, ApiMethod
 
-from .rms import BaseRmsService, ZeepClient
+from .baserms import BaseRmsService, ZeepClient
 
 
 class IchibaAPI(ApiService):
