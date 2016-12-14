@@ -8,8 +8,8 @@ class SimpleAPI(ApiService):
     api_version = "20140222"
     format_version = 2
 
-    item = ApiEndpoint(methods=[ApiMethod('search'), ApiMethod('ranking')])
-    product = ApiEndpoint(methods=[ApiMethod('get')], api_endpoint="Product")
+    item = ApiEndpoint(ApiMethod('search'), ApiMethod('ranking'))
+    product = ApiEndpoint(ApiMethod('get'), api_endpoint="Product")
 
 
 class SimpleWebService(BaseWebService):
@@ -40,8 +40,8 @@ def test_aliases_methods():
 
     class AnotherAPI(ApiService):
         api_version = "20131024"
-        endpoint = ApiEndpoint(methods=[ApiMethod('simple_search', 'simple_hotel_search'),
-                                        ApiMethod('detail_search', 'hotel_detail_search')],
+        endpoint = ApiEndpoint(ApiMethod('simple_search', 'simple_hotel_search'),
+                               ApiMethod('detail_search', 'hotel_detail_search'),
                                api_endpoint="Custom")
 
     class SimpleWebService(BaseWebService):

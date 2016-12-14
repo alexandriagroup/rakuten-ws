@@ -36,10 +36,9 @@ class ApiResponse(dict):
 
 class ApiRequest(object):
 
-    def __init__(self, endpoint, method_name, api_version, **kwargs):
+    def __init__(self, endpoint, method, **kwargs):
         self.endpoint = endpoint
-        self.method_name = method_name
-        self.api_version = api_version
+        self.method = method
         for key in dict(kwargs).keys():
             setattr(self, key, kwargs[key])
 
@@ -54,11 +53,12 @@ class ApiRequest(object):
         # creating new instance of url request
         api_request = furl(self.endpoint.api_obj.api_url)
         api_endpoint = self.endpoint.api_endpoint
-        method_endpoint = camelize(self.method_name)
+        method_endpoint = camelize(self.method.alias)
+        api_version = self.method.api_version or self.endpoint.api_version or self.endpoint.api_obj.api_version
 
         api_request.path.segments.append(api_endpoint)
         api_request.path.segments.append(method_endpoint)
-        api_request.path.segments.append(self.api_version)
+        api_request.path.segments.append(api_version)
         api_request.path.normalize()
 
         request_params = {
@@ -79,6 +79,7 @@ class ApiRequest(object):
 
 
 class ApiEndpoint(object):
+    api_version = None
 
     def __new__(cls, *args, **kwargs):
         instance = super(ApiEndpoint, cls).__new__(cls)
@@ -91,25 +92,17 @@ class ApiEndpoint(object):
     def __init__(self, *methods, **kwargs):
         self.api_obj = None
         self.name = kwargs.get('name', None)
-        self.methods = methods
         self.api_endpoint = kwargs.get('api_endpoint', None)
-        for key in dict(kwargs).keys():
-            setattr(self, key, kwargs[key])
+
+        for method in methods:
+            method_name = clean_python_variable_name(method.name)
+            setattr(self, method_name, ApiRequest(self, method))
 
     def __get__(self, api_obj, cls):
         if api_obj is not None:
             self.api_obj = api_obj
             if getattr(self, 'api_endpoint', None) is None:
                 self.api_endpoint = camelize("%s_%s" % (self.api_obj.name, self.name))
-            # if isinstance(self.methods, (list, tuple)):
-            #     methods = dict((clean_python_variable_name(m.name), m.alias) for m in self.methods)
-            # else:
-            #     raise Exception("'methods' parameter must be a list of ApiMethods.")
-            for method in self.methods:
-                api_version = method.api_version or self.api_obj.api_version
-                method_name = clean_python_variable_name(method.name)
-                setattr(self, method_name, ApiRequest(self, method.alias, api_version))
-
             return self
         return self.__class__
 
