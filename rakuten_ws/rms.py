@@ -72,10 +72,14 @@ class BaseRmsService(object):
         return to_unicode(key)
 
     @property
+    def shop_url(self):
+        return self.webservice_obj.shop_url or ""
+
+    @property
     def soap_user_auth_model(self):
         return {
             "authKey": self.esa_key,
-            "shopUrl": "",
+            "shopUrl": self.shop_url,
             "userName": ""
         }
 
