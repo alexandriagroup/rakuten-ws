@@ -34,12 +34,13 @@ class ZeepTransport(zeep.transports.Transport):
 
 
 class ZeepClient(RmsServiceClient):
+    wsdl = None
 
-    def __init__(self, wsdl):
-        self.zeep_client = zeep.Client(wsdl=wsdl, transport=ZeepTransport())
+    def __init__(self):
+        self.zeep_client = zeep.Client(wsdl=self.wsdl, transport=ZeepTransport())
 
     def __send_request(self, name, **proxy_kwargs):
-        kwargs = {'arg0': self.rms_service.soap_user_auth_model}
+        kwargs = {'arg0': self.service.soap_user_auth_model}
         if proxy_kwargs:
             kwargs['arg1'] = kwargs
         return getattr(self.zeep_client.service, name)(**kwargs)

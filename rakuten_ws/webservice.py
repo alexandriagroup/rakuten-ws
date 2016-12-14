@@ -81,14 +81,16 @@ class OtherAPI(ApiService):
     high_comission_shop = ApiEndpoint(ApiMethod('list'), api_endpoint="HighComissionShop")
 
 
+class RmsOrderAPI(ZeepClient):
+    wsdl = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 class RmsService(BaseRmsService):
-    order = ZeepClient(wsdl="https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL")
     # item = RmsRestEndpoint(RmsRestMethod('get', type='GET'),
     #                        RmsRestMethod('insert', type='POST'),
     #                        RmsRestMethod('update', type='POST'),
     #                        RmsRestMethod('delete', type='POST'),
     #                        RmsRestMethod('search', type='GET'))
     # items = RmsRestEndpoint(RmsRestMethod('update', type='POST'))
+    order = RmsOrderAPI()
 
 
 class RakutenWebService(BaseWebService):
