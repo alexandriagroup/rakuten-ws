@@ -23,7 +23,7 @@ def test_rest_client():
     ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC")
     assert ws.rms.item.name == "item"
     assert ws.rms.product.name == "item_product"
-    assert ws.rms.product._service == ws.rms
+    assert ws.rms.product.service == ws.rms
 
     assert isinstance(ws.rms.item.get, RestMethod)
     assert ws.rms.item.get.name == "get"

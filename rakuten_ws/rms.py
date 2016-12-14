@@ -18,7 +18,7 @@ from .compat import to_unicode
 class RmsServiceClient(object):
     def __get__(self, service, cls):
         if service is not None:
-            self._service = service
+            self.service = service
             return self
         return self.__class__
 
@@ -46,7 +46,7 @@ class ZeepClient(RmsServiceClient):
         self.zeep_client = zeep.Client(wsdl=self.wsdl, transport=ZeepTransport())
 
     def __send_request(self, name, **proxy_kwargs):
-        kwargs = {'arg0': self._service.soap_user_auth_model}
+        kwargs = {'arg0': self.service.soap_user_auth_model}
         if proxy_kwargs:
             kwargs['arg1'] = kwargs
         return getattr(self.zeep_client.service, name)(**kwargs)
@@ -107,7 +107,7 @@ class RestClient(RmsServiceClient):
 
     def __init__(self, name=None):
         self.name = name
-        self._service = None
+        self.service = None
 
 
 class BaseRmsService(object):

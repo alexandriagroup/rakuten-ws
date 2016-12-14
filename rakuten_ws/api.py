@@ -44,17 +44,17 @@ class ApiRequest(object):
 
     @property
     def application_id(self, *args, **kwargs):
-        app_id = self.endpoint._service._webservice.application_id
+        app_id = self.endpoint.service._webservice.application_id
         if app_id is None:
             raise Exception("An 'application_id' must be provided")
         return app_id
 
     def build_url(self, *args, **kwargs):
         # creating new instance of url request
-        api_request = furl(self.endpoint._service.api_url)
+        api_request = furl(self.endpoint.service.api_url)
         api_endpoint = self.endpoint.api_endpoint
         method_endpoint = camelize(self.method.alias)
-        api_version = self.method.api_version or self.endpoint.api_version or self.endpoint._service.api_version
+        api_version = self.method.api_version or self.endpoint.api_version or self.endpoint.service.api_version
 
         api_request.path.segments.append(api_endpoint)
         api_request.path.segments.append(method_endpoint)
@@ -63,7 +63,7 @@ class ApiRequest(object):
 
         request_params = {
             'applicationId': self.application_id,
-            'formatVersion': self.endpoint._service.format_version,
+            'formatVersion': self.endpoint.service.format_version,
         }
         if 'page' in kwargs:
             request_params.update(page=kwargs['page'])
@@ -74,7 +74,7 @@ class ApiRequest(object):
 
     def __call__(self, *args, **kwargs):
         url = self.build_url(*args, **kwargs)
-        session = self.endpoint._service._webservice.session
+        session = self.endpoint.service._webservice.session
         return ApiResponse(session, url)
 
 
@@ -82,7 +82,7 @@ class ApiEndpoint(object):
     api_version = None
 
     def __init__(self, *methods, **kwargs):
-        self._service = None
+        self.service = None
         self.name = kwargs.get('name', None)
         self.api_endpoint = kwargs.get('api_endpoint', None)
 
@@ -92,9 +92,9 @@ class ApiEndpoint(object):
 
     def __get__(self, service, cls):
         if service is not None:
-            self._service = service
+            self.service = service
             if getattr(self, 'api_endpoint', None) is None:
-                self.api_endpoint = camelize("%s_%s" % (self._service.name, self.name))
+                self.api_endpoint = camelize("%s_%s" % (self.service.name, self.name))
             return self
         return self.__class__
 
