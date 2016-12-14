@@ -81,14 +81,6 @@ class ApiRequest(object):
 class ApiEndpoint(object):
     api_version = None
 
-    def __new__(cls, *args, **kwargs):
-        instance = super(ApiEndpoint, cls).__new__(cls)
-        for name, attr in sorted(list(cls.__dict__.items())):
-            if isinstance(attr, ApiEndpoint) \
-                    and getattr(attr, 'name', None) is None:
-                setattr(attr, 'name', name)
-        return instance
-
     def __init__(self, *methods, **kwargs):
         self.service = None
         self.name = kwargs.get('name', None)
