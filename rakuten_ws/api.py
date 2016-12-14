@@ -44,7 +44,7 @@ class ApiRequest(object):
 
     @property
     def application_id(self, *args, **kwargs):
-        app_id = self.endpoint.service._webservice.application_id
+        app_id = self.endpoint.service.webservice_obj.application_id
         if app_id is None:
             raise Exception("An 'application_id' must be provided")
         return app_id
@@ -74,7 +74,7 @@ class ApiRequest(object):
 
     def __call__(self, *args, **kwargs):
         url = self.build_url(*args, **kwargs)
-        session = self.endpoint.service._webservice.session
+        session = self.endpoint.service.webservice_obj.session
         return ApiResponse(session, url)
 
 
@@ -113,13 +113,13 @@ class ApiService(object):
 
     def __init__(self, name=None, **kwargs):
         self.name = name
-        self._webservice = None
+        self.webservice_obj = None
         for key in dict(kwargs).keys():
             setattr(self, key, kwargs[key])
 
-    def __get__(self, webservice, cls):
-        if webservice is not None:
-            self._webservice = webservice
+    def __get__(self, webservice_obj, cls):
+        if webservice_obj is not None:
+            self.webservice_obj = webservice_obj
             return self
         return self.__class__
 

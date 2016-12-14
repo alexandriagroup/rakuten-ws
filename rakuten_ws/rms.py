@@ -121,8 +121,8 @@ class BaseRmsService(object):
 
     @property
     def esa_key(self):
-        license_key = self._webservice.license_key
-        secret_service = self._webservice.secret_service
+        license_key = self.webservice_obj.license_key
+        secret_service = self.webservice_obj.secret_service
         if license_key is None or secret_service is None:
             raise Exception("An 'license_key' and 'secret_service' must be provided")
         key = b"ESA " + base64.b64encode((secret_service + ":" + license_key).encode('utf-8'))
@@ -130,7 +130,7 @@ class BaseRmsService(object):
 
     @property
     def shop_url(self):
-        return self._webservice.shop_url or ""
+        return self.webservice_obj.shop_url or ""
 
     @property
     def soap_user_auth_model(self):
@@ -140,8 +140,8 @@ class BaseRmsService(object):
             "userName": ""
         }
 
-    def __get__(self, webservice, cls):
-        if webservice is not None:
-            self._webservice = webservice
+    def __get__(self, webservice_obj, cls):
+        if webservice_obj is not None:
+            self.webservice_obj = webservice_obj
             return self
         return self.__class__
