@@ -1,5 +1,11 @@
 # coding: utf-8
 from __future__ import unicode_literals
+
+from furl import furl
+
+from .utils import camelize
+
+
 import base64
 
 import requests
@@ -57,11 +63,61 @@ class SoapClient(RmsServiceClient):
 
 class RestMethod(object):
 
-    def __init__(self, **kwargs):
+    def __init__(self, name=None, http_method="GET"):
+        self.name = name
+        self.http_method = http_method
+        self.client = None
+
+    def build_url(self, *args, **kwargs):
+        api_request = furl(self.endpoint.api_obj.api_url)
+        api_endpoint = self.endpoint.api_endpoint
+        method_endpoint = camelize(self.method_name)
+
+        api_request.path.segments.append(api_endpoint)
+        api_request.path.segments.append(method_endpoint)
+        api_request.path.segments.append(self.api_version)
+        api_request.path.normalize()
+
+        return "url"
+
+    def build_request(self, *args, **kwargs):
+        # creating new instance of url request
+        return "<xml></xml>"
+
+    def __call__(self, *args, **kwargs):
         pass
+
+    def __get__(self, client, cls):
+        if client is not None:
+            self.client = client
+            return self
+        return self.__class__
+
+
+class RestClient(RmsServiceClient):
+    api_url = "https://api.rms.rakuten.co.jp/es"
+
+    def __new__(cls, *args, **kwargs):
+        instance = super(RestClient, cls).__new__(cls)
+        for name, attr in sorted(list(cls.__dict__.items())):
+            if isinstance(attr, RestMethod):
+                if getattr(attr, 'name', None) is None:
+                    setattr(attr, 'name', name)
+        return instance
+
+    def __init__(self, name=None):
+        self.name = name
+        self.service = None
 
 
 class BaseRmsService(object):
+    def __new__(cls, *args, **kwargs):
+        instance = super(BaseRmsService, cls).__new__(cls)
+        for name, attr in sorted(list(cls.__dict__.items())):
+            if isinstance(attr, RmsServiceClient):
+                if getattr(attr, 'name', None) is None:
+                    setattr(attr, 'name', name)
+        return instance
 
     @property
     def esa_key(self):
@@ -83,10 +139,6 @@ class BaseRmsService(object):
             "shopUrl": self.shop_url,
             "userName": ""
         }
-
-    def __init__(self, **kwargs):
-        pass
-        # session = requests.Session()
 
     def __get__(self, webservice_obj, cls):
         if webservice_obj is not None:
