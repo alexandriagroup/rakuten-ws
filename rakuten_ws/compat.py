@@ -28,71 +28,24 @@ if is_py3:
     str = str
     bytes = bytes
     basestring = (str, bytes)
-    integer_types = (int, )
-    numeric_types = integer_types + (float, )
-    from io import StringIO
-    from queue import Empty
-
-    range = range
-    zip = zip
-
-    def iterkeys(d):
-        return iter(d.keys())
-
-    def itervalues(d):
-        return iter(d.values())
 
     def iteritems(d):
         return iter(d.items())
 
-    def reraise(tp, value, tb=None):
-        if value.__traceback__ is not tb:
-            raise value.with_traceback(tb)
-        raise value
-
     def is_bytes(x):
         return isinstance(x, (bytes, memoryview, bytearray))
-
-    from collections import Callable
-
-    def callable(obj):
-        return isinstance(obj, Callable)
 
 else:
     builtin_str = str
     bytes = str
     str = unicode
     basestring = basestring
-    integer_types = (int, long)
-    numeric_types = integer_types + (float, )
-
-    from itertools import izip  # noqa
-
-    zip = izip
-    range = xrange
-
-    from cStringIO import StringIO  # noqa
-    from Queue import Empty  # noqa
-
-    def iterkeys(d):
-        return d.iterkeys()
-
-    def itervalues(d):
-        return d.itervalues()
 
     def iteritems(d):
         return d.iteritems()
 
-    exec('def reraise(tp, value, tb=None):\n raise tp, value, tb')
-
     def is_bytes(x):
         return isinstance(x, (buffer, bytearray))
-
-    callable = callable
-
-
-def with_metaclass(meta, base=object):
-    return meta("NewBase", (base,), {})
 
 
 def to_unicode(obj, encoding='utf-8'):
