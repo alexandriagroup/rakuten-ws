@@ -9,10 +9,10 @@ import zeep.transports
 from .compat import to_unicode
 
 
-class RmsServiceDescriptor(object):
-    def __get__(self, rms_service, cls):
-        if rms_service is not None:
-            self.rms_service = rms_service
+class RmsServiceClient(object):
+    def __get__(self, service, cls):
+        if service is not None:
+            self.service = service
             return self
         return self.__class__
 
@@ -33,7 +33,7 @@ class ZeepTransport(zeep.transports.Transport):
         return super(ZeepTransport, self).post(address, params, headers)
 
 
-class ZeepClient(RmsServiceDescriptor):
+class ZeepClient(RmsServiceClient):
 
     def __init__(self, wsdl):
         self.zeep_client = zeep.Client(wsdl=wsdl, transport=ZeepTransport())
@@ -48,13 +48,13 @@ class ZeepClient(RmsServiceDescriptor):
         return lambda **proxy_kwargs: self.__send_request(name, **proxy_kwargs)
 
 
-class SoapClient(RmsServiceDescriptor):
+class SoapClient(RmsServiceClient):
 
     def __init__(self, **kwargs):
         pass
 
 
-class RestClient(RmsServiceDescriptor):
+class RestMethod(object):
 
     def __init__(self, **kwargs):
         pass
