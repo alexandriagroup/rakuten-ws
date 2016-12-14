@@ -44,17 +44,17 @@ class ApiRequest(object):
 
     @property
     def application_id(self, *args, **kwargs):
-        app_id = self.endpoint.api_obj.webservice_obj.application_id
+        app_id = self.endpoint.service.webservice_obj.application_id
         if app_id is None:
             raise Exception("An 'application_id' must be provided")
         return app_id
 
     def build_url(self, *args, **kwargs):
         # creating new instance of url request
-        api_request = furl(self.endpoint.api_obj.api_url)
+        api_request = furl(self.endpoint.service.api_url)
         api_endpoint = self.endpoint.api_endpoint
         method_endpoint = camelize(self.method.alias)
-        api_version = self.method.api_version or self.endpoint.api_version or self.endpoint.api_obj.api_version
+        api_version = self.method.api_version or self.endpoint.api_version or self.endpoint.service.api_version
 
         api_request.path.segments.append(api_endpoint)
         api_request.path.segments.append(method_endpoint)
@@ -63,7 +63,7 @@ class ApiRequest(object):
 
         request_params = {
             'applicationId': self.application_id,
-            'formatVersion': self.endpoint.api_obj.format_version,
+            'formatVersion': self.endpoint.service.format_version,
         }
         if 'page' in kwargs:
             request_params.update(page=kwargs['page'])
@@ -74,7 +74,7 @@ class ApiRequest(object):
 
     def __call__(self, *args, **kwargs):
         url = self.build_url(*args, **kwargs)
-        session = self.endpoint.api_obj.webservice_obj.session
+        session = self.endpoint.service.webservice_obj.session
         return ApiResponse(session, url)
 
 
@@ -90,7 +90,7 @@ class ApiEndpoint(object):
         return instance
 
     def __init__(self, *methods, **kwargs):
-        self.api_obj = None
+        self.service = None
         self.name = kwargs.get('name', None)
         self.api_endpoint = kwargs.get('api_endpoint', None)
 
@@ -98,11 +98,11 @@ class ApiEndpoint(object):
             method_name = clean_python_variable_name(method.name)
             setattr(self, method_name, ApiRequest(self, method))
 
-    def __get__(self, api_obj, cls):
-        if api_obj is not None:
-            self.api_obj = api_obj
+    def __get__(self, service, cls):
+        if service is not None:
+            self.service = service
             if getattr(self, 'api_endpoint', None) is None:
-                self.api_endpoint = camelize("%s_%s" % (self.api_obj.name, self.name))
+                self.api_endpoint = camelize("%s_%s" % (self.service.name, self.name))
             return self
         return self.__class__
 
