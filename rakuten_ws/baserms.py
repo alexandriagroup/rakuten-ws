@@ -12,6 +12,11 @@ import requests
 import zeep
 import zeep.transports
 
+from requests import Request
+
+from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict
+
+from .utils import camelize_dict
 from .compat import to_unicode
 
 
@@ -68,24 +73,37 @@ class RestMethod(object):
         self.http_method = http_method
         self.client = None
 
-    def build_url(self, *args, **kwargs):
-        api_request = furl(self.endpoint.api_obj.api_url)
-        api_endpoint = self.endpoint.api_endpoint
-        method_endpoint = camelize(self.method_name)
-
-        api_request.path.segments.append(api_endpoint)
-        api_request.path.segments.append(method_endpoint)
-        api_request.path.segments.append(self.api_version)
+    def prepare_request(self, params={}):
+        api_request = furl(self.client.api_url)
+        api_request.path.segments.append(self.client.api_version)
+        api_request.path.segments.append(self.client.api_endpoint or self.client.name)
+        api_request.path.segments.append(self.name)
         api_request.path.normalize()
 
-        return "url"
+        headers = self.client.service.webservice.session.headers.copy()
+        headers['Authorization'] = self.client.service.esa_key
 
-    def build_request(self, *args, **kwargs):
-        # creating new instance of url request
-        return "<xml></xml>"
+        root_xml = camelize("%s_%s_request" % (self.client.name, self.name), uppercase_first_letter=False)
+
+        if self.http_method == "POST":
+            data = dict2xml({root_xml: sorted_dict(camelize_dict(params))}, root="request", pretty_print=True)
+            req = Request(self.http_method, api_request.url, data=data, headers=headers)
+        else:
+            req = Request(self.http_method, api_request.url, headers=headers, params=sorted_dict(params))
+
+        prepped_request = req.prepare()
+        return prepped_request
+
+    def parse_response(self, response):
+        root_xml = camelize("%s_%s_result" % (self.client.name, self.name), uppercase_first_letter=False)
+        response_dict = xml2dict(response.content)
+        assert response_dict['status']['systemStatus'] == 'OK'
+        return response_dict[root_xml]
 
     def __call__(self, *args, **kwargs):
-        pass
+        prepped_request = self.prepare_request(kwargs)
+        response = self.client.service.webservice.session.send(prepped_request)
+        return self.parse_response(response)
 
     def __get__(self, client, cls):
         if client is not None:
@@ -96,6 +114,8 @@ class RestMethod(object):
 
 class RestClient(RmsServiceClient):
     api_url = "https://api.rms.rakuten.co.jp/es"
+    api_endpoint = None
+    api_version = '1.0'
 
     def __new__(cls, *args, **kwargs):
         instance = super(RestClient, cls).__new__(cls)
