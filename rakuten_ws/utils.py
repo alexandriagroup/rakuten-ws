@@ -16,12 +16,24 @@ def camelize_dict(data, uppercase_first_letter=False):
 
     >>> d = {'a_simple_key': '1', 'Another_key': '2', 'CamelKey': '3'}
     >>> sorted(camelize_dict(d).keys())
-    ['aSimpleKey', 'anotherKey', 'camelKey']
+    ['Another_key', 'CamelKey', 'aSimpleKey']
     >>> camelize_dict(d)['aSimpleKey']
     '1'
     """
-    return {camelize(k, uppercase_first_letter):
-            v for (k, v) in iteritems(data)}
+    new_dict = {}
+    for k, v in iteritems(data):
+        new_v = v
+        if isinstance(v, dict):
+            new_v = camelize_dict(v, uppercase_first_letter)
+        elif isinstance(v, list):
+            new_v = list()
+            for x in v:
+                if isinstance(x, dict):
+                    new_v.append(camelize_dict(x, uppercase_first_letter))
+                else:
+                    camelize(k, uppercase_first_letter)
+        new_dict[camelize(k, uppercase_first_letter)] = new_v
+    return new_dict
 
 
 def camelize(string, uppercase_first_letter=True):

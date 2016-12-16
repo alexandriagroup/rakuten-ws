@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 
 from collections import OrderedDict
-from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict
+from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict
 
 
 def test_sorted_dict():
@@ -30,6 +30,34 @@ def test_sorted_dict():
         ('zzzz', 2)
     ])
     assert sorted_dict(test_dict) == expected_dict
+
+
+def test_camelize_dict():
+    test_dict = {
+        "my_list": [{"one_key": "one", "Two_key": 2, "NGKeyword": 3}, 2, "three"],
+        "my_dict": {"one_key": "one", "Two_key": 2, "NGKeyword": 3},
+        "first_key": 1,
+        "SecondKey": 2,
+        "thirdKey": 3,
+    }
+    expected_dict = {
+        "thirdKey": 3,
+        "myDict": {
+            "Two_key": 2,
+            "NGKeyword": 3,
+            "oneKey": "one"
+        },
+        "myList": [
+            {
+                "Two_key": 2,
+                "NGKeyword": 3,
+                "oneKey": "one"
+            }
+        ],
+        "SecondKey": 2,
+        "firstKey": 1
+    }
+    assert camelize_dict(test_dict) == expected_dict
 
 
 def test_xml2dict():
