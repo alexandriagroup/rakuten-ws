@@ -37,6 +37,8 @@ def camelize(string, uppercase_first_letter=True):
     >>> camelize("device_type", False)
     'deviceType'
     """
+    if not string.islower():
+        return string
     if uppercase_first_letter:
         return re.sub(r"(?:^|_)(.)", lambda m: m.group(1).upper(), string)
     else:
