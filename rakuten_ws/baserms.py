@@ -25,7 +25,6 @@ class RmsServiceClient(object):
         if service is not None:
             self.service = service
             return self
-        return self.__class__
 
 
 class ZeepTransport(zeep.transports.Transport):
@@ -109,7 +108,6 @@ class RestMethod(object):
         if client is not None:
             self.client = client
             return self
-        return self.__class__
 
 
 class RestClient(RmsServiceClient):
@@ -164,4 +162,3 @@ class BaseRmsService(object):
         if webservice is not None:
             self.webservice = webservice
             return self
-        return self.__class__
