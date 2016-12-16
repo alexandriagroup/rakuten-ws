@@ -2,7 +2,34 @@
 from __future__ import unicode_literals
 
 from collections import OrderedDict
-from rakuten_ws.utils import xml2dict, dict2xml
+from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict
+
+
+def test_sorted_dict():
+    test_dict = {
+        "thirdKey": 3,
+        "myDict": {
+            "c": 2,
+            "b": 2,
+            "a": "one"
+        },
+        "firstKey": [
+            {
+                "twoValue": 2,
+                "oneKey": "one"
+            }
+        ],
+        "zzzz": 2,
+        "aaaa": 1
+    }
+    expected_dict = OrderedDict([
+        ('aaaa', 1),
+        ('firstKey', [OrderedDict([('oneKey', 'one'), ('twoValue', 2)])]),
+        ('myDict', OrderedDict([('a', 'one'), ('b', 2), ('c', 2)])),
+        ('thirdKey', 3),
+        ('zzzz', 2)
+    ])
+    assert sorted_dict(test_dict) == expected_dict
 
 
 def test_xml2dict():

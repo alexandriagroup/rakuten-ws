@@ -53,7 +53,20 @@ def sorted_dict(d):
     >>> sorted_dict({'1': 10, '3': 3})
     OrderedDict([('1', 10), ('3', 3)])
     """
-    return OrderedDict(sorted(iteritems(d)))
+    new_dict = OrderedDict()
+    for k, v in sorted(iteritems(d)):
+        new_v = v
+        if isinstance(v, dict):
+            new_v = sorted_dict(v)
+        elif isinstance(v, list):
+            new_v = list()
+            for x in v:
+                if isinstance(x, dict):
+                    new_v.append(sorted_dict(x))
+                else:
+                    new_v.append(x)
+        new_dict[k] = new_v
+    return new_dict
 
 
 def clean_python_variable_name(s):
