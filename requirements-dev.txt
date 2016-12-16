@@ -17,3 +17,4 @@ cryptography==1.4
 PyYAML==3.11
 sphinx-readable-theme
 mock==2.0.0
+httpretty

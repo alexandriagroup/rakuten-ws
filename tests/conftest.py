@@ -7,6 +7,7 @@ import sys
 
 import mock
 import pytest
+import httpretty as httpretty_module
 
 from vcr import VCR
 from rakuten_ws import RakutenWebService
@@ -37,10 +38,19 @@ def pytest_configure(config):
 
 def pytest_runtest_setup(item):
     # Add the online marker to tests that will go online
-    if item.get_marker('online') or ('ws' in item.fixturenames):
-        item.fixturenames.append('use_vcr')
-    else:
-        item.fixturenames.append('no_requests')
+    if 'httpretty' not in item.fixturenames:
+        if item.get_marker('online') or ('ws' in item.fixturenames):
+            item.fixturenames.append('use_vcr')
+        else:
+            item.fixturenames.append('no_requests')
+
+
+@pytest.yield_fixture()
+def httpretty():
+    httpretty_module.reset()
+    httpretty_module.enable()
+    yield httpretty_module
+    httpretty_module.disable()
 
 
 @pytest.yield_fixture()
