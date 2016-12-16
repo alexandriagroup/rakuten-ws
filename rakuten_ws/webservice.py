@@ -2,7 +2,7 @@
 from __future__ import unicode_literals
 from .baseapi import ApiEndpoint, ApiService, BaseWebService, ApiMethod
 
-from .baserms import BaseRmsService, ZeepClient
+from .baserms import BaseRmsService, ZeepClient, RestClient, RestMethod
 
 
 class IchibaAPI(ApiService):
@@ -83,14 +83,29 @@ class OtherAPI(ApiService):
 
 class RmsOrderAPI(ZeepClient):
     wsdl = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
+
+
+class RmsItemAPI(RestClient):
+    get = RestMethod(http_method='GET')
+    insert = RestMethod(http_method='POST')
+    update = RestMethod(http_method='POST')
+    delete = RestMethod(http_method='POST')
+    search = RestMethod(http_method='GET')
+
+
+class RmsItemsAPI(RestClient):
+    update = RestMethod(http_method='POST')
+
+
+class RmsProductAPI(RestClient):
+    search = RestMethod(http_method='GET')
+
+
 class RmsService(BaseRmsService):
-    # item = RmsRestEndpoint(RmsRestMethod('get', type='GET'),
-    #                        RmsRestMethod('insert', type='POST'),
-    #                        RmsRestMethod('update', type='POST'),
-    #                        RmsRestMethod('delete', type='POST'),
-    #                        RmsRestMethod('search', type='GET'))
-    # items = RmsRestEndpoint(RmsRestMethod('update', type='POST'))
     order = RmsOrderAPI()
+    item = RmsItemAPI()
+    items = RmsItemsAPI()
+    product = RmsProductAPI()
 
 
 class RakutenWebService(BaseWebService):
