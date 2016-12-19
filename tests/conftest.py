@@ -130,6 +130,7 @@ def credentials():
         'application_id': os.environ.get('RAKUTEN_APP_ID', '<RAKUTEN_APP_ID>'),
         'license_key': os.environ.get('RMS_LICENSE_KEY', '<RMS_LICENSE_KEY>'),
         'secret_service': os.environ.get('RMS_SECRET_SERVICE', '<RMS_SECRET_SERVICE>'),
+        'shop_url': os.environ.get('RMS_SHOP_URL', '<RMS_SHOP_URL>'),
     }
 
 
@@ -139,6 +140,7 @@ def fake_credentials():
         'application_id': '<RAKUTEN_APP_ID>',
         'license_key': '<RMS_LICENSE_KEY>',
         'secret_service': '<RMS_SECRET_SERVICE>',
+        'shop_url': '<RMS_SHOP_URL>',
     }
 
 
