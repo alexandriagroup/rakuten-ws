@@ -20,6 +20,8 @@ VCR_RECORD_MODE = os.environ.get('VCR_RECORD_MODE', 'once')
 def before_record_cb(request):
     if request.body:
         request.body = re.sub('<authKey>.+</authKey>', '<authKey>XXXXXX</authKey>', request.body.decode('utf-8'))
+        request.body = re.sub('<shopUrl>.+</shopUrl>', '<shopUrl>XXXXXX</shopUrl>', request.body.decode('utf-8'))
+        request.body = re.sub('<userName>*.+</userName>', '<userName>XXXXXX</userName>', request.body.decode('utf-8'))
     return request
 
 
@@ -65,9 +67,9 @@ def use_vcr(request, monkeypatch):
     else:
         cassette_name = ""
         if request.module is not None:
-            cassette_name += request.module.__name__.split('tests.')[-1] + '.'
+            cassette_name += request.module.__name__.split('tests.')[-1] + '/'
         if request.cls is not None:
-            cassette_name += request.cls.__name__ + '.'
+            cassette_name += request.cls.__name__ + '/'
 
         # Take into account the parametrization set by pytest
         # to create many tests from a single function with many parameters.

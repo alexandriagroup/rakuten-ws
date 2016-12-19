@@ -18,7 +18,7 @@ def test_single_item(credentials):
     ws = RakutenWebService(**credentials)
     response = ws.ichiba.item.search(keyword="Naruto")
     item = response['Items'][0]
-    assert item['itemName'] == 'NARUTO THE BEST (期間生産限定盤) [ (アニメーション) ]'  # noqa
+    assert item['itemName'] == 'BORUTO-ボルトー 1 -NARUTO NEXT GENERATIONS- [ 池本 幹雄 ]'  # noqa
 
 
 @pytest.mark.online

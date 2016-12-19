@@ -1,0 +1,39 @@
+interactions:
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<soap-env:Envelope xmlns:soap-env=\"\
+      http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap-env:Body>\n    <ns0:getRequestId\
+      \ xmlns:ns0=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\">\n \
+      \     <arg0>\n        <authKey>XXXXXX</authKey>\n        <shopUrl>XXXXXX</shopUrl>\n\
+      \        <userName>XXXXXX</userName>\n      </arg0>\n    </ns0:getRequestId>\n\
+      \  </soap-env:Body>\n</soap-env:Envelope>\n"
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['496']
+      Content-Type: [text/xml; charset=utf-8]
+      SOAPAction: ['""']
+      User-Agent: [python-requests/2.12.1]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/order/ws
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3WQO07DQBCGr2KlcZWddYSQsdYbCQQSDUUCB1jZI8fgfbCzDtBScBFqSqSI8/C4
+        BmslxhXdr2/++echlo+6S7boqbWmTDPG0wRNZevWNGV6c30xz9OlFOvi3Gyxsw6T6DdUrMvZJgRX
+        AFC1Qa2IRU5WOWZ9A4MAPHTAbOg/tfWTFIYWRYNhhfc9UrisV0jOGhpTY/kv1/oavXIt85qYV3d9
+        QMMqy24dRAJadd3eA9EEDxSneAy9N1Kg99af2RrlFedzzrmACQmNRKpB+f32+rXb/bw/f368CBhp
+        DDnsJrOTo+MsX/BcwAQHvZ8C/x0TS+O9MD1O/gJN0bh0awEAAA==
+    headers:
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['265']
+      Content-Type: [text/xml;charset="utf-8"]
+      Date: ['Mon, 19 Dec 2016 14:51:51 GMT']
+      Server: [nginx]
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+      requestId: [86ed2ba4-c41f-40c3-b54a-2b8cf684aa0a]
+      timeStamp: ['2016-12-19T14:51:50']
+    status: {code: 200, message: OK}
+version: 1
