@@ -37,7 +37,8 @@ class SimpleWebService(BaseWebService):
 
 
 def test_rest_client():
-    ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC")
+    ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC", shop_url="shop_url")
+    ws.rms.soap_user_auth_model == {'authKey': 'ESA Q0NDQ0M6QkJCQkI=', 'shopUrl': 'shop_url', 'userName': ''}
     assert ws.rms.item.name == "item"
     assert ws.rms.product.name == "item_product"
     assert ws.rms.product.service == ws.rms
