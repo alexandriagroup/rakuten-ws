@@ -116,4 +116,10 @@ def test_rest_client_get_response(httpretty):
                            content_type='application/xml')
 
     result = ws.rms.item.get(item_url="aaa")
+    assert result.status['interfaceId'] == 'item.get'
+    assert result.status['systemStatus'] == 'OK'
+    assert result.status['message'] == 'OK'
     assert result['code'] == 'N000'
+    assert result['item']['itemUrl'] == 'aaa'
+    assert result['item']['itemName'] == 'test'
+    assert result['item']['itemPrice'] == 1000

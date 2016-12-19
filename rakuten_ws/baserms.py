@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 from furl import furl
 
+from collections import OrderedDict
 from .utils import camelize
 
 
@@ -12,6 +13,7 @@ import requests
 import zeep
 import zeep.transports
 
+from lxml import etree
 from requests import Request
 
 from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict
@@ -65,9 +67,25 @@ class SoapClient(RmsServiceClient):
         pass
 
 
+class RestResponse(OrderedDict):
+    def __init__(self, method, response):
+        self.method = method
+        self.raw = response
+        self.request = response.request
+        self.parsed_xml = etree.fromstring(response.content)
+        _status = self.parsed_xml.xpath('//status')
+        _result = self.parsed_xml.xpath('//%s' % self.method.result_xml_key)
+        if _status:
+            self.status = xml2dict(etree.tostring(_status[0]))
+        result_data = {}
+        if _result:
+            result_data = xml2dict(etree.tostring(_result[0]))
+        super(RestResponse, self).__init__(result_data)
+
+
 class RestMethod(object):
 
-    def __init__(self, name=None, http_method="GET"):
+    def __init__(self, name=None, http_method="GET", success_code=None):
         self.name = name
         self.http_method = http_method
         self.client = None
@@ -81,28 +99,27 @@ class RestMethod(object):
 
         headers = self.client.service.webservice.session.headers.copy()
         headers['Authorization'] = self.client.service.esa_key
-
-        root_xml = camelize("%s_%s_request" % (self.client.name, self.name), uppercase_first_letter=False)
+        request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
 
         if self.http_method == "POST":
-            data = dict2xml({root_xml: sorted_dict(camelize_dict(params))}, root="request", pretty_print=True)
+            data = dict2xml({request_xml_key: sorted_dict(camelize_dict(params))},
+                            root="request", pretty_print=True)
             req = Request(self.http_method, api_request.url, data=data, headers=headers)
         else:
-            req = Request(self.http_method, api_request.url, headers=headers, params=sorted_dict(params))
+            req = Request(self.http_method,
+                          api_request.url,
+                          headers=headers,
+                          params=sorted_dict(camelize_dict(params)))
 
         prepped_request = req.prepare()
         return prepped_request
 
-    def parse_response(self, response):
-        root_xml = camelize("%s_%s_result" % (self.client.name, self.name), uppercase_first_letter=False)
-        response_dict = xml2dict(response.content)
-        assert response_dict['status']['systemStatus'] == 'OK'
-        return response_dict[root_xml]
-
     def __call__(self, *args, **kwargs):
+        self.result_xml_key = camelize("%s_%s_result" % (self.client.name, self.name), False)
+        self.request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
         prepped_request = self.prepare_request(kwargs)
         response = self.client.service.webservice.session.send(prepped_request)
-        return self.parse_response(response)
+        return RestResponse(self, response)
 
     def __get__(self, client, cls):
         if client is not None:
