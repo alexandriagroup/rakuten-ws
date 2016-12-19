@@ -87,7 +87,7 @@ def use_vcr(request, monkeypatch):
         cassette_path = os.path.join(VCR_CASSETTE_DIR, cassette_name)
 
         filter_query = [('applicationId', 'XXXXXX')]
-        filter_headers = []
+        filter_headers = [('Authorization', 'ESA XXXXXX')]
         filter_post = []
 
         online = True
