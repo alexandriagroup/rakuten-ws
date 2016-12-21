@@ -114,4 +114,4 @@ def dict2xml(data, root='request', pretty_print=True, xml_declaration=True, enco
                           pretty_print=pretty_print,
                           xml_declaration=xml_declaration,
                           encoding=encoding)
-    return to_unicode(xml_string, encoding=encoding)
+    return to_unicode(xml_string, encoding=encoding).strip()
