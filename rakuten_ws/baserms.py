@@ -16,7 +16,7 @@ import zeep.transports
 from lxml import etree
 from requests import Request
 
-from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict
+from rakuten_ws.utils import xml2dict, dict2xml
 
 from .utils import camelize_dict
 from .compat import to_unicode
@@ -77,20 +77,25 @@ class SoapClient(RmsServiceClient):
         pass
 
 
-class RestResponse(OrderedDict):
+class RestMethodResult(OrderedDict):
     def __init__(self, method, response):
         self.method = method
-        self.raw = response
+        self.response = response
         self.request = response.request
-        self.parsed_xml = etree.fromstring(response.content)
-        _status = self.parsed_xml.xpath('//status')
-        _result = self.parsed_xml.xpath('//%s' % self.method.result_xml_key)
+        self.xml = etree.fromstring(response.content)
+        self.request_id = ""
+        _status = self.xml.xpath('//status')
+        _result = self.xml.xpath('//%s' % self.method.result_xml_key)
         if _status:
             self.status = xml2dict(etree.tostring(_status[0]))
+            self.request_id = self.status['requestId']
         result_data = {}
         if _result:
             result_data = xml2dict(etree.tostring(_result[0]))
-        super(RestResponse, self).__init__(result_data)
+        super(RestMethodResult, self).__init__(result_data)
+
+    def __repr__(self):
+        return "<RestMethodResult [%s]>" % self.request_id
 
 
 class RestMethod(object):
@@ -128,7 +133,7 @@ class RestMethod(object):
         self.request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
         prepped_request = self.prepare_request(kwargs)
         response = self.client.service.webservice.session.send(prepped_request)
-        return RestResponse(self, response)
+        return RestMethodResult(self, response)
 
     def __get__(self, client, cls):
         if client is not None:
