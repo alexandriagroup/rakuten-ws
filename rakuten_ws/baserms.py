@@ -112,14 +112,13 @@ class RestMethod(object):
         request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
 
         if self.http_method == "POST":
-            data = dict2xml({request_xml_key: sorted_dict(camelize_dict(params))},
-                            root="request", pretty_print=True)
+            data = dict2xml({request_xml_key: camelize_dict(params)}, root="request")
             req = Request(self.http_method, api_request.url, data=data, headers=headers)
         else:
             req = Request(self.http_method,
                           api_request.url,
                           headers=headers,
-                          params=sorted_dict(camelize_dict(params)))
+                          params=camelize_dict(params))
 
         prepped_request = req.prepare()
         return prepped_request
