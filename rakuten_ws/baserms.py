@@ -52,10 +52,20 @@ class ZeepClient(RmsServiceClient):
         self.zeep_client = zeep.Client(wsdl=self.wsdl, transport=ZeepTransport())
 
     def __send_request(self, name, **proxy_kwargs):
-        kwargs = {'arg0': self.service.soap_user_auth_model}
-        if proxy_kwargs:
-            kwargs['arg1'] = kwargs
-        return getattr(self.zeep_client.service, name)(**kwargs)
+        address = self.zeep_client.service._binding_options['address']
+        arg0 = self.service.soap_user_auth_model
+        method = getattr(self.zeep_client.service, name)
+
+        if address.endswith('inventory/ws'):
+            response = method(arg0, proxy_kwargs)
+        # We assume the potential future methods will have the same form as the
+        # order method (arg0, arg1...)
+        else:
+            kwargs = {'arg0': arg0}
+            if proxy_kwargs:
+                kwargs['arg1'] = kwargs
+            response = method(**kwargs)
+        return response
 
     def __getattr__(self, name):
         return lambda **proxy_kwargs: self.__send_request(name, **proxy_kwargs)

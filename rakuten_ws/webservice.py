@@ -85,6 +85,11 @@ class RmsOrderAPI(ZeepClient):
     wsdl = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
 
+# TODO Find a way to serve the WSDL files
+class RmsInventoryAPI(ZeepClient):
+    wsdl = 'http://localhost:8080/inventoryapi.wsdl'
+
+
 class RmsItemAPI(RestClient):
     get = RestMethod(http_method='GET')
     insert = RestMethod(http_method='POST')
@@ -106,6 +111,7 @@ class RmsService(BaseRmsService):
     item = RmsItemAPI()
     items = RmsItemsAPI()
     product = RmsProductAPI()
+    inventory = RmsInventoryAPI()
 
 
 class RakutenWebService(BaseWebService):
