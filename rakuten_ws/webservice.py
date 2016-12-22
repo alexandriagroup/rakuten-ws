@@ -83,12 +83,13 @@ class OtherAPI(ApiService):
     high_comission_shop = ApiEndpoint(ApiMethod('list'), api_endpoint="HighComissionShop")
 
 
-class RmsOrderAPI(ZeepClient):
-    wsdl = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
-
-
 class RmsInventoryAPI(ZeepClient):
-    wsdl = op.abspath(op.join(op.dirname(__file__), 'wsdl', 'inventoryapi.wsdl'))
+    wsdl = "file://%s" % op.abspath(op.join(op.dirname(__file__), 'wsdl', 'inventoryapi.wsdl'))
+
+
+class RmsOrderAPI(ZeepClient):
+    wsdl = "file://%s" % op.abspath(op.join(op.dirname(__file__), 'wsdl', 'orderapi.wsdl'))
+    wsdl = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
 
 class RmsItemAPI(RestClient):
