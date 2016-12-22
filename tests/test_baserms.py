@@ -15,7 +15,7 @@ class ItemsAPI(RestClient):
 
 class ProductAPI(RestClient):
     api_version = '2.0'
-    get = RestMethod()
+    get_tag = RestMethod(name='genre/tag/get')
     remove = RestMethod(http_method='POST')
 
 
@@ -60,7 +60,8 @@ def test_rest_client_get_request():
     assert 'Authorization' in prepped_request.headers
     assert prepped_request.body is None
 
-    assert ws.rms.product.get.prepare_request().url == 'https://api.rms.rakuten.co.jp/es/2.0/item_product/get'
+    assert ws.rms.product.get_tag.prepare_request().url == \
+        'https://api.rms.rakuten.co.jp/es/2.0/item_product/genre/tag/get'
     assert ws.rms.order.get.prepare_request().url == 'https://orderapi.rms.rakuten.co.jp/1.0/myorders/get'
 
 

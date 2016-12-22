@@ -109,7 +109,7 @@ class RestMethod(object):
         api_request = furl(self.client.api_url)
         api_request.path.segments.append(self.client.api_version)
         api_request.path.segments.append(self.client.api_endpoint or self.client.name)
-        api_request.path.segments.append(self.name)
+        api_request.path.segments.extend(self.name.split('/'))
         api_request.path.normalize()
 
         headers = self.client.service.webservice.session.headers.copy()
