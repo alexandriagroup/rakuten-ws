@@ -92,6 +92,11 @@ class RmsOrderAPI(ZeepClient):
     wsdl = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
 
+class RmsProductAPI(RestClient):
+    api_version = '2.0'
+    search = RestMethod(http_method='GET')
+
+
 class RmsItemAPI(RestClient):
     get = RestMethod(http_method='GET')
     insert = RestMethod(http_method='POST')
@@ -104,14 +109,11 @@ class RmsItemsAPI(RestClient):
     update = RestMethod(http_method='POST')
 
 
-class RmsProductAPI(RestClient):
-    search = RestMethod(http_method='GET')
-
-
 class RmsService(BaseRmsService):
     order = RmsOrderAPI()
     item = RmsItemAPI()
     items = RmsItemsAPI()
+
     product = RmsProductAPI()
     inventory = RmsInventoryAPI()
 
