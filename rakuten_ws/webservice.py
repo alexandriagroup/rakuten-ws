@@ -89,7 +89,6 @@ class RmsInventoryAPI(ZeepClient):
 
 class RmsOrderAPI(ZeepClient):
     wsdl = "file://%s" % op.abspath(op.join(op.dirname(__file__), 'wsdl', 'orderapi.wsdl'))
-    wsdl = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
 
 class RmsProductAPI(RestClient):
