@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from collections import OrderedDict
+
 from rakuten_ws.baseapi import BaseWebService
 from rakuten_ws.baserms import RestClient, RestMethod, BaseRmsService
 
@@ -64,27 +66,24 @@ def test_rest_client_get_request():
 
 def test_rest_client_post_request():
     ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC")
-    params = {
-        'item': {
-            'item_url': 'http://item_url',
-            'itemPrice': 2000,
-            'genre_id': 32,
-        }
-    }
-    prepped_request = ws.rms.order.remove.prepare_request(params)
+    item = OrderedDict([
+        ('item_url', 'http://item_url'),
+        ('itemPrice', 2000),
+        ('genre_id', 32),
+    ])
+    prepped_request = ws.rms.order.remove.prepare_request(dict(item=item))
 
     assert prepped_request.url == 'https://orderapi.rms.rakuten.co.jp/1.0/myorders/delete'
     expected_body = """<?xml version='1.0' encoding='utf-8'?>
 <request>
   <orderDeleteRequest>
     <item>
-      <genreId>32</genreId>
-      <itemPrice>2000</itemPrice>
       <itemUrl>http://item_url</itemUrl>
+      <itemPrice>2000</itemPrice>
+      <genreId>32</genreId>
     </item>
   </orderDeleteRequest>
-</request>
-"""
+</request>"""
     assert prepped_request.body == expected_body
 
 

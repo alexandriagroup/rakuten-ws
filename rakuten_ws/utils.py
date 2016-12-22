@@ -20,7 +20,7 @@ def camelize_dict(data, uppercase_first_letter=False):
     >>> camelize_dict(d)['aSimpleKey']
     '1'
     """
-    new_dict = {}
+    new_dict = data.__class__()
     for k, v in iteritems(data):
         new_v = v
         if isinstance(v, dict):
