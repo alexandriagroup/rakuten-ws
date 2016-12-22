@@ -1,7 +1,9 @@
 # coding: utf-8
 from __future__ import unicode_literals
-from .baseapi import ApiEndpoint, ApiService, BaseWebService, ApiMethod
 
+import os.path as op
+
+from .baseapi import ApiEndpoint, ApiService, BaseWebService, ApiMethod
 from .baserms import BaseRmsService, ZeepClient, RestClient, RestMethod
 
 
@@ -85,9 +87,8 @@ class RmsOrderAPI(ZeepClient):
     wsdl = "https://api.rms.rakuten.co.jp/es/1.0/order/ws?WSDL"
 
 
-# TODO Find a way to serve the WSDL files
 class RmsInventoryAPI(ZeepClient):
-    wsdl = 'http://localhost:8080/inventoryapi.wsdl'
+    wsdl = op.abspath(op.join(op.dirname(__file__), 'wsdl', 'inventoryapi.wsdl'))
 
 
 class RmsItemAPI(RestClient):
