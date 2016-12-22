@@ -4,11 +4,14 @@ import re
 
 from collections import OrderedDict
 
-from xmljson import parker, Parker
+from xmljson import Parker
 
 from lxml.etree import Element, fromstring, tostring
 
 from .compat import iteritems, to_unicode
+
+
+parker = Parker(dict_type=dict)
 
 
 def camelize_dict(data, uppercase_first_letter=False):
