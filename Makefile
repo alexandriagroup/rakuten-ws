@@ -56,7 +56,7 @@ clean-test:  ## Eemove test and coverage artifacts
 	rm -fr htmlcov/
 
 test:  ## Run tests quickly with the default Python
-	py.test
+	py.test --cov=rakuten_ws
 
 test-no-vcr:
 	VCR_RECORD_MODE=off py.test
