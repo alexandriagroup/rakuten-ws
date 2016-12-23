@@ -67,11 +67,11 @@ def use_vcr(request, monkeypatch):
     if VCR_RECORD_MODE == 'off':
         yield None
     else:
-        cassette_name = ""
+        path_segments = [VCR_CASSETTE_DIR]
         if request.module is not None:
-            cassette_name += request.module.__name__.split('tests.')[-1] + '/'
+            path_segments.extend(request.module.__name__.split('tests.')[-1].split('.'))
         if request.cls is not None:
-            cassette_name += request.cls.__name__ + '/'
+            path_segments.append(request.cls.__name__)
 
         # Take into account the parametrization set by pytest
         # to create many tests from a single function with many parameters.
@@ -84,9 +84,9 @@ def use_vcr(request, monkeypatch):
         else:
             param_name = ''
 
-        cassette_name += request.function.__name__ + param_name + '.yaml'
+        path_segments.append(request.function.__name__ + param_name + '.yaml')
 
-        cassette_path = os.path.join(VCR_CASSETTE_DIR, cassette_name)
+        cassette_path = os.path.join(*path_segments)
 
         filter_query = [('applicationId', 'XXXXXX')]
         filter_headers = [('Authorization', 'ESA XXXXXX')]

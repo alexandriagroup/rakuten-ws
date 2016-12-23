@@ -1,0 +1,61 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [ESA XXXXXX]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/2.0/product/search?keyword=Tokyo+Tower
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA8xYW4/bRBR+51eYfQKhZG62xxO5rtosbVel3aWbgvo4tsdZk8QOttN237bxSxES
+        tCBRIVFx6UVUVcsDIFG6/BpDJZ76Fxg7ceJAd7uJ0hIpiuecOTNnZny+852xefxqr6tcFlHsh8Gx
+        NVSHa4oInND1g/axtYutUzVj7bj1hhmJeNBNLDNOeDKILdMPEhF53BEbrtWPQnfgJPVY8MjZMUG1
+        z4x340T0tkfDNs+aYEZh9kQc87Yoesq2dPbxQMSJHO7o1KCGMGoYubymqjasMYH1GrI11fawILZH
+        TDC1L4fKmcer2nCBZXbE7pUwcq1W2NkNlVZ4RUQmKJVmWwSRKOx6vCOi87wnQD5TV/BYrPNEnIrC
+        3qymFUo5DqPk5K5shJ4Xi0Q2un7Pz59gugxQnth4PdvFIV0YH2eft/2AJ/LsLTMY9E6Fg8C1EDTB
+        RBhPbknduGWC6qjxtFMHlZ1bKlMNijHRiIGZHDfpKG3Oh8W+LvviSlO6K9xUxXHfCRkg+ZuZ9JaK
+        cf/FqLvVtHaSpN8ApZd6xDuDRAR1J6x/1C+1oAYIo5Db1LExFVA4VIW6qzFsqFBDBnPh2AUofY0m
+        n3o6F9p+V5TeevXD/S3gbezAjHjQsTRC9HzbebvQtHjUFsnpUcxYGEJpMeqf7akYb43WMjpSjBCB
+        WnXETHcZjRaAAEGE1eJBEAIjV8VDxSYo7UYD8qC1mutZ+nT9g/z/2b0//vr6R6mx/h7el4KVXbud
+        XXv859OvxiOLAZMwyIXW5tlLm0pr88N3Lzzf/3z7zKX3Nptn5ZTDH7L0YZbeyNLvpH403SSWRtNU
+        kLHux30ZU65IuN/dCLw8wGy5V3cMKwmHwOWRuxX5Ti778WZfBIWUh1dVNBN+tSmnbIfRroVMUBWr
+        LuVLQKQG5Q+1IGtAKH91COE7hZC/2KnpFOJWlu5lw7vZ8FE2/DUb3s/Sn7P0E5mFJgbmoO/mOxq7
+        kFkH1zBpQb1BSIPguqrT0kXFcnI0L0akhnRkyHcoH2RVEMlVRokuCKUQU89hNoacM2IQlXouYWK5
+        iFzAWxWR4AUwBAehDVSz+yTuwWzgn/HbO8r7A971k11l3W/7Ce8qGz15mkqFMJS30NuHh32RDP56
+        8gt59s11DJ/dujcTeoXFAbiw8kBMv8/S/Wz4WzZ8nKV3sjTN0lsmmNrMQsciCDNY0EtFuSQ4QS2H
+        E4ZzwenALbwcUaihaQ1Vr1OmL4AoKtOjrukQIfXFiLK2WxdqCEJ9+v7C1w4yVdgIu4x7LuQuMQzN
+        oRrRIPRsj2pC1ZcLsgW8zdAeU3WMV4n2iIxAKeVKDOdnv/RRHo3Dn2Rnlt4eRWY2fHJUWsz29gpi
+        BM/37zzfvwv+G1AHJASEZEJAUGYEOk9C+DdRWkiDi4OdHc6dSG6lBul83PlleZ5fFId5PRs+LBj0
+        ZpZ+KpPAUVBPG0htYL1usEV41IDIIIwxAx6A+tfPo6qrM+Igj3mq42jEsZm8tkjcuYipMqTVJUN8
+        fm8zEKfQQCsF8VdX2VZYvBUOoljJ0m9lOZulD2QOeP21LDwcj7gGjTlr2XNb60dBnJEjjuh1FZO5
+        EceogTRD1+WNksJVQZzuUs6wLkkOO6pcm7ANG9uOoVFVhYQuuXJdwNurrVxPi9COhHCFDOmTYdhR
+        tIZy0m8rrSgc2F2h8GSmggXKiY6/40ehspGEL69liaQuXTIXmquUbYogiWQBvcWjjnJOuD5XmmHU
+        P7iSXdolML8B6vMBBxxekhJWp9oC5MQkPSGK9fyWtypQwZ6jeh7GhOiOTTGRdy7NwzZ3Wc4aBl8u
+        VBbwNktOBtbQKpHT/1Z/Zns35Mx7NyufZ0CWfiZrrDfLa9aD4tb1uzJSF9q7E+3KfaqR9EaPjNJ/
+        AAAA///tWs1qE1EUfpWspC5M5p77OxGyMQ/gKvv5yYCLWqF5gCQjUhLQFgWRKigiii1qtagtER9m
+        mtGdr+C5d5I2kUk6M5nSLlxk7mUY5oTD+e73ne/MtLd8Z9rLZ5Mk9o9MHpHD30waztPk6uv76fMP
+        oj6m5zAbNQKpM6gKygqIUVDCRjUGBK6MqUMCqhB4PmOO42nHyeKuUkGbuSCEC1Au3gtEm8O7UpZa
+        AndCscHPA3fCGM+MdiJYsvBaEsks+uhOgXnUG0T9ftR7FfVDU4W7phkameL7bDYvG7+/vh7vfDG3
+        8LpvavZbFL7FFqmhe6T+cRTuZQA/Mm/8fD/qDuIXByfH+J6fUYgFPqrNnAZRd0ibv/aGJz8en756
+        jVtR+MRg4+gc1+oSTgBSxKx9ZFK7ZezoZPNvZjPAnPA6tp3MriqaXwEzG6sUiCK4WaCAG63bt5o3
+        zBMLvSa6FPu8lBGL7wpQzJZMOlRKJRCMbWBeGyUJo44secSSP9oc9gG19JIRCzIvBZmL621gRag+
+        iZQsKjvHz84PdGFq5tV0lAHfHa3Oo263o/U5rht/Rg838deZGk1p9bRIrzNtNYE2n2ElrwmoIhfk
+        NVnMABHyQX87s5OsDSVL4xuKeEo2o0IyYilBs9E4XwplWgaUOfiBdG1qB5byhKtp1peKBhb3FXXd
+        km3jAtHmoEwUJ0qeo9tZHiwzJRm3iup2psFMRHIT0gk9FdPx4XBF3R73hvH93Xhre/zpADXD+AMy
+        1sAo1+kJET6tzNB4pXnHWd+461daiNGrSNk8N2V/NEw9MNdUrf7dtC872bgbiZsKpO+qkLDK3BWu
+        jHtFvcDzKHFAKY8gvDywbSaRDT3BCQ9oyTSdP9olz11b+C8qa3C9cs1Zv3dzfhgL/4exFzeMFXVi
+        VclZlHSYTXebZ9v5r5tqk6/G/gL9/0eHZSYAAA==
+    headers:
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Fri, 23 Dec 2016 09:19:40 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1

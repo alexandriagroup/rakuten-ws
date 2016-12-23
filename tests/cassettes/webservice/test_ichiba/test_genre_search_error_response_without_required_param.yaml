@@ -1,0 +1,27 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/IchibaGenre/Search/20120723?applicationId=XXXXXX&formatVersion=2&genrePath=1
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSi0qyi9SslIqL8rPS48vSCxKzE0tSS1S0oHIxKekFicXZRaUZObnwVQppKfm
+        FaV6piik5RflJpYo1QIAjXloikYAAAA=
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['80']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Fri, 23 Dec 2016 09:19:08 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 400, message: Bad Request}
+version: 1

@@ -1,0 +1,49 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?applicationId=XXXXXX&formatVersion=2&itemCode=book%3A17924463&keyword=Naruto
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA7VWbU8TWRT+Kzf9sNHETGfaaZFuNrtswZWNgrGo2TTEDO20nbWdNjNTgRiTdga0
+        rCi4KIIFi9oqgosCbsBSdn/MZWbaT/6FPfd2OlBfPm4yMzn3nOe83nPunVueWDYva54Qd8aTE5Ii
+        JRKSorZZacEhUpKmUiImKIokKp4Q21YIu+qDmpgBTPSWRwJqSMiAMc9Q3+UrI8No5PwA+nkgMoJO
+        WSuV1uKC/ahiP3rZWp43t57a5eppFEWnsP4CG/ew8RwbDazvYeM1NnZPo1EPcarFUrFsbhIs4sK8
+        VTs0q2+wsYgNA+vvsP4RFzewPoOLU7hYxcXXWNdbhaK1uGxPPYcvLjwErcvCjbwmyuhiXpVijqD4
+        R/PNK1x8Ajp+lr2kARLckfjD2TiJfyybvRHienp9PB/0O6JLihQDmZ/jWAcr5DQpKwP8G0mA98gl
+        VUiLYB/Zy3Xz5Y71pPap8dTHckHz4we2x1opsUHgoaN6yf4wZe+tmaW73ZggYHw8wXxe1F/7hgDH
+        B/zwsGyv38f6UOTqtTDE0MNyPQFvEOq+tnG6E9wTbLx1S4fM0qpZftbeiw7ukOIa2DjARgUbNZrN
+        vqNjPKPLbWzcwfpLyA/r71G0X1Jj3CjChQefhYcLc58ac+F+RN03HC3YM6MEUfcPD0RA3D8YOe/1
+        Ilw8wMV7yCrv2OUtrP+L9SrAsLEJSPSdPKbmvucYZH+Ybi5soSgfYvlRh+1j0LkLfRcHurl+Bg2J
+        N0UFhVOCnBRRQhQ05sJkPgQvRZ7tIHkG0f3axPo6ydMoUbmvIw+AvLiG9aL7RVF/KNDbkQcZFMlJ
+        sizJSXQtq6TjVBzsiHsY1HqxTk26KmcZ1FwvNB9C326R1iUNvAEE7L+1WiFYzk2kF7DL0OZb9ps6
+        tdLTkXAsgy4MDtHEeb/LhTLRyrXHZJN0JNRSB6LRXSLORzJbxfoCeDfny7gAyS04S+MxAQdYFwwF
+        tZYqNOA7ZNb0ORQNhPxunhypo1Gg+zbv+PJDEWl7+L7dHv1X+7+x6xxjz3w0p/cBEQWDo6jTSWTK
+        kFk+NO9Mu+tWZRcOBwRY2rrtzBuk3fXq0cGSM8BXlDTMakrTciGvlzAYpX02MLEs83vOS4bey/Gc
+        z88HeS8oCYmElJYETWxrAkdNZXN9X3ClDJyI59JCkh6IakZIpwcJCwDkZOy41FL5zJgsSGmGKnzm
+        /Sf2OlFsRxETxiRZ1Lxkpr1dEw7Q5I/XxYkfgvxEkPeMnvFkxLiUz/z/Djnf2Ql4iUvhJhgFjbSk
+        TdKcNWGinT+5HrKq5tYD1jEFAtTCghI/LhGUcTgxkhJ/EwXFBaopKTcMU6uKgvpVZp8iCu2KC2qe
+        JOMadNbhdFaFSRyR6CXE+UIsewx2tO1/qq1Xb+2VWa9ZadgPZih134B5JJS1un1Uf9syDr127ZlZ
+        K5l7q5S9+N46rFDou1lze5tQdmXXkdqv5o7qj6l0e9t6sU6o1uO91t0HlLcz31paobzVZXPnObU3
+        VbYrNUId7c+07t6nvIN7zd0C5dEIzPqK16y+bi1tUGr6b7O+Se3VSs2Zd5T6c9b6qxNOc3bdrFCH
+        1pphrZAgTrbwZXjbtdcERXMqBABRjh8vFPGmJI47d3ugs+6D8tN/BJ4Jku2VZM215q4i3WZd/sBJ
+        +0kpoZ3Y2WzO+V348mZ3Zu3EdexwuoZ4fHz8azNMPImyIg7GSRewnN8X9JAeTQ7GyXiM3oYW/oUC
+        5ERWyQjtWzwK3BHAdPNu/weK2g0BKwkAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['1336']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Fri, 23 Dec 2016 09:17:38 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

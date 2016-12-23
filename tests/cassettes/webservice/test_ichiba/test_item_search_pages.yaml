@@ -197,7 +197,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['10120']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Fri, 23 Dec 2016 09:17:19 GMT']
+      Date: ['Fri, 23 Dec 2016 09:18:51 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 - request:
@@ -398,7 +398,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['10120']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Fri, 23 Dec 2016 09:17:20 GMT']
+      Date: ['Fri, 23 Dec 2016 09:18:52 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 - request:
@@ -621,7 +621,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['11369']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Fri, 23 Dec 2016 09:17:22 GMT']
+      Date: ['Fri, 23 Dec 2016 09:18:54 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

@@ -7,7 +7,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.12.4]
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?applicationId=XXXXXX&formatVersion=2&keyword=Naruto
+    uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?applicationId=XXXXXX&formatVersion=2&keyword=Naruto&shipOverseasFlag=0
   response:
     body:
       string: !!binary |
@@ -197,7 +197,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['10120']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Fri, 23 Dec 2016 09:17:14 GMT']
+      Date: ['Fri, 23 Dec 2016 09:18:20 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1
