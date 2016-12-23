@@ -1,0 +1,29 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [ESA XXXXXX]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/2.0/product/search?keywordd=Tokyo&testWrongParameter=test
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1VQXU/DMAx851dMfe9C1g86ycukaQztZUJi/ICsdUq1pgE7BfrvSWHV2JPPZ5/v
+        ZFh/23b2icSN61aRnN9HM+xKVzVdvYpej7u4iNbqDgi5b70C9tr3rKDpPJLRJe4r9U6u6ks/Z9RU
+        voH4PwMe2KN9+ZMdnkDcEGCRWdeonjVpi0H3SOQIxMQH448e2YdTy+wki+RUxkmepHGaLdNYZ7mM
+        C5Oah7xYGCkXIK77kzS4XBLuK6HgjMOXoxHV2BH+clafkQ4hgBhVLWrGrfa4I2dvmaMLPTvymyEA
+        ZwyjD6BtbDNWcbUU06fE5XU/KT2HNGoBAAA=
+    headers:
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['254']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Fri, 23 Dec 2016 16:37:30 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 400, message: Bad Request}
+version: 1

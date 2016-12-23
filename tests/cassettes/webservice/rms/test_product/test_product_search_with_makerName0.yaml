@@ -1,0 +1,87 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [ESA XXXXXX]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/2.0/product/search?makerName=%E3%83%80%E3%82%A4%E3%82%AD%E3%82%B5%E3%82%A6%E3%83%B3%E3%83%89
+  response:
+    body:
+      string: !!binary |
+        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
+        vwACO/XMs2EAAA==
+    headers:
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Fri, 23 Dec 2016 16:37:27 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1

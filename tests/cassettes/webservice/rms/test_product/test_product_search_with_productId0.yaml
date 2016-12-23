@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [ESA XXXXXX]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/2.0/product/search?productId=4986773144973
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA51USW7bMBTd9xSBt4VEarItg1GQJnAQFBlQKwegxS9HtaaSVBJv7Quk624KdN1V
+        UaBFjyN00VuUkjV50aIoIEDvD3zv8/OT5OQpiY8egIsoS49Hho5HR5AGGYvS1fHozp9r09GJ94Jw
+        EEUsPSIklYXwSJRK4CEN4JJ5Oc9YEUhdAOXBPUHDGBEbISFZ7JfdvCbowEESEIKuoI60WIm9K0BI
+        tTxkU8COaWgYxlPNngaWtmTM0SwTKIQQ4gAzgvr8dqlibqpSTtudjicTy7Btd2IR1AfIGjaPGWfI
+        IytIuapXoYSugV/TBFDFFgMVcE4lzHmWHHr8TNki4/LVRoEsDAVIBeIoiao/6ktBbdca6UXdqDdN
+        S3O6ilIqVf89khbJPCtS5hkEdbjh9jBBDVKbGCxqWHv+f9t8A68zb3F6tbi7vjiyMfbnfpekImq/
+        DxE8nqk6av2h2cRO1fBUp9ZFW0cTv+Px7Zl3L2U+Qy2zzum6kJDqQaa/zVsv0tCY2ZYTGtjFgTM2
+        TNcNbZPa9sRZYgMzCo0EarX25L3SVbaMYmjVEv3vev+h1ggQTtM12v98ylcgL7oB6n23e526XQcz
+        VqNmxtpmK6s7iD8dSJUzHMHzSOSKgoGkUXyZhtVELpU+G7IR1Luq+5syytktj4JKPRI3OaS1Vc3c
+        0CSSPp0pkVXGN55L0NAcFuEZrutqWN1Rw8fuDGP16Rjjl7VR9a5P7W+XV26/lruP5fZ7ufvy68OP
+        n5+fy+23cvep3L1XHvUadJmkyFm12YrAxMZYM0zNtHxszBxnZjm661it1iCz61qPRA8PryBqnrff
+        275bNw4FAAA=
+    headers:
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['635']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Fri, 23 Dec 2016 16:37:18 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1
