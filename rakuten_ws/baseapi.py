@@ -22,9 +22,6 @@ class ApiResponse(dict):
         self.response = self.session.get(self.url).json()
         super(ApiResponse, self).__init__(self.response)
 
-    def get_json_response(self, url):
-        return self.session.get(url).json()
-
     def pages(self, start=1):
         page_number = start
         while page_number < self.response['pageCount']:
@@ -36,11 +33,9 @@ class ApiResponse(dict):
 
 class ApiRequest(object):
 
-    def __init__(self, endpoint, method, **kwargs):
+    def __init__(self, endpoint, method):
         self.endpoint = endpoint
         self.method = method
-        for key in dict(kwargs).keys():
-            setattr(self, key, kwargs[key])
 
     @property
     def application_id(self, *args, **kwargs):
@@ -113,8 +108,6 @@ class ApiService(object):
     def __init__(self, name=None, **kwargs):
         self.name = name
         self.webservice = None
-        for key in dict(kwargs).keys():
-            setattr(self, key, kwargs[key])
 
     def __get__(self, webservice, cls):
         if webservice is not None:
