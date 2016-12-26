@@ -3,7 +3,7 @@ from __future__ import unicode_literals
 
 from collections import OrderedDict
 from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict
-from rakuten_ws.compat import to_unicode
+from rakuten_ws.compat import to_unicode, is_py3
 
 
 def test_sorted_dict():
@@ -122,3 +122,10 @@ def test_to_unicode():
     assert to_unicode('à tester'.encode('utf-8')) == 'à tester'
     assert to_unicode('à tester'.encode('iso-8859-1'), encoding='iso-8859-1') == 'à tester'
     assert to_unicode(352) == '352'
+    assert to_unicode(bytearray([104, 101, 108, 108, 111])) == "hello"
+    assert to_unicode(memoryview(b"abc")) == "abc"
+    assert to_unicode(memoryview("abc".encode('iso-8859-1')), 'iso-8859-1') == "abc"
+    if is_py3:
+        assert to_unicode(bytes([104, 101, 108, 108, 111])) == "hello"
+    else:
+        assert to_unicode(buffer("Hello world", 6, 5))  # noqa

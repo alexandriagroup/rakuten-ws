@@ -45,7 +45,7 @@ else:
         return d.iteritems()
 
     def is_bytes(x):
-        return isinstance(x, (buffer, bytearray))
+        return isinstance(x, (buffer, bytearray, memoryview))
 
 
 def to_unicode(obj, encoding='utf-8'):
@@ -59,7 +59,10 @@ def to_unicode(obj, encoding='utf-8'):
     if is_bytes(obj):
         if hasattr(obj, 'tobytes'):
             return str(obj.tobytes(), encoding)
-        return str(obj, encoding)
+        try:
+            return str(obj, encoding)
+        except:
+            pass
 
     # string support
     if isinstance(obj, basestring):
