@@ -55,6 +55,13 @@ def to_unicode(obj, encoding='utf-8'):
     if isinstance(obj, str):
         return obj
 
+    # string support
+    if isinstance(obj, basestring):
+        if hasattr(obj, 'decode'):
+            return obj.decode(encoding)
+        else:
+            return str(obj, encoding)
+
     # bytes support
     if is_bytes(obj):
         if hasattr(obj, 'tobytes'):
@@ -63,12 +70,5 @@ def to_unicode(obj, encoding='utf-8'):
             return str(obj, encoding)
         except:
             pass
-
-    # string support
-    if isinstance(obj, basestring):
-        if hasattr(obj, 'decode'):
-            return obj.decode(encoding)
-        else:
-            return str(obj, encoding)
 
     return str(obj)
