@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 from collections import OrderedDict
 from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict
+from rakuten_ws.compat import to_unicode
 
 
 def test_sorted_dict():
@@ -114,3 +115,10 @@ def test_dict2xml():
                                                        .replace('\n', '')\
                                                        .replace('?>', '?>\n')
     assert expected_no_pretty_xml_string == dict2xml(data, root="request", pretty_print=False)
+
+
+def test_to_unicode():
+    assert to_unicode('à tester') == 'à tester'
+    assert to_unicode('à tester'.encode('utf-8')) == 'à tester'
+    assert to_unicode('à tester'.encode('iso-8859-1'), encoding='iso-8859-1') == 'à tester'
+    assert to_unicode(352) == '352'
