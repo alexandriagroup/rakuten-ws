@@ -125,6 +125,7 @@ class RestMethod(object):
         self.request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
         prepped_request = self.prepare_request(kwargs)
         response = self.client.service.webservice.session.send(prepped_request)
+        response.raise_for_status()
         return RestMethodResult(self, response)
 
     def __get__(self, client, cls):

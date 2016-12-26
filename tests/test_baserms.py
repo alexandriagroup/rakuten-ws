@@ -3,8 +3,12 @@ from __future__ import unicode_literals
 
 from collections import OrderedDict
 
+import requests
+
 from rakuten_ws.baseapi import BaseWebService
 from rakuten_ws.baserms import RestClient, RestMethod, BaseRmsService
+
+from . import assert_raises
 
 
 class ItemsAPI(RestClient):
@@ -167,3 +171,14 @@ def test_rest_client_get_response(httpretty):
 }"""
     assert result.json == expected_json
     assert result.xml == get_xml_response
+
+
+def test_rest_client_get_404_response(httpretty):
+
+    ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC")
+    httpretty.register_uri(httpretty.GET, 'https://api.rms.rakuten.co.jp/es/1.0/item/get',
+                           body="指定されたページが見つかりません（エラー404）: 楽天",
+                           status=404)
+
+    with assert_raises(requests.exceptions.HTTPError, "404 Client Error"):
+        ws.rms.item.get(item_url="aaa")
