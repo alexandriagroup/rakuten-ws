@@ -24,7 +24,7 @@ class ApiResponse(dict):
 
     def pages(self, start=1):
         page_number = start
-        while page_number < self.response['pageCount']:
+        while page_number <= self.response['pageCount']:
             api_request = furl(self.url)
             api_request.add({'page': page_number})
             page_number += 1

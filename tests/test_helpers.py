@@ -26,9 +26,14 @@ def test_item_pages(credentials):
     ws = RakutenWebService(**credentials)
     response = ws.ichiba.item.search(keyword="Naruto")
     items = response.pages()
+
     # search should also allow to retrieve all the available responses
     # within a generator
     assert isinstance(items, types.GeneratorType)
-    # The iteration should switch to the next page
-    assert next(items)['page'] == 1
-    assert next(items)['page'] == 2
+
+    # test page count
+    response.response['pageCount'] = 3
+    pages = list(response.pages())
+    assert len(pages) == 3
+    for i, page in enumerate(pages):
+        page['page'] == i + 1
