@@ -14,6 +14,12 @@ from .compat import iteritems, to_unicode
 parker = Parker(dict_type=dict)
 
 
+class PrettyStringRepr(str):
+    # Useful for debug
+    def __repr__(self):
+        return self.replace(' \n', '\n').strip()
+
+
 def camelize_dict(data, uppercase_first_letter=False):
     """ Returns a dict with camel case keys.
 

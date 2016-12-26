@@ -1,6 +1,8 @@
 # coding: utf-8
 from __future__ import unicode_literals
 
+import json
+
 from furl import furl
 
 from collections import OrderedDict
@@ -17,7 +19,7 @@ from requests import Request
 
 from rakuten_ws.utils import xml2dict, dict2xml
 
-from .utils import camelize_dict
+from .utils import camelize_dict, PrettyStringRepr
 from .compat import to_unicode
 
 
@@ -80,6 +82,14 @@ class RestMethodResult(OrderedDict):
             result_data = xml2dict(etree.tostring(_result[0]))
         return status, result_data
 
+    @property
+    def xml(self):
+        return PrettyStringRepr(self.response.text)
+
+    @property
+    def json(self):
+        data = OrderedDict([('status', self.status), ('result', self)])
+        return PrettyStringRepr(json.dumps(data, ensure_ascii=False, indent=4, separators=(',', ': ')))
     def __repr__(self):
         return "<RestMethodResult [%s]>" % self.status['message']
 
