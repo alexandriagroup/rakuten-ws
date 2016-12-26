@@ -2,6 +2,10 @@
 from __future__ import unicode_literals
 
 import pytest
+import requests
+
+from ... import assert_raises
+
 
 product_ids = [
     "4943586953048", "4943586934344", "4943586934368", "4943586934337", "4943586934351",
@@ -49,6 +53,5 @@ def test_product_search(ws, params):
 
 
 def test_product_search_wrong_params(ws):
-    result = ws.rms.product.search(keywordd="Tokyo", testWrongParameter="test")
-    assert result.status['systemStatus'] == "NG"
-    assert result.status['message'] == "ParameterError"
+    with assert_raises(requests.exceptions.HTTPError):
+        ws.rms.product.search(keywordd="Tokyo", testWrongParameter="test")

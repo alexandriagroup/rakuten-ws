@@ -31,6 +31,10 @@ class RmsServiceClient(object):
         return self.__class__
 
 
+class RMSInvalidResponse(Exception):
+    pass
+
+
 class ZeepClient(RmsServiceClient):
     wsdl = None
 
@@ -69,9 +73,11 @@ class RestMethodResult(OrderedDict):
         xml = etree.fromstring(response.content)
         _status = xml.xpath('//status')
         _result = xml.xpath('//%s' % self.method.result_xml_key)
+        result_data = {}
         if _status:
             status = xml2dict(etree.tostring(_status[0]))
-        result_data = {}
+        else:
+            raise RMSInvalidResponse()
         if _result:
             result_data = xml2dict(etree.tostring(_result[0]))
         return status, result_data

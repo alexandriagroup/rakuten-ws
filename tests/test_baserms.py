@@ -3,10 +3,12 @@ from __future__ import unicode_literals
 
 from collections import OrderedDict
 
+import lxml
 import requests
 
 from rakuten_ws.baseapi import BaseWebService
-from rakuten_ws.baserms import RestClient, RestMethod, BaseRmsService
+from rakuten_ws.baserms import RestClient, RestMethod, BaseRmsService, RMSInvalidResponse
+from rakuten_ws.utils import dict2xml
 
 from . import assert_raises
 
@@ -181,4 +183,25 @@ def test_rest_client_get_404_response(httpretty):
                            status=404)
 
     with assert_raises(requests.exceptions.HTTPError, "404 Client Error"):
+        ws.rms.item.get(item_url="aaa")
+
+
+def test_rest_client_get_invalid_xml(httpretty):
+
+    ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC")
+    httpretty.register_uri(httpretty.GET, 'https://api.rms.rakuten.co.jp/es/1.0/item/get',
+                           body='<?xml ssversion="1.0"? encoding="UTF-8"?>',
+                           status=200)
+    with assert_raises(lxml.etree.XMLSyntaxError):
+        ws.rms.item.get(item_url="aaa")
+
+
+def test_rest_client_get_invalid_response(httpretty):
+
+    ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC")
+    httpretty.register_uri(httpretty.GET, 'https://api.rms.rakuten.co.jp/es/1.0/item/get',
+                           body=dict2xml({'error': 400}),
+                           content_type='application/xml')
+
+    with assert_raises(RMSInvalidResponse):
         ws.rms.item.get(item_url="aaa")
