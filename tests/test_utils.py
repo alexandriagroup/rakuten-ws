@@ -14,6 +14,7 @@ def test_sorted_dict():
             "a": "one"
         },
         "firstKey": [
+            "simple_value",
             {
                 "twoValue": 2,
                 "oneKey": "one"
@@ -24,7 +25,7 @@ def test_sorted_dict():
     }
     expected_dict = OrderedDict([
         ('aaaa', 1),
-        ('firstKey', [OrderedDict([('oneKey', 'one'), ('twoValue', 2)])]),
+        ('firstKey', ["simple_value", OrderedDict([('oneKey', 'one'), ('twoValue', 2)])]),
         ('myDict', OrderedDict([('a', 'one'), ('b', 2), ('c', 2)])),
         ('thirdKey', 3),
         ('zzzz', 2)
@@ -78,6 +79,12 @@ def test_xml2dict():
     data = xml2dict(xml_string)
     assert data['cast']['actor'][1]['firstname'] == 'Carly'
     assert data['cast']['actor'][0]['age'] == 35
+
+    class MyDictClass(dict):
+        pass
+
+    data = xml2dict(xml_string, dict_type=MyDictClass)
+    assert isinstance(data, MyDictClass)
 
 
 def test_dict2xml():
