@@ -21,10 +21,29 @@ def test_single_item(credentials):
     assert "naruto" in item['itemName'].lower()
 
 
-@pytest.mark.online
-def test_item_pages(credentials):
-    ws = RakutenWebService(**credentials)
-    response = ws.ichiba.item.search(keyword="Naruto")
+def idfn(val):
+    return '_with_{}'.format('_'.join(sorted(["%s%s" % (k, v) for k, v in val.items()])))
+
+
+item_pages_parameters = [
+    {'page': 1, 'num': 3},
+    {'page': 4, 'num': 2},
+    {'num': 1},
+]
+
+
+@pytest.mark.parametrize('params', item_pages_parameters, ids=idfn)
+def test_item_pages(ws, request, params):
+    search_params = {'keyword': "Naruto"}
+
+    if 'page' in params:
+        search_params.update({'page': params.get('page')})
+
+    start_page = params.get('page', 1)
+    num_pages = params.get('num')
+
+    response = ws.ichiba.item.search(**search_params)
+
     items = response.pages()
 
     # search should also allow to retrieve all the available responses
@@ -32,8 +51,12 @@ def test_item_pages(credentials):
     assert isinstance(items, types.GeneratorType)
 
     # test page count
-    response.response['pageCount'] = 3
+    response.response['pageCount'] = start_page + (num_pages - 1)
+
     pages = list(response.pages())
-    assert len(pages) == 3
+    assert len(pages) == num_pages
+
     for i, page in enumerate(pages):
-        page['page'] == i + 1
+        page['page'] == i + start_page
+
+    assert len(request.node.funcargs['use_vcr'].requests) == num_pages

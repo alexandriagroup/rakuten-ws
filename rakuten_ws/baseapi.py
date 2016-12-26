@@ -22,11 +22,12 @@ class ApiResponse(dict):
         self.response = self.session.get(self.url).json()
         super(ApiResponse, self).__init__(self.response)
 
-    def pages(self, start=1):
-        page_number = start
+    def pages(self):
+        yield self.response
+        page_number = int(self.response['page']) + 1
         while page_number <= self.response['pageCount']:
             api_request = furl(self.url)
-            api_request.add({'page': page_number})
+            api_request.args['page'] = page_number
             page_number += 1
             yield self.session.get(api_request.url).json()
 
