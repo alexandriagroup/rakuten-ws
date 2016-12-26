@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import sys
 import re
 import os.path as op
 
@@ -18,18 +17,12 @@ def read(fname):
 readme = read('README.rst')
 changelog = read('CHANGES.rst').replace('.. :changelog:', '')
 
-requirements = read('requirements.txt').split()
-
-if sys.version_info[0] == 2:
-    # TODO: put python2-only package requirements
-    # requirements.append('example-package')
-    pass
-
-
-if sys.version_info[0] == 3:
-    # TODO: put python3-only package requirements
-    # requirements.append('example-package')
-    pass
+requirements = [
+    'furl',
+    'requests',
+    'zeep',
+    'xmljson'
+]
 
 version = ''
 version = re.search(r'^__version__\s*=\s*[\'"]([^\'"]*)[\'"]',

@@ -1,5 +1,0 @@
-furl==0.5.6
-requests==2.12.1
-zeep==0.23.0
-xmljson==0.1.7
-lxml>=3.0.0
