@@ -18,6 +18,8 @@ class SimpleWebService(BaseWebService):
 
 
 def test_class_api_description():
+    assert SimpleWebService.test_api == SimpleAPI
+    assert SimpleAPI.item == ApiEndpoint
     ws = SimpleWebService(application_id="4K95553C260362")
     assert ws.test_api.name == "test_api"
     assert ws.test_api.api_version == "20140222"

@@ -38,6 +38,24 @@ class SimpleWebService(BaseWebService):
     rms = SimpleRmsService()
 
 
+def test_fake_credentials():
+    assert SimpleWebService.rms == SimpleRmsService
+    assert SimpleRmsService.item == ItemsAPI
+    assert ItemsAPI.get == RestMethod
+
+    ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC", shop_url="shop_url")
+    ws.rms.soap_user_auth_model == {'authKey': 'ESA Q0NDQ0M6QkJCQkI=', 'shopUrl': 'shop_url', 'userName': ''}
+    assert ws.rms.item.name == "item"
+    assert ws.rms.product.name == "item_product"
+    assert ws.rms.product.service == ws.rms
+
+    assert isinstance(ws.rms.item.get, RestMethod)
+    assert ws.rms.item.get.name == "get"
+    assert ws.rms.item.get.http_method == "GET"
+    assert ws.rms.item.remove.name == "delete"
+    assert ws.rms.product.remove.name == "remove"
+
+
 def test_rest_client():
     assert SimpleWebService.rms == SimpleRmsService
     assert SimpleRmsService.item == ItemsAPI

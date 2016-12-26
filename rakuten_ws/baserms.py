@@ -57,12 +57,6 @@ class ZeepClient(RmsServiceClient):
         return lambda **proxy_kwargs: self.__send_request(name, **proxy_kwargs)
 
 
-class SoapClient(RmsServiceClient):
-
-    def __init__(self, **kwargs):
-        pass
-
-
 class RestMethodResult(OrderedDict):
     def __init__(self, method, response):
         self.method = method
@@ -90,6 +84,7 @@ class RestMethodResult(OrderedDict):
     def json(self):
         data = OrderedDict([('status', self.status), ('result', self)])
         return PrettyStringRepr(json.dumps(data, ensure_ascii=False, indent=4, separators=(',', ': ')))
+
     def __repr__(self):
         return "<RestMethodResult [%s]>" % self.status['message']
 
@@ -170,7 +165,7 @@ class BaseRmsService(object):
         license_key = self.webservice.license_key
         secret_service = self.webservice.secret_service
         if license_key is None or secret_service is None:
-            raise Exception("An 'license_key' and 'secret_service' must be provided")
+            raise Exception("A 'license_key' and 'secret_service' must be provided")
         key = b"ESA " + base64.b64encode((secret_service + ":" + license_key).encode('utf-8'))
         return to_unicode(key)
 
