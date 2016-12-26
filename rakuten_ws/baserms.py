@@ -82,8 +82,9 @@ class RestMethodResult(OrderedDict):
 
     @property
     def json(self):
-        data = OrderedDict([('status', self.status), ('result', self)])
-        return PrettyStringRepr(json.dumps(data, ensure_ascii=False, indent=4, separators=(',', ': ')))
+        data = {'status': self.status, 'result': self}
+        return PrettyStringRepr(json.dumps(data, ensure_ascii=False, sort_keys=True,
+                                           indent=4, separators=(',', ': ')))
 
     def __repr__(self):
         return "<RestMethodResult [%s]>" % self.status['message']

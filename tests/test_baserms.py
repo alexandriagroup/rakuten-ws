@@ -145,3 +145,25 @@ def test_rest_client_get_response(httpretty):
     assert result['item']['itemUrl'] == 'aaa'
     assert result['item']['itemName'] == 'test'
     assert result['item']['itemPrice'] == 1000
+
+    expected_json = """{
+    "result": {
+        "code": "N000",
+        "item": {
+            "itemName": "test",
+            "itemPrice": 1000,
+            "itemUrl": "aaa"
+        }
+    },
+    "status": {
+        "interfaceId": "item.get",
+        "message": "OK",
+        "requestId": "714a4983-555f-42d9-aeea-89dae89f2f55",
+        "requests": {
+            "itemUrl": "aaa"
+        },
+        "systemStatus": "OK"
+    }
+}"""
+    assert result.json == expected_json
+    assert result.xml == get_xml_response
