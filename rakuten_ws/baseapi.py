@@ -92,6 +92,7 @@ class ApiEndpoint(object):
             if getattr(self, 'api_endpoint', None) is None:
                 self.api_endpoint = camelize("%s_%s" % (self.service.name, self.name))
             return self
+        return self.__class__
 
 
 class ApiService(object):
@@ -114,6 +115,7 @@ class ApiService(object):
         if webservice is not None:
             self.webservice = webservice
             return self
+        return self.__class__
 
 
 class BaseWebService(object):
