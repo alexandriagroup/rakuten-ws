@@ -9,7 +9,6 @@ from .utils import camelize
 
 import base64
 
-import requests
 import zeep
 import zeep.transports
 
@@ -29,27 +28,11 @@ class RmsServiceClient(object):
             return self
 
 
-class ZeepTransport(zeep.transports.Transport):
-
-    def create_session(self):
-        self.http_headers = requests.Session().headers.copy()
-        return super(ZeepTransport, self).create_session()
-
-    # Patch Zeep methods to send custom headers
-    def get(self, address, params, headers):
-        headers.update(self.http_headers.copy())
-        return super(ZeepTransport, self).get(address, params, headers)
-
-    def post(self, address, params, headers):
-        headers.update(self.http_headers.copy())
-        return super(ZeepTransport, self).post(address, params, headers)
-
-
 class ZeepClient(RmsServiceClient):
     wsdl = None
 
     def __init__(self):
-        self.zeep_client = zeep.Client(wsdl=self.wsdl, transport=ZeepTransport())
+        self.zeep_client = zeep.Client(wsdl=self.wsdl, transport=zeep.transports.Transport())
 
     def __send_request(self, name, **proxy_kwargs):
         address = self.zeep_client.service._binding_options['address']
