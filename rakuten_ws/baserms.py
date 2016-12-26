@@ -66,20 +66,22 @@ class RestMethodResult(OrderedDict):
         self.method = method
         self.response = response
         self.request = response.request
-        self.xml = etree.fromstring(response.content)
-        self.request_id = ""
-        _status = self.xml.xpath('//status')
-        _result = self.xml.xpath('//%s' % self.method.result_xml_key)
+        self.status, result_data = self.parse_result(response)
+        super(RestMethodResult, self).__init__(result_data)
+
+    def parse_result(self, response):
+        xml = etree.fromstring(response.content)
+        _status = xml.xpath('//status')
+        _result = xml.xpath('//%s' % self.method.result_xml_key)
         if _status:
-            self.status = xml2dict(etree.tostring(_status[0]))
-            self.request_id = self.status['requestId']
+            status = xml2dict(etree.tostring(_status[0]))
         result_data = {}
         if _result:
             result_data = xml2dict(etree.tostring(_result[0]))
-        super(RestMethodResult, self).__init__(result_data)
+        return status, result_data
 
     def __repr__(self):
-        return "<RestMethodResult [%s]>" % self.request_id
+        return "<RestMethodResult [%s]>" % self.status['message']
 
 
 class RestMethod(object):
