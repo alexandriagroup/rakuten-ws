@@ -35,6 +35,11 @@ if is_py3:
     def is_bytes(x):
         return isinstance(x, (bytes, memoryview, bytearray))
 
+    from collections import Callable
+
+    def callable(obj):
+        return isinstance(obj, Callable)
+
 else:
     builtin_str = str
     bytes = str
@@ -46,6 +51,8 @@ else:
 
     def is_bytes(x):
         return isinstance(x, (buffer, bytearray, memoryview))
+
+    callable = callable
 
 
 def to_unicode(obj, encoding='utf-8'):
