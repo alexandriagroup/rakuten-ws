@@ -26,8 +26,7 @@ class BooksAPI(ApiService):
     magazine = ApiEndpoint(ApiMethod('search'))
     game = ApiEndpoint(ApiMethod('search'))
     software = ApiEndpoint(ApiMethod('search'))
-    genre = ApiEndpoint(ApiMethod('search'),
-                        ApiMethod('ranking', api_version="20121128"))
+    genre = ApiEndpoint(ApiMethod('search', api_version="20121128"))
 
 
 class TravelAPI(ApiService):

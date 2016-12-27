@@ -93,7 +93,7 @@ class RestMethodResult(OrderedDict):
                                            indent=4, separators=(',', ': ')))
 
     def __repr__(self):
-        return "<RestMethodResult [%s]>" % self.status['message']
+        return "<RestMethodResult [%s]>" % self.status.get('systemStatus', 'Error')
 
 
 class RestMethod(object):
