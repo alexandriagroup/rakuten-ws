@@ -20,8 +20,8 @@ class BooksAPI(ApiService):
 
     total = ApiEndpoint(ApiMethod('search'))
     book = ApiEndpoint(ApiMethod('search'))
-    cd = ApiEndpoint(ApiMethod('search'), name='CD', )
-    dvd = ApiEndpoint(ApiMethod('search'), name='DVD')
+    cd = ApiEndpoint(ApiMethod('search'), api_endpoint='BooksCD')
+    dvd = ApiEndpoint(ApiMethod('search'), api_endpoint='BooksDVD')
     foreign_book = ApiEndpoint(ApiMethod('search'))
     magazine = ApiEndpoint(ApiMethod('search'))
     game = ApiEndpoint(ApiMethod('search'))
