@@ -7,67 +7,34 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.12.4]
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&author=%E5%B0%BE%E7%94%B0%E3%83%BB%E6%A0%84%E4%B8%80%E9%83%8E&formatVersion=2
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&author=%E5%B0%BE%E7%94%B0%E3%83%BB%E6%A0%84%E4%B8%80%E9%83%8E&formatVersion=2&hits=3
   response:
     body:
       string: !!binary |
-        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
+        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
+        jc/+Au7sO3qgCwAA
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
       Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['2709']
+      Content-Length: ['810']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 15:49:01 GMT']
+      Date: ['Tue, 27 Dec 2016 16:04:24 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

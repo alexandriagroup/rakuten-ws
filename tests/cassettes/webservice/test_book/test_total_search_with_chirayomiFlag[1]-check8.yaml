@@ -7,7 +7,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.12.4]
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&chirayomiFlag=1&formatVersion=2&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&chirayomiFlag=1&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86
   response:
     body:
       string: !!binary |
@@ -28,7 +28,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['512']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 14:21:59 GMT']
+      Date: ['Tue, 27 Dec 2016 16:04:10 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

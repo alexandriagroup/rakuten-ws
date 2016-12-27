@@ -7,15 +7,11 @@ from .. import idfn, assert_eq, assert_in
 from rakuten_ws.compat import callable
 
 
-def assert_response(callback, params, result):
+def assert_response(params, result, callback=None):
     assert 'error' not in result, result['error_description']
+    assert len(result['Items']) > 0
     if callable(callback):
-        assert len(result['Items']) > 0
         callback(params, result, result['Items'][0])
-
-
-def no_check(*args, **kwargs):
-    return True
 
 
 total_search_parameters = [
@@ -41,9 +37,10 @@ total_search_parameters = [
 
 @pytest.mark.parametrize('params,check', total_search_parameters, ids=idfn)
 def test_total_search(ws, params, check):
+    params.update({'hits': 3})
     if all(key not in params for key in ('keyword', 'booksGenreId', 'isbnjan')):
         params.update({'keyword': 'ドン・キホーテ'})
-    assert_response(check, params, ws.books.total.search(**params))
+    assert_response(params, ws.books.total.search(**params), callback=check)
 
 
 book_search_parameters = [
@@ -51,14 +48,14 @@ book_search_parameters = [
     ({'author': "尾田・栄一郎"}, lambda p, r, i: assert_eq(i['author'], i['author'])),
     ({'isbn': "9784088701752"}, lambda p, r, i: assert_in(p['isbn'], i['isbn'])),
     ({'size': "9"}, lambda p, r, i: assert_in(i['size'], 'コミック')),
-    ({'sort': 'standard'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
-    ({'sort': 'sales'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
-    ({'sort': '+releaseDate'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
-    ({'sort': '-releaseDate'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
-    ({'sort': '+itemPrice'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
-    ({'sort': '-itemPrice'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
-    ({'sort': 'reviewCount'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
-    ({'sort': 'reviewAverage'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'sort': 'standard'}, lambda p, r, i: assert_eq(len(r['Items']), p['hits'])),
+    ({'sort': 'sales'}, lambda p, r, i: assert_eq(len(r['Items']), p['hits'])),
+    ({'sort': '+releaseDate'}, lambda p, r, i: assert_eq(len(r['Items']), p['hits'])),
+    ({'sort': '-releaseDate'}, lambda p, r, i: assert_eq(len(r['Items']), p['hits'])),
+    ({'sort': '+itemPrice'}, lambda p, r, i: assert_eq(len(r['Items']), p['hits'])),
+    ({'sort': '-itemPrice'}, lambda p, r, i: assert_eq(len(r['Items']), p['hits'])),
+    ({'sort': 'reviewCount'}, lambda p, r, i: assert_eq(len(r['Items']), p['hits'])),
+    ({'sort': 'reviewAverage'}, lambda p, r, i: assert_eq(len(r['Items']), p['hits'])),
     ({'booksGenreId': '001001001008'}, lambda p, r, i: assert_eq(i['booksGenreId'], p['booksGenreId'])),
     ({'elements': 'title,author'}, lambda p, r, i: assert_eq(set(i.keys()), set(p['elements'].split(',')))),
 ]
@@ -66,4 +63,5 @@ book_search_parameters = [
 
 @pytest.mark.parametrize('params,check', book_search_parameters, ids=idfn)
 def test_book_search(ws, params, check):
-    assert_response(check, params, ws.books.book.search(**params))
+    params.update({'hits': 3})
+    assert_response(params, ws.books.book.search(**params), callback=check)

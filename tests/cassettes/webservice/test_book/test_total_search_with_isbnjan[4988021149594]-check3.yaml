@@ -7,7 +7,7 @@ interactions:
       Connection: [keep-alive]
       User-Agent: [python-requests/2.12.4]
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&formatVersion=2&isbnjan=4988021149594
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&isbnjan=4988021149594
   response:
     body:
       string: !!binary |
@@ -30,7 +30,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['616']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 14:21:51 GMT']
+      Date: ['Tue, 27 Dec 2016 16:04:02 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1
