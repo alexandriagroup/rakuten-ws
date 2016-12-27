@@ -14,6 +14,10 @@ def assert_response(callback, params, result):
         callback(params, result, result['Items'][0])
 
 
+def no_check(*args, **kwargs):
+    return True
+
+
 total_search_parameters = [
     ({'keyword': "ドン・キホーテ"}, lambda p, r, i: assert_in(p['keyword'], i['title'])),
     ({'booksGenreId': '001025'}, lambda p, r, i: assert_eq(i['booksGenreId'], p['booksGenreId'])),
@@ -40,3 +44,26 @@ def test_total_search(ws, params, check):
     if all(key not in params for key in ('keyword', 'booksGenreId', 'isbnjan')):
         params.update({'keyword': 'ドン・キホーテ'})
     assert_response(check, params, ws.books.total.search(**params))
+
+
+book_search_parameters = [
+    ({'title': "ワンピース"}, lambda p, r, i: assert_in(p['title'], i['title'])),
+    ({'author': "尾田・栄一郎"}, lambda p, r, i: assert_eq(i['author'], i['author'])),
+    ({'isbn': "9784088701752"}, lambda p, r, i: assert_in(p['isbn'], i['isbn'])),
+    ({'size': "9"}, lambda p, r, i: assert_in(i['size'], 'コミック')),
+    ({'sort': 'standard'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'sort': 'sales'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'sort': '+releaseDate'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'sort': '-releaseDate'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'sort': '+itemPrice'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'sort': '-itemPrice'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'sort': 'reviewCount'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'sort': 'reviewAverage'}, lambda p, r, i: assert_eq(len(r['Items']), 30)),
+    ({'booksGenreId': '001001001008'}, lambda p, r, i: assert_eq(i['booksGenreId'], p['booksGenreId'])),
+    ({'elements': 'title,author'}, lambda p, r, i: assert_eq(set(i.keys()), set(p['elements'].split(',')))),
+]
+
+
+@pytest.mark.parametrize('params,check', book_search_parameters, ids=idfn)
+def test_book_search(ws, params, check):
+    assert_response(check, params, ws.books.book.search(**params))

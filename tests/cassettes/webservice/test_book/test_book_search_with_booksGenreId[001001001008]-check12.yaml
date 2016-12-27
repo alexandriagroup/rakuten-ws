@@ -1,0 +1,89 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&booksGenreId=001001001008&formatVersion=2
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['3629']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Tue, 27 Dec 2016 15:49:18 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1
