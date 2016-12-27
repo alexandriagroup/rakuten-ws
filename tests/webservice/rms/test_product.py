@@ -52,6 +52,11 @@ def test_product_search(ws, params):
     assert_result_is_valid(ws.rms.product.search(**params))
 
 
+def test_product_search_no_result(ws):
+    result = ws.rms.product.search(keyword="djshfksdhgflhskdjdsfbhdezeeeeeeeee")
+    assert dict(result) == {}
+
+
 def test_product_search_wrong_params(ws):
     with assert_raises(requests.exceptions.HTTPError):
         ws.rms.product.search(keywordd="Tokyo", testWrongParameter="test")

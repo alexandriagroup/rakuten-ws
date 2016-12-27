@@ -1,0 +1,29 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Authorization: [ESA XXXXXX]
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/2.0/product/search?keyword=djshfksdhgflhskdjdsfbhdezeeeeeeeee
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA1VQwU7DMAy98xVV711ataggeZk0oaFddmF8QJo4bdcmgTgFyteTwaoxX2w/+/k9
+        GTZfZkw+0FPv7DotVnmaoJVO9bZdp6/HXfaQbvgdeKRpDBwoiDARh94G9FpI3Cv+5p2aZFgRCi87
+        YP9nQDMFNC9/tMMzsBsADBKJFvmTCCKxLiTaTVYBW/Ao/D4hhXhKF3VTVbXOyrxsskrmOmuEkllR
+        1Hj/WJRNXebArvsLNapcHO4V4zDg/Om84upEnR5Ida0eOxrUSZFuOoXfuASwZRdatB5/6UYM6A/C
+        IDsLjCgIo3fceWdukaOLPTkftnMsnNaEIRZjb/pzZld3bHkqu3z5B+AsZdCVAQAA
+    headers:
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Length: ['276']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Tue, 27 Dec 2016 15:12:49 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1
