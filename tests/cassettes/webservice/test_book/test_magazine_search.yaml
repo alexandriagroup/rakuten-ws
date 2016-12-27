@@ -1,0 +1,36 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksMagazine/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&title=%E3%83%95%E3%82%A1%E3%83%9F%E9%80%9A
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA81Tz2sTQRT+V8KcQ3ZmutmkAdHQooSAiiAeQiiTzSSZdnY3zE5iQimUbIUgQvUg
+        ggrWQz3oqSoEwf9mSTT/hW92Q2w8VEFWPCzM+/V9b9973yFyg4GvUYXmUZ91OaqQPOoIFerkJVmY
+        xnpCh8nDZUoJrlAFpwU7aTnk1jT3IKdxiLTQEpDQ8vhiPn2ci6Pn8eRtHL1ZHr/MUUxK8y+fc8Qq
+        zk9nucby1bPv7580UT6tqjOfQWU8mcXReTx5F08+xNGnNUIcnYATkvuDlhRhj6vbzDNU9erunXr1
+        QRVC+8wHh71NMCXlMgG+MngFdLfD+loEfoL/MY6+xtHZt9np/Ol0ET2an11AH5AYMsnDXaYNKjTr
+        QLOELl5PKV28OIe4O3Yv/dwK+a4SLjiLWzAV6EuvbLDaIkwmfC9BvOT4mWIA7isJmD2t+xXLagXB
+        QVhQ7GCguV9wg8J+31Iti9gOxluEWkDKOh0hBWCmhaZvj0lZ82AlG1i6N/BaPhOyIEzsF9QbeM+U
+        JYyWy1rC59oyE7M25gep3et7fHTNsUeODWQeb4uBlzUboXgEHzJ3qLo8azqK8Qg+s+OeUGwceGI9
+        XTYEFoCQQo/BQ8wJBqEG0puSdZM1SuHBJttrW/Gh4A9X+ljb1SFXic4QLhiqZNe3uK94rW2cuOSQ
+        bYypZV4UFm6jo/xvJeUkkqIWpf9EVDahyRn8tahw+Q9EhbMVVbGEt0k5a1GZiVkb88tSVFewZSGq
+        K+j+W1E18yjN8DuB8lh6w43m0Q/a4ECWEgcAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['598']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Tue, 27 Dec 2016 16:30:59 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

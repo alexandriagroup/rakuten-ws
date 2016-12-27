@@ -1,0 +1,38 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20130522?applicationId=XXXXXX&author=cervantes&formatVersion=2&hits=3
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA8WV327aMBTGX8XKNSJ/SFJAmrYUWJe1ZYyWSVNVVQdiiNvEjhyH0VZ9q93sgfYe
+        O05QW1gHU7VoF5Hs43O+L8f2T743ZqLgyuh6nYaRwYIaXbthzJnMVTlKQA9aDSNmKi8HM5CSUWl0
+        raqgV9U7OA0VTTHp4t5QTCUoZZwAOWUSIiARJb0YshS40aiWj4EDpuD0GjLgNKfnu6ugULFAY2NE
+        JcapXAJXNH9cWQv+tpoV04TlMZVDSLX8oB/2wk/DwRk5DMbBeTAOA8xi+ZTjYueg3XZ93/fatneg
+        w9hTDzLFBK9+NoeE5n1QWsmxbP/nj+/rtJFkM4y2vAMfN47lah3AnYlYXu7zuKx7FnhK0QoTmaBq
+        rFTWNc2pEDd5U8JNoShvzkTzOjPl1LRdz3Nd1zZ13/M5SxhqVoX671JIkjDFc9nQUnGRTjmwpMn0
+        2pbqO+tKl5WO5gymjFNl6v7Njd3A1MXbK7p647sr30WzlEasSOt2sx1rhZ+hL6Nc0LrtHMta4ad3
+        d4maWJAwdYtuuuNM5Aot3iewwCuvTznFc4uqOR6ipEtGv62ReJwHSypLtAyrqYXLkz2iXNIw0kHL
+        cy20dIyHxhM6fcHJ54KthKLkA8hoJlCFfBSF5JDsZ2hf+SNMp2xR0IT0nzFjjjQxN0UKUm3TtT99
+        G7fR5PAkPJ6ckmB8vsGZb7Udx7adTudVnNme59XLmd1x237dnHFRpl5ZdnPB5nXx9YJLHVy9YPP3
+        PNn/kid3m6fBiqYZdnpLhohCku9H6IWKXdSQM4AljSSYYzGlUglyJPgd3uI7MpjFdKnfTTAHEVMx
+        OZIiz5+/an+m65Wy2xR+DU4GZDIMv5DReINCq2VZtuO1/darKHQdv10vhb5r27VTqPs3N3ajztdu
+        h1sdVO6w+6+v3WXDqOJ8LmQK1a27uHz4BXURhJeVCgAA
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['717']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Tue, 27 Dec 2016 16:18:07 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

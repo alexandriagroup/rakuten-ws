@@ -65,3 +65,40 @@ book_search_parameters = [
 def test_book_search(ws, params, check):
     params.update({'hits': 3})
     assert_response(params, ws.books.book.search(**params), callback=check)
+
+
+def test_cd_search(ws):
+    params = {'artistName': "Speed", 'hits': 3}
+    assert_response(params, ws.books.cd.search(**params))
+
+
+def test_dvd_search(ws):
+    params = {'title': "ワンピース", 'hits': 3}
+    assert_response(params, ws.books.dvd.search(**params))
+
+
+def test_foreign_book_search(ws):
+    params = {'author': "cervantes", 'hits': 3}
+    assert_response(params, ws.books.foreign_book.search(**params))
+
+
+def test_magazine_search(ws):
+    params = {'title': "ファミ通", 'hits': 3}
+    assert_response(params, ws.books.magazine.search(**params))
+
+
+def test_game_search(ws):
+    params = {'title': "mario", 'hits': 3}
+    assert_response(params, ws.books.game.search(**params))
+
+
+def test_software_search(ws):
+    params = {'os': "windows", 'hits': 3}
+    assert_response(params, ws.books.software.search(**params))
+
+
+def test_genre_search(ws):
+    params = {'booksGenreId': "001", 'hits': 3}
+    result = ws.books.genre.search(**params)
+    assert len(result["children"]) > 0
+    assert len(result["parents"]) == 0
