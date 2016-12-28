@@ -2,13 +2,11 @@
 sudo: false
 
 language: python
-python: 3.5
-
-env:
-  - TOXENV=py27
-  - TOXENV=py33
-  - TOXENV=py34
-  - TOXENV=py35
+python:
+  - "2.7"
+  - "3.3"
+  - "3.4"
+  - "3.5"
 
 # command to install dependencies, e.g. pip install -r requirements.txt --use-mirrors
 install:
@@ -16,7 +14,7 @@ install:
   - coverage erase
 
 # command to run tests, e.g. python setup.py test
-script: tox -e ${TOXENV}
+script: tox -e py
 
 after_success:
     - coverage combine
