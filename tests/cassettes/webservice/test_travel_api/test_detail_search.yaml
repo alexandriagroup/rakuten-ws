@@ -1,0 +1,42 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/Travel/HotelDetailSearch/20131024?applicationId=XXXXXX&formatVersion=2&hotelNo=136197
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA61VW08bRxT+K5UfqkQC766xY4MURQRFwQq3gvuQRBGamLG9Zb27Xa8hUmRpZxxu
+        xkkEorkBSmmgAbeENNDENST5Lx3vYj/xF3pmveZi9SEiefGOv3PON9+57d73pTQTKxlf1+3b9xvn
+        qygjx6NqQvN1ecgAHKWOS1JnuM0DUBr7uny1hb+ZZd24ORgbhOdIrPumz3Pg4UYambKm/mgo4Joy
+        Tb1LEOR00m8aaAIrfgONZ02s+uOa/ycdDCiJBdMQkC4LckLIDk2KPwhXEqOqdrlxNVDrClL75Ix5
+        Pspbk9HgWcrvE6MJJXl5qK97ANjH9KGv4r8uBiZvCVdULaalkSH38jqcaDfwhIwnz8ccEu8NjHPl
+        bm3PlMRFbiAVeS1hhDJSYOQBNISRh4zOMDLNyKb79zkjv4OpGTai47iMuCD7w2p99TdG3rghc4wS
+        Rh7bU3PMonVSZmTXKawwMs9okZGX9dJmbeEVI0X78Tr41+Z24Nd5Tqv7AJZrpWf8dvKJX2dRlt9i
+        dJ3ln/BDvsTyB4y8rpW2neUyswjca1cKLD/tuv0DJhBfK75ndBFimzr7ZbUnhYwk5CcFI6LY5lNg
+        sszsGAcCoc7OoD8QAVBTkx4ajETCEckfkmBmtIyJlB6Nw75LotgeEaUOYEZjYwbOZCRAq5U/6/mP
+        dmXlBA6cwGVaLc/D2S5WnJVN+6/5w6VK3XpR3ecFsncq1XKB0Xl7fevwETdJwVC79N0FRiHXXxh9
+        BWld/NfaB4v95j0jO/bsBtTZ/nXPmYOO/MFIidHCcblAASSM9ZSmYr51PjEcau8IBdvD4bAIxgS6
+        1woHuOp4HER7mp+VmFV0ylPO271qZclZXau/nmLWQ/vTorO9FbJnpwVwcawN7vVu1370kifkukBH
+        jgkON2bslUV7ebmFQBI5w9FB6ejgHbg1iuSF08+M7jD6odFl15NvLTLGZTV56pUAQg8frDHy9Ojg
+        BW/45wUYNz59dNcdll2WX+AcdJuf6Vs+DmTJWZu1p6dqM3sQeLpgKkbQMnPE9LjVrKI0X0N8kb5s
+        5zIwYVjoHYxd6xMa2+U9wJhsTmIslU3fVZGsfBlnb7T/utApniUyNC39LXSNSolTjOdRFh2IXRuO
+        Dg7/T6L9SP8WGtNI9yflxPHrr0fLqmazQw2oewIbiK92A8xmsDHsGhpILtfmfYSGob2NKeLfJXCb
+        kOO4JVrR4u4QtMC8QC0Q/jkr62msmi34XWSmWqA0RsoZKJe7cyf3HzCTLAI5BwAA
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['960']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Wed, 28 Dec 2016 09:51:49 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

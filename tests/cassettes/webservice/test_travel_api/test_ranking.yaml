@@ -1,0 +1,74 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/Travel/HotelRanking/20131024?applicationId=XXXXXX&formatVersion=2&hits=3
+  response:
+    body:
+      string: !!binary |
+        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
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['2792']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Wed, 28 Dec 2016 09:51:52 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

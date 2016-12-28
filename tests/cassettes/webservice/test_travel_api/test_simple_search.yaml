@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/Travel/SimpleHotelSearch/20131024?applicationId=XXXXXX&formatVersion=2&hits=3&latitude=125994.28&longitude=488781.51
+  response:
+    body:
+      string: !!binary |
+        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
+        7xMAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['1543']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Wed, 28 Dec 2016 09:51:47 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1
