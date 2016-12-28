@@ -1,0 +1,44 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/HighCommissionShop/List/20131205?applicationId=XXXXXX&formatVersion=2&hits=3
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA52V309iRxTH/5f7TICLay2+rbhpmzabZrd9aJo+IItKF4EAxpjNJndmWBTEVUsR
+        rVVwBRFdf7RqRYT1jznO5d4n/4U9M1dQXExMk8vN8OXMmTPnfM7hjeILT4biyuCA2/3EpkS8Y35l
+        ULUpo4FoLC5XQa9Y9NmU8UA8Jhc+bzQa8EeVQae1wWN5UJ34PRb3RuNPI5Hg9LA3jq4Ul1MdcDhV
+        h7NPsSkvx8MR9PHrGyWGq+feCWHxDdAzYBVgDOjhdSMJ7C+gH4BuA60KkZGhoD8W+yU8iR7EPk/4
+        ldg3ItTpjvpzNIjieDweGXQ4pqam7FHv68m4P2T3he2/Rxxta8eN+Y8v0Fp1uwf4+YlebvJSldco
+        L57w1Kle3geyIx5KgezxmTqv54Hk1T60ba0dAP3DuHwPZBbIJ5SBFEDTLB9XNQ3IAc8SfYFJg4Mv
+        bwPkEC8KbBfoObAN8Sa7QKpA0TgHbNb8WzO20ayClrxU4aUULzeNak4qq3gWsI/AGkD/E29S0Vep
+        sYNn7QHblFm8kL/WME7+rgw0A3QO6KkQWVYel7nrEBMy5g9F/d+9woz093/tdrnb0k2FjHc56wzU
+        vaOjgWAAa/sCPy9FDu3qfflpb3mot+zpLQ93ZF94YiIQiwXCoZ+mI5Kpu7ay7qHJYPCtrRurH549
+        93z7zPN9NzVjQX/IN+73vX4cNh3zLm700zNeWuaLCb7WBILJTbVOivr6ImhErxYM1tS1Cq6BrEs+
+        tkXS6SXQkqi6qBACXwaSEzUjWSBFoAtA00A+AkkgT6ZWQ4awfkD+bJ2cX13MgUb1lUNzfUNuSeup
+        OblASrfQv1lEUOcFiCTBc0mxlxzJwNJtaKi5XjW2muInDAyJZEsSoz38aq4tGf/u8KOFVqp6w6L1
+        ZlUZ8zGwtGQ3jx1h/JPmhxnLYXtLTTBN0nxx3gKuldjUl1fF0W2mRbSUCprvkHfdIPh08edSv1L7
+        1Hv8AVuUWTsCdnFzJEPGl0V8IriUdYGedLrszp549tAln84vdc8D+vCt/v8QNQtZBOiqttzKZcSo
+        EBcUTXzdQCD2gRXltMAkIhNr2MTdJEe9IyOB+OMwtmy7GMbB7MJ5hoVRn/ClHbG8nWsF3syKoadR
+        QyPGbF4OQCwZxSiu6nMCPEFRe24LMHZFQXAkCWBKcjBZF7JKlEfy+ULeON7Q9/HMjOyOND/4oFdW
+        xIw9SPFLpicKGMNVTcRg7qGeMI4bSFTr/YyIbXdG8vzJ4tkauJ2cIVroHC+lirEnT2rP5oyVZ548
+        M+t10ObRoLWfNIv7AkqN3E5rHPeCtIR0etzpHNkPSSAbt91I0Xhe+l/Aa5ibK7JvE7ID850Qu8jG
+        v0eXa+Ae2eZWAY/vCa7T3t8T3B760AO65wF9+FZ/LLi/vf0M3jVqvioIAAA=
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['1070']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Wed, 28 Dec 2016 11:03:48 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

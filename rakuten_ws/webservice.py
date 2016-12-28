@@ -75,9 +75,7 @@ class RecipeAPI(ApiService):
 
 
 class OtherAPI(ApiService):
-    api_version = "20131205"
-
-    high_comission_shop = ApiEndpoint(ApiMethod('list'), api_endpoint="HighComissionShop")
+    high_commission_shop = ApiEndpoint(ApiMethod('list', api_version="20131205"), api_endpoint="HighCommissionShop")
 
 
 class RmsInventoryAPI(ZeepClient):
