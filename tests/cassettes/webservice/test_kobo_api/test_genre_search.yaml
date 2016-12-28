@@ -1,0 +1,30 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/Kobo/GenreSearch/20131010?applicationId=XXXXXX&formatVersion=2&koboGenreId=101901
+  response:
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA6tWSi4tKkrNK1GyqlbKzk/Kd0/NK0r1TFGyUjI0MLQ0MFTSQQj7JeamAiWebuh/
+        sWrN4+bdj5tWPG5uftwEZCwBqksHqfFJLUvNUbIyqtVRSs7IzEkBmq1kFY3dbAM8xqOZZ1yrg8sM
+        Iyxm4HEZHpOMsZnUvPZx87zHzZsfN+0k3iQTrCbNfty88nHzHuKNMcViTLAb8frNsDpj6uOmhWAP
+        7X/ctIMk95hjM69x7uPGdU92T8MwJlZHqSARlLaKsacALIa9nL376doJz2bveL6xF808w9rYWgBZ
+        rTiPrgIAAA==
+    headers:
+      Access-Control-Allow-Origin: ['*']
+      Cache-Control: [no-store]
+      Connection: [close]
+      Content-Encoding: [gzip]
+      Content-Language: [ja-JP]
+      Content-Length: ['235']
+      Content-Type: [application/json;charset=UTF-8]
+      Date: ['Wed, 28 Dec 2016 10:49:10 GMT']
+      Vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1

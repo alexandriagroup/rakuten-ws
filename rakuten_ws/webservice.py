@@ -54,17 +54,15 @@ class AuctionAPI(ApiService):
 class KoboAPI(ApiService):
     api_version = "20131010"
 
-    genre = ApiEndpoint(ApiMethod('search', 'genre_search'), api_endpoint="Kobo")
-    ebook = ApiEndpoint(ApiMethod('search', 'ebook_search'), api_endpoint="Kobo")
+    genre = ApiEndpoint(ApiMethod('search', 'genre_search'), api_endpoint="Kobo", api_version="20131010")
+    ebook = ApiEndpoint(ApiMethod('search', 'ebook_search'), api_endpoint="Kobo", api_version="20140811")
 
 
 class GoraAPI(ApiService):
-    api_version = "20131113"
-
-    golf = ApiEndpoint(ApiMethod('search', 'gora_golf_course_search'),
-                       ApiMethod('detail', 'gora_golf_course_detail'),
+    golf = ApiEndpoint(ApiMethod('search', 'gora_golf_course_search', api_version="20131113"),
+                       ApiMethod('detail', 'gora_golf_course_detail', api_version="20140410"),
                        api_endpoint="Gora")
-    plan = ApiEndpoint(ApiMethod('search', 'gora_plan_search'),
+    plan = ApiEndpoint(ApiMethod('search', 'gora_plan_search', api_version="20150706"),
                        api_endpoint="Gora")
 
 
