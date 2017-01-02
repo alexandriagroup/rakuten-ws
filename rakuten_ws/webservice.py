@@ -5,6 +5,7 @@ import os.path as op
 
 from .baseapi import ApiEndpoint, ApiService, BaseWebService, ApiMethod
 from .baserms import BaseRmsService, ZeepClient, RestClient, RestMethod
+from . import parameters
 
 
 class IchibaAPI(ApiService):
@@ -93,14 +94,14 @@ class RmsProductAPI(RestClient):
 
 class RmsItemAPI(RestClient):
     get = RestMethod(http_method='GET')
-    insert = RestMethod(http_method='POST')
-    update = RestMethod(http_method='POST')
-    delete = RestMethod(http_method='POST')
+    insert = RestMethod(http_method='POST', params=parameters.item_insert)
+    update = RestMethod(http_method='POST', params=parameters.item_update)
+    delete = RestMethod(http_method='POST', params=parameters.item_delete)
     search = RestMethod(http_method='GET')
 
 
 class RmsItemsAPI(RestClient):
-    update = RestMethod(http_method='POST')
+    update = RestMethod(http_method='POST', params=parameters.items_update)
 
 
 class RmsService(BaseRmsService):

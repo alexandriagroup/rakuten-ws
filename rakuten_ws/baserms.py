@@ -8,6 +8,7 @@ from furl import furl
 from collections import OrderedDict
 from .utils import camelize
 
+import warnings
 
 import base64
 
@@ -17,7 +18,7 @@ import zeep.transports
 from lxml import etree
 from requests import Request
 
-from rakuten_ws.utils import xml2dict, dict2xml
+from rakuten_ws.utils import xml2dict, dict2xml, unflatten_dict, sorted_dict, flatten_dict
 
 from .utils import camelize_dict, PrettyStringRepr
 from .compat import to_unicode
@@ -98,10 +99,37 @@ class RestMethodResult(OrderedDict):
 
 class RestMethod(object):
 
-    def __init__(self, name=None, http_method="GET", success_code=None):
+    def __init__(self, name=None, http_method="GET", params=[]):
         self.name = name
         self.http_method = http_method
+        self.params = params
         self.client = None
+
+    @property
+    def result_xml_key(self):
+        if self.client is not None:
+            return camelize("%s_%s_result" % (self.client.name, self.name), False)
+
+    @property
+    def request_xml_key(self):
+        if self.client is not None:
+            return camelize("%s_%s_request" % (self.client.name, self.name), False)
+
+    def prepare_xml_params(self, params):
+        def key(x):
+            try:
+                return self.params.index(x[0])
+            except:
+                if len(self.params) != 0:
+                    warnings.warn(
+                        "Given invalid parameter '%s'." % x[0],
+                        SyntaxWarning
+                    )
+                return len(self.params) + 1
+
+        camelcase_params = camelize_dict(params)
+        sorted_params = unflatten_dict(sorted_dict(flatten_dict(camelcase_params), key=key))
+        return dict2xml({self.request_xml_key: sorted_params}, root="request")
 
     def prepare_request(self, params={}):
         api_request = furl(self.client.api_url)
@@ -112,26 +140,22 @@ class RestMethod(object):
 
         headers = self.client.service.webservice.session.headers.copy()
         headers['Authorization'] = self.client.service.esa_key
-        request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
 
         if self.http_method == "POST":
-            data = dict2xml({request_xml_key: camelize_dict(params)}, root="request")
+            data = self.prepare_xml_params(params)
             req = Request(self.http_method, api_request.url, data=data, headers=headers)
         else:
-            req = Request(self.http_method,
-                          api_request.url,
-                          headers=headers,
-                          params=camelize_dict(params))
+            req = Request(self.http_method, api_request.url, headers=headers, params=camelize_dict(params))
 
         prepped_request = req.prepare()
         return prepped_request
 
     def __call__(self, *args, **kwargs):
-        self.result_xml_key = camelize("%s_%s_result" % (self.client.name, self.name), False)
-        self.request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
+        raise_for_status = kwargs.pop('raise_for_status', True)
         prepped_request = self.prepare_request(kwargs)
         response = self.client.service.webservice.session.send(prepped_request)
-        response.raise_for_status()
+        if raise_for_status:
+            response.raise_for_status()
         return RestMethodResult(self, response)
 
     def __get__(self, client, cls):
