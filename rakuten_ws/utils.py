@@ -1,8 +1,9 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+
 import re
 
-from collections import OrderedDict
+from collections import OrderedDict, MutableMapping
 
 from xmljson import Parker
 
@@ -125,3 +126,27 @@ def dict2xml(data, root='request', pretty_print=True, xml_declaration=True, enco
                           xml_declaration=xml_declaration,
                           encoding=encoding)
     return to_unicode(xml_string, encoding=encoding).strip()
+
+
+def flatten_dict(dictionary, parent_key='', sep='.'):
+    items = []
+    for k, v in dictionary.items():
+        new_key = parent_key + sep + k if parent_key else k
+        if isinstance(v, MutableMapping):
+            items.extend(flatten_dict(v, new_key, sep=sep).items())
+        else:
+            items.append((new_key, v))
+    return dict(items)
+
+
+def unflatten_dict(dictionary):
+    unflatten_dict = dictionary.__class__()
+    for key, value in dictionary.items():
+        parts = key.split(".")
+        d = unflatten_dict
+        for part in parts[:-1]:
+            if part not in d:
+                d[part] = dictionary.__class__()
+            d = d[part]
+        d[parts[-1]] = value
+    return unflatten_dict
