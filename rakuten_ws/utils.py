@@ -107,11 +107,12 @@ def clean_python_variable_name(s):
     return re.sub('\W|^(?=\d)', '_', s)
 
 
-def xml2dict(xml_string, dict_type=None):
+def xml2dict(xml_string, encoding="utf-8", dict_type=None):
     """ Convert an xml string to a python dictionary."""
+    string = to_unicode(xml_string).encode((encoding))
     if dict_type is not None:
-        return Parker(dict_type=dict_type).data(fromstring(xml_string))
-    return parker.data(fromstring(xml_string))
+        return Parker(dict_type=dict_type).data(fromstring(string))
+    return parker.data(fromstring(string))
 
 
 def dict2xml(data, root='request', pretty_print=True, xml_declaration=True, encoding='utf-8'):
