@@ -134,3 +134,4 @@ class BaseWebService(object):
         self.secret_service = secret_service
         self.shop_url = shop_url
         self.session = requests.Session()
+        self.session.headers = {"User-Agent": self.session.headers['User-Agent']}
