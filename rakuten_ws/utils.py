@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
+
 import re
 
 from collections import OrderedDict
@@ -107,11 +108,12 @@ def clean_python_variable_name(s):
     return re.sub('\W|^(?=\d)', '_', s)
 
 
-def xml2dict(xml_string, dict_type=None):
+def xml2dict(xml_string, encoding="utf-8", dict_type=None):
     """ Convert an xml string to a python dictionary."""
+    string = to_unicode(xml_string).encode((encoding))
     if dict_type is not None:
-        return Parker(dict_type=dict_type).data(fromstring(xml_string))
-    return parker.data(fromstring(xml_string))
+        return Parker(dict_type=dict_type).data(fromstring(string))
+    return parker.data(fromstring(string))
 
 
 def dict2xml(data, root='request', pretty_print=True, xml_declaration=True, encoding='utf-8'):
@@ -124,3 +126,36 @@ def dict2xml(data, root='request', pretty_print=True, xml_declaration=True, enco
                           xml_declaration=xml_declaration,
                           encoding=encoding)
     return to_unicode(xml_string, encoding=encoding).strip()
+
+
+def http_get(url, params=None, headers=None):
+    """ Post fields and files to an HTTP server as multipart/form-data.
+        Return the server's response.
+    """
+    # Default empty dicts for dict params.
+    headers = {} if headers is None else headers
+    params = {} if params is None else params
+
+
+def http_post(url, data=None, headers=None):
+    """ Post fields and data to an HTTP server.
+        Return the server's response.
+    """
+    from urllib.parse import urlsplit, urlunsplit
+
+    import http.client
+
+    scheme, location, path, query, _ = urlsplit(url)
+    assert scheme in ("http", "https"), "Unsupported scheme %r" % scheme
+
+    # Default empty dicts for dict params.
+    data = "" if data is None else data
+    headers = {} if headers is None else headers
+    body = to_unicode(data).encode('utf-8')
+
+    conn = getattr(http.client, scheme.upper() + "Connection")(location)
+
+    relative_url = urlunsplit(('', '', path, query, ''))
+    conn.request("POST", relative_url, body=body, headers=headers)
+    return conn.getresponse()
+

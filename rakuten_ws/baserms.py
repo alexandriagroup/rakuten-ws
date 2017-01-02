@@ -2,24 +2,16 @@
 from __future__ import unicode_literals
 
 import json
-
-from furl import furl
-
-from collections import OrderedDict
-from .utils import camelize
-
-
 import base64
 
 import zeep
 import zeep.transports
 
+from furl import furl
 from lxml import etree
-from requests import Request
+from requests import Session
 
-from rakuten_ws.utils import xml2dict, dict2xml
-
-from .utils import camelize_dict, PrettyStringRepr
+from .utils import camelize, camelize_dict, xml2dict, dict2xml, PrettyStringRepr, http_post
 from .compat import to_unicode
 
 
@@ -61,16 +53,15 @@ class ZeepClient(RmsServiceClient):
         return lambda **proxy_kwargs: self.__send_request(name, **proxy_kwargs)
 
 
-class RestMethodResult(OrderedDict):
+class RestMethodResult(dict):
     def __init__(self, method, response):
         self.method = method
         self.response = response
-        self.request = response.request
         self.status, result_data = self.parse_result(response)
         super(RestMethodResult, self).__init__(result_data)
 
     def parse_result(self, response):
-        xml = etree.fromstring(response.content)
+        xml = etree.fromstring(to_unicode(response.read()).encode('utf-8'))
         _status = xml.xpath('//status')
         _result = xml.xpath('//%s' % self.method.result_xml_key)
         result_data = {}
@@ -114,24 +105,21 @@ class RestMethod(object):
         headers['Authorization'] = self.client.service.esa_key
         request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
 
+        session = Session()
         if self.http_method == "POST":
             data = dict2xml({request_xml_key: camelize_dict(params)}, root="request")
-            req = Request(self.http_method, api_request.url, data=data, headers=headers)
+            return http_post(api_request.url, data=data, headers=headers)
         else:
-            req = Request(self.http_method,
-                          api_request.url,
-                          headers=headers,
-                          params=camelize_dict(params))
-
-        prepped_request = req.prepare()
-        return prepped_request
+            return session.get(api_request.url, params=camelize_dict(params), headers=headers)
 
     def __call__(self, *args, **kwargs):
+        raise_for_status = kwargs.pop('raise_for_status', True)
         self.result_xml_key = camelize("%s_%s_result" % (self.client.name, self.name), False)
         self.request_xml_key = camelize("%s_%s_request" % (self.client.name, self.name), False)
-        prepped_request = self.prepare_request(kwargs)
-        response = self.client.service.webservice.session.send(prepped_request)
-        response.raise_for_status()
+        response = self.prepare_request(kwargs)
+        # response = self.client.service.webservice.session.send(prepped_request)
+        if raise_for_status:
+            response.raise_for_status()
         return RestMethodResult(self, response)
 
     def __get__(self, client, cls):
