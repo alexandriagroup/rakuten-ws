@@ -66,7 +66,7 @@ def camelize(string, uppercase_first_letter=True):
         return string[0].lower() + camelize(string)[1:]
 
 
-def sorted_dict(d):
+def sorted_dict(d, key=None):
     """ Sort dict by keys.
 
     Examples::
@@ -77,7 +77,7 @@ def sorted_dict(d):
     OrderedDict([('1', 10), ('3', 3)])
     """
     new_dict = OrderedDict()
-    for k, v in sorted(iteritems(d)):
+    for k, v in sorted(iteritems(d), key=key):
         new_v = v
         if isinstance(v, dict):
             new_v = sorted_dict(v)
