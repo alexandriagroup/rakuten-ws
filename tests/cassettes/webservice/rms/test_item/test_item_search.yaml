@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemInsertRequest>\n\
+      \    <item>\n      <itemUrl>item-test-02</itemUrl>\n      <itemNumber>item test\
+      \ 02</itemNumber>\n      <itemName>item test 02</itemName>\n      <itemPrice>298000</itemPrice>\n\
+      \      <genreId>409148</genreId>\n      <itemInventory>\n        <inventoryType>1</inventoryType>\n\
+      \        <inventories>\n          <inventory>\n            <inventoryCount>11</inventoryCount>\n\
+      \          </inventory>\n        </inventories>\n      </itemInventory>\n  \
+      \  </item>\n  </itemInsertRequest>\n</request>"
+    headers:
+      Authorization: [ESA XXXXXX]
+      Content-Length: ['541']
+      User-Agent: [python-requests/2.12.4]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/insert
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>item.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>83cb4b4f-163f-40d8-b07a-79362ebae9a9</requestId><requests/></status><itemInsertResult><code>C219</code><errorMessages><errorMessage><errorId>324</errorId><fieldId>501</fieldId><msg>\u5546\
+        \u54C1\u7BA1\u7406\u756A\u53F7\uFF08\u5546\u54C1URL\uFF09\u6B04\u306B\u3059\
+        \u3067\u306B\u767B\u9332\u6E08\u307F\u306E\u3082\u306E\u306F\u6307\u5B9A\u3067\
+        \u304D\u307E\u305B\u3093\u3002\u91CD\u8907\u304C\u3042\u308A\u307E\u3057\u305F\
+        \u306E\u3067\u3054\u78BA\u8A8D\u304F\u3060\u3055\u3044\u3002</msg></errorMessage></errorMessages><item><itemUrl>item-test-02</itemUrl></item></itemInsertResult></result>"}
+    headers:
+      Connection: [close]
+      Content-Length: ['596']
+      Content-Type: [text/xml; charset=UTF-8]
+      Date: ['Mon, 02 Jan 2017 15:31:51 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Authorization: [ESA XXXXXX]
+      User-Agent: [python-requests/2.12.4]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/search?itemUrl=item-test-02
+  response:
+    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>item.search</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>c29218a2-a47b-454b-bcbe-e6db4acbf5b5</requestId><requests><itemUrl>item-test-02</itemUrl></requests></status><itemSearchResult><code>200-00</code><numFound>1</numFound><items><item><itemUrl>item-test-02</itemUrl><itemNumber>item
+        test 02</itemNumber><itemName>item test 02</itemName><itemPrice>298000</itemPrice><genreId>409148</genreId><isIncludedTax>true</isIncludedTax><isIncludedPostage>false</isIncludedPostage><displayPrice>0</displayPrice><isUnavailableForSearch>false</isUnavailableForSearch><isAvailableForMobile>true</isAvailableForMobile><isDepot>false</isDepot></item></items></itemSearchResult></result>'}
+    headers:
+      Connection: [close]
+      Content-Length: ['771']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Mon, 02 Jan 2017 15:31:53 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1

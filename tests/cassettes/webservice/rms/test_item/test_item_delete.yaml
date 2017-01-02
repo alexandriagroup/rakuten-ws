@@ -1,0 +1,50 @@
+interactions:
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemInsertRequest>\n\
+      \    <item>\n      <itemUrl>item-test-02</itemUrl>\n      <itemNumber>item test\
+      \ 02</itemNumber>\n      <itemName>item test 02</itemName>\n      <itemPrice>298000</itemPrice>\n\
+      \      <genreId>409148</genreId>\n      <itemInventory>\n        <inventoryType>1</inventoryType>\n\
+      \        <inventories>\n          <inventory>\n            <inventoryCount>11</inventoryCount>\n\
+      \          </inventory>\n        </inventories>\n      </itemInventory>\n  \
+      \  </item>\n  </itemInsertRequest>\n</request>"
+    headers:
+      Authorization: [ESA XXXXXX]
+      Content-Length: ['541']
+      User-Agent: [python-requests/2.12.4]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/insert
+  response:
+    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>item.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>ec006f97-8739-475c-a96a-838af1622af0</requestId><requests/></status><itemInsertResult><code>N000</code><item><itemUrl>item-test-02</itemUrl></item></itemInsertResult></result>'}
+    headers:
+      Connection: [close]
+      Content-Length: ['331']
+      Content-Type: [text/xml; charset=UTF-8]
+      Date: ['Mon, 02 Jan 2017 15:33:29 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n\
+      \    <item>\n      <itemUrl>item-test-02</itemUrl>\n    </item>\n  </itemDeleteRequest>\n\
+      </request>"
+    headers:
+      Authorization: [ESA XXXXXX]
+      Content-Length: ['165']
+      User-Agent: [python-requests/2.12.4]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
+  response:
+    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>b7c871df-ee00-4aee-86cb-789b19898c68</requestId><requests/></status><itemDeleteResult><code>N000</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'}
+    headers:
+      Connection: [close]
+      Content-Length: ['331']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Mon, 02 Jan 2017 15:33:31 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1

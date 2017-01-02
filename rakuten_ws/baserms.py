@@ -116,19 +116,22 @@ class RestMethod(object):
             return camelize("%s_%s_request" % (self.client.name, self.name), False)
 
     def prepare_xml_params(self, params):
-        def key(x):
-            try:
-                return self.params.index(x[0])
-            except:
-                if len(self.params) != 0:
-                    warnings.warn(
-                        "Given invalid parameter '%s'." % x[0],
-                        SyntaxWarning
-                    )
-                return len(self.params) + 1
-
         camelcase_params = camelize_dict(params)
-        sorted_params = unflatten_dict(sorted_dict(flatten_dict(camelcase_params), key=key))
+        if self.params:
+            def key(x):
+                try:
+                    return self.params.index(x[0])
+                except:
+                    if len(self.params) != 0:
+                        warnings.warn(
+                            "Given invalid parameter '%s'." % x[0],
+                            SyntaxWarning
+                        )
+                    return len(self.params) + 1
+
+            sorted_params = unflatten_dict(sorted_dict(flatten_dict(camelcase_params), key=key))
+        else:
+            sorted_params = camelcase_params
         return dict2xml({self.request_xml_key: sorted_params}, root="request")
 
     def prepare_request(self, params={}):
