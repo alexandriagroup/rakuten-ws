@@ -3,6 +3,7 @@ from __future__ import unicode_literals
 
 from collections import OrderedDict
 
+import pytest
 import lxml
 import requests
 
@@ -13,9 +14,16 @@ from rakuten_ws.utils import dict2xml
 from . import assert_raises
 
 
+delete_params = [
+    'item.args',
+    'item.args.arg2',
+    'item.args.arg1',
+]
+
+
 class ItemsAPI(RestClient):
     get = RestMethod()
-    remove = RestMethod(http_method='POST', name='delete')
+    remove = RestMethod(http_method='POST', name='delete', params=delete_params)
     search = RestMethod(http_method='GET')
 
 
@@ -50,7 +58,7 @@ def test_fake_credentials():
     assert ItemsAPI.get == RestMethod
 
     ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC", shop_url="shop_url")
-    ws.rms.soap_user_auth_model == {'authKey': 'ESA Q0NDQ0M6QkJCQkI=', 'shopUrl': 'shop_url', 'userName': ''}
+    assert ws.rms.soap_user_auth_model == {'authKey': 'ESA Q0NDQ0M6QkJCQkI=', 'shopUrl': 'shop_url', 'userName': ''}
     assert ws.rms.item.name == "item"
     assert ws.rms.product.name == "item_product"
     assert ws.rms.product.service == ws.rms
@@ -60,6 +68,44 @@ def test_fake_credentials():
     assert ws.rms.item.get.http_method == "GET"
     assert ws.rms.item.remove.name == "delete"
     assert ws.rms.product.remove.name == "remove"
+
+
+def test_params_order(httpretty):
+    ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC", shop_url="shop_url")
+
+    # check with valid params
+    item = {'args': {'arg1': 'value1', 'arg2': 'value2'}}
+    xml_post = ws.rms.item.remove.prepare_xml_post({'item': item})
+    expected_body = """<?xml version='1.0' encoding='utf-8'?>
+<request>
+  <itemDeleteRequest>
+    <item>
+      <args>
+        <arg2>value2</arg2>
+        <arg1>value1</arg1>
+      </args>
+    </item>
+  </itemDeleteRequest>
+</request>"""
+    assert xml_post == expected_body
+
+    # check with valid+invalid params
+    item = {'args': {'arg1': 'value1', 'arg2': 'value2', 'arg3': 'value3'}}
+    with pytest.warns(SyntaxWarning):
+        xml_post = ws.rms.item.remove.prepare_xml_post({'item': item})
+    expected_body = """<?xml version='1.0' encoding='utf-8'?>
+<request>
+  <itemDeleteRequest>
+    <item>
+      <args>
+        <arg2>value2</arg2>
+        <arg1>value1</arg1>
+        <arg3>value3</arg3>
+      </args>
+    </item>
+  </itemDeleteRequest>
+</request>"""
+    assert xml_post == expected_body
 
 
 def test_rest_client():

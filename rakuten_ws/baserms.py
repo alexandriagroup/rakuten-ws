@@ -78,7 +78,7 @@ class RestMethodResult(OrderedDict):
         if _status:
             status = xml2dict(etree.tostring(_status[0]))
         else:
-            raise RMSInvalidResponse()
+            raise RMSInvalidResponse(response.text)
         if _result:
             result_data = xml2dict(etree.tostring(_result[0]))
         return status, result_data
