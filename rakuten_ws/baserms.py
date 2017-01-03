@@ -107,13 +107,11 @@ class RestMethod(object):
 
     @property
     def result_xml_key(self):
-        if self.client is not None:
-            return camelize("%s_%s_result" % (self.client.name, self.name), False)
+        return camelize("%s_%s_result" % (self.client.name, self.name), False)
 
     @property
     def request_xml_key(self):
-        if self.client is not None:
-            return camelize("%s_%s_request" % (self.client.name, self.name), False)
+        return camelize("%s_%s_request" % (self.client.name, self.name), False)
 
     def prepare_xml_post(self, params):
         camelcase_params = camelize_dict(params)
@@ -122,11 +120,10 @@ class RestMethod(object):
                 try:
                     return self.params.index(x[0])
                 except:
-                    if len(self.params) != 0:
-                        warnings.warn(
-                            "Given invalid parameter '%s'." % x[0],
-                            SyntaxWarning
-                        )
+                    warnings.warn(
+                        "Given invalid parameter '%s'." % x[0],
+                        SyntaxWarning
+                    )
                     return len(self.params) + 1
 
             sorted_params = unflatten_dict(sorted_dict(flatten_dict(camelcase_params), key=key))
