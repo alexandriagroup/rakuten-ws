@@ -54,7 +54,7 @@ class ZeepClient(RmsServiceClient):
         else:
             kwargs = {'arg0': arg0}
             if proxy_kwargs:
-                kwargs['arg1'] = kwargs
+                kwargs['arg1'] = proxy_kwargs
             response = method(**kwargs)
         return response
 
