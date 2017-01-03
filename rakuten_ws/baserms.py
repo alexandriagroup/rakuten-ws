@@ -115,7 +115,7 @@ class RestMethod(object):
         if self.client is not None:
             return camelize("%s_%s_request" % (self.client.name, self.name), False)
 
-    def prepare_xml_params(self, params):
+    def prepare_xml_post(self, params):
         camelcase_params = camelize_dict(params)
         if self.params:
             def key(x):
@@ -145,7 +145,7 @@ class RestMethod(object):
         headers['Authorization'] = self.client.service.esa_key
 
         if self.http_method == "POST":
-            data = self.prepare_xml_params(params)
+            data = self.prepare_xml_post(params)
             req = Request(self.http_method, api_request.url, data=data, headers=headers)
         else:
             req = Request(self.http_method, api_request.url, headers=headers, params=camelize_dict(params))
