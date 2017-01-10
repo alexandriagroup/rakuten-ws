@@ -3,6 +3,11 @@
 Python Rakuten Web Service changelog
 ==================================================
 
+Version 0.2.0.dev0
+------------------
+
+**unreleased**
+
 Version 0.1.0
 -------------
 
