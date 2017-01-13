@@ -3,10 +3,12 @@
 Python Rakuten Web Service changelog
 ==================================================
 
-Version 0.1.1.dev0
-------------------
+Version 0.1.1
+-------------
 
-**unreleased**
+Released on January 13th 2017
+
+- Included WSDL files in the Pypi package
 
 Version 0.1.0
 -------------
