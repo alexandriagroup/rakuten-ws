@@ -28,6 +28,7 @@ if is_py3:
     str = str
     bytes = bytes
     basestring = (str, bytes)
+    from collections import UserDict
 
     def iteritems(d):
         return iter(d.items())
@@ -45,6 +46,7 @@ else:
     bytes = str
     str = unicode
     basestring = basestring
+    from UserDict import UserDict  # noqa
 
     def iteritems(d):
         return d.iteritems()

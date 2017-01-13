@@ -9,7 +9,7 @@ from xmljson import Parker
 
 from lxml.etree import Element, fromstring, tostring
 
-from .compat import iteritems, to_unicode
+from .compat import iteritems, to_unicode, is_py2, str
 
 
 parker = Parker(dict_type=dict)
@@ -18,7 +18,7 @@ parker = Parker(dict_type=dict)
 class PrettyStringRepr(str):
     # Useful for debug
     def __repr__(self):
-        return self.replace(' \n', '\n').strip()
+        return to_unicode(self.replace(' \n', '\n').strip()).encode('utf-8')
 
 
 def camelize_dict(data, uppercase_first_letter=False):

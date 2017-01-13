@@ -1,11 +1,14 @@
 # coding: utf-8
 from __future__ import unicode_literals
 
+import json
 import requests
 
 from furl import furl
 
-from .utils import camelize, camelize_dict, sorted_dict, clean_python_variable_name
+from .utils import (camelize, camelize_dict, sorted_dict, clean_python_variable_name, PrettyStringRepr)
+
+from .compat import UserDict
 
 
 class ApiMethod(object):
@@ -15,12 +18,20 @@ class ApiMethod(object):
         self.api_version = api_version
 
 
-class ApiResponse(dict):
+class ApiResponse(UserDict):
     def __init__(self, session, url):
         self.session = session
         self.url = url
         self.response = self.session.get(self.url).json()
-        super(ApiResponse, self).__init__(self.response)
+        self.data = self.response
+
+    @property
+    def json(self):
+        return PrettyStringRepr(json.dumps(self.data, ensure_ascii=False, sort_keys=True,
+                                           indent=4, separators=(',', ': ')))
+
+    def __repr__(self):
+        return self.json.encode('utf-8')
 
     def pages(self):
         yield self.response
