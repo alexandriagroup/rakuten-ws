@@ -8,6 +8,13 @@ Version 0.2.0.dev0
 
 **unreleased**
 
+Version 0.1.1
+-------------
+
+Released on January 13th 2017
+
+- Included WSDL files in the Pypi package
+
 Version 0.1.0
 -------------
 
