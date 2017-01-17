@@ -137,6 +137,8 @@ def test_rest_client_get_request():
 
     assert ws.rms.product.get_tag.prepare_request().url == \
         'https://api.rms.rakuten.co.jp/es/2.0/item_product/genre/tag/get'
+    assert ws.rms.product.get_tag.result_xml_key == 'itemProductGenreTagGetResult'
+    assert ws.rms.product.get_tag.request_xml_key == 'itemProductGenreTagGetRequest'
     assert ws.rms.order.get.prepare_request().url == 'https://orderapi.rms.rakuten.co.jp/1.0/myorders/get'
 
 
