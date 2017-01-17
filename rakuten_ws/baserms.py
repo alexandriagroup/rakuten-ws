@@ -99,9 +99,10 @@ class RestMethodResult(OrderedDict):
 
 class RestMethod(object):
 
-    def __init__(self, name=None, http_method="GET", params=[]):
+    def __init__(self, name=None, http_method="GET", params=[], custom_headers={}):
         self.name = name
         self.http_method = http_method
+        self.custom_headers = custom_headers
         self.params = params
         self.client = None
 
@@ -140,6 +141,8 @@ class RestMethod(object):
 
         headers = self.client.service.webservice.session.headers.copy()
         headers['Authorization'] = self.client.service.esa_key
+        if self.custom_headers:
+            headers.update(self.custom_headers)
 
         if self.http_method == "POST":
             data = self.prepare_xml_post(params)

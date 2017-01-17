@@ -30,6 +30,7 @@ class ItemsAPI(RestClient):
 class ProductAPI(RestClient):
     api_version = '2.0'
     get_tag = RestMethod(name='genre/tag/get')
+    insert_file = RestMethod(name='genre/file/insert', custom_headers={'Content-Type': 'multipart/form-data'})
     remove = RestMethod(http_method='POST')
 
 
@@ -251,3 +252,14 @@ def test_rest_client_get_invalid_response(httpretty):
 
     with assert_raises(RMSInvalidResponse):
         ws.rms.item.get(item_url="aaa")
+
+
+def test_rest_client_custom_headers():
+    ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC")
+    item = OrderedDict([
+        ('item_url', 'http://item_url'),
+        ('file', "FILE"),
+    ])
+    prepped_request = ws.rms.product.insert_file.prepare_request(dict(item=item))
+    assert 'Content-Type' in prepped_request.headers
+    assert prepped_request.headers['Content-Type'] == 'multipart/form-data'
