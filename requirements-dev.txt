@@ -19,4 +19,4 @@ sphinx-readable-theme
 mock==2.0.0
 httpretty
 unidecode
-pypython
+ptpython
