@@ -18,7 +18,10 @@ parker = Parker(dict_type=dict)
 class PrettyStringRepr(str):
     # Useful for debug
     def __repr__(self):
-        return to_unicode(self.replace(' \n', '\n').strip()).encode('utf-8')
+        if is_py2:
+            return to_unicode(self.replace(' \n', '\n').strip()).encode('utf-8')
+        else:
+            return to_unicode(self.replace(' \n', '\n').strip())
 
 
 def camelize_dict(data, uppercase_first_letter=False):
