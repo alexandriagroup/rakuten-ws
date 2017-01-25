@@ -154,7 +154,7 @@ class RestMethod(object):
         return prepped_request
 
     def __call__(self, *args, **kwargs):
-        raise_for_status = kwargs.pop('raise_for_status', True)
+        raise_for_status = kwargs.pop('raise_for_status', not self.client.service.webservice.debug)
         prepped_request = self.prepare_request(kwargs)
         response = self.client.service.webservice.session.send(prepped_request)
         if raise_for_status:

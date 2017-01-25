@@ -139,10 +139,11 @@ class BaseWebService(object):
                 setattr(attr, 'name', name)
         return instance
 
-    def __init__(self, application_id=None, license_key=None, secret_service=None, shop_url=None):
+    def __init__(self, application_id=None, license_key=None, secret_service=None, shop_url=None, debug=False):
         self.application_id = application_id
         self.license_key = license_key
         self.secret_service = secret_service
         self.shop_url = shop_url
+        self.debug = debug
         self.session = requests.Session()
         self.session.headers = {"User-Agent": self.session.headers['User-Agent']}

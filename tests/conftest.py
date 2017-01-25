@@ -40,6 +40,10 @@ def pytest_configure(config):
                             'online: mark a test that goes online. VCR will automatically be used.')
 
 
+def pytest_addoption(parser):
+    parser.addoption("--ws-debug", action="store_true", help="Allow webservice debugging")
+
+
 def pytest_runtest_setup(item):
     # Add the online marker to tests that will go online
     if 'httpretty' not in item.fixturenames:
@@ -148,4 +152,5 @@ def fake_credentials():
 
 @pytest.fixture
 def ws(credentials, request):
-    return RakutenWebService(**credentials)
+    ws_debug = request.config.getoption("--ws-debug")
+    return RakutenWebService(debug=ws_debug, **credentials)
