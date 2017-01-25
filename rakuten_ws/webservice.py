@@ -104,12 +104,26 @@ class RmsItemsAPI(RestClient):
     update = RestMethod(http_method='POST', params=parameters.items_update)
 
 
+class RmsCabinetAPI(RestClient):
+    get_usage = RestMethod(http_method='GET', name='usage/get')
+    get_folders = RestMethod(http_method='GET', name='folders/get')
+    get_files = RestMethod(http_method='GET', name='files/get')
+    search_files = RestMethod(http_method='GET', name='files/search')
+    delete_file = RestMethod(http_method='POST', name='file/delete')
+    get_trash_files = RestMethod(http_method='GET', name='trashbox/files/get')
+    revert_trash_file = RestMethod(http_method='POST', name='trashbox/file/revert')
+    insert_file = RestMethod(http_method='POST', name='file/insert', form_data='file')
+    update_file = RestMethod(http_method='POST', name='file/update', form_data='file')
+    insert_folder = RestMethod(http_method='POST', name='folder/insert')
+
+
 class RmsService(BaseRmsService):
-    order = RmsOrderAPI()
     item = RmsItemAPI()
     items = RmsItemsAPI()
-
     product = RmsProductAPI()
+    cabinet = RmsCabinetAPI()
+
+    order = RmsOrderAPI()
     inventory = RmsInventoryAPI()
 
 
