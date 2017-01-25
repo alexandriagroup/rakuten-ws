@@ -99,12 +99,15 @@ class RestMethodResult(OrderedDict):
 
 class RestMethod(object):
 
-    def __init__(self, name=None, http_method="GET", params=[], custom_headers={}, form=False):
+    def __init__(self, name=None, http_method="GET", params=[], custom_headers={}, form_data=None):
         self.name = name
         self.http_method = http_method
         self.custom_headers = custom_headers
         self.params = params
         self.client = None
+        self.form_data = form_data
+        if self.form_data is not None:
+            self.custom_headers.update({'Content-Type': 'multipart/form-data'})
 
     @property
     def result_xml_key(self):
