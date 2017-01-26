@@ -106,8 +106,6 @@ class RestMethod(object):
         self.params = params
         self.client = None
         self.form_data = form_data
-        if self.form_data is not None:
-            self.custom_headers.update({'Content-Type': 'multipart/form-data'})
         self._root_xml_key = root_xml_key
 
     @property
