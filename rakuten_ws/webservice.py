@@ -109,12 +109,12 @@ class RmsCabinetAPI(RestClient):
     get_folders = RestMethod(http_method='GET', name='folders/get')
     get_files = RestMethod(http_method='GET', name='files/get')
     search_files = RestMethod(http_method='GET', name='files/search')
-    delete_file = RestMethod(http_method='POST', name='file/delete')
     get_trash_files = RestMethod(http_method='GET', name='trashbox/files/get')
-    revert_trash_file = RestMethod(http_method='POST', name='trashbox/file/revert')
-    insert_file = RestMethod(http_method='POST', name='file/insert', form_data='file')
-    update_file = RestMethod(http_method='POST', name='file/update', form_data='file')
-    insert_folder = RestMethod(http_method='POST', name='folder/insert')
+    delete_file = RestMethod(http_method='POST', name='file/delete', root_xml_key="fileDelete")
+    revert_trash_file = RestMethod(http_method='POST', name='trashbox/file/revert', root_xml_key="fileRevert")
+    insert_file = RestMethod(http_method='POST', name='file/insert', form_data='file', root_xml_key="fileInsert")
+    update_file = RestMethod(http_method='POST', name='file/update', form_data='file', root_xml_key="folderUpdate")
+    insert_folder = RestMethod(http_method='POST', name='folder/insert', root_xml_key="folderInsert")
 
 
 class RmsService(BaseRmsService):

@@ -99,7 +99,7 @@ class RestMethodResult(OrderedDict):
 
 class RestMethod(object):
 
-    def __init__(self, name=None, http_method="GET", params=[], custom_headers={}, form_data=None):
+    def __init__(self, name=None, http_method="GET", params=[], custom_headers={}, form_data=None, root_xml_key=None):
         self.name = name
         self.http_method = http_method
         self.custom_headers = custom_headers
@@ -108,14 +108,22 @@ class RestMethod(object):
         self.form_data = form_data
         if self.form_data is not None:
             self.custom_headers.update({'Content-Type': 'multipart/form-data'})
+        self._root_xml_key = root_xml_key
+
+    @property
+    def root_xml_key(self):
+        if self._root_xml_key:
+            return camelize(self._root_xml_key, False)
+        else:
+            return camelize("%s_%s" % (self.client.name, '_'.join(self.name.split('/'))), False)
 
     @property
     def result_xml_key(self):
-        return camelize("%s_%s_result" % (self.client.name, '_'.join(self.name.split('/'))), False)
+        return "%sResult" % self.root_xml_key
 
     @property
     def request_xml_key(self):
-        return camelize("%s_%s_request" % (self.client.name, '_'.join(self.name.split('/'))), False)
+        return camelize("%sRequest" % self.root_xml_key, False)
 
     def prepare_xml_post(self, params):
         camelcase_params = camelize_dict(params)
