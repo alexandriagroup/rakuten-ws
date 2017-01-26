@@ -1,0 +1,21 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Authorization: [ESA XXXXXX]
+      User-Agent: [python-requests/2.13.0]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/usage/get
+  response:
+    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>c0d5ce11-c766-4263-9812-0cde1b67f3f1</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>18.204</UseSpace><AvailSpace>5119981.796</AvailSpace><UseFolderCount>2</UseFolderCount><AvailFolderCount>498</AvailFolderCount></cabinetUsageGetResult></result>'}
+    headers:
+      Connection: [close]
+      Content-Length: ['512']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Thu, 26 Jan 2017 17:08:44 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1
