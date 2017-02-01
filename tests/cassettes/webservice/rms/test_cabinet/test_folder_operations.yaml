@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <folderInsertRequest>\n
+      \   <folder>\n      <folderName>H35TX4FO6J697AX</folderName>\n    </folder>\n
+      \ </folderInsertRequest>\n</request>"
+    headers:
+      Authorization: [ESA XXXXXX]
+      Content-Length: ['182']
+      User-Agent: [python-requests/2.13.0]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folder/insert
+  response:
+    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>c6dba603-26ec-4f61-ab38-a1fe479aa9c0</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>5503240</FolderId></cabinetFolderInsertResult></result>'}
+    headers:
+      Connection: [close]
+      Content-Length: ['352']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Wed, 01 Feb 2017 09:15:39 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      Authorization: [ESA XXXXXX]
+      User-Agent: [python-requests/2.13.0]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folders/get
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>39faf6fc-4c23-4872-a38d-75fe35c5679b</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>12</folderAllCount><folderCount>12</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2016-12-08
+        10:55:21</TimeStamp></folder><folder><FolderId>5421913</FolderId><FolderName>\u770B\u677F</FolderName><FolderNode>1</FolderNode><FolderPath>/kanban</FolderPath><FileCount>1</FileCount><FileSize>18.204</FileSize><TimeStamp>2016-12-08
+        10:56:14</TimeStamp></folder><folder><FolderId>5491265</FolderId><FolderName>test_xcvbn</FolderName><FolderNode>1</FolderNode><FolderPath>/05491265</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-01-26
+        22:56:44</TimeStamp></folder><folder><FolderId>5503183</FolderId><FolderName>gEtHaLyflOunestroUTI</FolderName><FolderNode>1</FolderNode><FolderPath>/05503183</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        17:44:08</TimeStamp></folder><folder><FolderId>5503184</FolderId><FolderName>gEtHaLyflOunestroUTI</FolderName><FolderNode>1</FolderNode><FolderPath>/05503184</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        17:44:24</TimeStamp></folder><folder><FolderId>5503201</FolderId><FolderName>IPPRIR4ABSG5WAS</FolderName><FolderNode>1</FolderNode><FolderPath>/05503201</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        17:55:04</TimeStamp></folder><folder><FolderId>5503203</FolderId><FolderName>5GVIYM99ZQI7X34</FolderName><FolderNode>1</FolderNode><FolderPath>/05503203</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        17:57:23</TimeStamp></folder><folder><FolderId>5503209</FolderId><FolderName>FCFAR82LSX0MDCA</FolderName><FolderNode>1</FolderNode><FolderPath>/05503209</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        18:02:00</TimeStamp></folder><folder><FolderId>5503212</FolderId><FolderName>WNWUXMQE8ONMOKK</FolderName><FolderNode>1</FolderNode><FolderPath>/05503212</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        18:02:18</TimeStamp></folder><folder><FolderId>5503213</FolderId><FolderName>DpEVvgY-INwcX_sXEB6eKf-XZB3</FolderName><FolderNode>1</FolderNode><FolderPath>/05503213</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        18:03:47</TimeStamp></folder><folder><FolderId>5503214</FolderId><FolderName>DpEVvgY-INwcX_sXEB6eKf-XZB3</FolderName><FolderNode>1</FolderNode><FolderPath>/05503214</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        18:03:58</TimeStamp></folder><folder><FolderId>5503240</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05503240</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
+        18:15:39</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"}
+    headers:
+      Connection: [close]
+      Content-Length: ['3280']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Wed, 01 Feb 2017 09:15:41 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1
