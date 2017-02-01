@@ -20,3 +20,4 @@ mock==2.0.0
 httpretty
 unidecode
 ptpython
+pytest-randomly
