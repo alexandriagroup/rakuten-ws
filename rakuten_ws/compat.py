@@ -29,6 +29,7 @@ if is_py3:
     bytes = bytes
     basestring = (str, bytes)
     from collections import UserDict
+    from urllib.parse import urlparse
 
     def iteritems(d):
         return iter(d.items())
@@ -47,6 +48,7 @@ else:
     str = unicode
     basestring = basestring
     from UserDict import UserDict  # noqa
+    from urlparse import urlparse  # noqa
 
     def iteritems(d):
         return d.iteritems()

@@ -4,12 +4,15 @@ from __future__ import unicode_literals
 import re
 
 from collections import OrderedDict, MutableMapping
+from shutil import copyfileobj
+from io import BytesIO, open
+
+import requests
 
 from xmljson import Parker
-
 from lxml.etree import Element, fromstring, tostring
 
-from .compat import iteritems, to_unicode, is_py2, str
+from .compat import iteritems, to_unicode, is_py2, str, urlparse
 
 
 parker = Parker(dict_type=dict)
@@ -153,3 +156,23 @@ def unflatten_dict(dictionary):
             d = d[part]
         d[parts[-1]] = value
     return unflatten_dict
+
+
+def load_url(url, session=None, timeout=None):
+    """Load the content from the given URL and return it as a `BytesIO`"""
+    scheme = urlparse(url).scheme
+    if scheme in ('http', 'https'):
+        if session is None:
+            session = requests.Session()
+        response = session.get(url, timeout=timeout)
+        response.raise_for_status()
+        return BytesIO(response.content)
+    elif scheme in ('', 'file'):
+        if url.startswith('file://'):
+            url = url[7:]
+        fileobj = BytesIO()
+        with open(url, 'rb') as fd:
+            copyfileobj(fd, fileobj)
+        fileobj.seek(0)
+        return fileobj
+    raise ValueError("Invalid url given to load")

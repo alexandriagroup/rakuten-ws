@@ -1,8 +1,13 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+from io import open
 from collections import OrderedDict
-from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict
+
+import pytest
+import requests
+
+from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict, load_url
 from rakuten_ws.compat import to_unicode, is_py3
 
 
@@ -129,3 +134,22 @@ def test_to_unicode():
         assert to_unicode(bytes([104, 101, 108, 108, 111])) == "hello"
     else:
         assert to_unicode(buffer("Hello world", 6, 5))  # noqa
+
+
+@pytest.mark.online
+def test_load_url(tmpdir):
+    image_filename = "%s" % tmpdir.mkdir("image").join("image.png")
+    url = 'https://httpbin.org/image/png'
+
+    # Prepare test
+    with open(image_filename, 'wb') as fd:
+        response = requests.get(url, stream=True)
+        assert response.ok
+        for block in response.iter_content(1024):
+            fd.write(block)
+
+    fileobj1 = load_url(url)
+    fileobj2 = load_url(image_filename)
+
+    import pdb; pdb.set_trace()  # noqa
+    assert fileobj1.read() == fileobj2.read()
