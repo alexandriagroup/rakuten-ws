@@ -151,5 +151,4 @@ def test_load_url(tmpdir):
     fileobj1 = load_url(url)
     fileobj2 = load_url(image_filename)
 
-    import pdb; pdb.set_trace()  # noqa
     assert fileobj1.read() == fileobj2.read()
