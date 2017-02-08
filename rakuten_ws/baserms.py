@@ -139,7 +139,7 @@ class RestMethod(object):
             sorted_params = unflatten_dict(sorted_dict(flatten_dict(camelcase_params), key=key))
         else:
             sorted_params = camelcase_params
-        return dict2xml({self.request_xml_key: sorted_params}, root="request")
+        return dict2xml({self.request_xml_key: sorted_params}, root="request") + "\n"
 
     def prepare_request(self, params={}):
         api_request = furl(self.client.api_url)
@@ -159,7 +159,7 @@ class RestMethod(object):
             data = self.prepare_xml_post(params)
             if filename:
                 if hasattr(filename, 'read'):
-                    files = {'xml': ('', data), 'file': ('filename', 'filename', 'image/png')}
+                    files = {'xml': (None, data), 'file': ('filename', 'filename', 'image/png')}
                 else:
                     files = {'xml': ('', data), 'file': ('filename', 'load_url(filename)', 'image/png')}
                 req = Request(self.http_method, api_request.url, files=files, headers=headers)
