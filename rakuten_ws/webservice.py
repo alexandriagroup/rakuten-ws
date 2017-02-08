@@ -113,7 +113,7 @@ class RmsCabinetAPI(RestClient):
     delete_file = RestMethod(http_method='POST', name='file/delete', root_xml_key="fileDelete")
     revert_trash_file = RestMethod(http_method='POST', name='trashbox/file/revert', root_xml_key="fileRevert")
     insert_file = RestMethod(http_method='POST', name='file/insert', form_data='file', root_xml_key="fileInsert",
-                             parms=parameters.cabinet_insert_file)
+                             params=parameters.cabinet_insert_file)
     update_file = RestMethod(http_method='POST', name='file/update', form_data='file', root_xml_key="folderUpdate")
     insert_folder = RestMethod(http_method='POST', name='folder/insert', root_xml_key="folderInsert")
 
