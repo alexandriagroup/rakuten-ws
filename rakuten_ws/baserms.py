@@ -150,6 +150,8 @@ class RestMethod(object):
 
         headers = self.client.service.webservice.session.headers.copy()
         headers['Authorization'] = self.client.service.esa_key
+        if self.custom_headers:
+            headers.update(self.custom_headers)
 
         filename = params.pop('filename', None)
 

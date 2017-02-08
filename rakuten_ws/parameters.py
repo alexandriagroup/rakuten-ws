@@ -230,3 +230,11 @@ items_update = [
     'item.lossLeaderId',
     'item.textLargeId',
 ]
+
+
+cabinet_insert_file = [
+    'file.fileName',
+    'file.folderId',
+    'file.filePath',
+    'file.overWrite',
+]
