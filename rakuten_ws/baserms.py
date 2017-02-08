@@ -20,7 +20,7 @@ from requests import Request
 
 from rakuten_ws.utils import xml2dict, dict2xml, unflatten_dict, sorted_dict, flatten_dict
 
-from .utils import camelize_dict, PrettyStringRepr
+from .utils import camelize_dict, PrettyStringRepr, load_url
 from .compat import to_unicode
 
 
@@ -150,12 +150,19 @@ class RestMethod(object):
 
         headers = self.client.service.webservice.session.headers.copy()
         headers['Authorization'] = self.client.service.esa_key
-        if self.custom_headers:
-            headers.update(self.custom_headers)
+
+        filename = params.pop('filename', None)
 
         if self.http_method == "POST":
             data = self.prepare_xml_post(params)
-            req = Request(self.http_method, api_request.url, data=data, headers=headers)
+            if filename:
+                if hasattr(filename, 'read'):
+                    files = {'xml': ('', data), 'file': ('filename', 'filename', 'image/png')}
+                else:
+                    files = {'xml': ('', data), 'file': ('filename', 'load_url(filename)', 'image/png')}
+                req = Request(self.http_method, api_request.url, files=files, headers=headers)
+            else:
+                req = Request(self.http_method, api_request.url, data=data, headers=headers)
         else:
             req = Request(self.http_method, api_request.url, headers=headers, params=camelize_dict(params))
 
