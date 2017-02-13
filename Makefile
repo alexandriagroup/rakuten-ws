@@ -62,7 +62,7 @@ test-no-vcr:
 	VCR_RECORD_MODE=off py.test
 
 test-renew-vcr-records:
-	@rm -vf $(ROOT_DIR)/tests/cassettes/*.yaml
+	@rm -vfr $(ROOT_DIR)/tests/cassettes
 	VCR_RECORD_MODE=once py.test
 
 test-all:  ## Run tests on every Python version with tox

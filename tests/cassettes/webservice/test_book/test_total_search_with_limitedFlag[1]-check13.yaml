@@ -2,39 +2,21 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86&limitedFlag=1
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA+1W3WsTQRD/V2SfFEJu7yPXa0BUKpa+iBTEh1LKJrk0297lwt6mH5S+3IK2iKDS
-        UosfFW2rbRAfrNTagP9LV4v+F87uJdbaEvDjxAcf7m52dmZ+szM7P24OlaNmnaOik0MNMu6joplD
-        VcpirqWAKMHOoRrlsRbKhDHqM1TEqcNA6m7l0BD3Q7AZmUOc8gAiISkWpXgjxb5MXknxUIq2FDdR
-        DpEmr0UQAimZcRrzqyRMHZaleKHtwLOlPXeleC7FtkyeSbEE4Yzu3o5MYKMF6ydS3NKLfSlWla1o
-        G4P5G3kp7kmxIpM9KRYAqtEsBTSu+ayDhtT5Sn4A4tnDp9vnFESyrqOksdvdBNpgSuNSPXWaIEpw
-        +m3b7bMsp1BwMWhrhFWmCesEjuL0S6EoA6TBadRxjkngx5cJV3YWNguf9nZw4fDRgmUdrmx0HK4x
-        WoZ927agK5Ay7yig5BUa64YN6wjfKY5MVITrTJ2qxnmjaBilKJqM84xMNrlfz5ej/ETDYCXDtE3P
-        cguuobpQrdKAQszUUeUZkiAYCqHDx2LxWjMs1QkN8lTt/RD1Ih5TbhrRKJMSrfvcUPUxjlULTMcv
-        jPkz511nxnUALPQrtBlmjWZaeAYe3XY27mcNZ2E8Aw/AlWuUkdkopN+qS6YABUIElM+CxlS3M4o5
-        gF4JyLgep4CG0MlKuoZRZP4U9ac744a760tTPtNji3BeQeleD/p15g9VlBLbcMkwNg0tFUBC87mj
-        CR3O6/u9AQMixZZMNmFYih/fr39Z+/B5a+tgcfvUET5YbPWe4gd6QFf1e0EP1LJMtrqBWgpKrKez
-        vCSTlzpqq2OnhNugNGTyTmWmp7frJ6R4rK3vGHrO72ty6KKcOIrxZ1LpzR1SbCozcVf5Jm+115pO
-        pK2PIGTy+gw8OqvddH0qn3gexgXP8Wy3/5f5xAE+MTHwCfZO8gm2+rPkE8vzLNvMnE9UfYxj1cqS
-        T3qgZcEnPeD+DT6xTOzA+z+L/NssYvV5nv1bLIJd9VdSOMEijutk+ldi9dmuY9tZs4iqj3GsWlmy
-        SA+0LFikB9xPsIjzF1hkNIdSfb0asZCkN3JkdP4rcCBV9pgMAAA=
+    body: {string: "{\"count\":4,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":2,\"Items\":[{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\",\"author\":\"\",\"artistName\":\"\u30D5\u30E7\u30FC\u30C9\u30EB\u30FB\u30B7\u30E3\u30EA\u30A2\u30D4\u30F3/\u30C9\u30EB\u30F4\u30A3\u30EB/\u30DE\u30C7\u30A3\u30FB\u30D9\u30EA\u30FC/G.W.\u30D1\u30D7\u30B9\u30C8\",\"publisherName\":\"\",\"label\":\"(\u682A)\u30A2\u30A4\u30FB\u30F4\u30A3\u30FC\u30FB\u30B7\u30FC\",\"isbn\":\"\",\"jan\":\"4933672245560\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2015\u5E7405\u670822\u65E5\",\"itemPrice\":3693,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/13182656/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5560/4933672245560.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5560/4933672245560.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5560/4933672245560.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":1,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003201001/003205001\"},{\"title\":\"R.\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9:\u4EA4\u97FF\u8A69\u226A\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u226B\",\"author\":\"\",\"artistName\":\"\u30D8\u30EB\u30D9\u30EB\u30C8\u30FB\u30D5\u30A9\u30F3\u30FB\u30AB\u30E9\u30E4\u30F3/\u30D4\u30A8\u30FC\u30EB\u30FB\u30D5\u30EB\u30CB\u30A8/\u30B8\u30E5\u30B9\u30C8\u30FB\u30AB\u30C3\u30DD\u30FC\u30CD/\u30EA\u30D2\u30E3\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9/\u30D8\u30EB\u30D9\u30EB\u30C8\u30FB\u30D5\u30A9\u30F3\u30FB\u30AB\u30E9\u30E4\u30F3/\u30D4\u30A8\u30FC\u30EB\u30FB\u30D5\u30EB\u30CB\u30A8\",\"publisherName\":\"\",\"label\":\"\u30E6\u30CB\u30D0\u30FC\u30B5\u30EB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF
+        \u30AF\u30E9\u30B7\u30C3\u30AF\",\"isbn\":\"\",\"jan\":\"4988005848369\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2014\u5E7410\u670808\u65E5\",\"itemPrice\":3029,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/12882316/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8369/4988005848369.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8369/4988005848369.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8369/4988005848369.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":1,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"002104002\"},{\"title\":\"R.\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9:\u4EA4\u97FF\u8A69\u226A\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u226B\",\"author\":\"\",\"artistName\":\"\u30D8\u30EB\u30D9\u30EB\u30C8\u30FB\u30D5\u30A9\u30F3\u30FB\u30AB\u30E9\u30E4\u30F3/\u30D4\u30A8\u30FC\u30EB\u30FB\u30D5\u30EB\u30CB\u30A8/\u30B8\u30E5\u30B9\u30C8\u30FB\u30AB\u30C3\u30DD\u30FC\u30CD/\u30EA\u30D2\u30E3\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9/\u30D8\u30EB\u30D9\u30EB\u30C8\u30FB\u30D5\u30A9\u30F3\u30FB\u30AB\u30E9\u30E4\u30F3/\u30D4\u30A8\u30FC\u30EB\u30FB\u30D5\u30EB\u30CB\u30A8\",\"publisherName\":\"\",\"label\":\"\u30E6\u30CB\u30D0\u30FC\u30B5\u30EB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF
+        \u30AF\u30E9\u30B7\u30C3\u30AF\",\"isbn\":\"\",\"jan\":\"4988005827883\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2014\u5E7406\u670825\u65E5\",\"itemPrice\":4644,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/12736433/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7883/4988005827883.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7883/4988005827883.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7883/4988005827883.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":1,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"002104002\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['836']
+      Content-Length: ['3224']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:17 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:17 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

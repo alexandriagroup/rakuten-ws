@@ -2,56 +2,21 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/Kobo/EbookSearch/20131010?applicationId=XXXXXX&author=%E6%9D%91%E4%B8%8A%E6%98%A5%E6%A8%B9&formatVersion=2&hits=3
   response:
-    body:
-      string: !!binary |
-        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
-        +DeC/G6PzYJIyB+OjEgWMO7cffwvIOHHpecQAAA=
+    body: {string: "{\"count\":24,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"pageCount\":8,\"Items\":[{\"title\":\"\u30B9\u30D7\u30FC\u30C8\u30CB\u30AF\u306E\u604B\u4EBA\",\"titleKana\":\"\u30B9\u30D7\u30FC\u30C8\u30CB\u30AF\u30CE\u30B3\u30A4\u30D3\u30C8\",\"subTitle\":\"\",\"seriesName\":\"\",\"author\":\"\u6751\u4E0A\u6625\u6A39\",\"authorKana\":\"\u30E0\u30E9\u30AB\u30DF\u30CF\u30EB\u30AD\",\"publisherName\":\"\u8B1B\u8AC7\u793E\",\"language\":\"JA\",\"salesDate\":\"2016\u5E7412\u670816\u65E5\",\"itemNumber\":\"4310000034431\",\"koboGenreId\":\"101901\",\"itemCaption\":\"\uFF62\u3059\u307F\u308C\u304C\u307C\u304F\u306B\u3068\u3063\u3066\u3069\u308C\u307B\u3069\u5927\u4E8B\u306A\u3001\u304B\u3051\u304C\u3048\u306E\u306A\u3044\u5B58\u5728\u3067\u3042\u3063\u305F\u304B\u3068\u3044\u3046\u3053\u3068\u304C\u3001\u3042\u3089\u305F\u3081\u3066\u7406\u89E3\u3067\u304D\u305F\u3002\u3059\u307F\u308C\u306F\u5F7C\u5973\u306B\u3057\u304B\u3067\u304D\u306A\u3044\u3084\u308A\u304B\u305F\u3067\u3001\u307C\u304F\u3092\u3053\u306E\u4E16\u306B\u3064\u306A\u304E\u6B62\u3081\u3066\u3044\u305F\u306E\u3060\uFF63
+        \uFF62\u65C5\u306E\u9023\u308C\uFF63\u3068\u3044\u3046\u76AE\u8089\u306A\u540D\u3092\u6301\u3064\u5B64\u72EC\u306A\u4EBA\u5DE5\u885B\u661F\u306E\u3088\u3046\u306B\u3001\u8AB0\u3082\u304C\u7686\u305D\u308C\u305E\u308C\u306E\u8ECC\u9053\u3092\u63CF\u304D\u7D9A\u3051\u308B\u3002
+        \u3053\u306E\u5E83\u5927\u306A\u4E16\u754C\u3067\u3001\u304B\u308F\u3059\u8A00\u8449\u3082\u7D50\u3076\u7D04\u675F\u3082\u306A\u304F\u3059\u308C\u9055\u3044\u3001\u5225\u308C\u3001\u305D\u3057\u3066\u307E\u305F\u3075\u3068\u3081\u3050\u308A\u3042\u3046\u30B9\u30D7\u30FC\u30C8\u30CB\u30AF\u306E\u672B\u88D4\u305F\u3061\u306E\u7269\u8A9E\u3002\",\"itemPrice\":637,\"itemUrl\":\"http://books.rakuten.co.jp/rk/dfba655f0f8530d38a17ef6a9de7d1ad\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/5019/2000004855019.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/5019/2000004855019.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/5019/2000004855019.jpg?_ex=200x200\",\"reviewCount\":0,\"reviewAverage\":\"0.0\"},{\"title\":\"\u8FBA\u5883\u30FB\u8FD1\u5883\uFF08\u65B0\u6F6E\u6587\u5EAB\uFF09\",\"titleKana\":\"\u30D8\u30F3\u30AD\u30E7\u30A6\u30AD\u30F3\u30AD\u30E7\u30A6\u30B7\u30F3\u30C1\u30E7\u30A6\u30D6\u30F3\u30B3\",\"subTitle\":\"\",\"seriesName\":\"\",\"author\":\"\u6751\u4E0A\u6625\u6A39\",\"authorKana\":\"\u30E0\u30E9\u30AB\u30DF\u30CF\u30EB\u30AD\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"language\":\"JA\",\"salesDate\":\"2016\u5E7412\u670823\u65E5\",\"itemNumber\":\"4340008032411\",\"koboGenreId\":\"101907015004\",\"itemCaption\":\"\u4E45\u3057\u3076\u308A\u306B\u30EA\u30E5\u30C3\u30AF\u3092\u80A9\u306B\u304B\u3051\u305F\u3002\u300C\u3046\u3093\u3001\u3053\u308C\u3060\u3088\u3001\u3053\u306E\u611F\u3058\u306A\u3093\u3060\u300D\u3081\u3056\u3059\u306F\u30E2\u30F3\u30B4\u30EB\u8349\u539F\u3001\u5317\u7C73\u6A2A\u65AD\u3001\u7802\u57C3\u821E\u3046\u30E1\u30AD\u30B7\u30B3\u306E\u753A\u2026\u2026\u3002\uFF2E\uFF39\u90CA\u5916\u306E\u8D85\u8C6A\u83EF\u30B3\u30C3\u30C6\u30FC\u30B8\u306B\u5727\u5012\u3055\u308C\u3001\u7121\u4EBA\u306E\u5CF6\u30FB\u304B\u3089\u3059\u5CF6\u3067\u306F\u866B\u306E\u5927\u7FA4\u306E\u5927\u8972\u6483\uFF01\u3000\u65C5\u306E\u6700\u5F8C\u306F\u9707\u707D\u306B\u898B\u821E\u308F\u308C\u305F\u6545\u90F7\u30FB\u795E\u6238\u3002\u3054\u5B58\u3058\u3001\u5199\u771F\u306E\u30A8\u30A4\u30BE\u30FC\u541B\u3068\u3001\u8B83\u5C90\u306E\u30C7\u30A3\u30FC\u30D7\u306A\u3046\u3069\u3093\u7D00\u884C\u306B\u306F\u3001\u5B89\u897F\u6C34\u4E38\u753B\u4F2F\u3082\u98DB\u3073\u5165\u308A\u3001\u30E0\u30E9\u30AB\u30DF\u306E\u65C5\u306F\u7D9A\u304D\u307E\u3059\u3002\u96FB\u5B50\u7248\u7279\u5178\uFF01\u300E\u8FBA\u5883\u30FB\u8FD1\u5883\u300A\u65B0\u88C5\u7248\u300B\u300F\u306B\u63B2\u8F09\u3055\u308C\u305F\u3001\u677E\u6751\u6620\u4E09\u30AB\u30E1\u30E9\u30DE\u30F3\u64AE\u5F71\u306E\u30AB\u30E9\u30FC\u53E3\u7D75\u5199\u771F\u3092\u8FFD\u52A0\u53CE\u9332\uFF01\",\"itemPrice\":626,\"itemUrl\":\"http://books.rakuten.co.jp/rk/4434f8a7d4803a428a83244ba13c1dc4\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/3518/2000004853518.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/3518/2000004853518.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/3518/2000004853518.jpg?_ex=200x200\",\"reviewCount\":0,\"reviewAverage\":\"0.0\"},{\"title\":\"\u9060\u3044\u592A\u9F13\",\"titleKana\":\"\u30C8\u30AA\u30A4\u30BF\u30A4\u30B3\",\"subTitle\":\"\",\"seriesName\":\"\",\"author\":\"\u6751\u4E0A\u6625\u6A39\",\"authorKana\":\"\u30E0\u30E9\u30AB\u30DF\u30CF\u30EB\u30AD\",\"publisherName\":\"\u8B1B\u8AC7\u793E\",\"language\":\"JA\",\"salesDate\":\"2015\u5E7411\u670827\u65E5\",\"itemNumber\":\"4310000025842\",\"koboGenreId\":\"101901\",\"itemCaption\":\"\u3042\u308B\u671D\u76EE\u304C\u899A\u3081\u3066\u3001\u3075\u3068\u8033\u3092\u6F84\u307E\u305B\u308B\u3068\u3001\u4F55\u51E6\u304B\u9060\u304F\u304B\u3089\u592A\u9F13\u306E\u97F3\u304C\u805E\u3053\u3048\u3066\u304D\u305F\u3002\u305D\u306E\u97F3\u3092\u805E\u3044\u3066\u3044\u308B\u3046\u3061\u306B\u3001\u50D5\u306F\u3069\u3046\u3057\u3066\u3082\u9577\u3044\u65C5\u306B\u51FA\u305F\u304F\u306A\u3063\u305F\u306E\u3060\u30FC\u30FC\u300240\u6B73\u306B\u306A\u308D\u3046\u3068\u3057\u3066\u3044\u305F\u8457\u8005\u306F\u3001\u3042\u308B\u601D\u3044\u306B\u99C6\u3089\u308C\u3066\u65E5\u672C\u3092\u5F8C\u306B\u3057\u3001\u30AE\u30EA\u30B7\u30E3\uFF65\u30A4\u30BF\u30EA\u30A2\u3078\u9577\u3044\u65C5\u306B\u51FA\u308B\u3002\u300E\u30CE\u30EB\u30A6\u30A7\u30A4\u306E\u68EE\u300F\u3068\u300E\u30C0\u30F3\u30B9\uFF65\u30C0\u30F3\u30B9\uFF65\u30C0\u30F3\u30B9\u300F\u3092\u66F8\u304D\u4E0A\u3052\u3001\u4F5C\u5BB6\u3068\u3057\u3066\u306E\u8EE2\u63DB\u671F\u3068\u306A\u3063\u305F\u3001\u4E09\u5E74\u9593\u306E\u7570\u56FD\u751F\u6D3B\u306E\u30B9\u30B1\u30C3\u30C1\u30D6\u30C3\u30AF\u3002\",\"itemPrice\":864,\"itemUrl\":\"http://books.rakuten.co.jp/rk/2f6c629361643a4d99584d1bcb2c9689\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/8673/2000003788673.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/8673/2000003788673.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/rakutenkobo-ebooks/cabinet/8673/2000003788673.jpg?_ex=200x200\",\"reviewCount\":0,\"reviewAverage\":\"0.0\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['1796']
+      Content-Length: ['4425']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Wed, 28 Dec 2016 10:49:11 GMT']
+      Date: ['Mon, 13 Feb 2017 14:39:37 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

@@ -2,39 +2,26 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&author=%E5%B0%BE%E7%94%B0%E3%83%BB%E6%A0%84%E4%B8%80%E9%83%8E&formatVersion=2&hits=3
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA8WVW2sTQRTHv0rY55id3dw2BVGpVYJQRfSplDJJJsnYvYTdSU0thXRXSopQWij0
-        oYJC4wVvrShoaeyXGZO2T/0KntlN26SxF6mrsAuzZ878z8x/5jc7I+WtqsmkISUZj0oVXCLQjEpF
-        ajvMb+lYNKCvTJnjN/LYtimxpSEUDBgOBJKQnGXEgKSxGYlRpoOUxOtL7fW5zuIary/fHR3h9fq9
-        7MjwSLv5pt1ocvcL915wz+PuBnffc+8D9yBS517roNVQkZI+aC1I0UDsDjaxEPQ2/KQVSOLuVoS7
-        78TjLUE00isYOaEIOk4196A7r56vrrCIEFiYM4oNkXHQ2h6Y04++pMMZDdTJWyYjprBLqOIqK1tg
-        l9Te3Nld2ey8fPrze33fWzzqOtKBZdSj3H3L3aZ4vDnufeTua0isVHM6dcrE7k5uf21+79nn3eaO
-        mBB94jvds3aIUidnQjST1hJIyyBNTWcyIgw7NIwrjFpmd81YJ85NzIQEOJ5qb31VlM7zRhx1Vl91
-        B9yzaR761WRGhQNBHdYNwAEoUMc/QPd9hZ7AcYpQeGjroF9mrDIkyznLmnRiNp6sgkuxvBV7VJHt
-        nKwk4lo8qWiyMKZYpDoFzWCgmKeBdT1rwHnr02LlqpEzMdVjVPSdUL2OJsQwv6KcxzlqEiYLJ+Q+
-        XyC1dG2C1K6mErVUAooZpECrRtjVFBXV4JUEZHaJhF1ORagGrzifZWrjacugR+7iKagCEjpl0xBR
-        xJGzHAZFb+m4FFwE1ICdLATfsK02maLkcRd+9fD7xhSx/UtESsZEKX+vbxPTJtkCBBFSDh9Nmo32
-        3BP9WHNvWTS8ee6uR5QravsbwLgtDrfXOHEh/CnXv0P4DGY/LeytNoE1+Rx6LwbpMZgqWAA2JJGi
-        qOkLgolSAKYyCKaWSoTKparF4ygdNpfCCLnPljC5PKNaGFyeUe4yXKJzuESDXKLTuFSTfUTC3zri
-        /6uBP+0/AhgWdigdvyR28YSm/QPw1NDBAyvkPmNCBe/0aqGAd3q5y4Cn/mXwxqNSEDSLlm3g4DyO
-        jc/+Au7sO3qgCwAA
+    body: {string: "{\"count\":157,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":53,\"Items\":[{\"title\":\"ONE
+        PIECE 84\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088810027\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7402\u670803\u65E5\",\"itemPrice\":432,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14637787/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0027/9784088810027.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0027/9784088810027.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0027/9784088810027.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":69,\"reviewAverage\":\"4.84\",\"booksGenreId\":\"001001001008\"},{\"title\":\"\u30EF\u30F3\u30D4\u30FC\u30B9\u30D1\u30FC\u30C6\u30A3
+        1-2\u5DFB\u30BB\u30C3\u30C8\",\"titleKana\":\"\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u5B89\u85E4\u82F1/\u5C3E\u7530\u6804\u4E00\u90CE\",\"authorKana\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\",\"isbn\":\"2100010501127\",\"itemCaption\":\"\",\"salesDate\":\"2016\u5E7407\u670804\u65E5\",\"itemPrice\":864,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14283307/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1127/2100010501127.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1127/2100010501127.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1127/2100010501127.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025\"},{\"title\":\"ONE
+        PIECE FILM STRONG WORLD 1-2\u5DFB\u30BB\u30C3\u30C8\",\"titleKana\":\"\u30EF\u30F3
+        \u30D4\u30FC\u30B9 \u30D5\u30A3\u30EB\u30E0 \u30B9\u30C8\u30ED\u30F3\u30B0
+        \u30EF\u30FC\u30EB\u30C9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30FB\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\u30B8\u30E3\u30F3\u30D7
+        \u30B3\u30DF\u30C3\u30AF\u30B9\",\"contents\":\"\",\"author\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u96C6\u82F1\u793E\",\"authorKana\":\"\u30AA\u30C0,\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30B7\u30E5\u30A6\u30A8\u30A4\u30B7\u30E3\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\",\"isbn\":\"2100010303370\",\"itemCaption\":\"\",\"salesDate\":\"2015\u5E7405\u6708\",\"itemPrice\":1913,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/13199309/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3370/2100010303370.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3370/2100010303370.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3370/2100010303370.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['810']
+      Content-Length: ['3056']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:24 GMT']
+      Date: ['Mon, 13 Feb 2017 14:36:45 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

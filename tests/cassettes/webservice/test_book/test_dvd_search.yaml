@@ -2,60 +2,30 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksDVD/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&title=%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9
   response:
-    body:
-      string: !!binary |
-        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
-        Z6Dvf3j8OweLEfDhGAAA
+    body: {string: "{\"count\":364,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 18TH\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u7DE8
+        PIECE.5\u3010Blu-ray\u3011\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9
+        \u30A8\u30A4\u30C6\u30A3\u30FC\u30F3\u30B9\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u30D8\u30F3
+        \u30D4\u30FC\u30B9 5\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13/\u4E45\u7530\u548C\u4E5F\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AF\u30C0\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475273427\",\"makerCode\":\"EYXA-11342\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7405\u670803\u65E5\",\"itemPrice\":4455,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14675608/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003215007\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 18TH\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u7DE8
+        PIECE.4\u3010Blu-ray\u3011\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9
+        \u30A8\u30A4\u30C6\u30A3\u30FC\u30F3\u30B9\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u30D8\u30F3
+        \u30D4\u30FC\u30B9 4\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475273106\",\"makerCode\":\"EYXA-11310\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7404\u670805\u65E5\",\"itemPrice\":4573,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14632157/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003215007\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 18TH\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u7DE8
+        PIECE.5\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9 \u30A8\u30A4\u30C6\u30A3\u30FC\u30F3\u30B9\u30B7\u30FC\u30BA\u30F3
+        \u30BE\u30A6\u30D8\u30F3 \u30D4\u30FC\u30B9 5\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13/\u4E45\u7530\u548C\u4E5F\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AF\u30C0\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475273410\",\"makerCode\":\"EYBA-11341\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7405\u670803\u65E5\",\"itemPrice\":3645,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14675609/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206001/003206002/003206003/003206004/003206005\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['2010']
+      Content-Length: ['3200']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:18:06 GMT']
+      Date: ['Mon, 13 Feb 2017 14:36:40 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

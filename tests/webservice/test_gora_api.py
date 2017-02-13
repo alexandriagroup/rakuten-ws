@@ -17,5 +17,5 @@ def test_golf_detail(ws):
 
 
 def test_plan_detail(ws):
-    params = {'playDate': '2017-01-05', 'hits': 3}
+    params = {'playDate': '2017-03-05', 'hits': 3}
     assert_no_error(ws.gora.plan.search(**params))

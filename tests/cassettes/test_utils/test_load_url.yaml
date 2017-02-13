@@ -159,7 +159,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['8090']
       Content-Type: [image/png]
-      Date: ['Thu, 02 Feb 2017 14:29:46 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:36 GMT']
       Server: [nginx]
     status: {code: 200, message: OK}
 - request:
@@ -322,7 +322,7 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['8090']
       Content-Type: [image/png]
-      Date: ['Thu, 02 Feb 2017 14:29:46 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:37 GMT']
       Server: [nginx]
     status: {code: 200, message: OK}
 version: 1

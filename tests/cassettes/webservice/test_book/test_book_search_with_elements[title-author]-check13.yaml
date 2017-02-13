@@ -2,30 +2,21 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&elements=title%2Cauthor&formatVersion=2&hits=3
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA22QTUsCURSG/8pwVwVC5iZwF+GikGofLVoICUZQ00oG5t4DNSXqJggiU2r8og+d
-        MpxxpE0/5fXOdddf6M5sSmhzDhye9zmcU2abZuHolGX3yswsmqUCyzLVqYL3Zr4N7kqvErUC8NeZ
-        XwHvshQ7ODMPj080Fg1HstbUJHgIUWFW6leRy+dzxtb67s62sQTRAz2BNOSDHkEN0PuykUmvrslg
-        ZKQz0Z0j62PY9teNLjEuAtA5yAa14gk9QLjJkCeCqQExAD1rT+LUdWiAmvEaMfie1v9L0ItuEGNQ
-        N07YtroMpNOGCEEEcv6eBqonsM47st+ZTSbqOpQtT7mfC2fOw6pq36vbC+k39I/k4GN+5S2IuAs+
-        BK9GY0/V3lY2ioUSs/atHwofecN3AQAA
+    body: {string: "{\"Items\":[{\"title\":\"\u9ED2\u5B50\u306E\u30D0\u30B9\u30B1
+        TV\u30A2\u30CB\u30E1\u30A4\u30E9\u30B9\u30C8\u96C6 COLORFUL MEMORIES\",\"author\":\"\u85E4\u5DFB
+        \u5FE0\u4FCA\"},{\"title\":\"\u767B\u5742\u5E83\u81E3AURA\",\"author\":\"Exile\u7814\u7A76\u4F1A\"},{\"title\":\"\u50D5\u305F\u3061\u306E\u597D\u304D\u306A\u30AC\u30F3\u30C0\u30E0\u3000Reboot\",\"author\":\"\"}]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['309']
+      Content-Length: ['234']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:43 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:15 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

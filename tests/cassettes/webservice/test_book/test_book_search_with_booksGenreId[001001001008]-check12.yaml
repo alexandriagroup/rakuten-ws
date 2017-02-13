@@ -2,40 +2,25 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&booksGenreId=001001001008&formatVersion=2&hits=3
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA81W628TRxD/V6z7bPn2zo84kVCLqFpFlao+PyGE1s4m3nIP626dhiKk+DYCk4rI
-        Uh8BlRLSvCBVCGlAgOSQP2b8IJ/4Fzq7Nk6cICtIOahkWzuzs7+ZnZ3feK4ZRb/iCWPMHiV20ijT
-        KWaMWUljkgeh0CuHqkU6aZS4CPWiSIOAs8AYI90DF7oIFkF5XDAXrS5eMwQXDmIZnWqjc2MHqo9b
-        t3/t1GXr4Z1Exkh2t7+kHkUTiJ6DXIFoG+RtkHMgFyDaBykh2gK5BtE6yAcQvQS5jAfDSuH7HvQR
-        qYekNAyDC7+iLtPILxSy3AW5CBH+LmnYbUQbMD08XvQ9wTx1UyXRiij5eFOjfe+vg5sLCYjmoFqH
-        6FZ/r3+FvyF6piKXqxA9AfkILcqVgsPDEgt60Rz8eeP1Lzud1VfKN/+5G+BhUKjlYcFD7ehIPkPy
-        +TwZGc3llBqzeoGWBfe93iWpw8LPqFAQNrFyrZdPLdK+VyOZ9uJa78DXAS/ifmYEnwzDED0ZH2mC
-        h/rVv9UARxSHJgrgh8BB+JIQ5THTLPj+lTAV0CsVTE+q6Kd+LJtBwbQyGCjJZk2VkMlJ7nDE7B5U
-        YbrUccZdrJEBLFGquAWPcifF1d4x1E/JZXVMezSLtMA9JkyVCHMgLWg69cllNnMul5nJqYpy2QSv
-        uHF7s2wyg19DESOYYnG7swmZwa8qzBIP6FXf5f3s0mn0ghAOF1dRY6mK80OBTj936JR+Roe7+JIT
-        fTlg05z91CNsXz4/zQJNfIOklCv91l8wL2DjE0pJrLefvHE9eUjt1upGe2uldXO9tbbberXcbOy9
-        frTzplGz3jRunaD4PkSrmugbSGgk0ibIGjL67Sp6DLIOch5NzpDkMDv73TenIP5RiMQxe5QfKqhu
-        M5KN4/tDmsZyvfniDlR/h+rmyYaBcJvq8tE/Sd065s+kY2RH09YpOwaxP0rHSGdHslaGxN0xVCLM
-        gbTE2TGGeIujYwxx97/uGAcrS+3aEg4DEO0hlUDeT9j2u6aBDc2tfzVLFvrGH+3vv7lXbza2E839
-        efPg7lzntyeJzlq9/cfiSVY/091iS18Cu8WuqQYaNdnMglzXo0ztTHiez+sSPtVkoHietk7yPG3H
-        OhlkM9m0FTvPVSLMgbTEyfMh3uLg+RB378Hz7Ifh+aWk0d3yJv3Apd2avHjp+n+C+/qAZAwAAA==
+    body: {string: "{\"count\":2919,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u30D5\u30A1\u30A4\u30A2\u30D1\u30F3\u30C1
+        4\",\"titleKana\":\"\u30D5\u30A1\u30A4\u30A2\u30D1\u30F3\u30C1\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u85E4\u672C
+        \u30BF\u30C4\u30AD\",\"authorKana\":\"\u30D5\u30B8\u30E2\u30C8\u30BF\u30C4\u30AD\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088810140\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7403\u670803\u65E5\",\"itemPrice\":432,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14662572/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"\u65B0\u30C6\u30CB\u30B9\u306E\u738B\u5B50\u69D8
+        20\",\"titleKana\":\"\u30B7\u30F3\u30C6\u30CB\u30B9\u30CE\u30AA\u30A6\u30B8\u30B5\u30DE\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u8A31\u6590
+        \u525B\",\"authorKana\":\"\u30B3\u30CE\u30DF\u30BF\u30B1\u30B7\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088810287\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7403\u670803\u65E5\",\"itemPrice\":473,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14662565/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"\u7D42\u672B\u306E\u30CF\u30FC\u30EC\u30E0
+        2\",\"titleKana\":\"\u30B7\u30E5\u30A6\u30DE\u30C4\u30CE\u30CF\u30FC\u30EC\u30E0\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u5BB5\u91CE
+        \u30B3\u30BF\u30ED\u30FC/LINK\",\"authorKana\":\"\u30B7\u30E7\u30A6\u30CE\u30B3\u30BF\u30ED\u30FC/\u30EA\u30F3\u30AF\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088808420\",\"itemCaption\":\"\",\"salesDate\":\"2016\u5E7412\u670831\u65E5\",\"itemPrice\":626,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14545306/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8420/9784088808420.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8420/9784088808420.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8420/9784088808420.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['910']
+      Content-Length: ['3016']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:41 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:12 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

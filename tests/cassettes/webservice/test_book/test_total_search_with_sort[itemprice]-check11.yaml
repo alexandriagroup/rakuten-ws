@@ -2,44 +2,19 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86&sort=%2BitemPrice
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA71VW08bRxT+L/tseXd9N1LVVqla8VJVlfoURdHaXvAk64t214QoirQzyzWGOJgE
-        l5I0aiAEcLiIpE0BY/5LD7u2n/gLPTM2NJSSBFWOvLuayznfN/PNfMf3pHShlLelATWmBqSiNqxj
-        MyANEdOyRcvQeCMckLLEtkQjrZkm0U1pQOkmXOsCRCMBadDWcxh0/Z5kE9tAKAncaXDfgHsAbBPc
-        JXAb4E5IAUkr2dmCKQKeA9sFt85j3EkReSC6j0TiBLA9Mfg7sBfgLgrAdVlMrwNbExHLIuKFQJ8C
-        d5s32DZmcibTJpb9vZbjy8F+sZQyiJXVzd4QsBURvidSkboG7utuqqGldKObRaxUHlvJeCIST6gx
-        RUmEYjh8S8t357OambmjmT2OgtXLQj2uaUWbFHhYZ+2ht1zv0PnW9Hp741egW+2NTaBHHfoQ+PPK
-        Wx3zcc+03ll8CXQZ6PN2c9ffmcNIsbtNrgg7PFWzIvbrtB16vL8PdBscimhAfwFaBjYNrHrceNbe
-        eI3pXWqga77zDOhYu9ngkQ5t1daBLnVWeQzHZ+/AfdDTna55zfm2M86l5yMU3FdCoDmxDDyPqtd4
-        AnQW6AqwGUTztv7waxVgY16lLJa05R25nfFZjAQ2BRSp695EtbPIp/zaOO9O7gMr/+WsgsPakxv+
-        WKW9+TMiYHpnYZ6HTT3qPHkHdAPoOkdAItpErTBXDJa7QoEz4zllcGa5qqsLLTxOVj3Vud5aWgL2
-        4GzXGMzlokiEiq3ylKO544Nlb6fC5eIga8AYCgWswhlZ+aQxd9KoHf+50Hrr8H2xuePDp0jhN+qt
-        xwfezAKuHw/c0gzd+kaz+T0IKUrS23urRPynU7278INJ0jgVTcbwcuGt7PXRSBliCSP+KHLfG/gn
-        hAP8ZPL7mLXt4oAspwqF21bQ1G6XbD0fTBeCt4qymZJjSigUjSVkfveHhohBELKbxxeY0wxjMIe2
-        PQdlZ0u5VF4jRpDwuX+BfqXc5GmCUE5rKZLXbZk7QD7nBwwd/vKmPvpFLDIaiyBZTs+QUq7fbGpI
-        GcVX+NUc1vtNh8c6ii/SpbPE1O4WcuRMXW0EWRDCIPZdHOEaFAuWjaTfGtqwOEWD5PAgM2d9Ux8h
-        +p1eDU2e9r8e0U1Ri6VwMJ5AGHHW3+l5Ux/M4KiiqIqaxK982opL9wMfKbsnjSn1pDH9fvVt/zbj
-        Nauyv/um9XinszTmHdU+oWT6Czv+4VZrpXlpjVSVeFzFX/yqNfKCh9Qw91ASPYSf2svPaSQ1FFHj
-        oUSs307iOsnnVOunkz7A1g8nfYDuCk5Sr+ok5aKTlKDy30biTxiL5ic5KPRZHRSJKv/fQRHuoOiF
-        f6GYGu2reeKhSDgZ7rt5UCL5nGB9Nc/lbH0xz+V0/TSPetE8kY+b50ZA6k7lhwpmTutex+s37v8N
-        2fEdrmMMAAA=
+    body: {string: "{\"count\":155,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":52,\"Items\":[{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\",\"author\":\"\u30DF\u30B2\u30EB\u30FB\u30C7\u30FB\u30BB\u30EB\u30D0\u30F3\u30C6\u30B9\u30FB\u30B5\u30A2\u30D9\u30C9\u30E9/\u30D0\u30E9\u30A8\u30C6\u30A3\u30FB\u30A2\u30FC\u30C8\u30EF\u30FC\u30AF\u30B9\",\"artistName\":\"\",\"publisherName\":\"\u30A4\u30FC\u30B9\u30C8\u30FB\u30D7\u30EC\u30B9\",\"label\":\"\",\"isbn\":\"9784781600826\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\u9A0E\u58EB\u9053\u7269\u8A9E\u306E\u8AAD\u307F\u904E\u304E\u3067\u5984\u60F3\u306B\u9665\u3063\u305F\u8FB2\u6C11\u306E\u30A2\u30ED\u30F3\u30BD\u30FB\u30AD\u30CF\u30FC\u30C0\u8001\u4EBA\u306F\u3001\u307F\u305A\u304B\u3089\u3092\u4F1D\u8AAC\u306E\u9A0E\u58EB\u3068\u601D\u3044\u8FBC\u307F\u3001\u75E9\u305B\u99AC\u306E\u30ED\u30B7\u30CA\u30F3\u30C6\u3068\u5F93\u8005\u30B5\u30F3\u30C1\u30E7\u30FB\u30D1\u30F3\u30B5\u3092\u5F15\u304D\u3064\u308C\u3001\u5BB6\u65CF\u3084\u53CB\u4EBA\u306E\u5FC3\u914D\u3092\u3088\u305D\u306B\u5192\u967A\u306E\u65C5\u306B\u51FA\u308B\u2026\u3002\u81EA\u610F\u8B58\u3084\u4EBA\u9593\u306E\u6210\u9577\u306A\u3069\u305D\u308C\u307E\u3067\u306B\u306A\u304B\u3063\u305F\u300C\u500B\u300D\u306E\u8996\u70B9\u3092\u7269\u8A9E\u306B\u76DB\u308A\u8FBC\u307F\u3001\u300C\u306F\u3058\u3081\u3066\u306E\u8FD1\u4EE3\u5C0F\u8AAC\u300D\u3068\u3082\u3044\u308F\u308C\u308B\uFF11\uFF17\u4E16\u7D00\u306E\u5091\u4F5C\u3092\u6F2B\u753B\u5316\u3002\",\"salesDate\":\"2009\u5E7404\u6708\",\"itemPrice\":596,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/6022568/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0826/9784781600826.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0826/9784781600826.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0826/9784781600826.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"4\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":9,\"reviewAverage\":\"3.78\",\"booksGenreId\":\"001019001/001019007\"},{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF081\uFF09\",\"author\":\"\u884C\u5F92/\u6CB3\u7530\u96C4\u5FD7\",\"artistName\":\"\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"label\":\"\",\"isbn\":\"9784107717177\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2013\u5E7409\u670809\u65E5\",\"itemPrice\":596,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/12417286/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001001003022\"},{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF082\uFF09\",\"author\":\"\u884C\u5F92/\u6CB3\u7530\u96C4\u5FD7\",\"artistName\":\"\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"label\":\"\",\"isbn\":\"9784107717450\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2014\u5E7405\u6708\",\"itemPrice\":615,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/12724393/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"4\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"4.0\",\"booksGenreId\":\"001001003022\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['1091']
+      Content-Length: ['3171']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:14 GMT']
+      Date: ['Mon, 13 Feb 2017 14:36:32 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

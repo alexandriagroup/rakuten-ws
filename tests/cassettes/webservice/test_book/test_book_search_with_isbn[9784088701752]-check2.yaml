@@ -2,35 +2,21 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&isbn=9784088701752
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA7VUUWsTQRD+K8c+h9xdTJM0IBrSKEFMS1F8KKXsJZvc2r27sLeXpJZCvBWpCD4V
-        fFBQsIgI0oqCLQ39M2tb+9S/4OzdJW31uXALu998883szOxtonYQ+QJV7Rzq4x5JNl3KwxRiONu4
-        VITJpo05p4SjqpU61GfuTUE84KxsIkEFAyW02Gqo8Xip2ag3LibbJ7+OSvbF5BXKpYQH2MdAUnJP
-        yR+GkjtKTlR8COYwch5lEldOGV8jBFIIW9jTDBUfKPkJJJR8q+SRimHzQUmp4r1MbcaeRrziYfzP
-        bwe+IL6+LlpefFhr1RvGQu1Jy+gG3BAuMXwyNIYBZx3g4ki4ARQDnewfn+3sn3588ftgfC7fzEyz
-        kF+VHOdU/EXFu/qTz5X8puLPQOxHDqOhS3h2ofN3L/+8/n62e6xzp8/SO14mCSgNHR/Q+XKlaFUq
-        ZcsuzxU0DA2o476ggZ/VCTMSLmChJQqWbZ8c/rQKp++3M+4Sp20wFW8VoNE0FNkZGtuhYTIWy4nv
-        FeCSogUecwbKrhD9qmk6QbAe5jlej6B6+XaQf9o3uWOW5q1y0Z4zdUW6XcooSKZ+OkEPM9b0YIyu
-        SQk38hwfU5an2vaP6F1rTbslAc02dqhPhKlLYF4rCFB7d9bI6HapOCoVIZhHOjTybjqaXbBGsJB+
-        O7xHbjpcwbJGsPTYupTjjcCjs+riAUQBCUbFBiC2nrUgFBD0HsO9pIuMetDIzuzMyYCS4fRNl+bt
-        KVQbEJ78HlAxX9FKSbvvE5+TZgdQy7KnXwVtreZQavLh0Xg4nciV1a2/fa0tHG4EAAA=
+    body: {string: "{\"count\":1,\"page\":1,\"first\":1,\"last\":1,\"hits\":1,\"carrier\":0,\"pageCount\":1,\"Items\":[{\"title\":\"ONE\u3000PIECE\uFF08\u5DFB61\uFF09\",\"titleKana\":\"\u30EF\u30F3
+        \u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30FB\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\u30B8\u30E3\u30F3\u30D7
+        \u30B3\u30DF\u30C3\u30AF\u30B9\",\"contents\":\"ROMANCE DAWN for the new world\",\"author\":\"\u5C3E\u7530\u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0,\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088701752\",\"itemCaption\":\"\",\"salesDate\":\"2011\u5E7402\u6708\",\"itemPrice\":432,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/6907415/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1692,\"reviewAverage\":\"4.81\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['620']
+      Content-Length: ['1134']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:25 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:08 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

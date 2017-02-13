@@ -2,39 +2,22 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&sort=%2BreleaseDate
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA+2WW2sTQRSA/0rZ55DMbrZNUhAVRSmCiOhTkTJJJ8noXsLupFZF6O7Qmmq9gHcq
-        4p3Yiwpaak3BH3Pc1D75Fzyzm977pK6+CBmYOXsuM+ecj5MrWsVtOkIbLBWNAtEzWoPWmDaImyr3
-        fBHvLKo2+YxW58KPNxXqeZx52iBJDI4kPnSC5yHBbNQavqIJLiz0pXU/fFq7MxUtvokmX68/mOje
-        W/neDtemW1omUTlBHYpqEK5A+ArkHIQLEL7vA3kD5GsI34B8AfIjavvN8pmez22nnrmSMLyVf5La
-        bPd5S6fiOoI56h3qRJui7nrqjk8W1h/c/dYJNoUbt5KzGBzk0wwuCJcgXEaVRrNscb/OvF6w7st3
-        0czD6NqX5Fk+v6yk0c1H35/PoGsUcb/soKhUKJoDRsEs6XldV2LM1hHaENx1enemFvOPUqHs9RIh
-        0cqnntopj1dUaUqmiTXhvugJMOej3I/LeDq22ybYUlEeznoWeq0L0RjM5cque8HPevRCE/ORrbjZ
-        842cV85hDU2jP6fSUK1yi6PHxEzdzaaWNWRjwXd4EvWmXXYot7Jcfdvl8xAZUWZxvFyFlrnDRM5x
-        Y9URomdrvHpwhI0fGDDHB0wMYrNR3rTTiqIbZByXprraq7G0whiEjONS/VbnHr3k2nwzi3QMvaOp
-        xcUlVWTVTq4v0MMxi9YS4riN9RpNzlg8j41xdrFH2eb58BjzYlo1klWh4ooeZ47HhkaVkOgEn4pt
-        djWzBSMENyCchuAZBO8gaEHQgfAuhB2QEmTrx2ormmwXo+XOj9XpPXzOg3wLcgLJvNUHYTtBo2/T
-        OF1Cd4O5D4UQhOp5wWJ39nO39XUbiJPt9dkpkJ3o9gx+24mj0Y+c6SRuvl/AUTfyRoo85ouFvJlP
-        m0eVg9xGIlCrlhaS+wdKg8r9I/0OmMYfBJPkCSnsAnN+A8aJuIsfQvABgjncJFTqBLHcRuoePtW8
-        TIiUzxSs4TLu7oC8nsysf8ymvA9yAeQqyMcg59dftbfwXFta2jMk+wv4d0Qvloq/RGWpfyDNIYlQ
-        6mbx/5D8a0PSTJtF/OGcPJfRkk9O1fVsmjTc8LmrPwFvQrA1JgsAAA==
+    body: {string: "{\"count\":983132,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u6C34\u7406\u5B66\u5165\u9580\u6539\u8A02\u7248\",\"titleKana\":\"\u30B9\u30A4\u30EA\u30AC\u30AF
+        \u30CB\u30E5\u30A6\u30E2\u30F3\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u672C\u9593\u4EC1\",\"authorKana\":\"\u30DB\u30F3\u30DE,\u30DE\u30B5\u30B7\",\"publisherName\":\"\u68EE\u5317\u51FA\u7248\",\"size\":\"\u5358\u884C\u672C\",\"isbn\":\"9784627491311\",\"itemCaption\":\"\",\"salesDate\":\"1900\u5E74\",\"itemPrice\":1944,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/100425/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001012011\"},{\"title\":\"\u306B\u307B\u3093\u3080\u304B\u3057\u3070\u306A\u3057\uFF08\u516810\u5DFB\u30BB\u30C3\u30C8\uFF09\",\"titleKana\":\"\u30CB\u30DB\u30F3
+        \u30E0\u30AB\u30B7 \u30D0\u30CA\u30B7\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\",\"authorKana\":\"\",\"publisherName\":\"\u30D5\u30EC\u30FC\u30D9\u30EB\u9928\",\"size\":\"\u7D75\u672C\",\"isbn\":\"9784577011898\",\"itemCaption\":\"\",\"salesDate\":\"1900\u5E74\",\"itemPrice\":9564,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/387148/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001003003001\"},{\"title\":\"\u30CA\u30EB\u30CB\u30A2\u56FD\u3082\u306E\u304C\u305F\u308A\uFF08\u51687\u5DFB\uFF09\",\"titleKana\":\"\u30CA\u30EB\u30CB\u30A2\u30B3\u30AF
+        \u30E2\u30CE\u30AC\u30BF\u30EA\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"C\uFF0ES\uFF0E\u30EB\u30A4\u30B9\",\"authorKana\":\"\u30EB\u30A4\u30B9,C.S.\",\"publisherName\":\"\u5CA9\u6CE2\u66F8\u5E97\",\"size\":\"\u5168\u96C6\u30FB\u53CC\u66F8\",\"isbn\":\"9784002007311\",\"itemCaption\":\"\",\"salesDate\":\"1900\u5E74\",\"itemPrice\":13068,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/1539506/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7311/9784002007311.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7311/9784002007311.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7311/9784002007311.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001008022008\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['838']
+      Content-Length: ['2902']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:31 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:19 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

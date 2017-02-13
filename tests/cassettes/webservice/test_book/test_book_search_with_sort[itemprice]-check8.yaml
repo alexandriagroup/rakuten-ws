@@ -2,42 +2,26 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&sort=%2BitemPrice
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA+2WW2/TSBSA/0rl5ygZu25sV1rtIhCrCgmtdpcnhKpJ6iSz+BLZTimLKtU2LZcW
-        Um6iUFYtaklSKLRaQNAt0B8zcdL+C86MQ2guW7YPWe3DVkoyx3NunjnfOb0iZO2S5QmjmiopSEwI
-        RZzXhVFY5IjjenxlYLYYTggF4rl8kcWOQ3RHGEWxwcnYh4hAHvN0E7TOXxE84hngSzjzC/W3aFCj
-        wQ4NH9Nwg4avaXg9Wv5I/ffUfxXNPqPBzai8Rv1VIRGbncEWBlMagOYHGnyE7yEabg31umEqQbwR
-        3oafdRo+p8E2DX0wmAF/binzayuTPtZ+9WDlHqTSeDi7/3ThkHo7g24TcHsN4rxgUis2RAyrXKgw
-        DzocjnsWmzxk+AfPib9xeaGx/L5D40uUQ1pD7HWDCg3egVNQztqWp1vs5AWQcMkr2HDyQvP+dv2v
-        B/Wd2frOfPt5O+k9cJeg4V0avKUh+HoJKsVSxiBuQXdaqTUePms82exzMS8r9Q+PWZrkd6YXzdYO
-        ludouNvOn7gZCzY0RZVV+FMQUkfYY7j6k7joEduKk3WxobunsMe8iJqmRTtvRNR4cr2l+5NDsrAl
-        sRojrtcSoYYmiMvL8mdueujBVxVmf84xwHHB84qjqVTGti+6SQdfLMFpJbN28rdiysmkRDGtpJGW
-        YkeUyxGDgMvYjuVnYsMYM6GCO1x5hZKZsTAxkoTtdTn9AY0zMx4wlcUZYuleyrK56jgSk3mS+35c
-        n/ouLU+lZQhi6hOkZA4qiiihKfgIDFMnrw8qjITQFHxYORaIgy/bJmmfIp4E72BqEO8yu2hWarbr
-        gYfTBs7z2zKICRc20ZYdfZLol1ptQ/0in5jUHd5+BDkpSuCG3+mPuuXoYxPwFCERiSPCdOJrb6H+
-        HvXnqb9IgxvUn6P+SrP8qb67Vt99FS3e6u4m4QrjljWHDU7YHrD2Jy/6GYZfsEnDm50do7chdAPe
-        D+e/p7ab1D5YRusbzcW5xoNHB/69qDzfXP90CMVbS9ClgNouCJEyjBDStG9DqCCAEMkAIRKhAXSS
-        ODxQEpGoamnpfxL/NRLl45Io9ZI4nET/CMRouwxzo7H6FL6be3cbC9ei7dv7Ff9gdWm/urb/fJPO
-        zEBZN6t3mu9qPVMeRl2NEwkEXo0H6RATgi2+V4llWN3gq1iZTd1avPOC47sLxnwYs+G8BFz/B1iu
-        xlM2Wn7dGv1Hgiwr8E+YJn8bZKgAlYGs9kzTdHqADI+osqiMKINmmJ1AquM8QDU/KJaPiDYIpo8I
-        dwy2peOyLfYds2mxP91IRfDeSBKmLySEeMvK2Y6J43I8f2H6MxXCh246DAAA
+    body: {string: "{\"count\":983132,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u307F\u304B\u3050\u3089\u3046\u305F\u73FE\u4EE3\u4EEE\u540D\",\"titleKana\":\"\u30DF\u30AB\u30B0\u30E9\u30A6\u30BF
+        \u30B2\u30F3\u30C0\u30A4\u30AC\u30CA\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\",\"authorKana\":\"\",\"publisherName\":\"\u5929\u7406\u6559\u9053\u53CB\u793E\",\"size\":\"\u5358\u884C\u672C\",\"isbn\":\"9784807300099\",\"itemCaption\":\"\",\"salesDate\":\"1970\u5E7404\u670801\u65E5\",\"itemPrice\":31,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/1018962/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"4\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":2,\"reviewAverage\":\"3.0\",\"booksGenreId\":\"001015\"},{\"title\":\"\u7DCF\u9078\u6319\u52DD\u5229\u3078\u6D3B\u52D5\u306E\u98DB\u8E8D\u3092\",\"titleKana\":\"\u30BD\u30A6\u30BB\u30F3\u30AD\u30E7
+        \u30B7\u30E7\u30A6\u30EA \u30A8 \u30AB\u30C4\u30C9\u30A6 \u30CE \u30D2\u30E4\u30AF
+        \u30AA\",\"subTitle\":\"\u5E79\u90E8\u4F1A\u3078\u306E\u5FD7\u4F4D\u59D4\u54E1\u9577\u306E\u5831\u544A\u3068\u307E\u3068\u3081\",\"subTitleKana\":\"\u30AB\u30F3\u30D6\u30AB\u30A4
+        \u30A8\u30CE \u30B7\u30A4 \u30A4\u30A4\u30F3\u30C1\u30E7\u30A6 \u30CE \u30DB\u30A6\u30B3\u30AF
+        \u30C8 \u30DE\u30C8\u30E1\",\"seriesName\":\"\u6587\u732E\u30D1\u30F3\u30D5\",\"seriesNameKana\":\"\u30D6\u30F3\u30B1\u30F3
+        \u30D1\u30F3\u30D5\",\"contents\":\"\",\"author\":\"\",\"authorKana\":\"\",\"publisherName\":\"\u65E5\u672C\u5171\u7523\u515A\u4E2D\u592E\u59D4\u54E1\u4F1A\u51FA\u7248\u5C40\",\"size\":\"\",\"isbn\":\"9784530015925\",\"itemCaption\":\"\",\"salesDate\":\"2009\u5E7403\u6708\",\"itemPrice\":102,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/6053310/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":5,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001015\"},{\"title\":\"\u6C38\u9060\u306E\u7D4C\u5178\u300C\u5FA1\u66F8\u300D\u306B\u5B66\u3076\uFF081\uFF09\",\"titleKana\":\"\u30A8\u30A4\u30A8\u30F3
+        \u30CE \u30AD\u30E8\u30A6\u30C6\u30F3 \u30B4\u30B7\u30E8 \u30CB \u30DE\u30CA\u30D6\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\",\"authorKana\":\"\",\"publisherName\":\"\u8056\u6559\u65B0\u805E\u793E\",\"size\":\"\u5358\u884C\u672C\",\"isbn\":\"9784412007864\",\"itemCaption\":\"\",\"salesDate\":\"1996\u5E7407\u670803\u65E5\",\"itemPrice\":104,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/1576996/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001008004003\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['1014']
+      Content-Length: ['3074']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:35 GMT']
+      Date: ['Mon, 13 Feb 2017 14:36:38 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

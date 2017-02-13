@@ -2,37 +2,27 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86&sort=-itemPrice
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA+2V32sTQRDH/5Wwz0du95JcmoCoVJT6IFLQl1LK5rLJbXs/wt5em1IKIUulggX7
-        JGjRl0aspU8KtbbqH7P2h/+Fs3ehasUianzQBhJmZ2e+M9nZD7uEvDiNJKoTl1ioQ9sMTAu1uEhk
-        ZgXUGCUL+VwmmeFRITgTqI7zhPFcoFK20IRkIQRNLSHJZQBSSPcenhy8OVwZHA3enexs6N66Vk91
-        f0+rNatwMw1YUi/o/kutHmu1pXsPtLqv1Sut9nV/R6snWh1odU/31iBKrWerVSPT39dKgY0sRFPp
-        x8KUOiNs9oTkibxFQ9MKrDtpI+CJz8TQpfvbWm3niceb75H5uw0W5ME8aURgOS42H2esVnIwuGdp
-        lO/7VDQXqBhKx8kwC45gnHYkj4dhCYVerlFp4kitig/3XmNytLEKP48Gw4Tbgnvm4MuuU3KgCWh6
-        6IIzbvIkm9FkpvGV40uI0bgjTN++lJ26bTfieC4pCjqXShYVvbg427FFwyZl4lZr1ZptzqbV4gEH
-        zTzRdBrSIJgIYaTfaEk/DRsR5UGRm70zqlfwjEnLKtoebfCISTuKs9AZTIpt3ro8w7qX3HLXLUOR
-        kDV5Go6qCnFwl2RjCqhos1GVcTDuwhfKeD4XdDEO+ekp0nlQh9SAy0XwuObaxYkEhesBbaN6Nt8Q
-        JtbM1zA+weY5WxhydLq+Os9ExiPCRVMqm+kNFgk20TROTDAZw7iCcRktW+ci19/VagC4GMb6z+Gy
-        W4VJ7pkLXC98fLv56dmHk63z6LPv0rTty+PdFz/D4Y+r/VEkCXZLFZf8JpIOJq5BsgJIEuc7JN0S
-        ro6YyGoVRnhB5P9F5C89gn/3tSOl0b52FccZNVrmsRu7QOtfQ2vaQvlW1IpFSPPbNzW9/BmN48IN
-        zQoAAA==
+    body: {string: "{\"count\":155,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":52,\"Items\":[{\"title\":\"\u3010\u8F38\u5165\u697D\u8B5C\u3011\u30DE\u30B9\u30CD,
+        Jules: \u30AA\u30DA\u30E9\u300C\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u300D:
+        \u30D1\u30FC\u30C8\u8B5C\u30BB\u30C3\u30C8\",\"author\":\"\u30DE\u30B9\u30CD,
+        Jules\",\"artistName\":\"\",\"publisherName\":\"\u30AB\u30EB\u30DE\u30B9\u793E\",\"label\":\"\",\"isbn\":\"2600000289320\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"1970\u5E7401\u670801\u65E5\",\"itemPrice\":146232,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14167979/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"6\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001018005004\"},{\"title\":\"\u3010\u8F38\u5165\u697D\u8B5C\u3011\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9,
+        Richard: \u4EA4\u97FF\u8A69\u300C\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u300D/Vaught\u7DE8:
+        \u30D1\u30FC\u30C8\u8B5C\u30BB\u30C3\u30C8\",\"author\":\"\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9,
+        Richard\",\"artistName\":\"\",\"publisherName\":\"\u30AB\u30EB\u30DE\u30B9\u793E\",\"label\":\"\",\"isbn\":\"2600001063561\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2016\u5E7405\u670812\u65E5\",\"itemPrice\":63072,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14177500/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"6\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001018005004\"},{\"title\":\"\u3010\u8F38\u5165\u697D\u8B5C\u3011\u30DE\u30B9\u30CD,
+        Jules: \u30AA\u30DA\u30E9\u300C\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u300D\",\"author\":\"\u30DE\u30B9\u30CD,
+        Jules\",\"artistName\":\"\",\"publisherName\":\"\u30AB\u30EB\u30DE\u30B9\u793E\",\"label\":\"\",\"isbn\":\"2600000289313\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"1970\u5E7401\u670801\u65E5\",\"itemPrice\":52272,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14167978/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"6\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001018005004\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['688']
+      Content-Length: ['2765']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:04:15 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:16 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

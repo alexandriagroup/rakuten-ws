@@ -87,7 +87,8 @@ def test_params_order(httpretty):
       </args>
     </item>
   </itemDeleteRequest>
-</request>"""
+</request>
+"""
     assert xml_post == expected_body
 
     # check with valid+invalid params
@@ -105,7 +106,8 @@ def test_params_order(httpretty):
       </args>
     </item>
   </itemDeleteRequest>
-</request>"""
+</request>
+"""
     assert xml_post == expected_body
 
 
@@ -161,7 +163,8 @@ def test_rest_client_post_request():
       <genreId>32</genreId>
     </item>
   </orderDeleteRequest>
-</request>"""
+</request>
+"""
     assert prepped_request.body == expected_body
 
 
@@ -186,7 +189,8 @@ def test_rest_client_get_response(httpretty):
             <itemPrice>1000</itemPrice>
         </item>
     </itemGetResult>
-</result>"""
+</result>
+"""
     ws = SimpleWebService(application_id="AAAAA", license_key="BBBBB", secret_service="CCCCC")
     httpretty.register_uri(httpretty.GET, 'https://api.rms.rakuten.co.jp/es/1.0/item/get',
                            body=get_xml_response,

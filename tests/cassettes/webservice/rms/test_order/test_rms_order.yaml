@@ -1,31 +1,29 @@
 interactions:
 - request:
-    body: "<?xml version='1.0' encoding='utf-8'?>\n<soap-env:Envelope xmlns:soap-env=\"\
-      http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap-env:Body>\n    <ns0:getRequestId\
-      \ xmlns:ns0=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\">\n \
-      \     <arg0>\n        <authKey>XXXXXX</authKey>\n        <shopUrl>XXXXXX</shopUrl>\n\
-      \        <userName>XXXXXX</userName>\n      </arg0>\n    </ns0:getRequestId>\n\
-      \  </soap-env:Body>\n</soap-env:Envelope>\n"
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<soap-env:Envelope xmlns:soap-env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n
+      \ <soap-env:Body>\n    <ns0:getRequestId xmlns:ns0=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\">\n
+      \     <arg0>\n        <authKey>XXXXXX</authKey>\n        <shopUrl>XXXXXX</shopUrl>\n
+      \       <userName>XXXXXX</userName>\n      </arg0>\n    </ns0:getRequestId>\n
+      \ </soap-env:Body>\n</soap-env:Envelope>\n"
     headers:
       Content-Length: ['486']
       Content-Type: [text/xml; charset=utf-8]
       SOAPAction: ['""']
-      User-Agent: [Zeep/0.23.0 (www.python-zeep.org)]
+      User-Agent: [Zeep/0.25.0 (www.python-zeep.org)]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/order/ws
   response:
-    body: {string: "<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\"\
-        ><S:Body><ns2:getRequestIdResponse xmlns:ns2=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\"\
-        ><return><errorCode>N00-000</errorCode><message>\u6B63\u5E38\u7D42\u4E86</message><requestId>199136805</requestId></return></ns2:getRequestIdResponse></S:Body></S:Envelope>"}
+    body: {string: "<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\"><S:Body><ns2:getRequestIdResponse
+        xmlns:ns2=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\"><return><errorCode>N00-000</errorCode><message>\u6B63\u5E38\u7D42\u4E86</message><requestId>226536064</requestId></return></ns2:getRequestIdResponse></S:Body></S:Envelope>"}
     headers:
       Connection: [close]
       Content-Length: ['363']
       Content-Type: [text/xml;charset="utf-8"]
-      Date: ['Mon, 26 Dec 2016 07:45:37 GMT']
+      Date: ['Mon, 13 Feb 2017 14:39:22 GMT']
       Server: [nginx]
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
-      requestId: [57cba4b0-3ebb-416e-be34-8ee1ab2ce42f]
-      timeStamp: ['2016-12-26T07:45:36']
+      requestId: [8b5ca5c2-61b8-4ac0-b994-35dda0faedbf]
+      timeStamp: ['2017-02-13T14:39:22']
     status: {code: 200, message: OK}
 version: 1

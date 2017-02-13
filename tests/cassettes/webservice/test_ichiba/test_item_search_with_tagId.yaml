@@ -2,26 +2,19 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?applicationId=XXXXXX&formatVersion=2&keyword=Naruto&tagId=1000943
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA6tWSs4vzStRsjLQUSpITE9VsjLUUUrLLCqGCOUkQhkZmSXFYEZyYlFRZmoRXIMz
-        XLtnSWouUE10rI6Se2peUapnXlp+UW5iSWZ+HkQ0JDEdTawWAFBfpIt/AAAA
+    body: {string: '{"count":0,"page":1,"first":0,"last":0,"hits":0,"carrier":0,"pageCount":0,"Items":[],"GenreInformation":[],"TagInformation":[]}'}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['102']
+      Content-Length: ['127']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Fri, 23 Dec 2016 09:17:40 GMT']
+      Date: ['Mon, 13 Feb 2017 14:38:44 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

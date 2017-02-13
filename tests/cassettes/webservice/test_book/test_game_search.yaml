@@ -2,45 +2,36 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksGame/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&title=mario
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA8VWe0/bVhT/KpH/mDYpED/yIEzTxkCb2ABNQ900lapyEgO3OHbkmEdVVcq1gUIf
-        ohQhtBYGFDpeK1sHGgUCfJcdHJK/+Ao795pHgKXt1kWT4sj33HN+5+XfPfeOkDR7DVuoj0SDQkbt
-        0oR6KSh0Eitr8zddZS9KUOgmdpa/JFXLIpol1Iu+QaNvL8WDQrOtpVHp+h3BJraOUIKaJiRhBsB9
-        CU4eXBecg+P8CDjb4OJynP//BO4qOPjbYi8ocXaO86NC0Af5WjXU9wXqVq1Uv2qxgL4nJHBNYHkl
-        NB3Xh7u73uKKN+eg7JZqoCQcF2UlJkYUJSKFUZpWezSr0Uwx67bvWmoaaxo+b/gKNwhm26hmbGIy
-        sw6jw/ggaWZufxxoI4atGSkTdbKqrmWbVJsZy6IU9bY3JbEwPSKLhakXJxjfWCSJ+/GYjGGRrH2y
-        xvKmSJZ351sOUCY4V2EA1yyWSbdtZ+pDoYRp9mRrLbWnF2OoTZq1tzIhKxGSwmFJkZRYCJ2qnZ1E
-        J4jpG7Iw06quN6exmxew7O7edMJQiV5L2N4l1M/Em8yMewwl1QQxNDvEiha6UEJU7fr0pjbwSTQ8
-        EOUF1VKkN11tb5IsDuDDW211adV2J4viAD6sun2IiQY6sW+jNwlFGTNro4svdLWLN00naexb6mxt
-        aX1E6z8hkny6bujTLE5IIVLLgHlnv9QMS2tOoVAUoxFJEkVZuBs8J9wZC5AqK+A+5jTY4PRAtqz5
-        kkCnaQXatH5wH4CLm8P8fxR3lKb2lpZL1PuPIMtIeEqQAO6VcbG1/YdzFkZiklInhpEVvKrlLGxt
-        r2GgmHprjXyFiJCbPiM1C9hZBGeXReNse5PD3gQNoAbkcufnhYvba0yPJfaaJ+En+RrcJbQ8zlP8
-        dRiV0gu0tBSmfzncmwC6BnQT6ALQWXDugzsJzgI7rLBQdApyFBw8vnbAGSy8egrOQ6APwBk9PJgp
-        vtxiCnQf6I+Qc9hZArnHfrhHo9ve/ibkxjuMP6fGKkUNzhNvcamIgdG10tCjo711DjjLPLp+DJRp
-        UjS8B84f3HCD+0LU4vxyaeY50F+vdHiYZ4DF+827P+dtvQA6yQLHVBg8JrqMiRZ2xzEPzKa4sVoY
-        nD1FfXu9nCfvXBEW5cLQ0UzuJC+2s+8NLQP9Geh6YeLR4d400IfFecQYKbPjUwI/0nlMrbAyW3T3
-        eB9+59nNgbPHusT6s364s1gYe4a77U3cIs8CLhPjyDmt41OWDl0vDr5iAeVoaXajdG+suHpQmMRO
-        0YZGcJ6Di5/YFDOiS6jrDQ2Vnu368+jSVIjgVBBjOBXE+JWpICMLqjkWFDlap+CpVuWxwFgcusDp
-        ao6FN3irxlh4g7t3HwvSW8aC9A/Gglh3eSz416fyU+89r2En2h/+rd1H//bOJSthKVrpztVw5aiv
-        QCUFqSTJV6gkyfFoVakkxuNSvOpUYiUKXShYVW9Ylb1V5YZV2d3/esO6ERR8uYH3nLTqf3/Xb9z9
-        Cz4JVNo/DQAA
+    body: {string: "{\"count\":58,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":20,\"Items\":[{\"title\":\"\u30DE\u30EA\u30AA\u30B9\u30DD\u30FC\u30C4
+        \u30B9\u30FC\u30D1\u30FC\u30B9\u30BF\u30FC\u30BA\",\"titleKana\":\"\u30DE\u30EA\u30AA\u30B9\u30DD\u30FC\u30C4
+        \u30B9\u30FC\u30D1\u30FC\u30B9\u30BF\u30FC\u30BA\",\"hardware\":\"Nintendo
+        3DS\",\"label\":\"\u4EFB\u5929\u5802\",\"jan\":\"4902370536423\",\"makerCode\":\"CTR-P-AUNJ\",\"itemCaption\":\"\\n\\n\u30DE\u30EA\u30AA\u305F\u3061\u304C\u672C\u6C17\u3067\u6311\u30805\u3064\u306E\u30B9\u30DD\u30FC\u30C4\u3001\u3053\u3053\u306B\u96C6\u7D50\u3002\\n\\n\u25A0\u672C\u683C\u7684\u306B\u697D\u3057\u3081\u308B5\u3064\u306E\u7AF6\u6280\u30B5\u30C3\u30AB\u30FC\u3001\u30D9\u30FC\u30B9\u30DC\u30FC\u30EB\u3001\u30C6\u30CB\u30B9\u3001\u30B4\u30EB\u30D5\u3001\u4E57\u99AC\u30EC\u30FC\u30B9\u306E5\u3064\u306E\u7AF6\u6280\u306F\u3001\u305D\u308C\u305E\u308C\u304C\u3057\u3063\u304B\u308A\u3068\u3057\u305F\u30B9\u30DD\u30FC\u30C4\u30B2\u30FC\u30E0\u3068\u3057\u3066\u72EC\u7ACB\u3057\u3001\u30C8\u30FC\u30CA\u30E1\u30F3\u30C8\u3092\u52DD\u3061\u629C\u3044\u305F\u308A\u3001\u81EA\u5206\u597D\u307F\u306E\u8A2D\u5B9A\u3067\u30D7\u30EC\u30A4\u3057\u305F\u308A\u3059\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002\\n\u307E\u305F\u3001\u5404\u7AF6\u6280\u3067\u3001\u30C8\u30EC\u30FC\u30CB\u30F3\u30B0\u3084\u30EF\u30F3\u30DD\u30A4\u30F3\u30C8\u30A2\u30C9\u30D0\u30A4\u30B9\u3068\u3044\u3063\u305F\u3001\u30D7\u30EC\u30A4\u3092\u4E0A\u9054\u3055\u305B\u308B\u8981\u7D20\u3082\u53CE\u9332\u3057\u3066\u3044\u307E\u3059\u3002\\n\\n\\n\\n\u25A05\u7AF6\u6280\u3059\u3079\u3066\u5BFE\u6226\u30D7\u30EC\u30A4\u306B\u5BFE\u5FDC\u3000\u30ED\u30FC\u30AB\u30EB\u30D7\u30EC\u30A4\u3084\u30A4\u30F3\u30BF\u30FC\u30CD\u30C3\u30C8\u901A\u4FE1\u5BFE\u6226\u3067\u306F\u3001\u672C\u6C17\u3067\u904A\u3073\u305F\u3044\u30D7\u30EC\u30A4\u30E4\u30FC\u5411\u3051\u306B\u3001\u7279\u6B8A\u306A\u30A2\u30AF\u30B7\u30E7\u30F3\u3092\u30AA\u30D5\u306B\u3059\u308B\u3053\u3068\u3082\u3067\u304D\u307E\u3059\u3002\\n\\n\\n\\n\\n\\n\u25A0\u99AC\u3068\u306E\u3075\u308C\u3042\u3044\u4E57\u99AC\u30EC\u30FC\u30B9\u3067\u306F\u3001\u30EC\u30FC\u30B9\u306E\u4ED6\u306B\u3001\u300C\u3075\u308C\u3042\u3044\u300D\u30E2\u30FC\u30C9\u3067\u81EA\u5206\u306E\u99AC\u3092\u304B\u308F\u3044\u304C\u308B\u3053\u3068\u304C\u3067\u304D\u307E\u3059\u3002\\n\u30D6\u30E9\u30C3\u30B7\u30F3\u30B0\u3084\u30A8\u30B5\u3084\u308A\u3092\u3059\u308B\u3053\u3068\u3067\u99AC\u3068\u306E\u306A\u304B\u3088\u3057\u5EA6\u304C\u4E0A\u304C\u308A\u307E\u3059\u3002\u307E\u305F\u3001\u304A\u3055\u3093\u307D\u3084\u304A\u3067\u304B\u3051\u4E2D\u306B\u898B\u3064\u3051\u305F\u30A2\u30AF\u30BB\u30B5\u30EA\u30FC\u3092\u8EAB\u306B\u3064\u3051\u3066\u3084\u308B\u3068\u3001\u30C9\u30EC\u30B9\u30A2\u30C3\u30D7\u3057\u305F\u59FF\u3067\u30EC\u30FC\u30B9\u306B\u51FA\u5834\u3059\u308B\u3053\u3068\u3082\u3067\u304D\u307E\u3059\u3002\\n\\n\\n\\n\u25A0amiibo\u30AB\u30FC\u30C9\u3067\u30D1\u30EF\u30FC\u30A2\u30C3\u30D7
+        \u516890\u7A2E\u985E\u5225\u58F2\u306E \u300E\u30DE\u30EA\u30AA\u30B9\u30DD\u30FC\u30C4\u3000\u30B9\u30FC\u30D1\u30FC\u30B9\u30BF\u30FC\u30BA\u300Famiibo\u30AB\u30FC\u30C9\u3092\u30BF\u30C3\u30C1\u3059\u308B\u3068\u3001\u901A\u5E38\u3067\u306F\u5165\u624B\u304C\u96E3\u3057\u3044\u300C\u30B9\u30BF\u30FC\u30AD\u30E3\u30E9\u300D\u3092\u4F7F\u3048\u308B\u3088\u3046\u306B\u306A\u308A\u307E\u3059\u3002\\n\\n&copy;2017
+        Nintendo\\nTennis, Golf\uFF1A&copy;2017 Nintendo / CAMELOT\",\"salesDate\":\"2017\u5E7403\u670830\u65E5\",\"itemPrice\":4644,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14675706/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6423/4902370536423.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6423/4902370536423.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6423/4902370536423.jpg?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"006508006009\"},{\"title\":\"\u300E\u30DE\u30EA\u30AA\u30B9\u30DD\u30FC\u30C4
+        \u30B9\u30FC\u30D1\u30FC\u30B9\u30BF\u30FC\u30BA\u300Famiibo\u30AB\u30FC\u30C9
+        1BOX\uFF0820\u30D1\u30C3\u30AF\u5165\u308A\uFF09\",\"titleKana\":\"\u300E\u30DE\u30EA\u30AA\u30B9\u30DD\u30FC\u30C4
+        \u30B9\u30FC\u30D1\u30FC\u30B9\u30BF\u30FC\u30BA\u300Famiibo\u30AB\u30FC\u30C9
+        1BOX\uFF0820\u30D1\u30C3\u30AF\u5165\u308A\uFF09\",\"hardware\":\"Nintendo
+        3DS\",\"label\":\"\u4EFB\u5929\u5802\",\"jan\":\"2100010666222\",\"makerCode\":\"\",\"itemCaption\":\"\u203B\u300E\u30DE\u30EA\u30AA\u30B9\u30DD\u30FC\u30C4
+        \u30B9\u30FC\u30D1\u30FC\u30B9\u30BF\u30FC\u30BA\u300Famiibo\u30AB\u30FC\u30C9
+        1BOX\uFF0820\u30D1\u30C3\u30AF\uFF09\u30BB\u30C3\u30C8\u3067\u3059\u3002\\n\u203B1\u30D1\u30C3\u30AF5\u679A\u5165\u308A\u3067\u3059\u3002\\n\\n\\n\\n\\n\\n&copy;2017
+        Nintendo\\nTennis, Golf\uFF1A&copy;2017 Nintendo / CAMELOT\",\"salesDate\":\"2017\u5E7403\u670830\u65E5\",\"itemPrice\":8439,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14675710/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6222/2100010666222.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6222/2100010666222.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6222/2100010666222.jpg?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"006508002\"},{\"title\":\"amiibo
+        \u30C6\u30EC\u30B5\uFF08\u30B9\u30FC\u30D1\u30FC\u30DE\u30EA\u30AA\u30B7\u30EA\u30FC\u30BA\uFF09\",\"titleKana\":\"amiibo
+        \u30C6\u30EC\u30B5\uFF08\u30B9\u30FC\u30D1\u30FC\u30DE\u30EA\u30AA\u30B7\u30EA\u30FC\u30BA\uFF09\",\"hardware\":\"Wii
+        U\",\"label\":\"\u4EFB\u5929\u5802\",\"jan\":\"4902370533576\",\"makerCode\":\"NVL-C-ABAQ\",\"itemCaption\":\"\\n\\n&copy;
+        Nintendo\",\"salesDate\":\"2016\u5E7410\u670820\u65E5\",\"itemPrice\":777,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14413143/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3576/4902370533576.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3576/4902370533576.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3576/4902370533576.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"006511002\"}],\"GenreInformation\":[]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['1149']
+      Content-Length: ['4550']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Tue, 27 Dec 2016 16:18:10 GMT']
+      Date: ['Mon, 13 Feb 2017 14:36:52 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

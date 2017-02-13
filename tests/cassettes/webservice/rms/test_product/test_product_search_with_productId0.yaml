@@ -2,34 +2,19 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
       Authorization: [ESA XXXXXX]
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://api.rms.rakuten.co.jp/es/2.0/product/search?productId=4986773144973
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA51USW7bMBTd9xSBt4VEarItg1GQJnAQFBlQKwegxS9HtaaSVBJv7Quk624KdN1V
-        UaBFjyN00VuUkjV50aIoIEDvD3zv8/OT5OQpiY8egIsoS49Hho5HR5AGGYvS1fHozp9r09GJ94Jw
-        EEUsPSIklYXwSJRK4CEN4JJ5Oc9YEUhdAOXBPUHDGBEbISFZ7JfdvCbowEESEIKuoI60WIm9K0BI
-        tTxkU8COaWgYxlPNngaWtmTM0SwTKIQQ4gAzgvr8dqlibqpSTtudjicTy7Btd2IR1AfIGjaPGWfI
-        IytIuapXoYSugV/TBFDFFgMVcE4lzHmWHHr8TNki4/LVRoEsDAVIBeIoiao/6ktBbdca6UXdqDdN
-        S3O6ilIqVf89khbJPCtS5hkEdbjh9jBBDVKbGCxqWHv+f9t8A68zb3F6tbi7vjiyMfbnfpekImq/
-        DxE8nqk6av2h2cRO1fBUp9ZFW0cTv+Px7Zl3L2U+Qy2zzum6kJDqQaa/zVsv0tCY2ZYTGtjFgTM2
-        TNcNbZPa9sRZYgMzCo0EarX25L3SVbaMYmjVEv3vev+h1ggQTtM12v98ylcgL7oB6n23e526XQcz
-        VqNmxtpmK6s7iD8dSJUzHMHzSOSKgoGkUXyZhtVELpU+G7IR1Luq+5syytktj4JKPRI3OaS1Vc3c
-        0CSSPp0pkVXGN55L0NAcFuEZrutqWN1Rw8fuDGP16Rjjl7VR9a5P7W+XV26/lruP5fZ7ufvy68OP
-        n5+fy+23cvep3L1XHvUadJmkyFm12YrAxMZYM0zNtHxszBxnZjm661it1iCz61qPRA8PryBqnrff
-        275bNw4FAAA=
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>product.search</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a144c10f-483b-4121-b00e-a1860987672a</requestId><requests><productId>4986773144973</productId><keyword/><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status><productSearchResult><pagination><numFound>1</numFound><offset>0</offset></pagination><products><product><productId>4986773144973</productId><productNo>SAMSUNG
+        400TFT</productNo><reviewCount>0</reviewCount><reviewAverage>0</reviewAverage><reviewUrlPC>http://product.rakuten.co.jp/product/-/6d435f1090c561299f42a4475b010dae/review/</reviewUrlPC><reviewUrlMobile>http://m.product.rakuten.co.jp/product/6d435f1090c561299f42a4475b010dae/review/</reviewUrlMobile><rank/><rankTargetGenreId/><rankTargetProductCount/><genreId/><genreName/><productName>SAMSUNG
+        SAMSUNG 400TFT</productName><releaseDateDisp/><detailInfo/><brandName>SAMSUNG</brandName><standardPrice/><isOpenPrice>1</isOpenPrice><taxCategory>9</taxCategory><releaseDate>1999-01-01T09:00:00.000+09:00</releaseDate><makerName>\u30B5\u30E0\u30B9\u30F3\u96FB\u5B50\u30B8\u30E3\u30D1\u30F3</makerName><updateDate>2017-02-13T01:39:16.341+09:00</updateDate></product></products></productSearchResult></result>"}
     headers:
       Connection: [close]
-      Content-Encoding: [gzip]
-      Content-Length: ['635']
+      Content-Length: ['1294']
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Fri, 23 Dec 2016 16:37:18 GMT']
+      Date: ['Mon, 13 Feb 2017 14:37:29 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}

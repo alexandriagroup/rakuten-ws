@@ -30,9 +30,6 @@ class ApiResponse(UserDict):
         return PrettyStringRepr(json.dumps(self.data, ensure_ascii=False, sort_keys=True,
                                            indent=4, separators=(',', ': ')))
 
-    def __repr__(self):
-        return self.json.encode('utf-8')
-
     def pages(self):
         yield self.response
         page_number = int(self.response['page']) + 1

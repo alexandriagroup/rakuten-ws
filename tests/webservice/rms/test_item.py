@@ -1,46 +1,59 @@
 # coding: utf-8
 from __future__ import unicode_literals
 
-from collections import OrderedDict
-
 from ... import slugify
 
 
+URLS = {
+    'insert': slugify('item test 01'),
+    'search': slugify('item test 02'),
+}
+
+
 def cleanup(ws):
-    try:
-        for item_url in ('item test 02', ):
-            ws.rms.item.delete(item={'itemUrl': slugify(item_url)}, raise_for_status=False)
-    except:
-        pass
+    for label in URLS:
+        result = ws.rms.item.delete(item={'itemUrl': URLS[label]})
+        # N000  Successful completion
+        # C001  Specified Item ID does not exist
+        assert result['code'] in ('C001', 'N000')
 
 
-def insert_item(ws, name):
-    item_url = slugify(name)
-    item = OrderedDict([
-        ('itemUrl', '%s' % item_url),
-        ('itemNumber', name),
-        ('itemName', '%s' % name),
-        ('itemPrice', '298000'),
-        ('genreId', 409148),
-        ('itemInventory', {'inventoryType': 1, 'inventories': {'inventory': {'inventoryCount': 11}}}),
-    ])
+def insert_item(ws, item_url):
+    item = {
+        'itemUrl': '%s' % item_url,
+        'itemNumber': item_url,
+        'itemName': '%s name' % item_url,
+        'itemPrice': '298000',
+        'genreId': 409148,
+        'itemInventory': {'inventoryType': 1,
+                          'inventories': {'inventory': {'inventoryCount': 11}}},
+    }
     result = ws.rms.item.insert(item=item, raise_for_status=False)
     assert result.status['message'] == "OK"
+    assert result['code'] == "N000"
     return result
 
 
 def test_item_insert(ws):
     cleanup(ws)
-    item = insert_item(ws, 'item test 02')['item']
-    assert item['itemUrl'] == 'item-test-02'
+    result = insert_item(ws, URLS['insert'])
+    item = result['item']
+    assert item['itemUrl'] == URLS['insert']
 
 
 def test_item_search(ws):
-    item = insert_item(ws, 'item test 02')['item']
-    assert ws.rms.item.search(itemUrl=item['itemUrl'])['numFound'] > 0
+    cleanup(ws)
+    result = insert_item(ws, URLS['search'])
+    # item = result['item']
+    result = ws.rms.item.search(itemUrl=URLS['insert'])
+    # 200-00: successful completion
+    assert result['code'] == '200-00'
+    # assert result['numFound'] > 0
+    # if result['numFound'] > 1:
+    #     assert result['items']['item'][0]['itemUrl'] == item['itemUrl']
+    # else:
+    #     assert result['items']['item']['itemUrl'] == item['itemUrl']
 
 
-def test_item_delete(ws):
-    item = insert_item(ws, 'item test 02')['item']
-    result = ws.rms.item.delete(item=item, raise_for_status=False)
-    assert result.status['message'] == 'OK'
+def test_delete(ws):
+    cleanup(ws)

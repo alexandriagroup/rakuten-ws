@@ -2,27 +2,19 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.12.4]
+      User-Agent: [python-requests/2.13.0]
     method: GET
     uri: https://app.rakuten.co.jp/services/api/IchibaTag/Search/20140222?applicationId=XXXXXX&formatVersion=2&tagId=1000943
   response:
-    body:
-      string: !!binary |
-        H4sIAAAAAAAAA6tWKklMdy/KLy0oVrKKrobz/BJzU5WslF7O3fK4cd3jpp2Pm/Y/blryuHm1kg5c
-        jWeKkpWhgYGBoaEJWBBuAkzC0sQYLAE17HHT6sdNOx43L33ctAhiUkFiUWpeSQhEh0FtLBACAF+I
-        P6WRAAAA
+    body: {string: "{\"tagGroups\":[{\"tagGroupName\":\"\u9774\u306E\u30B9\u30BF\u30A4\u30EB\",\"tagGroupId\":1000114,\"tags\":[{\"tagId\":1000943,\"tagName\":\"\u30AB\u30B8\u30E5\u30A2\u30EB\",\"parentTagId\":0}]}]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
-      Content-Encoding: [gzip]
       Content-Language: [ja-JP]
-      Content-Length: ['120']
+      Content-Length: ['145']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Fri, 23 Dec 2016 09:19:10 GMT']
+      Date: ['Mon, 13 Feb 2017 14:39:18 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1
