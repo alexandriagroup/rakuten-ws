@@ -107,7 +107,7 @@ class RmsItemsAPI(RestClient):
 class RmsCabinetAPI(RestClient):
     get_usage = RestMethod(http_method='GET', name='usage/get')
     get_folders = RestMethod(http_method='GET', name='folders/get')
-    get_files = RestMethod(http_method='GET', name='files/get')
+    get_files = RestMethod(http_method='GET', name='folder/files/get')
     search_files = RestMethod(http_method='GET', name='files/search')
     get_trash_files = RestMethod(http_method='GET', name='trashbox/files/get')
     delete_file = RestMethod(http_method='POST', name='file/delete', root_xml_key="fileDelete")
