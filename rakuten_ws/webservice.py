@@ -118,11 +118,16 @@ class RmsCabinetAPI(RestClient):
     insert_folder = RestMethod(http_method='POST', name='folder/insert', root_xml_key="folderInsert")
 
 
+class RmsNavigationAPI(RestClient):
+    get_genre = RestMethod(http_method='GET', name='navigation/genre/get')
+
+
 class RmsService(BaseRmsService):
     item = RmsItemAPI()
     items = RmsItemsAPI()
     product = RmsProductAPI()
     cabinet = RmsCabinetAPI()
+    navigation = RmsNavigationAPI()
 
     order = RmsOrderAPI()
     inventory = RmsInventoryAPI()
