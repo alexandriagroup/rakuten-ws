@@ -2,14 +2,14 @@
 from __future__ import unicode_literals
 
 # import hashlib
-# from rakuten_ws.utils import load_url
+from rakuten_ws.utils import load_url
 
 
 def test_get_usage(ws):
     result = ws.rms.cabinet.get_usage()
-    expected_keys = ['resultCode', 'MaxSpace', 'FolderMax', 'FileMax', 'UseSpace', 'AvailSpace', 'UseFolderCount',
-                     'AvailFolderCount']
-    keys = list(result.keys())
+    expected_keys = set(['resultCode', 'MaxSpace', 'FolderMax', 'FileMax', 'UseSpace', 'AvailSpace', 'UseFolderCount',
+                         'AvailFolderCount'])
+    keys = set(list(result.keys()))
     assert keys == expected_keys
 
 
