@@ -119,7 +119,7 @@ class RmsCabinetAPI(RestClient):
 
 
 class RmsNavigationAPI(RestClient):
-    get_genre = RestMethod(http_method='GET', name='navigation/genre/get')
+    get_genre = RestMethod(http_method='GET', name='genre/get')
 
 
 class RmsService(BaseRmsService):
