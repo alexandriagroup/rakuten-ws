@@ -11,12 +11,12 @@ interactions:
   response:
     body: {string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>5da1d4b7-e4b4-44fe-b5a7-21ca6e3776ad</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-01</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a2605025-0121-4e0b-ba86-aaf1f35039dd</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-01</itemUrl></item></itemDeleteResult></result>'}
     headers:
       Connection: [close]
       Content-Length: ['331']
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 13 Feb 2017 16:27:03 GMT']
+      Date: ['Mon, 20 Feb 2017 15:33:26 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
@@ -32,12 +32,12 @@ interactions:
   response:
     body: {string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>050c0fa2-48d5-4de2-830a-c2e11b359f04</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>f4f8985f-0c4f-4848-9086-6347d26761d3</requestId><requests/></status><itemDeleteResult><code>N000</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'}
     headers:
       Connection: [close]
       Content-Length: ['331']
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 13 Feb 2017 16:27:05 GMT']
+      Date: ['Mon, 20 Feb 2017 15:33:27 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
@@ -58,12 +58,12 @@ interactions:
   response:
     body: {string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>da809ff4-2251-42dd-95c3-aefba660abab</requestId><requests/></status><itemInsertResult><code>N000</code><item><itemUrl>item-test-01</itemUrl></item></itemInsertResult></result>'}
+        <result><status><interfaceId>item.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>6e4f86d2-6fb7-4271-8d72-ec87dca528f9</requestId><requests/></status><itemInsertResult><code>N000</code><item><itemUrl>item-test-01</itemUrl></item></itemInsertResult></result>'}
     headers:
       Connection: [close]
       Content-Length: ['331']
       Content-Type: [text/xml; charset=UTF-8]
-      Date: ['Mon, 13 Feb 2017 16:27:06 GMT']
+      Date: ['Mon, 20 Feb 2017 15:33:28 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}

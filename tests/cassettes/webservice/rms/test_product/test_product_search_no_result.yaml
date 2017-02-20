@@ -10,12 +10,12 @@ interactions:
     body: {string: '<?xml version="1.0" encoding="UTF-8"?>
 
         <result><status><interfaceId>product.search</interfaceId><systemStatus>NG</systemStatus><message>Data
-        not found</message><requestId>99ee4fb0-d7e1-45e4-8a82-804b5c3a06e1</requestId><requests><productId/><keyword>djshfksdhgflhskdjdsfbhdezeeeeeeeee</keyword><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status></result>'}
+        not found</message><requestId>e0d67082-d68d-4d67-8823-4a7563fa768e</requestId><requests><productId/><keyword>djshfksdhgflhskdjdsfbhdezeeeeeeeee</keyword><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status></result>'}
     headers:
       Connection: [close]
       Content-Length: ['405']
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 13 Feb 2017 14:37:33 GMT']
+      Date: ['Mon, 20 Feb 2017 15:34:35 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}

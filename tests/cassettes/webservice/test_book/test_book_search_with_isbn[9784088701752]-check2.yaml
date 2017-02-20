@@ -16,7 +16,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['1134']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 13 Feb 2017 14:37:08 GMT']
+      Date: ['Mon, 20 Feb 2017 15:34:03 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

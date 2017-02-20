@@ -6,7 +6,7 @@ interactions:
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksCD/Search/20130522?applicationId=XXXXXX&artistName=Speed&formatVersion=2&hits=3
   response:
-    body: {string: "{\"count\":69,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":23,\"Items\":[{\"title\":\"SPEEDLAND
+    body: {string: "{\"count\":70,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":24,\"Items\":[{\"title\":\"SPEEDLAND
         The Premium Best Re Tracks\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
         \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161874\",\"makerCode\":\"AVCD-16187\",\"itemCaption\":\"\u300CBody&Soul\u300D\u300CWake
         Me Up!\u300D\u3068\u3044\u3063\u305F\u30D2\u30C3\u30C8\u30FB\u30C1\u30E5\u30FC\u30F3\u3092\u30BB\u30EB\u30D5\u30FB\u30AB\u30F4\u30A1\u30FC\u3057\u305F\u30D9\u30B9\u30C8\u3002\u6700\u5148\u7AEF\u306ER&B\u30E2\u30FC\u30C9\u3092\u968F\u6240\u306B\u53D6\u308A\u5165\u308C\u308B\u3053\u3068\u3067\u3001\u201C2009\u5E74\u306ESPEED\u201D\u3092\u8868\u73FE\u3057\u3066\u3044\u308B\u3002\u30B0\u30C3\u3068\u6D17\u7DF4\u3055\u308C\u305F\u30C8\u30E9\u30C3\u30AF\u30FB\u30E1\u30A4\u30AF\u3001\u539A\u307F\u3068\u6DF1\u307F\u3092\u5897\u3057\u305F\u30B3\u30FC\u30E9\u30B9\u30FB\u30EF\u30FC\u30AF\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u629C\u7FA4\u3002\",\"playList\":\"Long
@@ -30,7 +30,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['4726']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 13 Feb 2017 14:36:59 GMT']
+      Date: ['Mon, 20 Feb 2017 15:34:02 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

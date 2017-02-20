@@ -9,12 +9,12 @@ interactions:
   response:
     body: {string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>product.search</interfaceId><systemStatus>NG</systemStatus><message>ParameterError</message><requestId>02573c48-0a18-4eb2-ad44-757373887281</requestId><requests><productId/><keyword/><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status></result>'}
+        <result><status><interfaceId>product.search</interfaceId><systemStatus>NG</systemStatus><message>ParameterError</message><requestId>3013950e-a990-4b25-9d7d-69e85c0c91a3</requestId><requests><productId/><keyword/><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status></result>'}
     headers:
       Connection: [close]
       Content-Length: ['362']
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 13 Feb 2017 14:37:34 GMT']
+      Date: ['Mon, 20 Feb 2017 15:34:31 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 400, message: Bad Request}

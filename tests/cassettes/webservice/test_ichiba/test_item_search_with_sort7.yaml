@@ -6,7 +6,7 @@ interactions:
     method: GET
     uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?applicationId=XXXXXX&formatVersion=2&keyword=Naruto&sort=-itemPrice
   response:
-    body: {string: "{\"count\":50575,\"page\":1,\"first\":1,\"last\":30,\"hits\":30,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"itemName\":\"\u8D85\u9AD8\u5727\u6E29\u6C34\u6D17\u6D44\u6A5F\u300CNARUTO\u300D\",\"catchcopy\":\"[HW-1310]\",\"itemCode\":\"otc-shop:10001199\",\"itemPrice\":1464480,\"itemCaption\":\"\u6D17\u6D44\u5410\u51FA\u91CF(L\uFF09
+    body: {string: "{\"count\":50334,\"page\":1,\"first\":1,\"last\":30,\"hits\":30,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"itemName\":\"\u8D85\u9AD8\u5727\u6E29\u6C34\u6D17\u6D44\u6A5F\u300CNARUTO\u300D\",\"catchcopy\":\"[HW-1310]\",\"itemCode\":\"otc-shop:10001199\",\"itemPrice\":1464480,\"itemCaption\":\"\u6D17\u6D44\u5410\u51FA\u91CF(L\uFF09
         1300 \u5E38\u7528\u5727/\u6700\u9AD8\u5727\u529B(MPa) 2\uFF0E9\u301C17\uFF0E6/19\uFF0E6
         \u96FB\u6E90 \u4E09\u76F8AC-200V \u6D17\u6D44\u30E2\u30FC\u30BF\u30FC\u99AC\u529B
         7\uFF0E5kW \u4E3B\u30DD\u30F3\u30D7 \u4E09\u9023\u30BB\u30E9\u30DF\u30C3\u30AF\u30B9\u30D7\u30E9\u30F3\u30B8\u30E3\u30FC\u30DD\u30F3\u30D7
@@ -605,8 +605,8 @@ interactions:
         ANIMATION\u3000\u5546\u54C1\u540D\uFF1A\u30AD\u30FC\u30DB\u30EB\u30C0\u30FC(\u30E9\u30D0\u30FC)
         \u30CA\u30EB\u30C8 NARUTO [\u306F\u305F\u3051\u30AB\u30AB\u30B7(\u30EA\u30A2\u30EB)]\u3010\u4E26\u884C\u8F38\u5165\u3011\u30AD\u30FC\u30DB\u30EB\u30C0\u30FC\uFF08\u30E9\u30D0\u30FC\uFF09
         \u30CA\u30EB\u30C8 NARUTO [\u306F\u305F\u3051\u30AB\u30AB\u30B7\uFF08\u30EA\u30A2\u30EB\uFF09]
-        \u30A2\u30E1\u30EA\u30AB GE ANIMATION\u793E\",\"itemUrl\":\"http://item.rakuten.co.jp/worldselect/87042652/\",\"shopUrl\":\"http://www.rakuten.co.jp/worldselect/\",\"smallImageUrls\":[\"http://thumbnail.image.rakuten.co.jp/@0_mall/worldselect/cabinet/img16/87042652.jpg?_ex=64x64\"],\"mediumImageUrls\":[\"http://thumbnail.image.rakuten.co.jp/@0_mall/worldselect/cabinet/img16/87042652.jpg?_ex=128x128\"],\"affiliateUrl\":\"\",\"shopAffiliateUrl\":\"\",\"imageFlag\":1,\"availability\":1,\"taxFlag\":0,\"postageFlag\":1,\"creditCardFlag\":1,\"shopOfTheYearFlag\":0,\"shipOverseasFlag\":0,\"shipOverseasArea\":\"\",\"asurakuFlag\":0,\"asurakuClosingTime\":\"\",\"asurakuArea\":\"\",\"affiliateRate\":1.1,\"startTime\":\"\",\"endTime\":\"\",\"reviewCount\":0,\"reviewAverage\":0,\"pointRate\":1,\"pointRateStartTime\":\"\",\"pointRateEndTime\":\"\",\"giftFlag\":0,\"shopName\":\"\u30EF\u30FC\u30EB\u30C9\u30BB\u30EC\u30AF\u30C8\u30B7\u30E7\u30C3\u30D7\",\"shopCode\":\"worldselect\",\"genreId\":\"101914\",\"tagIds\":[]},{\"itemName\":\"\u2605\u30DD\u30A4\u30F3\u30C8\u5927\u5897\u91CF\u4E2D\uFF01\u30B9\u30DE\u30DB\u30A8\u30F3\u30C8\u30EA\u30FC\u9650\u5B9A\u2605
-        \u56FD\u7523 \u958B\u68B1\u8A2D\u7F6E\u5EA7\u5353 \u5FDC\u63A5\u53F0 \u30C6\u30FC\u30D6\u30EB
+        \u30A2\u30E1\u30EA\u30AB GE ANIMATION\u793E\",\"itemUrl\":\"http://item.rakuten.co.jp/worldselect/87042652/\",\"shopUrl\":\"http://www.rakuten.co.jp/worldselect/\",\"smallImageUrls\":[\"http://thumbnail.image.rakuten.co.jp/@0_mall/worldselect/cabinet/img16/87042652.jpg?_ex=64x64\"],\"mediumImageUrls\":[\"http://thumbnail.image.rakuten.co.jp/@0_mall/worldselect/cabinet/img16/87042652.jpg?_ex=128x128\"],\"affiliateUrl\":\"\",\"shopAffiliateUrl\":\"\",\"imageFlag\":1,\"availability\":1,\"taxFlag\":0,\"postageFlag\":1,\"creditCardFlag\":1,\"shopOfTheYearFlag\":0,\"shipOverseasFlag\":0,\"shipOverseasArea\":\"\",\"asurakuFlag\":0,\"asurakuClosingTime\":\"\",\"asurakuArea\":\"\",\"affiliateRate\":1.1,\"startTime\":\"\",\"endTime\":\"\",\"reviewCount\":0,\"reviewAverage\":0,\"pointRate\":1,\"pointRateStartTime\":\"\",\"pointRateEndTime\":\"\",\"giftFlag\":0,\"shopName\":\"\u30EF\u30FC\u30EB\u30C9\u30BB\u30EC\u30AF\u30C8\u30B7\u30E7\u30C3\u30D7\",\"shopCode\":\"worldselect\",\"genreId\":\"101914\",\"tagIds\":[]},{\"itemName\":\"\u56FD\u7523
+        \u958B\u68B1\u8A2D\u7F6E\u5EA7\u5353 \u5FDC\u63A5\u53F0 \u30C6\u30FC\u30D6\u30EB
         \u56FA\u5B9A\u811A\u5B8C\u6210\u54C1 \u300C\u9CF4\u9580\u6A4B\u300D 150cm\u5E45\u30B3\u30AF\u30BF\u30F3\",\"catchcopy\":\"\u56FD\u7523\u306E\u5B8C\u6210\u54C1\u3067\u56FA\u5B9A\u811A\u306E\u30B3\u30AF\u30BF\u30F3\u6750\u306E150cm\u5EA7\u5353\",\"itemCode\":\"furni-u:10031623\",\"itemPrice\":105000,\"itemCaption\":\"\u9001\u6599\u7121\u6599
         \u958B\u68B1\u8A2D\u7F6E \u56FD\u7523\u306E150cm\u5E45\u56FA\u5B9A\u811A\u5EA7\u5353\u3000
         SIZE\u3000\uFF1A\u5E45150cm\xD7\u5965\u884C\u304D90cm\xD7\u9AD8\u305534cm
@@ -624,7 +624,7 @@ interactions:
       Connection: [close]
       Content-Language: [ja-JP]
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 13 Feb 2017 14:38:32 GMT']
+      Date: ['Mon, 20 Feb 2017 15:35:11 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

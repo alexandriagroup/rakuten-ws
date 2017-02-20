@@ -18,7 +18,7 @@ def test_detail_search(ws):
 
 def test_search_vacant(ws):
     params = {'latitude': '125994.28', 'longitude': '488781.51',
-              'checkinDate': '2017-02-14', 'checkoutDate': '2017-03-10'}
+              'checkinDate': '2017-02-25', 'checkoutDate': '2017-03-10'}
     assert_no_error(ws.travel.hotel.search_vacant(**params))
 
 

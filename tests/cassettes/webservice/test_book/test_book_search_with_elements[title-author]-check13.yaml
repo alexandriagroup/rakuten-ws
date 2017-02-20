@@ -6,17 +6,16 @@ interactions:
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&elements=title%2Cauthor&formatVersion=2&hits=3
   response:
-    body: {string: "{\"Items\":[{\"title\":\"\u9ED2\u5B50\u306E\u30D0\u30B9\u30B1
-        TV\u30A2\u30CB\u30E1\u30A4\u30E9\u30B9\u30C8\u96C6 COLORFUL MEMORIES\",\"author\":\"\u85E4\u5DFB
-        \u5FE0\u4FCA\"},{\"title\":\"\u767B\u5742\u5E83\u81E3AURA\",\"author\":\"Exile\u7814\u7A76\u4F1A\"},{\"title\":\"\u50D5\u305F\u3061\u306E\u597D\u304D\u306A\u30AC\u30F3\u30C0\u30E0\u3000Reboot\",\"author\":\"\"}]}"}
+    body: {string: "{\"Items\":[{\"title\":\"\u6642\u523B\u8868\u304C\u523B\u3093\u3060\u3042\u306E\u77AC\u9593\u30FC\u3000JR30\u5E74\u306E\u8ECC\u8DE1\",\"author\":\"\"},{\"title\":\"\u9632\u707DWalker\",\"author\":\"\"},{\"title\":\"\u7D9A
+        \u3042\u306A\u305F\u306E\u305F\u3081\u306B\",\"author\":\"\u8FB0\u5DF3 \u82B3\u5B50\"}]}"}
     headers:
       Access-Control-Allow-Origin: ['*']
       Cache-Control: [no-store]
       Connection: [close]
       Content-Language: [ja-JP]
-      Content-Length: ['234']
+      Content-Length: ['191']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 13 Feb 2017 14:37:15 GMT']
+      Date: ['Mon, 20 Feb 2017 15:33:35 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

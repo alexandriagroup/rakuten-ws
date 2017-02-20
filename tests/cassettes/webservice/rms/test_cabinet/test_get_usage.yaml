@@ -9,12 +9,12 @@ interactions:
   response:
     body: {string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>0b00e2ab-d5ad-483e-8597-4e49a6ffc4ce</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>18.204</UseSpace><AvailSpace>5119981.796</AvailSpace><UseFolderCount>13</UseFolderCount><AvailFolderCount>487</AvailFolderCount></cabinetUsageGetResult></result>'}
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>76cc65d9-33a5-4ca6-bbbb-af3427003e99</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>46.300</UseSpace><AvailSpace>5119953.700</AvailSpace><UseFolderCount>19</UseFolderCount><AvailFolderCount>481</AvailFolderCount></cabinetUsageGetResult></result>'}
     headers:
       Connection: [close]
       Content-Length: ['513']
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 13 Feb 2017 14:36:26 GMT']
+      Date: ['Mon, 20 Feb 2017 15:32:57 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}

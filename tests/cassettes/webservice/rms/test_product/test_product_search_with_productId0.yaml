@@ -7,14 +7,14 @@ interactions:
     method: GET
     uri: https://api.rms.rakuten.co.jp/es/2.0/product/search?productId=4986773144973
   response:
-    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>product.search</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a144c10f-483b-4121-b00e-a1860987672a</requestId><requests><productId>4986773144973</productId><keyword/><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status><productSearchResult><pagination><numFound>1</numFound><offset>0</offset></pagination><products><product><productId>4986773144973</productId><productNo>SAMSUNG
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>product.search</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a7e7bfa7-a1ff-4797-a3fc-51be354c0692</requestId><requests><productId>4986773144973</productId><keyword/><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status><productSearchResult><pagination><numFound>1</numFound><offset>0</offset></pagination><products><product><productId>4986773144973</productId><productNo>SAMSUNG
         400TFT</productNo><reviewCount>0</reviewCount><reviewAverage>0</reviewAverage><reviewUrlPC>http://product.rakuten.co.jp/product/-/6d435f1090c561299f42a4475b010dae/review/</reviewUrlPC><reviewUrlMobile>http://m.product.rakuten.co.jp/product/6d435f1090c561299f42a4475b010dae/review/</reviewUrlMobile><rank/><rankTargetGenreId/><rankTargetProductCount/><genreId/><genreName/><productName>SAMSUNG
-        SAMSUNG 400TFT</productName><releaseDateDisp/><detailInfo/><brandName>SAMSUNG</brandName><standardPrice/><isOpenPrice>1</isOpenPrice><taxCategory>9</taxCategory><releaseDate>1999-01-01T09:00:00.000+09:00</releaseDate><makerName>\u30B5\u30E0\u30B9\u30F3\u96FB\u5B50\u30B8\u30E3\u30D1\u30F3</makerName><updateDate>2017-02-13T01:39:16.341+09:00</updateDate></product></products></productSearchResult></result>"}
+        SAMSUNG 400TFT</productName><releaseDateDisp/><detailInfo/><brandName>SAMSUNG</brandName><standardPrice/><isOpenPrice>1</isOpenPrice><taxCategory>9</taxCategory><releaseDate>1999-01-01T09:00:00.000+09:00</releaseDate><makerName>\u30B5\u30E0\u30B9\u30F3\u96FB\u5B50\u30B8\u30E3\u30D1\u30F3</makerName><updateDate>2017-02-20T01:40:50.024+09:00</updateDate></product></products></productSearchResult></result>"}
     headers:
       Connection: [close]
       Content-Length: ['1294']
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 13 Feb 2017 14:37:29 GMT']
+      Date: ['Mon, 20 Feb 2017 15:34:22 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}

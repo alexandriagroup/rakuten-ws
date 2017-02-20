@@ -6,24 +6,33 @@ interactions:
       \       <userName>XXXXXX</userName>\n      </arg0>\n    </ns0:getRequestId>\n
       \ </soap-env:Body>\n</soap-env:Envelope>\n"
     headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
       Content-Length: ['486']
       Content-Type: [text/xml; charset=utf-8]
       SOAPAction: ['""']
-      User-Agent: [Zeep/0.25.0 (www.python-zeep.org)]
+      User-Agent: [Zeep/1.1.0 (www.python-zeep.org)]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/order/ws
   response:
-    body: {string: "<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\"><S:Body><ns2:getRequestIdResponse
-        xmlns:ns2=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\"><return><errorCode>N00-000</errorCode><message>\u6B63\u5E38\u7D42\u4E86</message><requestId>226536064</requestId></return></ns2:getRequestIdResponse></S:Body></S:Envelope>"}
+    body:
+      string: !!binary |
+        H4sIAAAAAAAAA3WQO07DQBCGr2KlcZWdjRESstYbCQQSDUUCB1jZI8dg7yw76wAtBRehpkSKOA+P
+        a7BWYlxRjDT65p9/Hmr52LXJFj03ZIt0IWSaoC2pamxdpDfXF/OTdKnVOj+3W2zJYRL1lvN1MduE
+        4HIALjfYGRaRMxknyNcwJICHDpgN/adUPWllOctrDCu875HDZbVCdmR5dI3lP1/yFXrjGuE7Ft7c
+        9QGtKEncOogEOtO2ew1EETxwnOIx9N5qhd6TP6MK9ZWUcymlggmpDplNjfr77fVrt/t5f/78eFEw
+        0mhy2E1nRzKLsThWMMEh30+B/46JpfFemB6nfwHYoLNuawEAAA==
     headers:
       Connection: [close]
-      Content-Length: ['363']
+      Content-Encoding: [gzip]
+      Content-Length: ['265']
       Content-Type: [text/xml;charset="utf-8"]
-      Date: ['Mon, 13 Feb 2017 14:39:22 GMT']
+      Date: ['Mon, 20 Feb 2017 15:36:35 GMT']
       Server: [nginx]
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
-      requestId: [8b5ca5c2-61b8-4ac0-b994-35dda0faedbf]
-      timeStamp: ['2017-02-13T14:39:22']
+      requestId: [8e010703-90c1-423e-bf1b-1b7df96af87e]
+      timeStamp: ['2017-02-20T15:36:34']
     status: {code: 200, message: OK}
 version: 1

@@ -8,7 +8,7 @@ interactions:
   response:
     body: {string: "{\"count\":1,\"page\":1,\"first\":1,\"last\":1,\"hits\":1,\"carrier\":0,\"pageCount\":1,\"Items\":[{\"itemName\":\"NARUTO
         THE BEST (\u671F\u9593\u751F\u7523\u9650\u5B9A\u76E4) [ (\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3)
-        ]\",\"catchcopy\":\"\u3010\u697D\u5929\u30D6\u30C3\u30AF\u30B9\u306A\u3089\u3044\u3064\u3067\u3082\u9001\u6599\u7121\u6599\u3011\",\"itemCode\":\"book:17924463\",\"itemPrice\":3429,\"itemCaption\":\"(\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3)\u3010SPsale\u3011
+        ]\",\"catchcopy\":\"\u3010\u697D\u5929\u30D6\u30C3\u30AF\u30B9\u306A\u3089\u3044\u3064\u3067\u3082\u9001\u6599\u7121\u6599\u3011\",\"itemCode\":\"book:17924463\",\"itemPrice\":3456,\"itemCaption\":\"(\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3)\u3010SPsale\u3011
         \u767A\u58F2\u65E5\uFF1A2016\u5E7407\u670806\u65E5 \u4E88\u7D04\u7DE0\u5207\u65E5\uFF1A2016\u5E7406\u670824\u65E5
         NARUTO THE BEST JAN\uFF1A4534530093202 SVWC\u30FC70175/6 (\u682A)\u30A2\u30CB\u30D7\u30EC\u30C3\u30AF\u30B9
         \u521D\u56DE\u9650\u5B9A (\u682A)\u30BD\u30CB\u30FC\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30DE\u30FC\u30B1\u30C6\u30A3\u30F3\u30B0
@@ -30,7 +30,7 @@ interactions:
       Content-Language: [ja-JP]
       Content-Length: ['2306']
       Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 13 Feb 2017 14:37:46 GMT']
+      Date: ['Mon, 20 Feb 2017 15:36:01 GMT']
       Vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 version: 1

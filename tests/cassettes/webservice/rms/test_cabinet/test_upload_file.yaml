@@ -159,17 +159,17 @@ interactions:
       Connection: [keep-alive]
       Content-Length: ['8090']
       Content-Type: [image/png]
-      Date: ['Mon, 20 Feb 2017 15:22:20 GMT']
+      Date: ['Mon, 20 Feb 2017 15:33:01 GMT']
       Server: [nginx]
     status: {code: 200, message: OK}
 - request:
     body: !!binary |
-      LS05NDk2MTg2YmIxMjM0NDk2YjcxMTAzODRhODBmM2I2Yw0KQ29udGVudC1EaXNwb3NpdGlvbjog
+      LS01N2QxNDAzNzY4ZTY0Yjc4OTQ5MWM1NGIwYzM3MDk5OA0KQ29udGVudC1EaXNwb3NpdGlvbjog
       Zm9ybS1kYXRhOyBuYW1lPSJ4bWwiDQoNCjw/eG1sIHZlcnNpb249JzEuMCcgZW5jb2Rpbmc9J3V0
       Zi04Jz8+CjxyZXF1ZXN0PgogIDxmaWxlSW5zZXJ0UmVxdWVzdD4KICAgIDxmaWxlPgogICAgICA8
       ZmlsZU5hbWU+WlpaPC9maWxlTmFtZT4KICAgICAgPGZvbGRlcklkPjU1MDMyNDA8L2ZvbGRlcklk
-      PgogICAgPC9maWxlPgogIDwvZmlsZUluc2VydFJlcXVlc3Q+CjwvcmVxdWVzdD4KDQotLTk0OTYx
-      ODZiYjEyMzQ0OTZiNzExMDM4NGE4MGYzYjZjDQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRh
+      PgogICAgPC9maWxlPgogIDwvZmlsZUluc2VydFJlcXVlc3Q+CjwvcmVxdWVzdD4KDQotLTU3ZDE0
+      MDM3NjhlNjRiNzg5NDkxYzU0YjBjMzcwOTk4DQpDb250ZW50LURpc3Bvc2l0aW9uOiBmb3JtLWRh
       dGE7IG5hbWU9ImZpbGUiOyBmaWxlbmFtZT0iZmlsZW5hbWUiDQpDb250ZW50LVR5cGU6IGltYWdl
       L3BuZw0KDQqJUE5HDQoaCgAAAA1JSERSAAAAZAAAAGQIAgAAAP+AAgMAAB9hSURBVHic3X13WFPZ
       1v5KI6EXwSACoQjBShkRRRAcERQQ+HRsKOrYRkdHVKyfXOuMDlbUsdxh5Aq2ERtFQRRRQZQmgqJC
@@ -313,23 +313,23 @@ interactions:
       rn5XUZHw6lXK+/eiMQYUCsXNzc3X19fX11fvK/zIlsDyr0eWEJ2dncnJybGxsbGxsVX9AsgJeLyJ
       np7kn+wrb2z8UFvbP7JWV1fX29vb19fX3d19kD9OKQ2+BVlCYBiWnZ0dGxsbExPzRmQfZ1lhYWGB
       KpGjo+M3Cx2Hb0yWKFpaWhgMBvqZ0cLCwoqKCil/ZtTS0vLrNTTJ+H+653fCmFNsowAAAABJRU5E
-      rkJggg0KLS05NDk2MTg2YmIxMjM0NDk2YjcxMTAzODRhODBmM2I2Yy0tDQo=
+      rkJggg0KLS01N2QxNDAzNzY4ZTY0Yjc4OTQ5MWM1NGIwYzM3MDk5OC0tDQo=
     headers:
       Authorization: [ESA XXXXXX]
       Content-Length: ['8537']
-      Content-Type: [multipart/form-data; boundary=9496186bb1234496b7110384a80f3b6c]
+      Content-Type: [multipart/form-data; boundary=57d1403768e64b789491c54b0c370998]
       User-Agent: [python-requests/2.13.0]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/file/insert
   response:
     body: {string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>cabinet.file.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>001e4751-f61c-4db3-9054-2002cdfae074</requestId><requests/></status><cabinetFileInsertResult><resultCode>0</resultCode><FileId>72460816</FileId></cabinetFileInsertResult></result>'}
+        <result><status><interfaceId>cabinet.file.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>66fdff8d-8a9b-48bf-adb7-c397f0895f17</requestId><requests/></status><cabinetFileInsertResult><resultCode>0</resultCode><FileId>72460818</FileId></cabinetFileInsertResult></result>'}
     headers:
       Connection: [close]
       Content-Length: ['343']
       Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:22:22 GMT']
+      Date: ['Mon, 20 Feb 2017 15:33:02 GMT']
       Vary: [Accept-Encoding]
       X-Powered-By: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
