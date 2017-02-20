@@ -159,9 +159,9 @@ class RestMethod(object):
             data = self.prepare_xml_post(params)
             if filename:
                 if hasattr(filename, 'read'):
-                    files = {'xml': (None, data), 'file': ('filename', 'filename', 'image/png')}
+                    files = {'xml': (None, data), 'file': ('filename', filename, 'image/png')}
                 else:
-                    files = {'xml': ('', data), 'file': ('filename', 'load_url(filename)', 'image/png')}
+                    files = {'xml': (None, data), 'file': ('filename', load_url(filename), 'image/png')}
                 req = Request(self.http_method, api_request.url, files=files, headers=headers)
             else:
                 req = Request(self.http_method, api_request.url, data=data, headers=headers)
