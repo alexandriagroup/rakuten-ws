@@ -19,11 +19,11 @@ VCR_RECORD_MODE = os.environ.get('VCR_RECORD_MODE', 'once')
 
 def before_record_cb(request):
     if request.body:
-        request.body = re.sub('<authKey>.+</authKey>', '<authKey>XXXXXX</authKey>', request.body.decode('utf-8'))
-        request.body = re.sub('<shopUrl>.+</shopUrl>', '<shopUrl>XXXXXX</shopUrl>', request.body.decode('utf-8'))
-        request.body = re.sub('>_shop.+<', '<shopUrl>XXXXXX</shopUrl>', request.body.decode('utf-8'))
-        request.body = re.sub('>ESA *.+<', '>ESA XXXXXX<>', request.body.decode('utf-8'))
-        request.body = re.sub('<userName>*.+</userName>', '<userName>XXXXXX</userName>', request.body.decode('utf-8'))
+        request.body = re.sub(b'<authKey>.+</authKey>', b'<authKey>XXXXXX</authKey>', request.body)
+        request.body = re.sub(b'<shopUrl>.+</shopUrl>', b'<shopUrl>XXXXXX</shopUrl>', request.body)
+        request.body = re.sub(b'>_shop.+<', b'<shopUrl>XXXXXX</shopUrl>', request.body)
+        request.body = re.sub(b'>ESA *.+<', b'>ESA XXXXXX<>', request.body)
+        request.body = re.sub(b'<userName>*.+</userName>', b'<userName>XXXXXX</userName>', request.body)
     return request
 
 
