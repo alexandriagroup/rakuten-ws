@@ -20,7 +20,7 @@ from requests import Request
 
 from rakuten_ws.utils import xml2dict, dict2xml, unflatten_dict, sorted_dict, flatten_dict
 
-from .utils import camelize_dict, PrettyStringRepr, load_url
+from .utils import camelize_dict, PrettyStringRepr, load_file
 from .compat import to_unicode
 
 
@@ -158,10 +158,8 @@ class RestMethod(object):
         if self.http_method == "POST":
             data = self.prepare_xml_post(params)
             if filename:
-                if hasattr(filename, 'read'):
-                    files = {'xml': (None, data), 'file': ('filename', filename, 'image/png')}
-                else:
-                    files = {'xml': (None, data), 'file': ('filename', load_url(filename), 'image/png')}
+                fileobj, mimetype = load_file(filename)
+                files = {'xml': (None, data), 'file': ('filename', fileobj, mimetype)}
                 req = Request(self.http_method, api_request.url, files=files, headers=headers)
             else:
                 req = Request(self.http_method, api_request.url, data=data, headers=headers)

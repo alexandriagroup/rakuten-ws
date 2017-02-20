@@ -5,6 +5,7 @@ import re
 
 from collections import OrderedDict, MutableMapping
 from shutil import copyfileobj
+from mimetypes import guess_type
 from io import BytesIO, open
 
 import requests
@@ -12,7 +13,7 @@ import requests
 from xmljson import Parker
 from lxml.etree import Element, fromstring, tostring
 
-from .compat import iteritems, to_unicode, is_py2, str, urlparse
+from .compat import iteritems, to_unicode, is_py2, str, urlparse, pathname2url
 
 
 parker = Parker(dict_type=dict)
@@ -158,7 +159,7 @@ def unflatten_dict(dictionary):
     return unflatten_dict
 
 
-def load_url(url, session=None, timeout=None):
+def load_file(url, session=None, timeout=None):
     """Load the content from the given URL and return it as a `BytesIO`"""
     scheme = urlparse(url).scheme
     if scheme in ('http', 'https'):
@@ -166,7 +167,7 @@ def load_url(url, session=None, timeout=None):
             session = requests.Session()
         response = session.get(url, timeout=timeout)
         response.raise_for_status()
-        return BytesIO(response.content)
+        return BytesIO(response.content), response.headers['Content-Type']
     elif scheme in ('', 'file'):
         if url.startswith('file://'):
             url = url[7:]
@@ -174,5 +175,5 @@ def load_url(url, session=None, timeout=None):
         with open(url, 'rb') as fd:
             copyfileobj(fd, fileobj)
         fileobj.seek(0)
-        return fileobj
+        return fileobj, guess_type(pathname2url(url))[0]
     raise ValueError("Invalid url given to load")

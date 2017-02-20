@@ -30,6 +30,7 @@ if is_py3:
     basestring = (str, bytes)
     from collections import UserDict
     from urllib.parse import urlparse
+    from urllib.request import pathname2url
 
     def iteritems(d):
         return iter(d.items())
@@ -49,6 +50,7 @@ else:
     basestring = basestring
     from UserDict import UserDict  # noqa
     from urlparse import urlparse  # noqa
+    from urllib import pathname2url
 
     def iteritems(d):
         return d.iteritems()

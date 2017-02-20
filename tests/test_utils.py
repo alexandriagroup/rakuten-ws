@@ -7,7 +7,7 @@ from collections import OrderedDict
 import pytest
 import requests
 
-from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict, load_url
+from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict, load_file
 from rakuten_ws.compat import to_unicode, is_py3
 
 
@@ -137,7 +137,7 @@ def test_to_unicode():
 
 
 @pytest.mark.online
-def test_load_url(tmpdir):
+def test_load_file(tmpdir):
     image_filename = "%s" % tmpdir.mkdir("image").join("image.png")
     url = 'https://httpbin.org/image/png'
 
@@ -148,7 +148,8 @@ def test_load_url(tmpdir):
         for block in response.iter_content(1024):
             fd.write(block)
 
-    fileobj1 = load_url(url)
-    fileobj2 = load_url(image_filename)
+    fileobj1, mimetype1 = load_file(url)
+    fileobj2, mimetype2 = load_file(image_filename)
 
+    assert mimetype1 == mimetype2 == 'image/png'
     assert fileobj1.read() == fileobj2.read()
