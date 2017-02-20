@@ -1,9 +1,6 @@
 # coding: utf-8
 from __future__ import unicode_literals
 
-# import hashlib
-from rakuten_ws.utils import load_url
-
 
 def test_get_usage(ws):
     result = ws.rms.cabinet.get_usage()
@@ -22,14 +19,10 @@ def test_folder_operations(ws):
     assert test_folder_name in folders_names
 
 
-# def test_upload_file(ws):
-#     image_url = "https://httpbin.org/image/png"
-#     image_obj = load_url(image_url)
-#     # image_name = hashlib.md5(image_obj.read()).hexdigest()
-#     image_obj.seek(0)
-#     item_file = {
-#         'file_name': "ZZZ",
-#         'folder_id': 5503240,
-#     }
-#     result = ws.rms.cabinet.insert_file(file=item_file, filename=image_obj)
-#     assert result.status['systemStatus'] == "OK"
+def test_upload_file(ws):
+    item_file = {
+        'file_name': "ZZZ",
+        'folder_id': 5503240,
+    }
+    result = ws.rms.cabinet.insert_file(file=item_file, filename="https://httpbin.org/image/png")
+    assert result.status['systemStatus'] == "OK"
