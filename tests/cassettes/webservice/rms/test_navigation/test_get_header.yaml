@@ -1,0 +1,21 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Authorization: [ESA XXXXXX]
+      User-Agent: [python-requests/2.13.0]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/navigation/genre/header/get
+  response:
+    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>navigation.genre.header.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>45c7a183-d29c-4265-b7b2-a12ea8ac6315</requestId></status><navigationHeaderGetResult><status>Success</status><genreLastUpdateDate>2017-01-31T10:00:00+09:00</genreLastUpdateDate><tagLastUpdateDate>2017-01-31T10:00:00+09:00</tagLastUpdateDate></navigationHeaderGetResult></result>'}
+    headers:
+      Connection: [close]
+      Content-Length: ['449']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Wed, 22 Feb 2017 10:58:32 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1

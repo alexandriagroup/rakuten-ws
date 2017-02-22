@@ -1,0 +1,19 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Authorization: [ESA XXXXXX]
+      User-Agent: [python-requests/2.13.0]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/navigation/genre/tag/get?genreId=101240
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>navigation.genre.tag.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>f9532f08-9419-478b-bafa-0a9c8c315771</requestId><requests><genreId>101240</genreId></requests></status><navigationGenreTagGetResult><status>Success</status><genreLastUpdateDate>2017-01-31T10:00:00+09:00</genreLastUpdateDate><tagLastUpdateDate>2017-01-31T10:00:00+09:00</tagLastUpdateDate><genre><genreId>101240</genreId><genreName>CD\u30FBDVD\u30FB\u697D\u5668</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg><ancestorGenre/><childGenre><genre><genreId>101354</genreId><genreName>DVD</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>505034</genreId><genreName>Blu-ray</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>101311</genreId><genreName>CD</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>112493</genreId><genreName>\u697D\u5668</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>200531</genreId><genreName>\u30EC\u30B3\u30FC\u30C9</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>205900</genreId><genreName>\u30AB\u30BB\u30C3\u30C8</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>101327</genreId><genreName>\u30D3\u30C7\u30AA</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>200532</genreId><genreName>LD</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>207509</genreId><genreName>UMD\u30D3\u30C7\u30AA</genreName><itemRegisterFlg><directory>0</directory><auction>0</auction></itemRegisterFlg></genre><genre><genreId>112960</genreId><genreName>\u305D\u306E\u4ED6</genreName><itemRegisterFlg><directory>1</directory><auction>1</auction></itemRegisterFlg></genre></childGenre><tagGroups><tagGroup><tagGroupId>1000287</tagGroupId><tagGroupName>\u914D\u9001\u30B5\u30FC\u30D3\u30B9</tagGroupName><tags><tag><tagId>1004528</tagId><tagName>\u8A2D\u7F6E\u5BFE\u5FDC\u53EF</tagName><parentTagId/></tag><tag><tagId>1004529</tagId><tagName>\u53D6\u4ED8\u5DE5\u4E8B\u53EF</tagName><parentTagId/></tag><tag><tagId>1004530</tagId><tagName>\u7D44\u7ACB\u5BFE\u5FDC\u53EF</tagName><parentTagId/></tag></tags></tagGroup></tagGroups></genre></navigationGenreTagGetResult></result>"}
+    headers:
+      Connection: [close]
+      Content-Length: ['2569']
+      Content-Type: [text/xml; charset=utf-8]
+      Date: ['Wed, 22 Feb 2017 10:58:31 GMT']
+      Vary: [Accept-Encoding]
+      X-Powered-By: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1
