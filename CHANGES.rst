@@ -3,10 +3,10 @@
 Python Rakuten Web Service changelog
 ==================================================
 
-Version 0.2.0.dev0
-------------------
+Version 0.2.0
+-------------
 
-**unreleased**
+Released on February 22nd 2017
 
 - Added support for RMS Cabinet API
 - Added support for RMS Navigation API
