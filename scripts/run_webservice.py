@@ -11,4 +11,6 @@ credentials = {
     'shop_url': os.environ.get('RMS_SHOP_URL', ''),
 }
 
+assert credentials['shop_url'].startswith('_shop_')
+
 ws = RakutenWebService(**credentials)
