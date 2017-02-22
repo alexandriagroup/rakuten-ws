@@ -8,6 +8,10 @@ Version 0.2.0.dev0
 
 **unreleased**
 
+- Added support for RMS Cabinet API
+- Added support for RMS Navigation API
+- Added support for Python 3.6
+
 Version 0.1.1
 -------------
 
