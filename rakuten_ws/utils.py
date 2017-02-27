@@ -137,26 +137,31 @@ def dict2xml(data, root='request', pretty_print=True, xml_declaration=True, enco
 
 def flatten_dict(dictionary, parent_key='', sep='.'):
     items = []
-    for k, v in dictionary.items():
-        new_key = parent_key + sep + k if parent_key else k
-        if isinstance(v, MutableMapping):
-            items.extend(flatten_dict(v, new_key, sep=sep).items())
-        else:
-            items.append((new_key, v))
+    if isinstance(dictionary, list):
+        for i, subdict in enumerate(dictionary):
+            for k, v in flatten_dict(subdict).items():
+                items.append(('%s.:%s:%s' % (parent_key, i, k), v))
+    elif isinstance(dictionary, MutableMapping):
+        for k, v in dictionary.items():
+            new_key = parent_key + sep + k if parent_key else k
+            if isinstance(v, (MutableMapping, list)):
+                items.extend(flatten_dict(v, new_key, sep=sep).items())
+            else:
+                items.append((new_key, v))
     return dict(items)
 
 
 def unflatten_dict(dictionary):
-    unflatten_dict = dictionary.__class__()
+    unflat_dict = dictionary.__class__()
     for key, value in dictionary.items():
         parts = key.split(".")
-        d = unflatten_dict
+        d = unflat_dict
         for part in parts[:-1]:
             if part not in d:
                 d[part] = dictionary.__class__()
             d = d[part]
         d[parts[-1]] = value
-    return unflatten_dict
+    return unflat_dict
 
 
 def load_file(url, session=None, timeout=None):

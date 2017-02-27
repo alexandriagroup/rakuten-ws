@@ -7,7 +7,7 @@ from collections import OrderedDict
 import pytest
 import requests
 
-from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict, load_file
+from rakuten_ws.utils import xml2dict, dict2xml, sorted_dict, camelize_dict, load_file, flatten_dict, unflatten_dict
 from rakuten_ws.compat import to_unicode, is_py3
 
 
@@ -153,3 +153,19 @@ def test_load_file(tmpdir):
 
     assert mimetype1 == mimetype2 == 'image/png'
     assert fileobj1.read() == fileobj2.read()
+
+
+def test_flatten_dict():
+    test_dict = {
+        'a1': {'b1': 'a1.b1', 'b2': {'c1': 'a1.b2.c1'}},
+        'a2': 3,
+    }
+    assert unflatten_dict(flatten_dict(test_dict)) == test_dict
+
+    # with list of dict
+    test_dict = {
+        'a1': {'b1': 'a1.b1', 'b2': {'c1': 'a1.b2.c1'}},
+        'a2': 'a2',
+        'a3': [{'b3': 'a3.:0:b3', 'b4': 'a3.:0:b4'}, {'b3': 'a3.:1:b3'}],
+    }
+    assert unflatten_dict(flatten_dict(test_dict)) == test_dict
