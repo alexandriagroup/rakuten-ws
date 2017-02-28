@@ -26,10 +26,3 @@ def test_upload_file(ws):
     }
     result = ws.rms.cabinet.insert_file(file=item_file, filename="https://httpbin.org/image/png")
     assert result.status['systemStatus'] == "OK"
-
-
-def test_upload_images(ws):
-    images = ["https://httpbin.org/image/png", "https://httpbin.org/image/jpeg"]
-    urls = ws.rms.cabinet.upload_images("SKU7EHDR72ZZ4TPS", *images)
-    assert len(urls) == len(images)
-    assert urls[0] != urls[1]
