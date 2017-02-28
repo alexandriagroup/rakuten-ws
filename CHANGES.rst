@@ -3,10 +3,13 @@
 Python Rakuten Web Service changelog
 ==================================================
 
-Version 0.2.1.dev0
-------------------
+Version 0.2.1
+-------------
 
-**unreleased**
+Released on February 28th 2017
+
+- Dropped upload_images function to keep the project as close as possible to Rakuten APIs [Salem Harrache]
+- Sorted xml keys recursively
 
 Version 0.2.0
 -------------
