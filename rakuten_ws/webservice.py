@@ -118,31 +118,6 @@ class RmsCabinetAPI(RestClient):
     update_file = RestMethod(http_method='POST', name='file/update', form_data='file', root_xml_key="folderUpdate")
     insert_folder = RestMethod(http_method='POST', name='folder/insert', root_xml_key="folderInsert")
 
-    def upload_images(self, sku, *images, **kwargs):
-        attempts = kwargs.get('attempts', 5)
-        result = self.search_files(file_name=sku)
-        excluded_files = []
-        if 'files' in result:
-            excluded_files = [int(f['FileId']) for f in result['files']['file']]
-
-        for image_url in images:
-            self.insert_file(file={'file_name': "%s" % sku, 'folder_id': 0}, filename=image_url)
-
-        def get_new_urls():
-            files = []
-            result = self.search_files(file_name=sku)
-            if 'files' in result:
-                for f in sorted(result['files']['file'], key=lambda x: x['TimeStamp']):
-                    if int(f['FileId']) not in excluded_files:
-                        files.append(f['FileUrl'])
-            return files
-        for i in range(attempts):
-            urls = get_new_urls()
-            if len(urls) == len(images):
-                return urls
-            time.sleep(1)
-        return []
-
 
 class RmsNavigationAPI(RestClient):
     get_genre = RestMethod(http_method='GET', name='genre/get')
