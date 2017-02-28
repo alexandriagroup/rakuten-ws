@@ -140,7 +140,7 @@ def flatten_dict(dictionary, parent_key='', sep='.'):
     if isinstance(dictionary, list):
         for i, subdict in enumerate(dictionary):
             for k, v in flatten_dict(subdict).items():
-                items.append(('%s.:%s:%s' % (parent_key, i, k), v))
+                items.append(('%s.@%s.%s' % (parent_key, i, k), v))
     elif isinstance(dictionary, MutableMapping):
         for k, v in dictionary.items():
             new_key = parent_key + sep + k if parent_key else k
@@ -161,7 +161,25 @@ def unflatten_dict(dictionary):
                 d[part] = dictionary.__class__()
             d = d[part]
         d[parts[-1]] = value
-    return unflat_dict
+
+    def unflatten_list_dict(dictionary):
+        unflat_list_dict = dictionary.__class__()
+        for k, v in dictionary.items():
+            if isinstance(v, dict):
+                unflat_dict = unflatten_list_dict(v)
+                if sorted(unflat_dict.keys())[0] == '@0':
+                    unflat_list = []
+                    for key in sorted(unflat_dict.keys()):
+                        unflat_list.append(unflat_dict[key])
+                    new_value = unflat_list
+                else:
+                    new_value = unflat_dict
+                unflat_list_dict[k] = new_value
+            else:
+                unflat_list_dict[k] = v
+        return unflat_list_dict
+
+    return unflatten_list_dict(unflat_dict)
 
 
 def load_file(url, session=None, timeout=None):
