@@ -1,6 +1,7 @@
 # coding: utf-8
 from __future__ import unicode_literals
 
+import re
 import json
 
 from furl import furl
@@ -127,11 +128,12 @@ class RestMethod(object):
         camelcase_params = camelize_dict(params)
         if self.params:
             def key(x):
+                k = re.sub('.@\d+.', '.', x[0])
                 try:
-                    return self.params.index(x[0])
+                    return self.params.index(k)
                 except:
                     warnings.warn(
-                        "Given invalid parameter '%s'." % x[0],
+                        "Given invalid parameter '%s'." % k,
                         SyntaxWarning
                     )
                     return len(self.params) + 1
