@@ -109,7 +109,8 @@ def use_vcr(request, monkeypatch):
         with vcr.use_cassette(path=cassette_path,
                               filter_query_parameters=filter_query,
                               filter_headers=filter_headers,
-                              filter_post_data_parameters=filter_post) as cassette:
+                              filter_post_data_parameters=filter_post,
+                              decode_compressed_response=True) as cassette:
             yield cassette
 
 
