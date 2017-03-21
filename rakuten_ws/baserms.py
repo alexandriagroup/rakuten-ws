@@ -39,11 +39,11 @@ class RMSInvalidResponse(Exception):
 
 class ZeepClient(RmsServiceClient):
     wsdl = None
-
-    def __init__(self):
-        self.zeep_client = zeep.Client(wsdl=self.wsdl, transport=zeep.transports.Transport())
+    zeep_client = None
 
     def __send_request(self, name, **proxy_kwargs):
+        if self.zeep_client is None:
+            self.zeep_client = zeep.Client(wsdl=self.wsdl, transport=zeep.transports.Transport())
         address = self.zeep_client.service._binding_options['address']
         arg0 = self.service.soap_user_auth_model
         method = getattr(self.zeep_client.service, name)
