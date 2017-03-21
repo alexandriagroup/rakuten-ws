@@ -14,6 +14,7 @@ def test_no_application():
         ws.ichiba.item.search(item_code="book:17924463")
 
 
+@pytest.mark.online
 def test_no_rms_keys():
     ws = RakutenWebService()
     with assert_raises(Exception, "A 'license_key' and 'secret_service' must be provided"):
