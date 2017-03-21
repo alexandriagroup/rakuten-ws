@@ -3,10 +3,10 @@
 Python Rakuten Web Service changelog
 ==================================================
 
-Version 0.3.0.dev0
-------------------
+Version 0.3.0
+-------------
 
-**unreleased**
+Released on March 21st 2017
 
 - Added support for RMS Category API
 
