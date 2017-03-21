@@ -37,6 +37,7 @@ Supported APIs
 -  `Rakuten Ichiba RMS Inventory API`_
 -  `Rakuten Ichiba RMS Cabinet API`_
 -  `Rakuten Ichiba RMS Navigation API`_
+-  `Rakuten Ichiba RMS Category API`_
 -  `Rakuten Books API`_
 -  `Rakuten Travel API`_
 -  `Rakuten Auction API`_
@@ -47,12 +48,13 @@ Supported APIs
 
 
 .. _Rakuten Ichiba API: https://rakuten-api-documentation.antoniotajuelo.com/rakuten/service/view?rakuten_service_id=1
-.. _Rakuten Ichiba RMS Item API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?page=document0002
-.. _Rakuten Ichiba RMS Product API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?page=document0009
-.. _Rakuten Ichiba RMS Order API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?page=document0046
-.. _Rakuten Ichiba RMS Inventory API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?page=document0076
-.. _Rakuten Ichiba RMS Cabinet API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?page=document0011
-.. _Rakuten Ichiba RMS Navigation API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?page=document0039
+.. _Rakuten Ichiba RMS Item API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/itemapi
+.. _Rakuten Ichiba RMS Product API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/productapi
+.. _Rakuten Ichiba RMS Order API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/orderapi
+.. _Rakuten Ichiba RMS Inventory API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/inventoryapi
+.. _Rakuten Ichiba RMS Cabinet API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/cabinetapi
+.. _Rakuten Ichiba RMS Navigation API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/navigationapi
+.. _Rakuten Ichiba RMS Categpory API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/categoryapi
 .. _Rakuten Books API: https://rakuten-api-documentation.antoniotajuelo.com/rakuten/service/view?rakuten_service_id=2
 .. _Rakuten Travel API: https://rakuten-api-documentation.antoniotajuelo.com/rakuten/service/view?rakuten_service_id=4
 .. _Rakuten Auction API: https://rakuten-api-documentation.antoniotajuelo.com/rakuten/service/view?rakuten_service_id=4
