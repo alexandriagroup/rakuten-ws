@@ -21,6 +21,7 @@ def before_record_cb(request):
     if request.body:
         request.body = re.sub(b'<authKey>.+</authKey>', b'<authKey>XXXXXX</authKey>', request.body)
         request.body = re.sub(b'<shopUrl>.+</shopUrl>', b'<shopUrl>XXXXXX</shopUrl>', request.body)
+        request.body = re.sub(b'<shopId>.+</shopId>', b'<shopId>XXXXXX</shopId>', request.body)
         request.body = re.sub(b'>_shop.+<', b'<shopUrl>XXXXXX</shopUrl>', request.body)
         request.body = re.sub(b'>ESA *.+<', b'>ESA XXXXXX<>', request.body)
         request.body = re.sub(b'<userName>*.+</userName>', b'<userName>XXXXXX</userName>', request.body)

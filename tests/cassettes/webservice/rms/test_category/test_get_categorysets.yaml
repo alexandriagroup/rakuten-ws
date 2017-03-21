@@ -1,0 +1,19 @@
+interactions:
+- request:
+    body: null
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      User-Agent: [python-requests/2.12.5]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/categorysets/get
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>shop.categorysets.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>5185bbab-839b-4212-83ee-07e2794b8b8f</requestId></status><categorysetsGetResult><code>N000</code><shopId/><categorySetList><categorySet><categorySetManageNumber>0</categorySetManageNumber><categorySetId>0</categorySetId><categorySetName>categorie_set_test</categorySetName><categorySetStatus>0</categorySetStatus><categorySetOrder>1</categorySetOrder></categorySet><categorySet><categorySetManageNumber>1</categorySetManageNumber><categorySetId>1</categorySetId><categorySetName>new_test_category</categorySetName><categorySetStatus>0</categorySetStatus><categorySetOrder>2</categorySetOrder></categorySet><categorySet><categorySetManageNumber>etc</categorySetManageNumber><categorySetId>-9999</categorySetId><categorySetName>\u305D\u306E\u4ED6</categorySetName><categorySetStatus>0</categorySetStatus><categorySetOrder>999999999</categorySetOrder></categorySet></categorySetList></categorysetsGetResult></result>"}
+    headers:
+      connection: [close]
+      content-length: ['1070']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Mon, 20 Mar 2017 16:09:22 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1

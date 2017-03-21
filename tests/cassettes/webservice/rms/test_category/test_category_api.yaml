@@ -1,0 +1,195 @@
+interactions:
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <categoryInsertRequest>\n
+      \   <categorySetManageNumber>0</categorySetManageNumber>\n    <categoryId>0</categoryId>\n
+      \   <category>\n      <name>[rakuten-ws test] Chocolate Ice Cream</name>\n    </category>\n
+      \ </categoryInsertRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['289']
+      User-Agent: [python-requests/2.12.5]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/category/insert
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.category.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>0271e2a4-2a33-42ae-9643-23ab6c196a07</requestId></status><categoryInsertResult><code>N000</code><shopId>333892</shopId><category><categoryId>119</categoryId></category></categoryInsertResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['365']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:40 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      User-Agent: [python-requests/2.12.5]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/category/get?categoryId=119
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.category.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>69d3d859-3dda-4fcd-9121-e17936f0bce6</requestId></status><categoryGetResult><code>N000</code><shopId>333892</shopId><category><categoryId>119</categoryId><categoryLevel>1</categoryLevel><name>[rakuten-ws
+        test] Chocolate Ice Cream</name><status>0</status><categoryWeight>999999999</categoryWeight><categoryContent/><categoryLayout><layoutFrameworkId>0</layoutFrameworkId><layoutCategoryMapId>0</layoutCategoryMapId><layoutTopTextId>0</layoutTopTextId><layoutLossLeaderId>0</layoutLossLeaderId><layoutCommonTextId>0</layoutCommonTextId><listingAreaId>0</listingAreaId></categoryLayout></category></categoryGetResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['785']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:42 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <categoryUpdateRequest>\n
+      \   <categoryId>119</categoryId>\n    <category>\n      <name>[rakuten-ws test]
+      Black Chocolat</name>\n    </category>\n  </categoryUpdateRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['229']
+      User-Agent: [python-requests/2.12.5]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/category/update
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.category.update</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>9285d38d-fc1b-40f4-86ff-2e829e360647</requestId></status><categoryUpdateResult><code>N000</code><shopId>333892</shopId></categoryUpdateResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['316']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:43 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      User-Agent: [python-requests/2.12.5]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/category/get?categoryId=119
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.category.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>0ee16786-e214-41e5-9570-d15fdce8e387</requestId></status><categoryGetResult><code>N000</code><shopId>333892</shopId><category><categoryId>119</categoryId><categoryLevel>1</categoryLevel><name>[rakuten-ws
+        test] Black Chocolat</name><status>0</status><categoryWeight>999999999</categoryWeight><categoryContent/><categoryLayout><layoutFrameworkId>0</layoutFrameworkId><layoutCategoryMapId>0</layoutCategoryMapId><layoutTopTextId>0</layoutTopTextId><layoutLossLeaderId>0</layoutLossLeaderId><layoutCommonTextId>0</layoutCommonTextId><listingAreaId>0</listingAreaId></categoryLayout></category></categoryGetResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['780']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:45 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <categoryInsertRequest>\n
+      \   <categorySetManageNumber>0</categorySetManageNumber>\n    <categoryId>0</categoryId>\n
+      \   <category>\n      <name>[rakuten-ws test] Chocolate</name>\n    </category>\n
+      \ </categoryInsertRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['279']
+      User-Agent: [python-requests/2.12.5]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/category/insert
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.category.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a18e1ab4-dcc8-4fc9-a413-2b786d27a6ff</requestId></status><categoryInsertResult><code>N000</code><shopId>333892</shopId><category><categoryId>120</categoryId></category></categoryInsertResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['365']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:47 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <categoryMoveRequest>\n
+      \   <categoryId>119</categoryId>\n    <categorySetManageNumber>0</categorySetManageNumber>\n
+      \   <destCategoryId>120</destCategoryId>\n  </categoryMoveRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['240']
+      User-Agent: [python-requests/2.12.5]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/category/move
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.category.move</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>531f58a7-d5f5-4811-8df9-36141bc80ce0</requestId><requests/></status><categoryMoveResult><code>N000</code><shopId>333892</shopId></categoryMoveResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['321']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:48 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: null
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      User-Agent: [python-requests/2.12.5]
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/categories/get?categorySetManageNumber=0
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.categories.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>eb762d65-73db-43bc-bc57-42b0352b716f</requestId><requests><categorySetManageNumber>0</categorySetManageNumber></requests></status><categoriesGetResult><code>N000</code><shopId/><categorySetManageNumber>0</categorySetManageNumber><categoryList><category><categoryId>100</categoryId><categoryLevel>1</categoryLevel><name>test_sous_categorie1</name><status>0</status><categoryWeight>1</categoryWeight></category><category><categoryId>101</categoryId><categoryLevel>1</categoryLevel><name>test_sous_categorie2</name><status>0</status><categoryWeight>2</categoryWeight></category><category><categoryId>102</categoryId><categoryLevel>1</categoryLevel><name>test_sous_categorie3</name><status>0</status><categoryWeight>3</categoryWeight></category><category><categoryId>103</categoryId><categoryLevel>1</categoryLevel><name>test_sous_categorie4</name><status>0</status><categoryWeight>4</categoryWeight></category><category><categoryId>120</categoryId><categoryLevel>1</categoryLevel><name>[rakuten-ws
+        test] Chocolate</name><status>0</status><categoryWeight>999999999</categoryWeight><childCategories><category><categoryId>119</categoryId><categoryLevel>2</categoryLevel><name>[rakuten-ws
+        test] Black Chocolat</name><status>0</status><categoryWeight>1</categoryWeight></category></childCategories></category></categoryList></categoriesGetResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['1511']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:50 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <categoryDeleteRequest>\n
+      \   <categoryId>119</categoryId>\n  </categoryDeleteRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['146']
+      User-Agent: [python-requests/2.12.5]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/category/delete
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.category.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>25d23afc-d00c-46ba-a0b2-a5598fd2db17</requestId><requests/></status><categoryDeleteResult><code>N000</code><shopId>333892</shopId></categoryDeleteResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['327']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:52 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <categoryDeleteRequest>\n
+      \   <categoryId>120</categoryId>\n  </categoryDeleteRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['146']
+      User-Agent: [python-requests/2.12.5]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/categoryapi/shop/category/delete
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>shop.category.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>72ffe312-2ab1-46b8-801d-02db6bff6274</requestId><requests/></status><categoryDeleteResult><code>N000</code><shopId>333892</shopId></categoryDeleteResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['327']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Tue, 21 Mar 2017 10:51:54 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+version: 1

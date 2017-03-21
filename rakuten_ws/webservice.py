@@ -1,7 +1,6 @@
 # coding: utf-8
 from __future__ import unicode_literals
 
-import time
 import os.path as op
 
 from .baseapi import ApiEndpoint, ApiService, BaseWebService, ApiMethod
@@ -125,12 +124,27 @@ class RmsNavigationAPI(RestClient):
     get_header = RestMethod(http_method='GET', name='genre/header/get', root_xml_key='navigationHeaderGet')
 
 
+class RmsCategoryAPI(RestClient):
+    api_endpoint = 'categoryapi'
+    get_categorysets = RestMethod(http_method='GET', name='shop/categorysets/get', root_xml_key='categorysetsGet')
+    get_categories = RestMethod(http_method='GET', name='shop/categories/get', root_xml_key='categoriesGet')
+    get_category = RestMethod(http_method='GET', name='shop/category/get', root_xml_key='categoryGet')
+    insert_category = RestMethod(http_method='POST', name='shop/category/insert',
+                                 params=parameters.category_insert, root_xml_key='categoryInsert')
+    update_category = RestMethod(http_method='POST', name='shop/category/update',
+                                 params=parameters.category_update, root_xml_key='categoryUpdate')
+    delete_category = RestMethod(http_method='POST', name='shop/category/delete', root_xml_key='categoryDelete')
+    move_category = RestMethod(http_method='POST', name='shop/category/move',
+                               params=parameters.category_move, root_xml_key='categoryMove')
+
+
 class RmsService(BaseRmsService):
     item = RmsItemAPI()
     items = RmsItemsAPI()
     product = RmsProductAPI()
     cabinet = RmsCabinetAPI()
     navigation = RmsNavigationAPI()
+    category = RmsCategoryAPI()
 
     order = RmsOrderAPI()
     inventory = RmsInventoryAPI()

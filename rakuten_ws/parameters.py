@@ -238,3 +238,54 @@ cabinet_insert_file = [
     'file.filePath',
     'file.overWrite',
 ]
+
+
+category_insert = [
+    'categorySetManageNumber',
+    'categoryId',
+    'category.categoryId',
+    'category.categoryLevel',
+    'category.name',
+    'category.status',
+    'category.categoryWeight',
+    'category.categoryContent.mainImageUrl',
+    'category.categoryContent.mainImageAlt',
+    'category.categoryContent.upperText',
+    'category.categoryContent.lowerText',
+    'category.categoryContent.smartPhoneText',
+    'category.categoryLayout.layoutFrameworkId',
+    'category.categoryLayout.layoutCategoryMapId',
+    'category.categoryLayout.layoutTopTextId',
+    'category.categoryLayout.layoutLossLeaderId',
+    'category.categoryLayout.layoutCommonTextId',
+    'category.categoryLayout.listingAreaId',
+    'category.childCategories.category.categoryId',
+    'category.childCategories.category.categoryLevel',
+    'category.childCategories.category.name',
+    'category.childCategories.category.status',
+    'category.childCategories.category.categoryWeight',
+    'category.childCategories.category.categoryContent',
+    'category.childCategories.category.categoryContent.mainImageUrl',
+    'category.childCategories.category.categoryContent.mainImageAlt',
+    'category.childCategories.category.categoryContent.upperText',
+    'category.childCategories.category.categoryContent.lowerText',
+    'category.childCategories.category.categoryContent.smartPhoneText',
+    'category.childCategories.category.categoryLayout',
+    'category.childCategories.category.categoryLayout.layoutFrameworkId',
+    'category.childCategories.category.categoryLayout.layoutCategoryMapId',
+    'category.childCategories.category.categoryLayout.layoutTopTextId',
+    'category.childCategories.category.categoryLayout.layoutLossLeaderId',
+    'category.childCategories.category.categoryLayout.layoutCommonTextId',
+    'category.childCategories.category.categoryLayout.listingAreaId',
+    'category.childCategories.category.childCategories',
+]
+
+
+category_update = category_insert[1:]
+
+
+category_move = [
+    'categoryId',
+    'categorySetManageNumber',
+    'destCategoryId',
+]
