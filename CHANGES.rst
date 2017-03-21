@@ -8,6 +8,8 @@ Version 0.3.0.dev0
 
 **unreleased**
 
+- Added support for RMS Category API
+
 Version 0.2.1
 -------------
 
