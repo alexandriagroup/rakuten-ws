@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
 from __future__ import unicode_literals, print_function
-import sys
 import os
 import re
 
@@ -10,45 +9,6 @@ import datetime
 import subprocess
 
 from argparse import RawTextHelpFormatter, ArgumentParser, FileType
-
-
-if (sys.version_info[0] == 3):
-    bytes = bytes
-    str = type(u"")
-    basestring = (str, bytes)
-
-    def is_bytes(x):
-        return isinstance(x, (bytes, memoryview, bytearray))
-
-else:
-    bytes = str
-    str = type(u"")
-    basestring = basestring
-
-    def is_bytes(x):
-        return isinstance(x, (buffer, bytearray))
-
-
-def to_unicode(obj, encoding='utf-8'):
-    """ Convert ``obj`` to unicode"""
-    # unicode support
-    if isinstance(obj, str):
-        return obj
-
-    # bytes support
-    if is_bytes(obj):
-        if hasattr(obj, 'tobytes'):
-            return str(obj.tobytes(), encoding)
-        return str(obj, encoding)
-
-    # string support
-    if isinstance(obj, basestring):
-        if hasattr(obj, 'decode'):
-            return obj.decode(encoding)
-        else:
-            return str(obj, encoding)
-
-    return str(obj)
 
 
 def generate_changelog_title(version):
@@ -85,9 +45,9 @@ which will create a 'release' version (Eg. 0.7.2-dev => 0.7.2).
     # would be. Useful side effect: exits if the working directory is not
     # clean.
     changelog = args.changelog.name
-    bumpver = to_unicode(subprocess.check_output(
+    bumpver = subprocess.check_output(
         ['bumpversion', 'release', '--dry-run', '--verbose'],
-        stderr=subprocess.STDOUT))
+        stderr=subprocess.STDOUT).decode('utf-8')
     m = re.search(r'Parsing version \'(\d+\.\d+\.\d+)\.dev0\'', bumpver)
     current_version = m.groups(0)[0] + ".dev0"
     m = re.search(r'New version will be \'(\d+\.\d+\.\d+)\'', bumpver)
@@ -149,13 +109,15 @@ which will create a 'major' release (0.0.2 => 1.0.0-dev)."""
     # clean.
     changelog = args.changelog.name
     part = args.part
-    bumpver = to_unicode(subprocess.check_output(
+    bumpver = subprocess.check_output(
         ['bumpversion', part, '--dry-run', '--verbose'],
-        stderr=subprocess.STDOUT))
-    m = re.search(r'Parsing version \'(\d+\.\d+\.\d+)\'', bumpver)
+        stderr=subprocess.STDOUT).decode("utf-8")
+    m = re.search(r'current_version.*?(\d+\.\d+\.\d+\.dev0|\d+\.\d+\.\d+)',
+                  bumpver)
     current_version = m.groups(0)[0]
-    m = re.search(r'New version will be \'(\d+\.\d+\.\d+)\.dev0\'', bumpver)
-    next_version = m.groups(0)[0] + ".dev0"
+    m = re.search(r'New version will be.*?(\d+\.\d+\.\d+\.dev0|\d+\.\d+\.\d+)',
+                  bumpver)
+    next_version = m.groups(0)[0]
 
     current_version_title = generate_changelog_title(current_version)
     next_version_title = generate_changelog_title(next_version)
