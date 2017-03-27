@@ -39,17 +39,32 @@ class RMSInvalidResponse(Exception):
 
 class ZeepClient(RmsServiceClient):
     wsdl = None
-    zeep_client = None
+    _zeep_client = None
+    _xsd_types = None
 
-    def __send_request(self, name, **proxy_kwargs):
-        if self.zeep_client is None:
-            self.zeep_client = zeep.Client(wsdl=self.wsdl, transport=zeep.transports.Transport())
+    @property
+    def zeep_client(self):
+        _zeep_client = getattr(self, '_zeep_client', None)
+        if _zeep_client is None:
+            self._zeep_client = _zeep_client = zeep.Client(wsdl=self.wsdl, transport=zeep.transports.Transport())
+        return _zeep_client
+
+    @property
+    def xsd_types(self):
+        _xsd_types = getattr(self, '_xsd_types', None)
+        if _xsd_types is None:
+            self._xsd_types = _xsd_types = dict(((t.name, t) for t in self.zeep_client.wsdl.types.types))
+        return _xsd_types
+
+    def _send_request(self, name, **proxy_kwargs):
         address = self.zeep_client.service._binding_options['address']
         arg0 = self.service.soap_user_auth_model
         method = getattr(self.zeep_client.service, name)
 
         if address.endswith('inventory/ws'):
-            response = method(arg0, proxy_kwargs)
+            kwargs = {'externalUserAuthModel': arg0}
+            kwargs.update(proxy_kwargs)
+            response = method(**kwargs)
         # We assume the potential future methods will have the same form as the
         # order method (arg0, arg1...)
         else:
@@ -60,7 +75,7 @@ class ZeepClient(RmsServiceClient):
         return response
 
     def __getattr__(self, name):
-        return lambda **proxy_kwargs: self.__send_request(name, **proxy_kwargs)
+        return lambda **proxy_kwargs: self._send_request(name, **proxy_kwargs)
 
 
 class RestMethodResult(OrderedDict):

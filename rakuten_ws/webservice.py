@@ -80,7 +80,39 @@ class OtherAPI(ApiService):
 
 
 class RmsInventoryAPI(ZeepClient):
+    # Documentation : https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/inventoryapi  # noqa
+    # Code Reference : https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/inventoryApi/inventoryApiCodeReference  # noqa
     wsdl = "file://%s" % op.abspath(op.join(op.dirname(__file__), 'wsdl', 'inventoryapi.wsdl'))
+
+    def getInventoryExternal(self, inventorySearchRange=None, itemUrl=None):
+        GetRequestExternalModelType = self.xsd_types['GetRequestExternalModel']  # noqa
+        request = GetRequestExternalModelType(inventorySearchRange=inventorySearchRange, itemUrl=itemUrl)
+        return self._send_request('getInventoryExternal', getRequestExternalModel=request)
+
+    def _create_update_request(self, itemUrl, inventoryType, restTypeFlag=0, HChoiceName=None,
+                               VChoiceName=None, orderFlag=0, nokoriThreshold=0, inventoryUpdateMode=1,
+                               inventory=None, inventoryBackFlag=0, normalDeliveryDeleteFlag=False,
+                               normalDeliveryId=0, lackDeliveryDeleteFlag=False, lackDeliveryId=0, orderSalesFlag=0):
+        UpdateRequestExternalItemType = self.xsd_types['UpdateRequestExternalItem']  # noqa
+        return UpdateRequestExternalItemType(
+            itemUrl=itemUrl, inventoryType=inventoryType, restTypeFlag=restTypeFlag, HChoiceName=HChoiceName,
+            VChoiceName=VChoiceName, orderFlag=orderFlag, nokoriThreshold=nokoriThreshold,
+            inventoryUpdateMode=inventoryUpdateMode, inventory=inventory, inventoryBackFlag=inventoryBackFlag,
+            normalDeliveryDeleteFlag=normalDeliveryDeleteFlag, normalDeliveryId=normalDeliveryId,
+            lackDeliveryDeleteFlag=lackDeliveryDeleteFlag, lackDeliveryId=lackDeliveryId, orderSalesFlag=orderSalesFlag
+        )
+
+    def updateInventoryExternal(self, args):
+        UpdateRequestExternalModelType = self.xsd_types['UpdateRequestExternalModel']  # noqa
+        ArrayOfUpdateRequestExternalItemType = self.xsd_types['ArrayOfUpdateRequestExternalItem']  # noqa
+        if not isinstance(args, (list, tuple)):
+            args = [args]
+        assert len(args) <= 400, "The maximum number of items (400) has been exceeded"
+        update_request_list = []
+        for kwargs in args:
+            update_request_list.append(self._create_update_request(**kwargs))
+        data = UpdateRequestExternalModelType(ArrayOfUpdateRequestExternalItemType(update_request_list))
+        return self._send_request('updateInventoryExternal', updateRequestExternalModel=data)
 
 
 class RmsOrderAPI(ZeepClient):
