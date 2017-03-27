@@ -3,15 +3,12 @@
 Python Rakuten Web Service changelog
 ==================================================
 
-Version 0.4.0.dev0
-------------------
+Version 0.4.0
+-------------
 
-**unreleased**
+Released on March 27th 2017
 
-Version 0.3.1.dev0
-------------------
-
-**unreleased**
+- Added support for RmsInventoryAPI
 
 Version 0.3.0
 -------------
