@@ -75,16 +75,6 @@
      </xsd:element>
     </xsd:sequence>
    </xsd:complexType>
-   <xsd:complexType     name="UpdateSingleRequestExternalItem">
-    <xsd:sequence>
-     <xsd:element       type="stns:UpdateRequestExternalItem"
-       name="UpdateRequestExternalItem"
-       minOccurs="0"
-       maxOccurs="1"
-       nillable="true">
-     </xsd:element>
-    </xsd:sequence>
-   </xsd:complexType>
    <xsd:complexType     name="ExternalUserAuthModel">
     <xsd:complexContent>
      <xsd:extension       base="stns:UserAuthBase">
@@ -331,20 +321,6 @@
      </xsd:extension>
     </xsd:complexContent>
    </xsd:complexType>
-   <xsd:complexType     name="UpdateSingleRequestExternalModel">
-    <xsd:complexContent>
-     <xsd:extension       base="stns:RequestModel">
-      <xsd:sequence>
-       <xsd:element         type="stns:UpdateSingleRequestExternalItem"
-         name="updateRequestExternalItem"
-         minOccurs="1"
-         maxOccurs="1"
-         nillable="true">
-       </xsd:element>
-      </xsd:sequence>
-     </xsd:extension>
-    </xsd:complexContent>
-   </xsd:complexType>
    <xsd:complexType     name="UpdateResponseExternalItem">
     <xsd:sequence>
      <xsd:element       type="xsd:string"
@@ -465,30 +441,6 @@
      </xsd:sequence>
     </xsd:complexType>
    </xsd:element>
-   <xsd:element     name="updateSingleInventoryExternal">
-    <xsd:complexType>
-     <xsd:sequence>
-      <xsd:element        xmlns:tp="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity"
-        type="tp:ExternalUserAuthModel"
-        name="externalUserAuthModel">
-      </xsd:element>
-      <xsd:element        xmlns:tp="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity"
-        type="tp:UpdateSingleRequestExternalModel"
-        name="updateRequestExternalModel">
-      </xsd:element>
-     </xsd:sequence>
-    </xsd:complexType>
-   </xsd:element>
-   <xsd:element     name="updateSingleInventoryExternalResponse">
-    <xsd:complexType>
-     <xsd:sequence>
-      <xsd:element        xmlns:tp="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity"
-        type="tp:UpdateResponseExternalModel"
-        name="result">
-      </xsd:element>
-     </xsd:sequence>
-    </xsd:complexType>
-   </xsd:element>
   </xsd:schema>
  </types>
  <message   name="getInventoryExternal">
@@ -515,18 +467,6 @@
     element="partns:updateInventoryExternalResponse">
   </part>
  </message>
- <message   name="updateSingleInventoryExternal">
-  <part    xmlns:partns="https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi"
-    name="parameters"
-    element="partns:updateSingleInventoryExternal">
-  </part>
- </message>
- <message   name="updateSingleInventoryExternalResponse">
-  <part    xmlns:partns="https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi"
-    name="parameters"
-    element="partns:updateSingleInventoryExternalResponse">
-  </part>
- </message>
  <portType   name="inventoryapiPort">
   <operation    name="getInventoryExternal">
    <input     message="tns:getInventoryExternal">
@@ -538,12 +478,6 @@
    <input     message="tns:updateInventoryExternal">
    </input>
    <output     message="tns:updateInventoryExternalResponse">
-   </output>
-  </operation>
-  <operation    name="updateSingleInventoryExternal">
-   <input     message="tns:updateSingleInventoryExternal">
-   </input>
-   <output     message="tns:updateSingleInventoryExternalResponse">
    </output>
   </operation>
  </portType>
@@ -560,15 +494,6 @@
    </output>
   </operation>
   <operation    name="updateInventoryExternal">
-    <soap:operation style="document" soapAction="" />
-   <input>
-     <soap:body use="literal" />
-   </input>
-   <output>
-     <soap:body use="literal" />
-   </output>
-  </operation>
-  <operation    name="updateSingleInventoryExternal">
     <soap:operation style="document" soapAction="" />
    <input>
      <soap:body use="literal" />
