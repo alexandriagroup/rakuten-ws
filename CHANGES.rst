@@ -3,10 +3,12 @@
 Python Rakuten Web Service changelog
 ==================================================
 
-Version 0.4.1.dev0
-------------------
+Version 0.4.1
+-------------
 
-**unreleased**
+Released on March 29th 2017
+
+- Retrieve inventory information about multiple items at once (RmsInventoryAPI)
 
 Version 0.4.0
 -------------
@@ -27,7 +29,7 @@ Version 0.2.1
 
 Released on February 28th 2017
 
-- Dropped upload_images function to keep the project as close as possible to Rakuten APIs [Salem Harrache]
+- Dropped upload_images function to keep the project as close as possible to Rakuten APIs
 - Sorted xml keys recursively
 
 Version 0.2.0
