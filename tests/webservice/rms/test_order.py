@@ -1,6 +1,8 @@
 # coding: utf-8
 from __future__ import unicode_literals
 
+from freezegun import freeze_time
+
 import pytz
 import datetime
 
@@ -10,6 +12,7 @@ def test_get_request_id(ws):
     assert ws.rms.order.getRequestId()['errorCode'] == "N00-000"
 
 
+@freeze_time("2017-03-28")
 def test_get_order(ws):
     now_tokyo = datetime.datetime.now(tz=pytz.timezone('Asia/Tokyo'))
     # N00-000 => Successfully completed.
