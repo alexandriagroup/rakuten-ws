@@ -1,48 +1,90 @@
 interactions:
 - request:
-    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
       \   <item>\n      <itemUrl>item-test-01</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
     headers:
-      Authorization: [ESA XXXXXX]
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
       Content-Length: ['166']
       User-Agent: [python-requests/2.13.0]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
   response:
-    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a2605025-0121-4e0b-ba86-aaf1f35039dd</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-01</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>ce668473-d67e-4a45-b96b-c504fc3a9380</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-01</itemUrl></item></itemDeleteResult></result>'}
     headers:
-      Connection: [close]
-      Content-Length: ['331']
-      Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:33:26 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 08:51:58 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
 - request:
-    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
       \   <item>\n      <itemUrl>item-test-02</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
     headers:
-      Authorization: [ESA XXXXXX]
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
       Content-Length: ['166']
       User-Agent: [python-requests/2.13.0]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
   response:
-    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>f4f8985f-0c4f-4848-9086-6347d26761d3</requestId><requests/></status><itemDeleteResult><code>N000</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a9cb3bde-a174-40a7-84f1-3eff9b0e5571</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'}
     headers:
-      Connection: [close]
-      Content-Length: ['331']
-      Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:33:27 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 08:52:00 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
 - request:
-    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemInsertRequest>\n
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+      \   <item>\n      <itemUrl>item-test-04</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['166']
+      User-Agent: [python-requests/2.13.0]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>b3b31d6d-c526-42d1-b877-99ffeb92168a</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-04</itemUrl></item></itemDeleteResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 08:52:01 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+      \   <item>\n      <itemUrl>item-test-03</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['166']
+      User-Agent: [python-requests/2.13.0]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>df3c9eff-77c1-40e3-9295-6b1f3adbb835</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-03</itemUrl></item></itemDeleteResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 08:52:02 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemInsertRequest>\n
       \   <item>\n      <itemUrl>item-test-01</itemUrl>\n      <itemNumber>item-test-01</itemNumber>\n
       \     <itemName>item-test-01 name</itemName>\n      <itemPrice>298000</itemPrice>\n
       \     <genreId>409148</genreId>\n      <itemInventory>\n        <inventoryType>1</inventoryType>\n
@@ -50,21 +92,21 @@ interactions:
       \         </inventory>\n        </inventories>\n      </itemInventory>\n    </item>\n
       \ </itemInsertRequest>\n</request>\n"
     headers:
-      Authorization: [ESA XXXXXX]
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
       Content-Length: ['547']
       User-Agent: [python-requests/2.13.0]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/item/insert
   response:
-    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>6e4f86d2-6fb7-4271-8d72-ec87dca528f9</requestId><requests/></status><itemInsertResult><code>N000</code><item><itemUrl>item-test-01</itemUrl></item></itemInsertResult></result>'}
+        <result><status><interfaceId>item.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>c5e2607c-0055-49bf-8ecd-9a883535ff56</requestId><requests/></status><itemInsertResult><code>N000</code><item><itemUrl>item-test-01</itemUrl></item></itemInsertResult></result>'}
     headers:
-      Connection: [close]
-      Content-Length: ['331']
-      Content-Type: [text/xml; charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:33:28 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=UTF-8]
+      date: ['Wed, 29 Mar 2017 08:52:04 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
 version: 1

@@ -1,44 +1,86 @@
 interactions:
 - request:
-    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
       \   <item>\n      <itemUrl>item-test-01</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
     headers:
-      Authorization: [ESA XXXXXX]
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
       Content-Length: ['166']
       User-Agent: [python-requests/2.13.0]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
   response:
-    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>260ee2d7-e218-4235-b0d5-ca676ff6615d</requestId><requests/></status><itemDeleteResult><code>N000</code><item><itemUrl>item-test-01</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>47f524fd-40d5-4e1b-b11c-e996489bde44</requestId><requests/></status><itemDeleteResult><code>N000</code><item><itemUrl>item-test-01</itemUrl></item></itemDeleteResult></result>'}
     headers:
-      Connection: [close]
-      Content-Length: ['331']
-      Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:33:17 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 08:52:06 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
 - request:
-    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
       \   <item>\n      <itemUrl>item-test-02</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
     headers:
-      Authorization: [ESA XXXXXX]
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
       Content-Length: ['166']
       User-Agent: [python-requests/2.13.0]
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
   response:
-    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>5d654319-111b-428f-8e6b-987b439b9300</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>b6c3dd7b-6828-478c-a2a6-3e656966111e</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'}
     headers:
-      Connection: [close]
-      Content-Length: ['331']
-      Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:33:19 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 08:52:08 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+      \   <item>\n      <itemUrl>item-test-04</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['166']
+      User-Agent: [python-requests/2.13.0]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>44ef5634-7000-47e0-9a4b-20e98048db84</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-04</itemUrl></item></itemDeleteResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 08:52:10 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+      \   <item>\n      <itemUrl>item-test-03</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
+    headers:
+      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
+      Content-Length: ['166']
+      User-Agent: [python-requests/2.13.0]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a54eec6f-a78e-458f-8375-6e89ac2b0a71</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-03</itemUrl></item></itemDeleteResult></result>'}
+    headers:
+      connection: [close]
+      content-length: ['331']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 08:52:11 GMT']
+      vary: [Accept-Encoding]
+      x-powered-by: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
 version: 1
