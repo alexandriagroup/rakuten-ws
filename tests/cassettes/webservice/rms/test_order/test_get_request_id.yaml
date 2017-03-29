@@ -1659,10 +1659,11 @@ interactions:
       connection: [close]
       content-length: ['34437']
       content-type: [text/xml;charset="utf-8"]
-      date: ['Wed, 29 Mar 2017 17:23:09 GMT']
-      requestid: [17353a94-7cfe-4ae8-b91c-1a53e82a5ebf]
+      date: ['Wed, 29 Mar 2017 17:36:31 GMT']
+      requestid: [c5c66b7b-a279-4cf7-8ca1-e0cdc93f8093]
       server: [nginx]
-      timestamp: ['2017-03-29T17:23:09']
+      timestamp: ['2017-03-29T17:36:31']
+      transfer-encoding: [chunked]
       vary: [Accept-Encoding]
     status: {code: 200, message: OK}
 - request:
@@ -1685,15 +1686,15 @@ interactions:
   response:
     body: {string: "<?xml version='1.0' encoding='UTF-8'?><S:Envelope xmlns:S=\"http://schemas.xmlsoap.org/soap/envelope/\"\
         ><S:Body><ns2:getRequestIdResponse xmlns:ns2=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\"\
-        ><return><errorCode>N00-000</errorCode><message>\u6B63\u5E38\u7D42\u4E86</message><requestId>251461144</requestId></return></ns2:getRequestIdResponse></S:Body></S:Envelope>"}
+        ><return><errorCode>N00-000</errorCode><message>\u6B63\u5E38\u7D42\u4E86</message><requestId>251464023</requestId></return></ns2:getRequestIdResponse></S:Body></S:Envelope>"}
     headers:
       connection: [close]
       content-length: ['363']
       content-type: [text/xml;charset="utf-8"]
-      date: ['Wed, 29 Mar 2017 17:23:10 GMT']
-      requestid: [edca6b51-7ee3-4077-b52a-865e9230ade2]
+      date: ['Wed, 29 Mar 2017 17:36:33 GMT']
+      requestid: [aecedca6-59ac-4366-93ab-9e245227202a]
       server: [nginx]
-      timestamp: ['2017-03-29T17:23:10']
+      timestamp: ['2017-03-29T17:36:33']
       vary: [Accept-Encoding]
       x-powered-by: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}

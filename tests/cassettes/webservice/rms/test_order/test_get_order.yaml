@@ -5,15 +5,14 @@ interactions:
       \    <ns0:getOrder xmlns:ns0=\"http://orderapi.rms.rakuten.co.jp/rms/mall/order/api/ws\"\
       >\n      <arg0>\n        <authKey>XXXXXX</authKey>\n        <shopUrl>XXXXXX</shopUrl>\n\
       \        <userName>XXXXXX</userName>\n      </arg0>\n      <arg1>\n        <isOrderNumberOnlyFlg>true</isOrderNumberOnlyFlg>\n\
-      \        <orderSearchModel>\n          <dateType>1</dateType>\n          <endDate>2017-03-30T02:23:11.150802+09:00</endDate>\n\
-      \          <startDate>2017-02-28T02:23:11.150802+09:00</startDate>\n       \
-      \ </orderSearchModel>\n      </arg1>\n    </ns0:getOrder>\n  </soap-env:Body>\n\
-      </soap-env:Envelope>\n"
+      \        <orderSearchModel>\n          <dateType>1</dateType>\n          <endDate>2017-03-28T09:00:00+09:00</endDate>\n\
+      \          <startDate>2017-02-26T09:00:00+09:00</startDate>\n        </orderSearchModel>\n\
+      \      </arg1>\n    </ns0:getOrder>\n  </soap-env:Body>\n</soap-env:Envelope>\n"
     headers:
       Accept: ['*/*']
       Accept-Encoding: ['gzip, deflate']
       Connection: [keep-alive]
-      Content-Length: ['779']
+      Content-Length: ['765']
       Content-Type: [text/xml; charset=utf-8]
       SOAPAction: ['""']
       User-Agent: [Zeep/1.3.0 (www.python-zeep.org)]
@@ -28,10 +27,10 @@ interactions:
       connection: [close]
       content-length: ['336']
       content-type: [text/xml;charset="utf-8"]
-      date: ['Wed, 29 Mar 2017 17:23:12 GMT']
-      requestid: [aa72b03a-6651-4536-9467-de8afca8ba56]
+      date: ['Wed, 29 Mar 2017 17:36:35 GMT']
+      requestid: [bfa2b327-5070-4218-8818-41381b502d30]
       server: [nginx]
-      timestamp: ['2017-03-29T17:23:12']
+      timestamp: ['2017-03-29T17:36:35']
       vary: [Accept-Encoding]
       x-powered-by: [Servlet/2.5 JSP/2.1]
     status: {code: 200, message: OK}
