@@ -86,6 +86,9 @@ class RmsInventoryAPI(ZeepClient):
 
     def getInventoryExternal(self, inventorySearchRange=None, itemUrl=None):
         GetRequestExternalModelType = self.xsd_types['GetRequestExternalModel']  # noqa
+        if isinstance(itemUrl, (list, tuple)):
+            ArrayOfString = self.zeep_client.get_type('ns0:ArrayOfString')  # noqa
+            itemUrl = ArrayOfString(itemUrl)  # noqa
         request = GetRequestExternalModelType(inventorySearchRange=inventorySearchRange, itemUrl=itemUrl)
         return self._send_request('getInventoryExternal', getRequestExternalModel=request)
 
