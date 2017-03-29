@@ -7,6 +7,8 @@ from ... import slugify
 URLS = {
     'insert': slugify('item test 01'),
     'search': slugify('item test 02'),
+    'update1': slugify('item test 03'),
+    'update2': slugify('item test 04'),
 }
 
 
@@ -53,6 +55,23 @@ def test_item_search(ws):
     #     assert result['items']['item'][0]['itemUrl'] == item['itemUrl']
     # else:
     #     assert result['items']['item']['itemUrl'] == item['itemUrl']
+
+
+def test_update_items(ws):
+    cleanup(ws)
+    insert_item(ws, URLS['update1'])
+    insert_item(ws, URLS['update2'])
+
+    items = {
+        'item': [
+            {'itemUrl': URLS['update1'], 'itemPrice': 380000},
+            {'itemUrl': URLS['update2'], 'itemPrice': 480000}
+        ]
+    }
+
+    result = ws.rms.items.update(items=items)
+    for item_result in result['itemUpdateResult']:
+        assert item_result['code'] == 'N000'
 
 
 def test_delete(ws):
