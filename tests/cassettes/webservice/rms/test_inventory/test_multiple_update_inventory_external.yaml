@@ -1,0 +1,153 @@
+interactions:
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<soap-env:Envelope
+      xmlns:soap-env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap-env:Body>\n
+      \   <ns0:getInventoryExternal xmlns:ns0=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\">\n
+      \     <ns0:externalUserAuthModel>\n        <ns1:authKey xmlns:ns1=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\">ESA
+      XXXXXX<>/ns1:authKey>\n        <ns2:userName xmlns:ns2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\"></ns2:userName>\n
+      \       <ns3:shopUrl xmlns:ns3=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\"<shopUrl>XXXXXX</shopUrl>/ns3:shopUrl>\n
+      \     </ns0:externalUserAuthModel>\n      <ns0:getRequestExternalModel>\n        <ns4:inventorySearchRange
+      xmlns:ns4=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xsi:nil=\"true\"/>\n        <ns5:itemUrl xmlns:ns5=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\">\n
+      \         <ns6:string xmlns:ns6=\"java:language_builtins.lang\">SKU7EHDR72ZZ4TPSSS</ns6:string>\n
+      \         <ns7:string xmlns:ns7=\"java:language_builtins.lang\">SKU7EHDR72ZZ4TPZZZ</ns7:string>\n
+      \       </ns5:itemUrl>\n      </ns0:getRequestExternalModel>\n    </ns0:getInventoryExternal>\n
+      \ </soap-env:Body>\n</soap-env:Envelope>\n"
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1329']
+      Content-Type: [text/xml; charset=utf-8]
+      SOAPAction: ['""']
+      User-Agent: [Zeep/1.3.0 (www.python-zeep.org)]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/inventory/ws
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><env:Envelope
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:getInventoryExternalResponse
+        xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
+        xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:getResponseExternalItem
+        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>7</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>9784088905877</n2:itemNumber><n2:itemUrl>sku7ehdr72zz4tpsss</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>0</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>97848897</n2:itemNumber><n2:itemUrl>sku7ehdr72zz4tpzzz</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem></n2:getResponseExternalItem></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"}
+    headers:
+      connection: [close]
+      content-length: ['2345']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 09:23:08 GMT']
+      requestid: [8684088a-c235-42dc-b3a8-8a5c1295398b]
+      server: [nginx]
+      timestamp: ['2017-03-29T09:23:08']
+      vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<soap-env:Envelope
+      xmlns:soap-env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap-env:Body>\n
+      \   <ns0:updateInventoryExternal xmlns:ns0=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\">\n
+      \     <ns0:externalUserAuthModel>\n        <ns1:authKey xmlns:ns1=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\">ESA
+      XXXXXX<>/ns1:authKey>\n        <ns2:userName xmlns:ns2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\"></ns2:userName>\n
+      \       <ns3:shopUrl xmlns:ns3=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\"<shopUrl>XXXXXX</shopUrl>/ns3:shopUrl>\n
+      \     </ns0:externalUserAuthModel>\n      <ns0:updateRequestExternalModel>\n
+      \       <ns4:updateRequestExternalItem xmlns:ns4=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\">\n
+      \         <ns4:UpdateRequestExternalItem>\n            <ns4:HChoiceName xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xsi:nil=\"true\"/>\n            <ns4:VChoiceName xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xsi:nil=\"true\"/>\n            <ns4:inventory>17</ns4:inventory>\n            <ns4:inventoryBackFlag>0</ns4:inventoryBackFlag>\n
+      \           <ns4:inventoryType>2</ns4:inventoryType>\n            <ns4:inventoryUpdateMode>1</ns4:inventoryUpdateMode>\n
+      \           <ns4:itemUrl>SKU7EHDR72ZZ4TPSSS</ns4:itemUrl>\n            <ns4:lackDeliveryDeleteFlag>false</ns4:lackDeliveryDeleteFlag>\n
+      \           <ns4:lackDeliveryId>0</ns4:lackDeliveryId>\n            <ns4:nokoriThreshold>0</ns4:nokoriThreshold>\n
+      \           <ns4:normalDeliveryDeleteFlag>false</ns4:normalDeliveryDeleteFlag>\n
+      \           <ns4:normalDeliveryId>0</ns4:normalDeliveryId>\n            <ns4:orderFlag>0</ns4:orderFlag>\n
+      \           <ns4:orderSalesFlag>0</ns4:orderSalesFlag>\n            <ns4:restTypeFlag>0</ns4:restTypeFlag>\n
+      \         </ns4:UpdateRequestExternalItem>\n          <ns4:UpdateRequestExternalItem>\n
+      \           <ns4:HChoiceName xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xsi:nil=\"true\"/>\n            <ns4:VChoiceName xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xsi:nil=\"true\"/>\n            <ns4:inventory>10</ns4:inventory>\n            <ns4:inventoryBackFlag>0</ns4:inventoryBackFlag>\n
+      \           <ns4:inventoryType>2</ns4:inventoryType>\n            <ns4:inventoryUpdateMode>1</ns4:inventoryUpdateMode>\n
+      \           <ns4:itemUrl>SKU7EHDR72ZZ4TPZZZ</ns4:itemUrl>\n            <ns4:lackDeliveryDeleteFlag>false</ns4:lackDeliveryDeleteFlag>\n
+      \           <ns4:lackDeliveryId>0</ns4:lackDeliveryId>\n            <ns4:nokoriThreshold>0</ns4:nokoriThreshold>\n
+      \           <ns4:normalDeliveryDeleteFlag>false</ns4:normalDeliveryDeleteFlag>\n
+      \           <ns4:normalDeliveryId>0</ns4:normalDeliveryId>\n            <ns4:orderFlag>0</ns4:orderFlag>\n
+      \           <ns4:orderSalesFlag>0</ns4:orderSalesFlag>\n            <ns4:restTypeFlag>0</ns4:restTypeFlag>\n
+      \         </ns4:UpdateRequestExternalItem>\n        </ns4:updateRequestExternalItem>\n
+      \     </ns0:updateRequestExternalModel>\n    </ns0:updateInventoryExternal>\n
+      \ </soap-env:Body>\n</soap-env:Envelope>\n"
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['3103']
+      Content-Type: [text/xml; charset=utf-8]
+      SOAPAction: ['""']
+      User-Agent: [Zeep/1.3.0 (www.python-zeep.org)]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/inventory/ws
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><env:Envelope
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:updateInventoryExternalResponse
+        xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
+        xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:UpdateResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:updateResponseExternalItem
+        xsi:nil=\"true\"/></n1:result></m:updateInventoryExternalResponse></env:Body></env:Envelope>"}
+    headers:
+      connection: [close]
+      content-length: ['798']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 09:23:09 GMT']
+      requestid: [b4fd3eb7-8f21-49ea-bbd8-d81d5bc81432]
+      server: [nginx]
+      timestamp: ['2017-03-29T09:23:09']
+      vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<soap-env:Envelope
+      xmlns:soap-env=\"http://schemas.xmlsoap.org/soap/envelope/\">\n  <soap-env:Body>\n
+      \   <ns0:getInventoryExternal xmlns:ns0=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\">\n
+      \     <ns0:externalUserAuthModel>\n        <ns1:authKey xmlns:ns1=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\">ESA
+      XXXXXX<>/ns1:authKey>\n        <ns2:userName xmlns:ns2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\"></ns2:userName>\n
+      \       <ns3:shopUrl xmlns:ns3=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\"<shopUrl>XXXXXX</shopUrl>/ns3:shopUrl>\n
+      \     </ns0:externalUserAuthModel>\n      <ns0:getRequestExternalModel>\n        <ns4:inventorySearchRange
+      xmlns:ns4=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+      xsi:nil=\"true\"/>\n        <ns5:itemUrl xmlns:ns5=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\">\n
+      \         <ns6:string xmlns:ns6=\"java:language_builtins.lang\">SKU7EHDR72ZZ4TPSSS</ns6:string>\n
+      \         <ns7:string xmlns:ns7=\"java:language_builtins.lang\">SKU7EHDR72ZZ4TPZZZ</ns7:string>\n
+      \       </ns5:itemUrl>\n      </ns0:getRequestExternalModel>\n    </ns0:getInventoryExternal>\n
+      \ </soap-env:Body>\n</soap-env:Envelope>\n"
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['1329']
+      Content-Type: [text/xml; charset=utf-8]
+      SOAPAction: ['""']
+      User-Agent: [Zeep/1.3.0 (www.python-zeep.org)]
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/inventory/ws
+  response:
+    body: {string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><env:Envelope
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:getInventoryExternalResponse
+        xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
+        xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:getResponseExternalItem
+        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>17</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>9784088905877</n2:itemNumber><n2:itemUrl>sku7ehdr72zz4tpsss</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>10</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>97848897</n2:itemNumber><n2:itemUrl>sku7ehdr72zz4tpzzz</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem></n2:getResponseExternalItem></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"}
+    headers:
+      connection: [close]
+      content-length: ['2347']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Wed, 29 Mar 2017 09:23:11 GMT']
+      requestid: [244c777f-0d22-4c0c-b46c-2ceafcdb2a11]
+      server: [nginx]
+      timestamp: ['2017-03-29T09:23:11']
+      vary: [Accept-Encoding]
+    status: {code: 200, message: OK}
+version: 1
