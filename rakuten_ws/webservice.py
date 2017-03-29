@@ -121,6 +121,30 @@ class RmsInventoryAPI(ZeepClient):
 class RmsOrderAPI(ZeepClient):
     wsdl = "file://%s" % op.abspath(op.join(op.dirname(__file__), 'wsdl', 'orderapi.wsdl'))
 
+    def getOrder(self, **kwargs):
+        request = {
+            'isOrderNumberOnlyFlg': kwargs.get('isOrderNumberOnlyFlg', True),
+        }
+        order_search_model_keys = ['asuraku', 'cardSearchModel', 'comment', 'coupon', 'dateType', 'delivery', 'drug',
+                                   'enclosureStatus', 'endDate', 'itemName', 'itemNumber', 'mailAddressType', 'modify',
+                                   'orderSite', 'orderType', 'ordererKana', 'ordererMailAddress', 'ordererName',
+                                   'ordererPhoneNumber', 'overseas', 'pointStatus', 'pointUsed', 'rbankStatus',
+                                   'reserveNumber', 'senderName', 'senderPhoneNumber', 'settlement', 'startDate',
+                                   'status']
+        order_search_model_kwargs = {k: kwargs[k] for k in kwargs if k in order_search_model_keys}
+        if order_search_model_kwargs:
+            OrderSearchModelType = self.xsd_types['orderSearchModel']  # noqa
+            request['orderSearchModel'] = OrderSearchModelType(**order_search_model_kwargs)
+
+        order_number = kwargs.get('orderNumber', None)
+        if order_number is not None:
+            if isinstance(order_number, (list, tuple)):
+                ArrayOfString = self.zeep_client.get_type('ns0:ArrayOfString')  # noqa
+                request['orderNumber'] = ArrayOfString(order_number)  # noqa
+            else:
+                request['orderNumber'] = order_number
+        return self._send_request('getOrder', **request)
+
 
 class RmsProductAPI(RestClient):
     api_version = '2.0'

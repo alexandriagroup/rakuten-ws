@@ -64,14 +64,11 @@ class ZeepClient(RmsServiceClient):
         if address.endswith('inventory/ws'):
             kwargs = {'externalUserAuthModel': arg0}
             kwargs.update(proxy_kwargs)
-            response = method(**kwargs)
-        # We assume the potential future methods will have the same form as the
-        # order method (arg0, arg1...)
         else:
             kwargs = {'arg0': arg0}
             if proxy_kwargs:
                 kwargs['arg1'] = proxy_kwargs
-            response = method(**kwargs)
+        response = method(**kwargs)
         return response
 
     def __getattr__(self, name):

@@ -21,3 +21,5 @@ httpretty
 unidecode
 ptpython
 pytest-randomly
+freezegun
+pytz
