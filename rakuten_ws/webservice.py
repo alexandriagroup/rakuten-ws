@@ -145,6 +145,30 @@ class RmsOrderAPI(ZeepClient):
                 request['orderNumber'] = order_number
         return self._send_request('getOrder', **request)
 
+    def updateOrder(self, **kwargs):
+        request = {}
+        order_model_keys = ['canEnclosure', 'cardStatus', 'carrierCode', 'childOrderModel',
+                            'couponAllTotalPrice', 'couponAllTotalUnit', 'couponModel', 'couponOtherPrice',
+                            'couponOtherTotalUnit', 'couponShopPrice', 'couponShopTotalUnit', 'deal',
+                            'deliveryModel', 'deliveryPrice', 'drugCategory', 'emailCarrierCode',
+                            'enclosureCouponPrice', 'enclosureDeliveryPrice', 'enclosureGoodsPrice',
+                            'enclosureGoodsTax', 'enclosureId', 'enclosurePointPrice', 'enclosurePostagePrice',
+                            'enclosureRBankTransferCommission', 'enclosureRequestPrice', 'enclosureStatus',
+                            'enclosureTotalPrice', 'firstAmount', 'gbuyOrderModel', 'goodsPrice', 'goodsTax',
+                            'historyModel', 'isBlackUser', 'isGift', 'isGiftCheck', 'isRakutenMember',
+                            'isTaxRecalc', 'mailPlugSentence', 'membership', 'memo', 'modify',
+                            'normalOrderModel', 'operator', 'option', 'orderDate', 'orderNumber',
+                            'orderType', 'ordererModel', 'packageModel', 'paymentDate', 'paymentStatusModel',
+                            'pointModel', 'postagePrice', 'RBankModel', 'requestPrice', 'rmId', 'saOrderModel',
+                            'seqId', 'settlementModel', 'shippingDate', 'shippingTerm', 'status', 'totalPrice',
+                            'wishDeliveryDate', 'wrappingModel1', 'wrappingModel2']
+        order_model_kwargs = {k: kwargs[k] for k in kwargs if k in order_model_keys}
+        if order_model_kwargs:
+            OrderModelType = self.xsd_types['orderModel']  # noqa
+            request['orderModel'] = OrderModelType(**order_model_kwargs)
+
+        return self._send_request('updateOrder', **request)
+
 
 class RmsProductAPI(RestClient):
     api_version = '2.0'
