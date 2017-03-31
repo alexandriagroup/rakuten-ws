@@ -24,3 +24,24 @@ def test_get_order(ws):
     result = ws.rms.order.getOrder(**kwargs)
     # E10-001   検索結果が0件です   The number of search results is zero.
     result['errorCode'] == "E10-001"
+
+
+def test_update_order(ws):
+    request_id = ws.rms.order.getRequestId()['requestId']
+    order_model = {'orderNumber': 333, 'status': 'processed'}
+    result = ws.rms.order.updateOrder(requestId=request_id, orderModel=order_model)
+    for unit_error in result['unitError']:
+        # E04-151   指定された受注番号の形式が不正です   Specified order number format is invalid.
+        unit_error['errorCode'] == 'E04-151'
+
+
+def test_update_orders(ws):
+    request_id = ws.rms.order.getRequestId()['requestId']
+    order_model = [
+        {'orderNumber': 111, 'status': 'awaiting shipment'},
+        {'orderNumber': 222, 'status': 'processed'}
+    ]
+    result = ws.rms.order.updateOrder(requestId=request_id, orderModel=order_model)
+    for unit_error in result['unitError']:
+        # E04-151   指定された受注番号の形式が不正です   Specified order number format is invalid.
+        unit_error['errorCode'] == 'E04-151'
