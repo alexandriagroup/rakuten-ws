@@ -145,27 +145,16 @@ class RmsOrderAPI(ZeepClient):
                 request['orderNumber'] = order_number
         return self._send_request('getOrder', **request)
 
-    def updateOrder(self, **kwargs):
-        request = {}
-        order_model_keys = ['canEnclosure', 'cardStatus', 'carrierCode', 'childOrderModel',
-                            'couponAllTotalPrice', 'couponAllTotalUnit', 'couponModel', 'couponOtherPrice',
-                            'couponOtherTotalUnit', 'couponShopPrice', 'couponShopTotalUnit', 'deal',
-                            'deliveryModel', 'deliveryPrice', 'drugCategory', 'emailCarrierCode',
-                            'enclosureCouponPrice', 'enclosureDeliveryPrice', 'enclosureGoodsPrice',
-                            'enclosureGoodsTax', 'enclosureId', 'enclosurePointPrice', 'enclosurePostagePrice',
-                            'enclosureRBankTransferCommission', 'enclosureRequestPrice', 'enclosureStatus',
-                            'enclosureTotalPrice', 'firstAmount', 'gbuyOrderModel', 'goodsPrice', 'goodsTax',
-                            'historyModel', 'isBlackUser', 'isGift', 'isGiftCheck', 'isRakutenMember',
-                            'isTaxRecalc', 'mailPlugSentence', 'membership', 'memo', 'modify',
-                            'normalOrderModel', 'operator', 'option', 'orderDate', 'orderNumber',
-                            'orderType', 'ordererModel', 'packageModel', 'paymentDate', 'paymentStatusModel',
-                            'pointModel', 'postagePrice', 'RBankModel', 'requestPrice', 'rmId', 'saOrderModel',
-                            'seqId', 'settlementModel', 'shippingDate', 'shippingTerm', 'status', 'totalPrice',
-                            'wishDeliveryDate', 'wrappingModel1', 'wrappingModel2']
-        order_model_kwargs = {k: kwargs[k] for k in kwargs if k in order_model_keys}
-        if order_model_kwargs:
-            OrderModelType = self.xsd_types['orderModel']  # noqa
-            request['orderModel'] = OrderModelType(**order_model_kwargs)
+    def updateOrder(self, requestId, orderModel=None):
+        request = {'requestId': requestId}
+        OrderModelType = self.xsd_types['orderModel']  # noqa
+        if orderModel is not None:
+            if not isinstance(orderModel, (list, tuple)):
+                request['orderModel'] = OrderModelType(**orderModel)
+            else:
+                request['orderModel'] = []
+                for model_kwargs in orderModel:
+                    request['orderModel'].append(OrderModelType(**model_kwargs))
 
         return self._send_request('updateOrder', **request)
 
