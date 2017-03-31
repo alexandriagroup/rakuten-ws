@@ -54,7 +54,7 @@ Supported APIs
 .. _Rakuten Ichiba RMS Inventory API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/inventoryapi
 .. _Rakuten Ichiba RMS Cabinet API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/cabinetapi
 .. _Rakuten Ichiba RMS Navigation API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/navigationapi
-.. _Rakuten Ichiba RMS Categpory API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/categoryapi
+.. _Rakuten Ichiba RMS Category API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/categoryapi
 .. _Rakuten Books API: https://rakuten-api-documentation.antoniotajuelo.com/rakuten/service/view?rakuten_service_id=2
 .. _Rakuten Travel API: https://rakuten-api-documentation.antoniotajuelo.com/rakuten/service/view?rakuten_service_id=4
 .. _Rakuten Auction API: https://rakuten-api-documentation.antoniotajuelo.com/rakuten/service/view?rakuten_service_id=4
