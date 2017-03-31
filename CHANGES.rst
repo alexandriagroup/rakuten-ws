@@ -3,10 +3,12 @@
 Python Rakuten Web Service changelog
 ==================================================
 
-Version 0.4.2.dev0
-------------------
+Version 0.4.2
+-------------
 
-**unreleased**
+Released on March 31st 2017
+
+- Fixed `RmsOrderAPI.getOrder` and `RmsOrderAPI.updateOrder`
 
 Version 0.4.1
 -------------
