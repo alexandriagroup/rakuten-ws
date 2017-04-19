@@ -123,7 +123,7 @@ class RmsOrderAPI(ZeepClient):
 
     def getOrder(self, **kwargs):
         request = {
-            'isOrderNumberOnlyFlg': kwargs.get('isOrderNumberOnlyFlg', True),
+            'isOrderNumberOnlyFlg': kwargs.get('isOrderNumberOnlyFlg', False),
         }
         order_search_model_keys = ['asuraku', 'cardSearchModel', 'comment', 'coupon', 'dateType', 'delivery', 'drug',
                                    'enclosureStatus', 'endDate', 'itemName', 'itemNumber', 'mailAddressType', 'modify',
