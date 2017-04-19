@@ -3,7 +3,7 @@
 Python Rakuten Web Service changelog
 ==================================================
 
-Version 0.4.4
+Version 0.4.3
 -------------
 
 Released on April 19th 2017
