@@ -3,6 +3,13 @@
 Python Rakuten Web Service changelog
 ==================================================
 
+Version 0.4.4
+-------------
+
+Released on April 19th 2017
+
+- Set `RmsOrderAPI.getOrder.isOrderNumberOnlyFlg` to False by default.
+
 Version 0.4.3.dev0
 ------------------
 
