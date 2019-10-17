@@ -76,3 +76,19 @@ You can install, upgrade, uninstall rakuten-ws with these commands::
   $ pip install [--user] rakuten-ws
   $ pip install [--user] --upgrade rakuten-ws
   $ pip uninstall rakuten-ws
+
+
+Development
+-----------
+
+konch_ provides a useful development environment. To execute it, run the command::
+
+   konch
+
+
+The old solution was to use ptpython_ in interactive mode. To execute it, run the command::
+
+   webservice
+
+.. _konch: https://konch.readthedocs.io/en/latest/
+.. _ptpython: https://github.com/prompt-toolkit/ptpython
