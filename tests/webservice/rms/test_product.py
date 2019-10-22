@@ -7,6 +7,8 @@ import requests
 from ... import assert_raises
 
 
+GENRE_ID = 203063
+
 product_ids = [
     "4943586953048", "4943586934344", "4943586934368", "4943586934337", "4943586934351",
     "4943586927957", "4943586933033", "4943586933040", "4943586948099", "4943586988033",
@@ -20,8 +22,8 @@ product_search_parameters = [
     {'productId': 4986773144973},
     {'productId': ','.join(product_ids)},
     {'keyword': 'ワンピース'},
-    {'genreId': '/0/100371/110729/403839'},
-    {'genreId': '/0/100371/110729/403839', 'sortBy': 'standardPriceAsc', 'offset': 0, 'limit': 15},
+    {'genreId': GENRE_ID},
+    {'genreId': GENRE_ID, 'sortBy': 'standardPriceAsc', 'offset': 0, 'limit': 15},
     {'makerName': 'ダイキサウンド'},
     {'makerName': '高電社'},
 ]
