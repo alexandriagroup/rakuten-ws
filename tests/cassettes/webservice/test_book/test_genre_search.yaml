@@ -2,19 +2,151 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
     uri: https://app.rakuten.co.jp/services/api/BooksGenre/Search/20121128?applicationId=XXXXXX&booksGenreId=001&formatVersion=2&hits=3
   response:
-    body: {string: "{\"current\":{\"booksGenreId\":\"001\",\"booksGenreName\":\"\u672C\",\"genreLevel\":1},\"children\":[{\"booksGenreId\":\"001001\",\"booksGenreName\":\"\u6F2B\u753B\uFF08\u30B3\u30DF\u30C3\u30AF\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001002\",\"booksGenreName\":\"\u8A9E\u5B66\u30FB\u5B66\u7FD2\u53C2\u8003\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001003\",\"booksGenreName\":\"\u7D75\u672C\u30FB\u5150\u7AE5\u66F8\u30FB\u56F3\u9451\",\"genreLevel\":2},{\"booksGenreId\":\"001004\",\"booksGenreName\":\"\u5C0F\u8AAC\u30FB\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":2},{\"booksGenreId\":\"001005\",\"booksGenreName\":\"\u30D1\u30BD\u30B3\u30F3\u30FB\u30B7\u30B9\u30C6\u30E0\u958B\u767A\",\"genreLevel\":2},{\"booksGenreId\":\"001006\",\"booksGenreName\":\"\u30D3\u30B8\u30CD\u30B9\u30FB\u7D4C\u6E08\u30FB\u5C31\u8077\",\"genreLevel\":2},{\"booksGenreId\":\"001007\",\"booksGenreName\":\"\u65C5\u884C\u30FB\u7559\u5B66\u30FB\u30A2\u30A6\u30C8\u30C9\u30A2\",\"genreLevel\":2},{\"booksGenreId\":\"001008\",\"booksGenreName\":\"\u4EBA\u6587\u30FB\u601D\u60F3\u30FB\u793E\u4F1A\",\"genreLevel\":2},{\"booksGenreId\":\"001009\",\"booksGenreName\":\"\u30DB\u30D3\u30FC\u30FB\u30B9\u30DD\u30FC\u30C4\u30FB\u7F8E\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001010\",\"booksGenreName\":\"\u7F8E\u5BB9\u30FB\u66AE\u3089\u3057\u30FB\u5065\u5EB7\u30FB\u6599\u7406\",\"genreLevel\":2},{\"booksGenreId\":\"001011\",\"booksGenreName\":\"\u30A8\u30F3\u30BF\u30E1\u30FB\u30B2\u30FC\u30E0\",\"genreLevel\":2},{\"booksGenreId\":\"001012\",\"booksGenreName\":\"\u79D1\u5B66\u30FB\u6280\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001013\",\"booksGenreName\":\"\u5199\u771F\u96C6\u30FB\u30BF\u30EC\u30F3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001016\",\"booksGenreName\":\"\u8CC7\u683C\u30FB\u691C\u5B9A\",\"genreLevel\":2},{\"booksGenreId\":\"001017\",\"booksGenreName\":\"\u30E9\u30A4\u30C8\u30CE\u30D9\u30EB\",\"genreLevel\":2},{\"booksGenreId\":\"001018\",\"booksGenreName\":\"\u697D\u8B5C\",\"genreLevel\":2},{\"booksGenreId\":\"001019\",\"booksGenreName\":\"\u6587\u5EAB\",\"genreLevel\":2},{\"booksGenreId\":\"001020\",\"booksGenreName\":\"\u65B0\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001021\",\"booksGenreName\":\"\u30DC\u30FC\u30A4\u30BA\u30E9\u30D6\uFF08BL\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001022\",\"booksGenreName\":\"\u4ED8\u9332\u4ED8\u304D\",\"genreLevel\":2},{\"booksGenreId\":\"001023\",\"booksGenreName\":\"\u30D0\u30FC\u30B2\u30F3\u672C\",\"genreLevel\":2},{\"booksGenreId\":\"001025\",\"booksGenreName\":\"\u30B3\u30DF\u30C3\u30AF\u30BB\u30C3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001026\",\"booksGenreName\":\"\u30AB\u30EC\u30F3\u30C0\u30FC\u30FB\u624B\u5E33\u30FB\u5BB6\u8A08\u7C3F\",\"genreLevel\":2},{\"booksGenreId\":\"001027\",\"booksGenreName\":\"\u6587\u5177\u30FB\u96D1\u8CA8\",\"genreLevel\":2},{\"booksGenreId\":\"001028\",\"booksGenreName\":\"\u533B\u5B66\u30FB\u85AC\u5B66\u30FB\u770B\u8B77\u5B66\u30FB\u6B6F\u79D1\u5B66\",\"genreLevel\":2}],\"parents\":[]}"}
+    body:
+      string: "{\"current\":{\"booksGenreId\":\"001\",\"booksGenreName\":\"\u672C\",\"genreLevel\":1},\"children\":[{\"booksGenreId\":\"001001\",\"booksGenreName\":\"\u6F2B\u753B\uFF08\u30B3\u30DF\u30C3\u30AF\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001002\",\"booksGenreName\":\"\u8A9E\u5B66\u30FB\u5B66\u7FD2\u53C2\u8003\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001003\",\"booksGenreName\":\"\u7D75\u672C\u30FB\u5150\u7AE5\u66F8\u30FB\u56F3\u9451\",\"genreLevel\":2},{\"booksGenreId\":\"001004\",\"booksGenreName\":\"\u5C0F\u8AAC\u30FB\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":2},{\"booksGenreId\":\"001005\",\"booksGenreName\":\"\u30D1\u30BD\u30B3\u30F3\u30FB\u30B7\u30B9\u30C6\u30E0\u958B\u767A\",\"genreLevel\":2},{\"booksGenreId\":\"001006\",\"booksGenreName\":\"\u30D3\u30B8\u30CD\u30B9\u30FB\u7D4C\u6E08\u30FB\u5C31\u8077\",\"genreLevel\":2},{\"booksGenreId\":\"001007\",\"booksGenreName\":\"\u65C5\u884C\u30FB\u7559\u5B66\u30FB\u30A2\u30A6\u30C8\u30C9\u30A2\",\"genreLevel\":2},{\"booksGenreId\":\"001008\",\"booksGenreName\":\"\u4EBA\u6587\u30FB\u601D\u60F3\u30FB\u793E\u4F1A\",\"genreLevel\":2},{\"booksGenreId\":\"001009\",\"booksGenreName\":\"\u30DB\u30D3\u30FC\u30FB\u30B9\u30DD\u30FC\u30C4\u30FB\u7F8E\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001010\",\"booksGenreName\":\"\u7F8E\u5BB9\u30FB\u66AE\u3089\u3057\u30FB\u5065\u5EB7\u30FB\u6599\u7406\",\"genreLevel\":2},{\"booksGenreId\":\"001011\",\"booksGenreName\":\"\u30A8\u30F3\u30BF\u30E1\u30FB\u30B2\u30FC\u30E0\",\"genreLevel\":2},{\"booksGenreId\":\"001012\",\"booksGenreName\":\"\u79D1\u5B66\u30FB\u6280\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001013\",\"booksGenreName\":\"\u5199\u771F\u96C6\u30FB\u30BF\u30EC\u30F3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001015\",\"booksGenreName\":\"\u305D\u306E\u4ED6\",\"genreLevel\":2},{\"booksGenreId\":\"001016\",\"booksGenreName\":\"\u8CC7\u683C\u30FB\u691C\u5B9A\",\"genreLevel\":2},{\"booksGenreId\":\"001017\",\"booksGenreName\":\"\u30E9\u30A4\u30C8\u30CE\u30D9\u30EB\",\"genreLevel\":2},{\"booksGenreId\":\"001018\",\"booksGenreName\":\"\u697D\u8B5C\",\"genreLevel\":2},{\"booksGenreId\":\"001019\",\"booksGenreName\":\"\u6587\u5EAB\",\"genreLevel\":2},{\"booksGenreId\":\"001020\",\"booksGenreName\":\"\u65B0\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001021\",\"booksGenreName\":\"\u30DC\u30FC\u30A4\u30BA\u30E9\u30D6\uFF08BL\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001022\",\"booksGenreName\":\"\u4ED8\u9332\u4ED8\u304D\",\"genreLevel\":2},{\"booksGenreId\":\"001023\",\"booksGenreName\":\"\u30D0\u30FC\u30B2\u30F3\u672C\",\"genreLevel\":2},{\"booksGenreId\":\"001025\",\"booksGenreName\":\"\u30B3\u30DF\u30C3\u30AF\u30BB\u30C3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001026\",\"booksGenreName\":\"\u30AB\u30EC\u30F3\u30C0\u30FC\u30FB\u624B\u5E33\u30FB\u5BB6\u8A08\u7C3F\",\"genreLevel\":2},{\"booksGenreId\":\"001027\",\"booksGenreName\":\"\u6587\u5177\u30FB\u96D1\u8CA8\",\"genreLevel\":2},{\"booksGenreId\":\"001028\",\"booksGenreName\":\"\u533B\u5B66\u30FB\u85AC\u5B66\u30FB\u770B\u8B77\u5B66\u30FB\u6B6F\u79D1\u5B66\",\"genreLevel\":2}],\"parents\":[]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['2186']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:33:47 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2256'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:41:08 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksGenre/Search/20121128?applicationId=XXXXXX&booksGenreId=001&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"current\":{\"booksGenreId\":\"001\",\"booksGenreName\":\"\u672C\",\"genreLevel\":1},\"children\":[{\"booksGenreId\":\"001001\",\"booksGenreName\":\"\u6F2B\u753B\uFF08\u30B3\u30DF\u30C3\u30AF\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001002\",\"booksGenreName\":\"\u8A9E\u5B66\u30FB\u5B66\u7FD2\u53C2\u8003\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001003\",\"booksGenreName\":\"\u7D75\u672C\u30FB\u5150\u7AE5\u66F8\u30FB\u56F3\u9451\",\"genreLevel\":2},{\"booksGenreId\":\"001004\",\"booksGenreName\":\"\u5C0F\u8AAC\u30FB\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":2},{\"booksGenreId\":\"001005\",\"booksGenreName\":\"\u30D1\u30BD\u30B3\u30F3\u30FB\u30B7\u30B9\u30C6\u30E0\u958B\u767A\",\"genreLevel\":2},{\"booksGenreId\":\"001006\",\"booksGenreName\":\"\u30D3\u30B8\u30CD\u30B9\u30FB\u7D4C\u6E08\u30FB\u5C31\u8077\",\"genreLevel\":2},{\"booksGenreId\":\"001007\",\"booksGenreName\":\"\u65C5\u884C\u30FB\u7559\u5B66\u30FB\u30A2\u30A6\u30C8\u30C9\u30A2\",\"genreLevel\":2},{\"booksGenreId\":\"001008\",\"booksGenreName\":\"\u4EBA\u6587\u30FB\u601D\u60F3\u30FB\u793E\u4F1A\",\"genreLevel\":2},{\"booksGenreId\":\"001009\",\"booksGenreName\":\"\u30DB\u30D3\u30FC\u30FB\u30B9\u30DD\u30FC\u30C4\u30FB\u7F8E\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001010\",\"booksGenreName\":\"\u7F8E\u5BB9\u30FB\u66AE\u3089\u3057\u30FB\u5065\u5EB7\u30FB\u6599\u7406\",\"genreLevel\":2},{\"booksGenreId\":\"001011\",\"booksGenreName\":\"\u30A8\u30F3\u30BF\u30E1\u30FB\u30B2\u30FC\u30E0\",\"genreLevel\":2},{\"booksGenreId\":\"001012\",\"booksGenreName\":\"\u79D1\u5B66\u30FB\u6280\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001013\",\"booksGenreName\":\"\u5199\u771F\u96C6\u30FB\u30BF\u30EC\u30F3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001015\",\"booksGenreName\":\"\u305D\u306E\u4ED6\",\"genreLevel\":2},{\"booksGenreId\":\"001016\",\"booksGenreName\":\"\u8CC7\u683C\u30FB\u691C\u5B9A\",\"genreLevel\":2},{\"booksGenreId\":\"001017\",\"booksGenreName\":\"\u30E9\u30A4\u30C8\u30CE\u30D9\u30EB\",\"genreLevel\":2},{\"booksGenreId\":\"001018\",\"booksGenreName\":\"\u697D\u8B5C\",\"genreLevel\":2},{\"booksGenreId\":\"001019\",\"booksGenreName\":\"\u6587\u5EAB\",\"genreLevel\":2},{\"booksGenreId\":\"001020\",\"booksGenreName\":\"\u65B0\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001021\",\"booksGenreName\":\"\u30DC\u30FC\u30A4\u30BA\u30E9\u30D6\uFF08BL\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001022\",\"booksGenreName\":\"\u4ED8\u9332\u4ED8\u304D\",\"genreLevel\":2},{\"booksGenreId\":\"001023\",\"booksGenreName\":\"\u30D0\u30FC\u30B2\u30F3\u672C\",\"genreLevel\":2},{\"booksGenreId\":\"001025\",\"booksGenreName\":\"\u30B3\u30DF\u30C3\u30AF\u30BB\u30C3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001026\",\"booksGenreName\":\"\u30AB\u30EC\u30F3\u30C0\u30FC\u30FB\u624B\u5E33\u30FB\u5BB6\u8A08\u7C3F\",\"genreLevel\":2},{\"booksGenreId\":\"001027\",\"booksGenreName\":\"\u6587\u5177\u30FB\u96D1\u8CA8\",\"genreLevel\":2},{\"booksGenreId\":\"001028\",\"booksGenreName\":\"\u533B\u5B66\u30FB\u85AC\u5B66\u30FB\u770B\u8B77\u5B66\u30FB\u6B6F\u79D1\u5B66\",\"genreLevel\":2}],\"parents\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2256'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:55:30 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksGenre/Search/20121128?applicationId=XXXXXX&booksGenreId=001&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"current\":{\"booksGenreId\":\"001\",\"booksGenreName\":\"\u672C\",\"genreLevel\":1},\"children\":[{\"booksGenreId\":\"001001\",\"booksGenreName\":\"\u6F2B\u753B\uFF08\u30B3\u30DF\u30C3\u30AF\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001002\",\"booksGenreName\":\"\u8A9E\u5B66\u30FB\u5B66\u7FD2\u53C2\u8003\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001003\",\"booksGenreName\":\"\u7D75\u672C\u30FB\u5150\u7AE5\u66F8\u30FB\u56F3\u9451\",\"genreLevel\":2},{\"booksGenreId\":\"001004\",\"booksGenreName\":\"\u5C0F\u8AAC\u30FB\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":2},{\"booksGenreId\":\"001005\",\"booksGenreName\":\"\u30D1\u30BD\u30B3\u30F3\u30FB\u30B7\u30B9\u30C6\u30E0\u958B\u767A\",\"genreLevel\":2},{\"booksGenreId\":\"001006\",\"booksGenreName\":\"\u30D3\u30B8\u30CD\u30B9\u30FB\u7D4C\u6E08\u30FB\u5C31\u8077\",\"genreLevel\":2},{\"booksGenreId\":\"001007\",\"booksGenreName\":\"\u65C5\u884C\u30FB\u7559\u5B66\u30FB\u30A2\u30A6\u30C8\u30C9\u30A2\",\"genreLevel\":2},{\"booksGenreId\":\"001008\",\"booksGenreName\":\"\u4EBA\u6587\u30FB\u601D\u60F3\u30FB\u793E\u4F1A\",\"genreLevel\":2},{\"booksGenreId\":\"001009\",\"booksGenreName\":\"\u30DB\u30D3\u30FC\u30FB\u30B9\u30DD\u30FC\u30C4\u30FB\u7F8E\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001010\",\"booksGenreName\":\"\u7F8E\u5BB9\u30FB\u66AE\u3089\u3057\u30FB\u5065\u5EB7\u30FB\u6599\u7406\",\"genreLevel\":2},{\"booksGenreId\":\"001011\",\"booksGenreName\":\"\u30A8\u30F3\u30BF\u30E1\u30FB\u30B2\u30FC\u30E0\",\"genreLevel\":2},{\"booksGenreId\":\"001012\",\"booksGenreName\":\"\u79D1\u5B66\u30FB\u6280\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001013\",\"booksGenreName\":\"\u5199\u771F\u96C6\u30FB\u30BF\u30EC\u30F3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001015\",\"booksGenreName\":\"\u305D\u306E\u4ED6\",\"genreLevel\":2},{\"booksGenreId\":\"001016\",\"booksGenreName\":\"\u8CC7\u683C\u30FB\u691C\u5B9A\",\"genreLevel\":2},{\"booksGenreId\":\"001017\",\"booksGenreName\":\"\u30E9\u30A4\u30C8\u30CE\u30D9\u30EB\",\"genreLevel\":2},{\"booksGenreId\":\"001018\",\"booksGenreName\":\"\u697D\u8B5C\",\"genreLevel\":2},{\"booksGenreId\":\"001019\",\"booksGenreName\":\"\u6587\u5EAB\",\"genreLevel\":2},{\"booksGenreId\":\"001020\",\"booksGenreName\":\"\u65B0\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001021\",\"booksGenreName\":\"\u30DC\u30FC\u30A4\u30BA\u30E9\u30D6\uFF08BL\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001022\",\"booksGenreName\":\"\u4ED8\u9332\u4ED8\u304D\",\"genreLevel\":2},{\"booksGenreId\":\"001023\",\"booksGenreName\":\"\u30D0\u30FC\u30B2\u30F3\u672C\",\"genreLevel\":2},{\"booksGenreId\":\"001025\",\"booksGenreName\":\"\u30B3\u30DF\u30C3\u30AF\u30BB\u30C3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001026\",\"booksGenreName\":\"\u30AB\u30EC\u30F3\u30C0\u30FC\u30FB\u624B\u5E33\u30FB\u5BB6\u8A08\u7C3F\",\"genreLevel\":2},{\"booksGenreId\":\"001027\",\"booksGenreName\":\"\u6587\u5177\u30FB\u96D1\u8CA8\",\"genreLevel\":2},{\"booksGenreId\":\"001028\",\"booksGenreName\":\"\u533B\u5B66\u30FB\u85AC\u5B66\u30FB\u770B\u8B77\u5B66\u30FB\u6B6F\u79D1\u5B66\",\"genreLevel\":2}],\"parents\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2256'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:16:26 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksGenre/Search/20121128?applicationId=XXXXXX&booksGenreId=001&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"current\":{\"booksGenreId\":\"001\",\"booksGenreName\":\"\u672C\",\"genreLevel\":1},\"children\":[{\"booksGenreId\":\"001001\",\"booksGenreName\":\"\u6F2B\u753B\uFF08\u30B3\u30DF\u30C3\u30AF\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001002\",\"booksGenreName\":\"\u8A9E\u5B66\u30FB\u5B66\u7FD2\u53C2\u8003\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001003\",\"booksGenreName\":\"\u7D75\u672C\u30FB\u5150\u7AE5\u66F8\u30FB\u56F3\u9451\",\"genreLevel\":2},{\"booksGenreId\":\"001004\",\"booksGenreName\":\"\u5C0F\u8AAC\u30FB\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":2},{\"booksGenreId\":\"001005\",\"booksGenreName\":\"\u30D1\u30BD\u30B3\u30F3\u30FB\u30B7\u30B9\u30C6\u30E0\u958B\u767A\",\"genreLevel\":2},{\"booksGenreId\":\"001006\",\"booksGenreName\":\"\u30D3\u30B8\u30CD\u30B9\u30FB\u7D4C\u6E08\u30FB\u5C31\u8077\",\"genreLevel\":2},{\"booksGenreId\":\"001007\",\"booksGenreName\":\"\u65C5\u884C\u30FB\u7559\u5B66\u30FB\u30A2\u30A6\u30C8\u30C9\u30A2\",\"genreLevel\":2},{\"booksGenreId\":\"001008\",\"booksGenreName\":\"\u4EBA\u6587\u30FB\u601D\u60F3\u30FB\u793E\u4F1A\",\"genreLevel\":2},{\"booksGenreId\":\"001009\",\"booksGenreName\":\"\u30DB\u30D3\u30FC\u30FB\u30B9\u30DD\u30FC\u30C4\u30FB\u7F8E\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001010\",\"booksGenreName\":\"\u7F8E\u5BB9\u30FB\u66AE\u3089\u3057\u30FB\u5065\u5EB7\u30FB\u6599\u7406\",\"genreLevel\":2},{\"booksGenreId\":\"001011\",\"booksGenreName\":\"\u30A8\u30F3\u30BF\u30E1\u30FB\u30B2\u30FC\u30E0\",\"genreLevel\":2},{\"booksGenreId\":\"001012\",\"booksGenreName\":\"\u79D1\u5B66\u30FB\u6280\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001013\",\"booksGenreName\":\"\u5199\u771F\u96C6\u30FB\u30BF\u30EC\u30F3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001015\",\"booksGenreName\":\"\u305D\u306E\u4ED6\",\"genreLevel\":2},{\"booksGenreId\":\"001016\",\"booksGenreName\":\"\u8CC7\u683C\u30FB\u691C\u5B9A\",\"genreLevel\":2},{\"booksGenreId\":\"001017\",\"booksGenreName\":\"\u30E9\u30A4\u30C8\u30CE\u30D9\u30EB\",\"genreLevel\":2},{\"booksGenreId\":\"001018\",\"booksGenreName\":\"\u697D\u8B5C\",\"genreLevel\":2},{\"booksGenreId\":\"001019\",\"booksGenreName\":\"\u6587\u5EAB\",\"genreLevel\":2},{\"booksGenreId\":\"001020\",\"booksGenreName\":\"\u65B0\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001021\",\"booksGenreName\":\"\u30DC\u30FC\u30A4\u30BA\u30E9\u30D6\uFF08BL\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001022\",\"booksGenreName\":\"\u4ED8\u9332\u4ED8\u304D\",\"genreLevel\":2},{\"booksGenreId\":\"001023\",\"booksGenreName\":\"\u30D0\u30FC\u30B2\u30F3\u672C\",\"genreLevel\":2},{\"booksGenreId\":\"001025\",\"booksGenreName\":\"\u30B3\u30DF\u30C3\u30AF\u30BB\u30C3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001026\",\"booksGenreName\":\"\u30AB\u30EC\u30F3\u30C0\u30FC\u30FB\u624B\u5E33\u30FB\u5BB6\u8A08\u7C3F\",\"genreLevel\":2},{\"booksGenreId\":\"001027\",\"booksGenreName\":\"\u6587\u5177\u30FB\u96D1\u8CA8\",\"genreLevel\":2},{\"booksGenreId\":\"001028\",\"booksGenreName\":\"\u533B\u5B66\u30FB\u85AC\u5B66\u30FB\u770B\u8B77\u5B66\u30FB\u6B6F\u79D1\u5B66\",\"genreLevel\":2}],\"parents\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2256'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:21:32 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksGenre/Search/20121128?applicationId=XXXXXX&booksGenreId=001&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"current\":{\"booksGenreId\":\"001\",\"booksGenreName\":\"\u672C\",\"genreLevel\":1},\"children\":[{\"booksGenreId\":\"001001\",\"booksGenreName\":\"\u6F2B\u753B\uFF08\u30B3\u30DF\u30C3\u30AF\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001002\",\"booksGenreName\":\"\u8A9E\u5B66\u30FB\u5B66\u7FD2\u53C2\u8003\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001003\",\"booksGenreName\":\"\u7D75\u672C\u30FB\u5150\u7AE5\u66F8\u30FB\u56F3\u9451\",\"genreLevel\":2},{\"booksGenreId\":\"001004\",\"booksGenreName\":\"\u5C0F\u8AAC\u30FB\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":2},{\"booksGenreId\":\"001005\",\"booksGenreName\":\"\u30D1\u30BD\u30B3\u30F3\u30FB\u30B7\u30B9\u30C6\u30E0\u958B\u767A\",\"genreLevel\":2},{\"booksGenreId\":\"001006\",\"booksGenreName\":\"\u30D3\u30B8\u30CD\u30B9\u30FB\u7D4C\u6E08\u30FB\u5C31\u8077\",\"genreLevel\":2},{\"booksGenreId\":\"001007\",\"booksGenreName\":\"\u65C5\u884C\u30FB\u7559\u5B66\u30FB\u30A2\u30A6\u30C8\u30C9\u30A2\",\"genreLevel\":2},{\"booksGenreId\":\"001008\",\"booksGenreName\":\"\u4EBA\u6587\u30FB\u601D\u60F3\u30FB\u793E\u4F1A\",\"genreLevel\":2},{\"booksGenreId\":\"001009\",\"booksGenreName\":\"\u30DB\u30D3\u30FC\u30FB\u30B9\u30DD\u30FC\u30C4\u30FB\u7F8E\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001010\",\"booksGenreName\":\"\u7F8E\u5BB9\u30FB\u66AE\u3089\u3057\u30FB\u5065\u5EB7\u30FB\u6599\u7406\",\"genreLevel\":2},{\"booksGenreId\":\"001011\",\"booksGenreName\":\"\u30A8\u30F3\u30BF\u30E1\u30FB\u30B2\u30FC\u30E0\",\"genreLevel\":2},{\"booksGenreId\":\"001012\",\"booksGenreName\":\"\u79D1\u5B66\u30FB\u6280\u8853\",\"genreLevel\":2},{\"booksGenreId\":\"001013\",\"booksGenreName\":\"\u5199\u771F\u96C6\u30FB\u30BF\u30EC\u30F3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001015\",\"booksGenreName\":\"\u305D\u306E\u4ED6\",\"genreLevel\":2},{\"booksGenreId\":\"001016\",\"booksGenreName\":\"\u8CC7\u683C\u30FB\u691C\u5B9A\",\"genreLevel\":2},{\"booksGenreId\":\"001017\",\"booksGenreName\":\"\u30E9\u30A4\u30C8\u30CE\u30D9\u30EB\",\"genreLevel\":2},{\"booksGenreId\":\"001018\",\"booksGenreName\":\"\u697D\u8B5C\",\"genreLevel\":2},{\"booksGenreId\":\"001019\",\"booksGenreName\":\"\u6587\u5EAB\",\"genreLevel\":2},{\"booksGenreId\":\"001020\",\"booksGenreName\":\"\u65B0\u66F8\",\"genreLevel\":2},{\"booksGenreId\":\"001021\",\"booksGenreName\":\"\u30DC\u30FC\u30A4\u30BA\u30E9\u30D6\uFF08BL\uFF09\",\"genreLevel\":2},{\"booksGenreId\":\"001022\",\"booksGenreName\":\"\u4ED8\u9332\u4ED8\u304D\",\"genreLevel\":2},{\"booksGenreId\":\"001023\",\"booksGenreName\":\"\u30D0\u30FC\u30B2\u30F3\u672C\",\"genreLevel\":2},{\"booksGenreId\":\"001025\",\"booksGenreName\":\"\u30B3\u30DF\u30C3\u30AF\u30BB\u30C3\u30C8\",\"genreLevel\":2},{\"booksGenreId\":\"001026\",\"booksGenreName\":\"\u30AB\u30EC\u30F3\u30C0\u30FC\u30FB\u624B\u5E33\u30FB\u5BB6\u8A08\u7C3F\",\"genreLevel\":2},{\"booksGenreId\":\"001027\",\"booksGenreName\":\"\u6587\u5177\u30FB\u96D1\u8CA8\",\"genreLevel\":2},{\"booksGenreId\":\"001028\",\"booksGenreName\":\"\u533B\u5B66\u30FB\u85AC\u5B66\u30FB\u770B\u8B77\u5B66\u30FB\u6B6F\u79D1\u5B66\",\"genreLevel\":2}],\"parents\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2256'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:25:15 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

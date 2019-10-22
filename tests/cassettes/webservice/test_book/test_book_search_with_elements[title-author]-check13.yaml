@@ -2,20 +2,160 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&elements=title%2Cauthor&formatVersion=2&hits=3
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&elements=title%2Cauthor&formatVersion=2&hits=3
   response:
-    body: {string: "{\"Items\":[{\"title\":\"\u6642\u523B\u8868\u304C\u523B\u3093\u3060\u3042\u306E\u77AC\u9593\u30FC\u3000JR30\u5E74\u306E\u8ECC\u8DE1\",\"author\":\"\"},{\"title\":\"\u9632\u707DWalker\",\"author\":\"\"},{\"title\":\"\u7D9A
-        \u3042\u306A\u305F\u306E\u305F\u3081\u306B\",\"author\":\"\u8FB0\u5DF3 \u82B3\u5B50\"}]}"}
+    body:
+      string: "{\"Items\":[{\"title\":\"\u7530\u4E2D\u307F\u306A\u5B9F1st\u5199\u771F\u96C6\uFF08\u4EEE\uFF09\",\"author\":\"\u7530\u4E2D
+        \u307F\u306A\u5B9F\"},{\"title\":\"\u81EA\u5206\u30C4\u30C3\u30B3\u30DF\u304F\u307E\u306E\u672C\u3000\u3082\u3050\u3089\u30B3\u30ED\u30C3\u30B1\u306E\u3046\u305F\",\"author\":\"\u30CA\u30AC\u30CE\"},{\"title\":\"\u300C\u65E5\u672C\u56FD\u7D00\u300D\u306E\u5929\u7687\u8AD6\",\"author\":\"\u767E\u7530\u5C1A\u6A39/\u6709\u672C\u9999\"}]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['191']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:33:35 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '262'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:41:01 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&elements=title%2Cauthor&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"Items\":[{\"title\":\"\u9B3C\u6EC5\u306E\u5203 18\",\"author\":\"\u543E\u5CE0
+        \u547C\u4E16\u6674\"},{\"title\":\"\u7530\u4E2D\u307F\u306A\u5B9F1st\u5199\u771F\u96C6\uFF08\u4EEE\uFF09\",\"author\":\"\u7530\u4E2D
+        \u307F\u306A\u5B9F\"},{\"title\":\"\u4E43\u6728\u574246\u5199\u771F\u96C6\u3000\u4E43\u6728\u64AE\u3000VOL\uFF0E02\",\"author\":\"\u4E43\u6728\u574246\"}]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '223'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:55:22 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&elements=title%2Cauthor&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"Items\":[{\"title\":\"\u7530\u4E2D\u307F\u306A\u5B9F1st\u5199\u771F\u96C6\uFF08\u4EEE\uFF09\",\"author\":\"\u7530\u4E2D
+        \u307F\u306A\u5B9F\"},{\"title\":\"\u4E43\u6728\u574246\u5199\u771F\u96C6\u3000\u4E43\u6728\u64AE\u3000VOL\uFF0E02\",\"author\":\"\u4E43\u6728\u574246\"},{\"title\":\"\u9B3C\u6EC5\u306E\u5203
+        18\",\"author\":\"\u543E\u5CE0 \u547C\u4E16\u6674\"}]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '223'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:16:18 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&elements=title%2Cauthor&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"Items\":[{\"title\":\"\u7530\u4E2D\u307F\u306A\u5B9F1st\u5199\u771F\u96C6\uFF08\u4EEE\uFF09\",\"author\":\"\u7530\u4E2D
+        \u307F\u306A\u5B9F\"},{\"title\":\"\u4E43\u6728\u574246\u5199\u771F\u96C6\u3000\u4E43\u6728\u64AE\u3000VOL\uFF0E02\",\"author\":\"\u4E43\u6728\u574246\"},{\"title\":\"\u9B3C\u6EC5\u306E\u5203
+        18\",\"author\":\"\u543E\u5CE0 \u547C\u4E16\u6674\"}]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '223'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:21:24 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&elements=title%2Cauthor&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"Items\":[{\"title\":\"\u7530\u4E2D\u307F\u306A\u5B9F1st\u5199\u771F\u96C6\uFF08\u4EEE\uFF09\",\"author\":\"\u7530\u4E2D
+        \u307F\u306A\u5B9F\"},{\"title\":\"\u4E43\u6728\u574246\u5199\u771F\u96C6\u3000\u4E43\u6728\u64AE\u3000VOL\uFF0E02\",\"author\":\"\u4E43\u6728\u574246\"},{\"title\":\"\u9B3C\u6EC5\u306E\u5203
+        18\",\"author\":\"\u543E\u5CE0 \u547C\u4E16\u6674\"}]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '223'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:25:06 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

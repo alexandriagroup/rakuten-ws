@@ -2,29 +2,196 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksDVD/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&title=%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9
+    uri: https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&title=%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9
   response:
-    body: {string: "{\"count\":364,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"ONE
-        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 18TH\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u7DE8
-        PIECE.5\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9 \u30A8\u30A4\u30C6\u30A3\u30FC\u30F3\u30B9\u30B7\u30FC\u30BA\u30F3
-        \u30BE\u30A6\u30D8\u30F3 \u30D4\u30FC\u30B9 5\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13/\u4E45\u7530\u548C\u4E5F\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AF\u30C0\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475273410\",\"makerCode\":\"EYBA-11341\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7405\u670803\u65E5\",\"itemPrice\":3645,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14675609/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206001/003206002/003206003/003206004/003206005\"},{\"title\":\"ONE
-        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 18TH\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u7DE8
-        PIECE.5\u3010Blu-ray\u3011\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9
-        \u30A8\u30A4\u30C6\u30A3\u30FC\u30F3\u30B9\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u30D8\u30F3
-        \u30D4\u30FC\u30B9 5\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13/\u4E45\u7530\u548C\u4E5F\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AF\u30C0\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475273427\",\"makerCode\":\"EYXA-11342\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7405\u670803\u65E5\",\"itemPrice\":4455,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14675608/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003215007\"},{\"title\":\"ONE
-        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 18TH\u30B7\u30FC\u30BA\u30F3 \u30BE\u30A6\u7DE8
-        PIECE.4\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9 \u30A8\u30A4\u30C6\u30A3\u30FC\u30F3\u30B9\u30B7\u30FC\u30BA\u30F3
-        \u30BE\u30A6\u30D8\u30F3 \u30D4\u30FC\u30B9 4\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475273090\",\"makerCode\":\"EYBA-11309\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7404\u670805\u65E5\",\"itemPrice\":3742,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14632158/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206001/003206002/003206003/003206004/003206005\"}],\"GenreInformation\":[]}"}
+    body:
+      string: "{\"count\":416,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"ONE
+        PIECE Log Collection \u201CJACK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30B8\u30E3\u30C3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295207\",\"makerCode\":\"EYBA-12520/3\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30BE\u30A6\u9632\u885B\u6226\u304B\u3089\u6D77\u8ECD\u8D85\u65B0\u661F\u7DE8\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A772\u8A71\u301C774\u8A71\\nDisc-2\uFF1A775\u8A71\u301C776\u8A71\\nDisc-3\uFF1A777\u8A71\u301C779\u8A71\\nDisc-4\uFF1A780\u8A71\u301C782\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7409\u670827\u65E5\",\"itemPrice\":9740,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839899/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 20TH\u30B7\u30FC\u30BA\u30F3 \u30EF\u30CE\u56FD\u7DE8
+        PIECE.1\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9 \u30C8\u30A5\u30A8\u30F3\u30C6\u30A3\u30B7\u30FC\u30BA\u30F3
+        \u30EF\u30CE\u30AF\u30CB\u30D8\u30F3 \u30D4\u30FC\u30B9 1\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475297669\",\"makerCode\":\"EYBA-12766\",\"itemCaption\":\"\",\"salesDate\":\"2020\u5E7401\u670808\u65E5\",\"itemPrice\":3712,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16091054/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002009\"},{\"title\":\"ONE
+        PIECE Log Collection \u201CMINK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30DF\u30F3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295160\",\"makerCode\":\"YBA-12516/9\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30B5\u30F3\u30B8\u306E\u5931\u8E2A\u304B\u3089\u3001\u201C\u5FCD\u8005\u6D77\u8CCA\u30DF\u30F3\u30AF\u4F8D\u540C\u76DF\u201D\u7D50\u6210\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A761\u8A71\u301C763\u8A71\\nDisc-2\uFF1A764\u8A71\u301C766\u8A71\\nDisc-3\uFF1A767\u8A71\u301C769\u8A71\\nDisc-4\uFF1A770\u8A71\u301C771\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7408\u670830\u65E5\",\"itemPrice\":10024,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839898/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"}],\"GenreInformation\":[]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['3227']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:34:04 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '4446'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:41:03 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&title=%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9
+  response:
+    body:
+      string: "{\"count\":416,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"ONE
+        PIECE Log Collection \u201CJACK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30B8\u30E3\u30C3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295207\",\"makerCode\":\"EYBA-12520/3\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30BE\u30A6\u9632\u885B\u6226\u304B\u3089\u6D77\u8ECD\u8D85\u65B0\u661F\u7DE8\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A772\u8A71\u301C774\u8A71\\nDisc-2\uFF1A775\u8A71\u301C776\u8A71\\nDisc-3\uFF1A777\u8A71\u301C779\u8A71\\nDisc-4\uFF1A780\u8A71\u301C782\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7409\u670827\u65E5\",\"itemPrice\":9740,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839899/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 20TH\u30B7\u30FC\u30BA\u30F3 \u30EF\u30CE\u56FD\u7DE8
+        PIECE.1\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9 \u30C8\u30A5\u30A8\u30F3\u30C6\u30A3\u30B7\u30FC\u30BA\u30F3
+        \u30EF\u30CE\u30AF\u30CB\u30D8\u30F3 \u30D4\u30FC\u30B9 1\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475297669\",\"makerCode\":\"EYBA-12766\",\"itemCaption\":\"\",\"salesDate\":\"2020\u5E7401\u670808\u65E5\",\"itemPrice\":3712,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16091054/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002009\"},{\"title\":\"ONE
+        PIECE Log Collection \u201CMINK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30DF\u30F3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295160\",\"makerCode\":\"YBA-12516/9\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30B5\u30F3\u30B8\u306E\u5931\u8E2A\u304B\u3089\u3001\u201C\u5FCD\u8005\u6D77\u8CCA\u30DF\u30F3\u30AF\u4F8D\u540C\u76DF\u201D\u7D50\u6210\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A761\u8A71\u301C763\u8A71\\nDisc-2\uFF1A764\u8A71\u301C766\u8A71\\nDisc-3\uFF1A767\u8A71\u301C769\u8A71\\nDisc-4\uFF1A770\u8A71\u301C771\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7408\u670830\u65E5\",\"itemPrice\":10024,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839898/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '4446'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:55:25 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&title=%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9
+  response:
+    body:
+      string: "{\"count\":416,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"ONE
+        PIECE Log Collection \u201CJACK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30B8\u30E3\u30C3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295207\",\"makerCode\":\"EYBA-12520/3\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30BE\u30A6\u9632\u885B\u6226\u304B\u3089\u6D77\u8ECD\u8D85\u65B0\u661F\u7DE8\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A772\u8A71\u301C774\u8A71\\nDisc-2\uFF1A775\u8A71\u301C776\u8A71\\nDisc-3\uFF1A777\u8A71\u301C779\u8A71\\nDisc-4\uFF1A780\u8A71\u301C782\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7409\u670827\u65E5\",\"itemPrice\":9740,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839899/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"ONE
+        PIECE Log Collection \u201CMINK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30DF\u30F3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295160\",\"makerCode\":\"YBA-12516/9\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30B5\u30F3\u30B8\u306E\u5931\u8E2A\u304B\u3089\u3001\u201C\u5FCD\u8005\u6D77\u8CCA\u30DF\u30F3\u30AF\u4F8D\u540C\u76DF\u201D\u7D50\u6210\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A761\u8A71\u301C763\u8A71\\nDisc-2\uFF1A764\u8A71\u301C766\u8A71\\nDisc-3\uFF1A767\u8A71\u301C769\u8A71\\nDisc-4\uFF1A770\u8A71\u301C771\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7408\u670830\u65E5\",\"itemPrice\":10024,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839898/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 20TH\u30B7\u30FC\u30BA\u30F3 \u30EF\u30CE\u56FD\u7DE8
+        PIECE.1\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9 \u30C8\u30A5\u30A8\u30F3\u30C6\u30A3\u30B7\u30FC\u30BA\u30F3
+        \u30EF\u30CE\u30AF\u30CB\u30D8\u30F3 \u30D4\u30FC\u30B9 1\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475297669\",\"makerCode\":\"EYBA-12766\",\"itemCaption\":\"\",\"salesDate\":\"2020\u5E7401\u670808\u65E5\",\"itemPrice\":3712,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16091054/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002009\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '4446'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:16:20 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&title=%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9
+  response:
+    body:
+      string: "{\"count\":416,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"ONE
+        PIECE Log Collection \u201CJACK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30B8\u30E3\u30C3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295207\",\"makerCode\":\"EYBA-12520/3\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30BE\u30A6\u9632\u885B\u6226\u304B\u3089\u6D77\u8ECD\u8D85\u65B0\u661F\u7DE8\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A772\u8A71\u301C774\u8A71\\nDisc-2\uFF1A775\u8A71\u301C776\u8A71\\nDisc-3\uFF1A777\u8A71\u301C779\u8A71\\nDisc-4\uFF1A780\u8A71\u301C782\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7409\u670827\u65E5\",\"itemPrice\":9740,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839899/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"ONE
+        PIECE Log Collection \u201CMINK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30DF\u30F3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295160\",\"makerCode\":\"YBA-12516/9\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30B5\u30F3\u30B8\u306E\u5931\u8E2A\u304B\u3089\u3001\u201C\u5FCD\u8005\u6D77\u8CCA\u30DF\u30F3\u30AF\u4F8D\u540C\u76DF\u201D\u7D50\u6210\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A761\u8A71\u301C763\u8A71\\nDisc-2\uFF1A764\u8A71\u301C766\u8A71\\nDisc-3\uFF1A767\u8A71\u301C769\u8A71\\nDisc-4\uFF1A770\u8A71\u301C771\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7408\u670830\u65E5\",\"itemPrice\":10024,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839898/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 20TH\u30B7\u30FC\u30BA\u30F3 \u30EF\u30CE\u56FD\u7DE8
+        PIECE.1\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9 \u30C8\u30A5\u30A8\u30F3\u30C6\u30A3\u30B7\u30FC\u30BA\u30F3
+        \u30EF\u30CE\u30AF\u30CB\u30D8\u30F3 \u30D4\u30FC\u30B9 1\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475297669\",\"makerCode\":\"EYBA-12766\",\"itemCaption\":\"\",\"salesDate\":\"2020\u5E7401\u670808\u65E5\",\"itemPrice\":3712,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16091054/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002009\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '4446'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:21:26 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksDVD/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&title=%E3%83%AF%E3%83%B3%E3%83%94%E3%83%BC%E3%82%B9
+  response:
+    body:
+      string: "{\"count\":416,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"ONE
+        PIECE Log Collection \u201CJACK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30B8\u30E3\u30C3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295207\",\"makerCode\":\"EYBA-12520/3\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30BE\u30A6\u9632\u885B\u6226\u304B\u3089\u6D77\u8ECD\u8D85\u65B0\u661F\u7DE8\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A772\u8A71\u301C774\u8A71\\nDisc-2\uFF1A775\u8A71\u301C776\u8A71\\nDisc-3\uFF1A777\u8A71\u301C779\u8A71\\nDisc-4\uFF1A780\u8A71\u301C782\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7409\u670827\u65E5\",\"itemPrice\":9740,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839899/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5207/4562475295207.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"ONE
+        PIECE Log Collection \u201CMINK\u201D\",\"titleKana\":\"\u30EF\u30F3 \u30D4\u30FC\u30B9
+        \u30ED\u30B0 \u30B3\u30EC\u30AF\u30B7\u30E7\u30F3 \u30DF\u30F3\u30AF\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u4E2D\u4E95\u548C\u54C9\",\"artistNameKana\":\"\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF/\u30AA\u30AB\u30E0\u30E9\u30A2\u30B1\u30DF/\u30CA\u30AB\u30A4\u30AB\u30BA\u30E4\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475295160\",\"makerCode\":\"YBA-12516/9\",\"itemCaption\":\"TV\u30A2\u30CB\u30E1\u300CONE
+        PIECE\u300D\u5927\u4EBA\u6C17\u30B7\u30EA\u30FC\u30BA\uFF01\\n\\n\u821E\u53F0\u3068\u306A\u308B\u306E\u306F1000\u5E74\u4EE5\u4E0A\u751F\u304D\u308B\u5DE8\u5927\u306A\u8C61\u306E\u80CC\u306B\u6804\u3048\u305F\u5CF6\u300C\u30BE\u30A6\u300D\u3002\\n\u3044\u306B\u3057\u3048\u306E\u90FD\u3068\u3046\u305F\u308F\u308C\u3001\u52D5\u7269\u306E\u3088\u3046\u306A\u5916\u898B\u3092\u6301\u3064\u8B0E\u591A\u304D\u30DF\u30F3\u30AF\u65CF\u306E\u652F\u914D\u3059\u308B\u5E7B\u306E\u5CF6\u300C\u30BE\u30A6\u300D\u3092\u821E\u53F0\u306B\u30EB\u30D5\u30A3\u305F\u3061\u306E\u65B0\u305F\u306A\u5192\u967A\u304C\u59CB\u307E\u308B\u3002\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n\u30B5\u30F3\u30B8\u306E\u5931\u8E2A\u304B\u3089\u3001\u201C\u5FCD\u8005\u6D77\u8CCA\u30DF\u30F3\u30AF\u4F8D\u540C\u76DF\u201D\u7D50\u6210\u307E\u3067(\u516811\u8A71)\\nDisc-1\uFF1A761\u8A71\u301C763\u8A71\\nDisc-2\uFF1A764\u8A71\u301C766\u8A71\\nDisc-3\uFF1A767\u8A71\u301C769\u8A71\\nDisc-4\uFF1A770\u8A71\u301C771\u8A71\\n\u203B\u53CE\u9332\u5185\u5BB9\u306F\u5909\u66F4\u3068\u306A\u308B\u5834\u5408\u304C\u3054\u3056\u3044\u307E\u3059\u3002\\n\\n&copy;\u5C3E\u7530\u6804\u4E00\u90CE\uFF0F\u96C6\u82F1\u793E\u30FB\u30D5\u30B8\u30C6\u30EC\u30D3\u30FB\u6771\u6620\u30A2\u30CB\u30E1\u30FC\u30B7\u30E7\u30F3\",\"salesDate\":\"2019\u5E7408\u670830\u65E5\",\"itemPrice\":10024,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15839898/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/5160/4562475295160.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 20TH\u30B7\u30FC\u30BA\u30F3 \u30EF\u30CE\u56FD\u7DE8
+        PIECE.1\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9 \u30C8\u30A5\u30A8\u30F3\u30C6\u30A3\u30B7\u30FC\u30BA\u30F3
+        \u30EF\u30CE\u30AF\u30CB\u30D8\u30F3 \u30D4\u30FC\u30B9 1\",\"artistName\":\"\u5C3E\u7530\u6804\u4E00\u90CE/\u7530\u4E2D\u771F\u5F13\",\"artistNameKana\":\"\u30AA\u30C0\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6/\u30BF\u30CA\u30AB\u30DE\u30E6\u30DF\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"jan\":\"4562475297669\",\"makerCode\":\"EYBA-12766\",\"itemCaption\":\"\",\"salesDate\":\"2020\u5E7401\u670808\u65E5\",\"itemPrice\":3712,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16091054/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002009\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '4446'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:25:09 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

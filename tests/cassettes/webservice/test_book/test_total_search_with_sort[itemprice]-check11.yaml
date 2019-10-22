@@ -2,19 +2,215 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86&sort=%2BitemPrice
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86&sort=%2BitemPrice
   response:
-    body: {string: "{\"count\":155,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":52,\"Items\":[{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF081\uFF09\",\"author\":\"\u884C\u5F92/\u6CB3\u7530\u96C4\u5FD7\",\"artistName\":\"\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"label\":\"\",\"isbn\":\"9784107717177\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2013\u5E7409\u670809\u65E5\",\"itemPrice\":596,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/12417286/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001001003022\"},{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF082\uFF09\",\"author\":\"\u884C\u5F92/\u6CB3\u7530\u96C4\u5FD7\",\"artistName\":\"\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"label\":\"\",\"isbn\":\"9784107717450\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2014\u5E7405\u6708\",\"itemPrice\":615,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/12724393/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"4.0\",\"booksGenreId\":\"001001003022\"},{\"title\":\"CD\u4ED8\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\",\"author\":\"\u30DF\u30B2\u30EB\u30FB\u30C7\u30FB\u30BB\u30EB\u30D0\u30F3\u30C6\u30B9\u30FB\u30B5\u30A2\u30D9\u30C9\u30E9/\u7A32\u6751\u677E\u96C4\",\"artistName\":\"\",\"publisherName\":\"\u958B\u9686\u5802\u51FA\u7248\",\"label\":\"\",\"isbn\":\"9784304013560\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2008\u5E7405\u6708\",\"itemPrice\":626,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/5658376/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3040/30401356.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3040/30401356.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3040/30401356.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001003007\"}],\"GenreInformation\":[]}"}
+    body:
+      string: "{\"count\":124,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":42,\"Items\":[{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u6050\u6016\u306E\u652F\u914D\u8005!
+        \u30C9\u30F3\u30AD\u30DB\u30FC\u30C6\u30D5\u30A1\u30DF\u30EA\u30FC!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083475\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7405\u670801\u65E5\",\"itemPrice\":429,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15762917/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3475/9784089083475.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3475/9784089083475.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3475/9784089083475.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF081\uFF09\",\"author\":\"\u884C\u5F92/\u6CB3\u7530\u96C4\u5FD7\",\"artistName\":\"\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"label\":\"\",\"isbn\":\"9784107717177\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2013\u5E7409\u670809\u65E5\",\"itemPrice\":607,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/12417286/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001001003022\"},{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF082\uFF09\",\"author\":\"\u884C\u5F92/\u6CB3\u7530\u96C4\u5FD7\",\"artistName\":\"\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"label\":\"\",\"isbn\":\"9784107717450\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2014\u5E7405\u6708\",\"itemPrice\":627,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/12724393/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":2,\"reviewAverage\":\"4.5\",\"booksGenreId\":\"001001003022\"}],\"GenreInformation\":[]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['2634']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:33:53 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2687'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:40:38 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86&sort=%2BitemPrice
+  response:
+    body:
+      string: "{\"count\":124,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":42,\"Items\":[{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u6050\u6016\u306E\u652F\u914D\u8005!
+        \u30C9\u30F3\u30AD\u30DB\u30FC\u30C6\u30D5\u30A1\u30DF\u30EA\u30FC!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083475\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7405\u670801\u65E5\",\"itemPrice\":429,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15762917/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3475/9784089083475.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3475/9784089083475.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3475/9784089083475.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF081\uFF09\",\"author\":\"\u884C\u5F92/\u6CB3\u7530\u96C4\u5FD7\",\"artistName\":\"\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"label\":\"\",\"isbn\":\"9784107717177\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2013\u5E7409\u670809\u65E5\",\"itemPrice\":607,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/12417286/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7177/9784107717177.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001001003022\"},{\"title\":\"\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF082\uFF09\",\"author\":\"\u884C\u5F92/\u6CB3\u7530\u96C4\u5FD7\",\"artistName\":\"\",\"publisherName\":\"\u65B0\u6F6E\u793E\",\"label\":\"\",\"isbn\":\"9784107717450\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2014\u5E7405\u6708\",\"itemPrice\":627,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/12724393/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7450/9784107717450.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":2,\"reviewAverage\":\"4.5\",\"booksGenreId\":\"001001003022\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2687'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:54:59 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=One+Piece&sort=%2BitemPrice
+  response:
+    body:
+      string: "{\"count\":866,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u201C\u6771\u306E\u6D77\u201D\u306E\u731B\u8005\u9054!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083215\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u670804\u65E5\",\"itemPrice\":385,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15613077/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u96C6\u7D50!\u201C\u8D85\u65B0\u661F\u201D!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083222\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u670804\u65E5\",\"itemPrice\":385,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15613078/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u4E16\u754C\u4E00\u306E\u8239\u5927\u5DE5!
+        \u30AC\u30EC\u30FC\u30E9\u30AB\u30F3\u30D1\u30CB\u30FC!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083468\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7405\u670801\u65E5\",\"itemPrice\":429,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15762916/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2771'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:15:55 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=One+Piece&sort=%2BitemPrice
+  response:
+    body:
+      string: "{\"count\":866,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u201C\u6771\u306E\u6D77\u201D\u306E\u731B\u8005\u9054!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083215\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u670804\u65E5\",\"itemPrice\":385,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15613077/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u96C6\u7D50!\u201C\u8D85\u65B0\u661F\u201D!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083222\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u670804\u65E5\",\"itemPrice\":385,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15613078/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u4E16\u754C\u4E00\u306E\u8239\u5927\u5DE5!
+        \u30AC\u30EC\u30FC\u30E9\u30AB\u30F3\u30D1\u30CB\u30FC!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083468\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7405\u670801\u65E5\",\"itemPrice\":429,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15762916/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2771'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:21:01 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=One+Piece&sort=%2BitemPrice
+  response:
+    body:
+      string: "{\"count\":866,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u201C\u6771\u306E\u6D77\u201D\u306E\u731B\u8005\u9054!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083215\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u670804\u65E5\",\"itemPrice\":385,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15613077/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u96C6\u7D50!\u201C\u8D85\u65B0\u661F\u201D!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083222\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u670804\u65E5\",\"itemPrice\":385,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15613078/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u4E16\u754C\u4E00\u306E\u8239\u5927\u5DE5!
+        \u30AC\u30EC\u30FC\u30E9\u30AB\u30F3\u30D1\u30CB\u30FC!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083468\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7405\u670801\u65E5\",\"itemPrice\":429,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15762916/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2771'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:24:11 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&keyword=One+Piece&sort=%2BitemPrice
+  response:
+    body:
+      string: "{\"count\":866,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u96C6\u7D50!\u201C\u8D85\u65B0\u661F\u201D!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083222\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u670804\u65E5\",\"itemPrice\":385,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15613078/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3222/9784089083222.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u201C\u6771\u306E\u6D77\u201D\u306E\u731B\u8005\u9054!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083215\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u670804\u65E5\",\"itemPrice\":385,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15613077/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3215/9784089083215.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":3,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"},{\"title\":\"VIVRE
+        CARD\u301CONE PIECE\u56F3\u9451\u301C BOOSTER PACK \u4E16\u754C\u4E00\u306E\u8239\u5927\u5DE5!
+        \u30AC\u30EC\u30FC\u30E9\u30AB\u30F3\u30D1\u30CB\u30FC!!\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784089083468\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7405\u670801\u65E5\",\"itemPrice\":429,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15762916/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3468/9784089083468.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2771'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:24:44 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

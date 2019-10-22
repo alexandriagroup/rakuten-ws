@@ -2,21 +2,161 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20130522?applicationId=XXXXXX&formatVersion=2&hits=3&isbn=9784088701752
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&isbn=9784088701752
   response:
-    body: {string: "{\"count\":1,\"page\":1,\"first\":1,\"last\":1,\"hits\":1,\"carrier\":0,\"pageCount\":1,\"Items\":[{\"title\":\"ONE\u3000PIECE\uFF08\u5DFB61\uFF09\",\"titleKana\":\"\u30EF\u30F3
+    body:
+      string: "{\"count\":1,\"page\":1,\"first\":1,\"last\":1,\"hits\":1,\"carrier\":0,\"pageCount\":1,\"Items\":[{\"title\":\"ONE\u3000PIECE\uFF08\u5DFB61\uFF09\",\"titleKana\":\"\u30EF\u30F3
         \u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30FB\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\u30B8\u30E3\u30F3\u30D7
-        \u30B3\u30DF\u30C3\u30AF\u30B9\",\"contents\":\"ROMANCE DAWN for the new world\",\"author\":\"\u5C3E\u7530\u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0,\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088701752\",\"itemCaption\":\"\",\"salesDate\":\"2011\u5E7402\u6708\",\"itemPrice\":432,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/6907415/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1692,\"reviewAverage\":\"4.81\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"}
+        \u30B3\u30DF\u30C3\u30AF\u30B9\",\"contents\":\"ROMANCE DAWN for the new world\",\"author\":\"\u5C3E\u7530\u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0,\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088701752\",\"itemCaption\":\"\",\"salesDate\":\"2011\u5E7402\u6708\",\"itemPrice\":440,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6907415/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1797,\"reviewAverage\":\"4.79\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['1134']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:34:03 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '1138'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:40:47 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&isbn=9784088701752
+  response:
+    body:
+      string: "{\"count\":1,\"page\":1,\"first\":1,\"last\":1,\"hits\":1,\"carrier\":0,\"pageCount\":1,\"Items\":[{\"title\":\"ONE\u3000PIECE\uFF08\u5DFB61\uFF09\",\"titleKana\":\"\u30EF\u30F3
+        \u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30FB\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\u30B8\u30E3\u30F3\u30D7
+        \u30B3\u30DF\u30C3\u30AF\u30B9\",\"contents\":\"ROMANCE DAWN for the new world\",\"author\":\"\u5C3E\u7530\u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0,\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088701752\",\"itemCaption\":\"\",\"salesDate\":\"2011\u5E7402\u6708\",\"itemPrice\":440,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6907415/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1797,\"reviewAverage\":\"4.79\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '1138'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:55:08 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&isbn=9784088701752
+  response:
+    body:
+      string: "{\"count\":1,\"page\":1,\"first\":1,\"last\":1,\"hits\":1,\"carrier\":0,\"pageCount\":1,\"Items\":[{\"title\":\"ONE\u3000PIECE\uFF08\u5DFB61\uFF09\",\"titleKana\":\"\u30EF\u30F3
+        \u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30FB\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\u30B8\u30E3\u30F3\u30D7
+        \u30B3\u30DF\u30C3\u30AF\u30B9\",\"contents\":\"ROMANCE DAWN for the new world\",\"author\":\"\u5C3E\u7530\u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0,\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088701752\",\"itemCaption\":\"\",\"salesDate\":\"2011\u5E7402\u6708\",\"itemPrice\":440,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6907415/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1797,\"reviewAverage\":\"4.79\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '1138'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:16:04 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&isbn=9784088701752
+  response:
+    body:
+      string: "{\"count\":1,\"page\":1,\"first\":1,\"last\":1,\"hits\":1,\"carrier\":0,\"pageCount\":1,\"Items\":[{\"title\":\"ONE\u3000PIECE\uFF08\u5DFB61\uFF09\",\"titleKana\":\"\u30EF\u30F3
+        \u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30FB\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\u30B8\u30E3\u30F3\u30D7
+        \u30B3\u30DF\u30C3\u30AF\u30B9\",\"contents\":\"ROMANCE DAWN for the new world\",\"author\":\"\u5C3E\u7530\u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0,\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088701752\",\"itemCaption\":\"\",\"salesDate\":\"2011\u5E7402\u6708\",\"itemPrice\":440,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6907415/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1797,\"reviewAverage\":\"4.79\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '1138'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:21:10 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&isbn=9784088701752
+  response:
+    body:
+      string: "{\"count\":1,\"page\":1,\"first\":1,\"last\":1,\"hits\":1,\"carrier\":0,\"pageCount\":1,\"Items\":[{\"title\":\"ONE\u3000PIECE\uFF08\u5DFB61\uFF09\",\"titleKana\":\"\u30EF\u30F3
+        \u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30FB\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\u30B8\u30E3\u30F3\u30D7
+        \u30B3\u30DF\u30C3\u30AF\u30B9\",\"contents\":\"ROMANCE DAWN for the new world\",\"author\":\"\u5C3E\u7530\u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0,\u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088701752\",\"itemCaption\":\"\",\"salesDate\":\"2011\u5E7402\u6708\",\"itemPrice\":440,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6907415/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1752/9784088701752.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":1797,\"reviewAverage\":\"4.79\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '1138'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:24:53 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

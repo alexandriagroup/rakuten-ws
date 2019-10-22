@@ -2,23 +2,199 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&booksGenreId=001025&formatVersion=2&hits=3&page=2
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&booksGenreId=001025&formatVersion=2&hits=3&page=2
   response:
-    body: {string: "{\"count\":10959,\"page\":2,\"first\":4,\"last\":6,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u3010\u7279\u5178\uFF1A\u7279\u88FD\u30AF\u30EA\u30A2\u30D5\u30A1\u30A4\u30EB\u4ED8\u304D\u3011\u30DC\u30AB\u30ED\u3067\u899A\u3048\u308B\u53C2\u8003\u66F8\uFF08\u4E2D\u5B66\u82F1\u5358\u8A9E\u30FB\u6570\u5B66\uFF09
-        2\u518A\u30BB\u30C3\u30C8\",\"author\":\"\u5B66\u7814\u30D7\u30E9\u30B9\",\"artistName\":\"\",\"publisherName\":\"\u5B66\u7814\u30D7\u30E9\u30B9\",\"label\":\"\",\"isbn\":\"2100010677488\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7404\u6708\",\"itemPrice\":3456,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14705842/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7488/2100010677488.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7488/2100010677488.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7488/2100010677488.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025\"},{\"title\":\"\u9B54\u6CD5\u4F7F\u3044\u306E\u5AC1
-        1-7\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u30E4\u30DE\u30B6\u30AD\u30B3\u30EC\",\"artistName\":\"\",\"publisherName\":\"\u30DE\u30C3\u30B0\u30AC\u30FC\u30C7\u30F3\",\"label\":\"\",\"isbn\":\"2100010672933\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7404\u6708\",\"itemPrice\":4316,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14678329/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2933/2100010672933.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2933/2100010672933.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/2933/2100010672933.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025\"},{\"title\":\"\u98DF\u7CE7\u4EBA\u985E\u30FCStarving
-        Anonym 1-2\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u30A4\u30CA\u30D9 \u30AB\u30BA/\u8535\u77F3
-        \u30E6\u30A6\",\"artistName\":\"\",\"publisherName\":\"\u8B1B\u8AC7\u793E\",\"label\":\"\",\"isbn\":\"2100010670236\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7404\u6708\",\"itemPrice\":1300,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14678059/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0236/2100010670236.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0236/2100010670236.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0236/2100010670236.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025\"}],\"GenreInformation\":[]}"}
+    body:
+      string: "{\"count\":14519,\"page\":2,\"first\":4,\"last\":6,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u89D2\u5DDD\u307E\u3093\u304C\u5B66\u7FD2\u30B7\u30EA\u30FC\u30BA\u3000\u65E5\u672C\u306E\u6B74\u53F2\u30003\u5927\u7279\u5178\u3064\u304D\u516815\u5DFB+\u5225\u5DFB4\u518A\u30BB\u30C3\u30C8\",\"author\":\"\u5C71\u672C\u3000\u535A\u6587\",\"artistName\":\"\",\"publisherName\":\"KADOKAWA\",\"label\":\"\",\"isbn\":\"9784041088326\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7411\u670815\u65E5\",\"itemPrice\":16720,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075017/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001003007/001025002\"},{\"title\":\"\u30B3\u30FC\u30D2\u30FC\uFF06\u30D0\u30CB\u30E9\u30001-13\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u6731\u795E
+        \u5B9D\",\"artistName\":\"\",\"publisherName\":\"\u5C0F\u5B66\u9928\",\"label\":\"\",\"isbn\":\"2100011550209\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7410\u6708\",\"itemPrice\":6162,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075316/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025001\"},{\"title\":\"\u30A2\u30AF\u30BF\u30FC\u30B8\u30E5
+        act-age 1-8\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u5B87\u4F50\u5D0E \u3057\u308D/\u30DE\u30C4\u30AD
+        \u30BF\u30C4\u30E4\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"2100011543607\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7409\u6708\u4E0A\u65EC\",\"itemPrice\":3784,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16058148/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3607/2100011543607.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3607/2100011543607.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3607/2100011543607.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025001\"}],\"GenreInformation\":[]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['2726']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:34:18 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2729'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:40:30 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&booksGenreId=001025&formatVersion=2&hits=3&page=2
+  response:
+    body:
+      string: "{\"count\":14518,\"page\":2,\"first\":4,\"last\":6,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u89D2\u5DDD\u307E\u3093\u304C\u5B66\u7FD2\u30B7\u30EA\u30FC\u30BA\u3000\u65E5\u672C\u306E\u6B74\u53F2\u30003\u5927\u7279\u5178\u3064\u304D\u516815\u5DFB+\u5225\u5DFB4\u518A\u30BB\u30C3\u30C8\",\"author\":\"\u5C71\u672C\u3000\u535A\u6587\",\"artistName\":\"\",\"publisherName\":\"KADOKAWA\",\"label\":\"\",\"isbn\":\"9784041088326\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7411\u670815\u65E5\",\"itemPrice\":16720,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075017/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001003007/001025002\"},{\"title\":\"\u30B3\u30FC\u30D2\u30FC\uFF06\u30D0\u30CB\u30E9\u30001-13\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u6731\u795E
+        \u5B9D\",\"artistName\":\"\",\"publisherName\":\"\u5C0F\u5B66\u9928\",\"label\":\"\",\"isbn\":\"2100011550209\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7410\u6708\",\"itemPrice\":6162,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075316/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025001\"},{\"title\":\"\u96C6\u82F1\u793E
+        \u5B66\u7FD2\u307E\u3093\u304C \u65E5\u672C\u306E\u6B74\u53F2 \u516820\u5DFB+2019\u5E74\u6570\u91CF\u9650\u5B9A\u7279\u5178\u30BB\u30C3\u30C8\u30102\u518A\u5206\u304A\u5F97\u306A\u7279\u5225\u5B9A\u4FA1\u3011
+        (\u5B66\u7FD2\u6F2B\u753B \u65E5\u672C\u306E\u6B74\u53F2)\",\"author\":\"\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784082399146\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u6708\",\"itemPrice\":19800,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15668659/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":7,\"reviewAverage\":\"4.43\",\"booksGenreId\":\"001003007/001025002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2807'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:54:51 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&booksGenreId=001025&formatVersion=2&hits=3&page=2
+  response:
+    body:
+      string: "{\"count\":14518,\"page\":2,\"first\":4,\"last\":6,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u89D2\u5DDD\u307E\u3093\u304C\u5B66\u7FD2\u30B7\u30EA\u30FC\u30BA\u3000\u65E5\u672C\u306E\u6B74\u53F2\u30003\u5927\u7279\u5178\u3064\u304D\u516815\u5DFB+\u5225\u5DFB4\u518A\u30BB\u30C3\u30C8\",\"author\":\"\u5C71\u672C\u3000\u535A\u6587\",\"artistName\":\"\",\"publisherName\":\"KADOKAWA\",\"label\":\"\",\"isbn\":\"9784041088326\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7411\u670815\u65E5\",\"itemPrice\":16720,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075017/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001003007/001025002\"},{\"title\":\"\u30B3\u30FC\u30D2\u30FC\uFF06\u30D0\u30CB\u30E9\u30001-13\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u6731\u795E
+        \u5B9D\",\"artistName\":\"\",\"publisherName\":\"\u5C0F\u5B66\u9928\",\"label\":\"\",\"isbn\":\"2100011550209\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7410\u6708\",\"itemPrice\":6162,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075316/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025001\"},{\"title\":\"\u96C6\u82F1\u793E
+        \u5B66\u7FD2\u307E\u3093\u304C \u65E5\u672C\u306E\u6B74\u53F2 \u516820\u5DFB+2019\u5E74\u6570\u91CF\u9650\u5B9A\u7279\u5178\u30BB\u30C3\u30C8\u30102\u518A\u5206\u304A\u5F97\u306A\u7279\u5225\u5B9A\u4FA1\u3011
+        (\u5B66\u7FD2\u6F2B\u753B \u65E5\u672C\u306E\u6B74\u53F2)\",\"author\":\"\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784082399146\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u6708\",\"itemPrice\":19800,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15668659/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":7,\"reviewAverage\":\"4.43\",\"booksGenreId\":\"001003007/001025002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2807'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:15:48 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&booksGenreId=001025&formatVersion=2&hits=3&page=2
+  response:
+    body:
+      string: "{\"count\":14518,\"page\":2,\"first\":4,\"last\":6,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u89D2\u5DDD\u307E\u3093\u304C\u5B66\u7FD2\u30B7\u30EA\u30FC\u30BA\u3000\u65E5\u672C\u306E\u6B74\u53F2\u30003\u5927\u7279\u5178\u3064\u304D\u516815\u5DFB+\u5225\u5DFB4\u518A\u30BB\u30C3\u30C8\",\"author\":\"\u5C71\u672C\u3000\u535A\u6587\",\"artistName\":\"\",\"publisherName\":\"KADOKAWA\",\"label\":\"\",\"isbn\":\"9784041088326\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7411\u670815\u65E5\",\"itemPrice\":16720,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075017/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001003007/001025002\"},{\"title\":\"\u30B3\u30FC\u30D2\u30FC\uFF06\u30D0\u30CB\u30E9\u30001-13\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u6731\u795E
+        \u5B9D\",\"artistName\":\"\",\"publisherName\":\"\u5C0F\u5B66\u9928\",\"label\":\"\",\"isbn\":\"2100011550209\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7410\u6708\",\"itemPrice\":6162,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075316/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025001\"},{\"title\":\"\u96C6\u82F1\u793E
+        \u5B66\u7FD2\u307E\u3093\u304C \u65E5\u672C\u306E\u6B74\u53F2 \u516820\u5DFB+2019\u5E74\u6570\u91CF\u9650\u5B9A\u7279\u5178\u30BB\u30C3\u30C8\u30102\u518A\u5206\u304A\u5F97\u306A\u7279\u5225\u5B9A\u4FA1\u3011
+        (\u5B66\u7FD2\u6F2B\u753B \u65E5\u672C\u306E\u6B74\u53F2)\",\"author\":\"\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784082399146\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u6708\",\"itemPrice\":19800,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15668659/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":7,\"reviewAverage\":\"4.43\",\"booksGenreId\":\"001003007/001025002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2807'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:20:53 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&booksGenreId=001025&formatVersion=2&hits=3&page=2
+  response:
+    body:
+      string: "{\"count\":14518,\"page\":2,\"first\":4,\"last\":6,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u89D2\u5DDD\u307E\u3093\u304C\u5B66\u7FD2\u30B7\u30EA\u30FC\u30BA\u3000\u65E5\u672C\u306E\u6B74\u53F2\u30003\u5927\u7279\u5178\u3064\u304D\u516815\u5DFB+\u5225\u5DFB4\u518A\u30BB\u30C3\u30C8\",\"author\":\"\u5C71\u672C\u3000\u535A\u6587\",\"artistName\":\"\",\"publisherName\":\"KADOKAWA\",\"label\":\"\",\"isbn\":\"9784041088326\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7411\u670815\u65E5\",\"itemPrice\":16720,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075017/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001003007/001025002\"},{\"title\":\"\u30B3\u30FC\u30D2\u30FC\uFF06\u30D0\u30CB\u30E9\u30001-13\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u6731\u795E
+        \u5B9D\",\"artistName\":\"\",\"publisherName\":\"\u5C0F\u5B66\u9928\",\"label\":\"\",\"isbn\":\"2100011550209\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7410\u6708\",\"itemPrice\":6162,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075316/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025001\"},{\"title\":\"\u96C6\u82F1\u793E
+        \u5B66\u7FD2\u307E\u3093\u304C \u65E5\u672C\u306E\u6B74\u53F2 \u516820\u5DFB+2019\u5E74\u6570\u91CF\u9650\u5B9A\u7279\u5178\u30BB\u30C3\u30C8\u30102\u518A\u5206\u304A\u5F97\u306A\u7279\u5225\u5B9A\u4FA1\u3011
+        (\u5B66\u7FD2\u6F2B\u753B \u65E5\u672C\u306E\u6B74\u53F2)\",\"author\":\"\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784082399146\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u6708\",\"itemPrice\":19800,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15668659/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":7,\"reviewAverage\":\"4.43\",\"booksGenreId\":\"001003007/001025002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2807'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:23:55 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&booksGenreId=001025&formatVersion=2&hits=3&page=2
+  response:
+    body:
+      string: "{\"count\":14518,\"page\":2,\"first\":4,\"last\":6,\"hits\":3,\"carrier\":0,\"pageCount\":100,\"Items\":[{\"title\":\"\u89D2\u5DDD\u307E\u3093\u304C\u5B66\u7FD2\u30B7\u30EA\u30FC\u30BA\u3000\u65E5\u672C\u306E\u6B74\u53F2\u30003\u5927\u7279\u5178\u3064\u304D\u516815\u5DFB+\u5225\u5DFB4\u518A\u30BB\u30C3\u30C8\",\"author\":\"\u5C71\u672C\u3000\u535A\u6587\",\"artistName\":\"\",\"publisherName\":\"KADOKAWA\",\"label\":\"\",\"isbn\":\"9784041088326\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7411\u670815\u65E5\",\"itemPrice\":16720,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075017/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8326/9784041088326.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"5\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001003007/001025002\"},{\"title\":\"\u30B3\u30FC\u30D2\u30FC\uFF06\u30D0\u30CB\u30E9\u30001-13\u5DFB\u30BB\u30C3\u30C8\",\"author\":\"\u6731\u795E
+        \u5B9D\",\"artistName\":\"\",\"publisherName\":\"\u5C0F\u5B66\u9928\",\"label\":\"\",\"isbn\":\"2100011550209\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7410\u6708\",\"itemPrice\":6162,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16075316/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0209/2100011550209.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001025001\"},{\"title\":\"\u96C6\u82F1\u793E
+        \u5B66\u7FD2\u307E\u3093\u304C \u65E5\u672C\u306E\u6B74\u53F2 \u516820\u5DFB+2019\u5E74\u6570\u91CF\u9650\u5B9A\u7279\u5178\u30BB\u30C3\u30C8\u30102\u518A\u5206\u304A\u5F97\u306A\u7279\u5225\u5B9A\u4FA1\u3011
+        (\u5B66\u7FD2\u6F2B\u753B \u65E5\u672C\u306E\u6B74\u53F2)\",\"author\":\"\",\"artistName\":\"\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"label\":\"\",\"isbn\":\"9784082399146\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7410\u6708\",\"itemPrice\":19800,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15668659/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9146/9784082399146.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":7,\"reviewAverage\":\"4.43\",\"booksGenreId\":\"001003007/001025002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2807'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:24:36 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

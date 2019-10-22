@@ -16,8 +16,9 @@ def assert_response(params, result, callback=None):
 
 total_search_parameters = [
     ({'keyword': "ドン・キホーテ"}, lambda p, r, i: assert_in(p['keyword'], i['title'])),
-    ({'booksGenreId': '001025'}, lambda p, r, i: assert_eq(i['booksGenreId'], p['booksGenreId'])),
-    ({'isbnjan': '2100010283771'}, lambda p, r, i: assert_eq(i['isbn'], p['isbnjan'])),
+    # The booksGenreId returned is '001025001'
+    ({'booksGenreId': '001025'}, lambda p, r, i: assert_eq(i['booksGenreId'].startswith(p['booksGenreId']), True)),
+    ({'isbnjan': '9784088820545'}, lambda p, r, i: assert_eq(i['isbn'], p['isbnjan'])),
     ({'isbnjan': '4988021149594'}, lambda p, r, i: assert_eq(i['jan'], p['isbnjan'])),
     ({'booksGenreId': '001025', 'page': '2'}, lambda p, r, i: assert_eq(r['page'], 2)),
     ({'availability': '1'}, lambda p, r, i: assert_eq(i['availability'], p['availability'])),
@@ -39,12 +40,12 @@ total_search_parameters = [
 def test_total_search(ws, params, check):
     params.update({'hits': 3})
     if all(key not in params for key in ('keyword', 'booksGenreId', 'isbnjan')):
-        params.update({'keyword': 'ドン・キホーテ'})
+        params.update({'keyword': 'One Piece'})
     assert_response(params, ws.books.total.search(**params), callback=check)
 
 
 book_search_parameters = [
-    ({'title': "ワンピース"}, lambda p, r, i: assert_in(p['title'], i['title'])),
+    ({'title': "ワンピース"}, lambda p, r, i: assert_in(p['title'], i['titleKana'])),
     ({'author': "尾田・栄一郎"}, lambda p, r, i: assert_eq(i['author'], i['author'])),
     ({'isbn': "9784088701752"}, lambda p, r, i: assert_in(p['isbn'], i['isbn'])),
     ({'size': "9"}, lambda p, r, i: assert_in(i['size'], 'コミック')),

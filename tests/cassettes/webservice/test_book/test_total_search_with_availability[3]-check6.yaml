@@ -2,19 +2,215 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20130522?applicationId=XXXXXX&availability=3&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&availability=3&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86
   response:
-    body: {string: "{\"count\":13,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":5,\"Items\":[{\"title\":\"UN681\u3000\u4EA4\u97FF\u66F2\u7B2C3\u756A\u3000\u30C9\u30F3\u30AD\u30DB\u30FC\u30C6\u3088\u308A\u3000\u7B2C\u4E00\u697D\u7AE0\u3000\u63A2\u6C42\uFF0F\u30ED\u30D0\u30FC\u30C8\u30B9\u30DF\u30B9\u3000\uFF08\u30D0\u30FC\u30F3\u30CF\u30A6\u30B9\uFF09\",\"author\":\"\",\"artistName\":\"\",\"publisherName\":\"\uFF08\u682A\uFF09\u30ED\u30B1\u30C3\u30C8\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\",\"label\":\"\",\"isbn\":\"4562360107615\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2012\u5E7403\u670822\u65E5\",\"itemPrice\":17280,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14132552/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001018005001\"},{\"title\":\"UN684\u3000\u4EA4\u97FF\u66F2\u7B2C3\u756A\u3000\u30C9\u30F3\u30AD\u30DB\u30FC\u30C6\u3088\u308A\u3000\u7B2C4\u697D\u7AE0\u3000\u30A4\u30EB\u30DF\u30CD\u30FC\u30B7\u30E7\u30F3\uFF0F\u30ED\u30D0\u30FC\u30C8\u30B9\u30DF\u30B9\u3000\uFF08\u30D0\u30FC\u30F3\u30CF\u30A6\u30B9\uFF09\",\"author\":\"\",\"artistName\":\"\",\"publisherName\":\"\uFF08\u682A\uFF09\u30ED\u30B1\u30C3\u30C8\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\",\"label\":\"\",\"isbn\":\"4562360107646\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2012\u5E7403\u670822\u65E5\",\"itemPrice\":17280,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14132555/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001018005001\"},{\"title\":\"UN683\u3000\u4EA4\u97FF\u66F2\u7B2C3\u756A\u3000\u30C9\u30F3\u30AD\u30DB\u30FC\u30C6\u3088\u308A\u3000\u7B2C3\u697D\u7AE0\u3000\u30B5\u30F3\u30C1\u30E7\u3068\u98A8\u8ECA\uFF0F\u30ED\u30D0\u30FC\u30C8\u30B9\u30DF\u30B9\u3000\uFF08\u30D0\u30FC\u30F3\u30CF\u30A6\u30B9\uFF09\",\"author\":\"\",\"artistName\":\"\",\"publisherName\":\"\uFF08\u682A\uFF09\u30ED\u30B1\u30C3\u30C8\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\",\"label\":\"\",\"isbn\":\"4562360107639\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2012\u5E7403\u670822\u65E5\",\"itemPrice\":13824,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14132554/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001018005001\"}],\"GenreInformation\":[]}"}
+    body:
+      string: "{\"count\":10,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":4,\"Items\":[{\"title\":\"\u4EA4\u97FF\u8A69\uFF08\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF09\",\"author\":\"\u30EA\u30D2\u30E3\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9\",\"artistName\":\"\",\"publisherName\":\"\u5168\u97F3\u697D\u8B5C\u51FA\u7248\u793E\",\"label\":\"\",\"isbn\":\"9784118941646\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2005\u5E7411\u6708\",\"itemPrice\":1760,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/3695462/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1189/11894164.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1189/11894164.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1189/11894164.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001018005004/001018007001\"},{\"title\":\"\u30EA\u30D2\u30E3\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9:\u4EA4\u97FF\u8A69\u300C\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u300D\u4F5C\u54C135\",\"author\":\"\",\"artistName\":\"\u30E0\u30B9\u30C6\u30A3\u30B9\u30E9\u30D5\u30FB\u30ED\u30B9\u30C8\u30ED\u30DD\u30FC\u30F4\u30A3\u30C1/\u30A6\u30EB\u30EA\u30D2\u30FB\u30B3\u30C3\u30DB/\u30D8\u30EB\u30D9\u30EB\u30C8\u30FB\u30D5\u30A9\u30F3\u30FB\u30AB\u30E9\u30E4\u30F3\",\"publisherName\":\"\",\"label\":\"(\u682A)\u30EF\u30FC\u30CA\u30FC\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30B8\u30E3\u30D1\u30F3\",\"isbn\":\"\",\"jan\":\"4943674256792\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7404\u670819\u65E5\",\"itemPrice\":3358,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/14667173/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6792/4943674256792.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6792/4943674256792.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6792/4943674256792.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"002104002\"},{\"title\":\"R.\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9:\u4EA4\u97FF\u8A69\u300C\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u300D
+        \u821E\u8E0F\u7D44\u66F2\",\"author\":\"\",\"artistName\":\"\u30EB\u30C9\u30EB\u30D5\u30FB\u30B1\u30F3\u30DA/\u30B7\u30E5\u30BF\u30FC\u30C4\u30AB\u30DA\u30EC\u30FB\u30C9\u30EC\u30B9\u30C7\u30F3/\u30DD\u30FC\u30EB\u30FB\u30C8\u30EB\u30C8\u30A5\u30EA\u30A8/\u30EA\u30D2\u30E3\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9/\u30EB\u30C9\u30EB\u30D5\u30FB\u30B1\u30F3\u30DA/\u30B7\u30E5\u30BF\u30FC\u30C4\u30AB\u30DA\u30EC\u30FB\u30C9\u30EC\u30B9\u30C7\u30F3\",\"publisherName\":\"\",\"label\":\"(\u682A)\u30EF\u30FC\u30CA\u30FC\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30B8\u30E3\u30D1\u30F3\",\"isbn\":\"\",\"jan\":\"4943674240579\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7401\u670825\u65E5\",\"itemPrice\":1540,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/14279627/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0579/4943674240579.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0579/4943674240579.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0579/4943674240579.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"002104002\"}],\"GenreInformation\":[]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['2899']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:34:14 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '3108'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:40:33 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&availability=3&formatVersion=2&hits=3&keyword=%E3%83%89%E3%83%B3%E3%83%BB%E3%82%AD%E3%83%9B%E3%83%BC%E3%83%86
+  response:
+    body:
+      string: "{\"count\":10,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":4,\"Items\":[{\"title\":\"\u4EA4\u97FF\u8A69\uFF08\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\uFF09\",\"author\":\"\u30EA\u30D2\u30E3\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9\",\"artistName\":\"\",\"publisherName\":\"\u5168\u97F3\u697D\u8B5C\u51FA\u7248\u793E\",\"label\":\"\",\"isbn\":\"9784118941646\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2005\u5E7411\u6708\",\"itemPrice\":1760,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/3695462/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1189/11894164.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1189/11894164.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/1189/11894164.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"001018005004/001018007001\"},{\"title\":\"\u30EA\u30D2\u30E3\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9:\u4EA4\u97FF\u8A69\u300C\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u300D\u4F5C\u54C135\",\"author\":\"\",\"artistName\":\"\u30E0\u30B9\u30C6\u30A3\u30B9\u30E9\u30D5\u30FB\u30ED\u30B9\u30C8\u30ED\u30DD\u30FC\u30F4\u30A3\u30C1/\u30A6\u30EB\u30EA\u30D2\u30FB\u30B3\u30C3\u30DB/\u30D8\u30EB\u30D9\u30EB\u30C8\u30FB\u30D5\u30A9\u30F3\u30FB\u30AB\u30E9\u30E4\u30F3\",\"publisherName\":\"\",\"label\":\"(\u682A)\u30EF\u30FC\u30CA\u30FC\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30B8\u30E3\u30D1\u30F3\",\"isbn\":\"\",\"jan\":\"4943674256792\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7404\u670819\u65E5\",\"itemPrice\":3358,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/14667173/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6792/4943674256792.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6792/4943674256792.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6792/4943674256792.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"002104002\"},{\"title\":\"R.\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9:\u4EA4\u97FF\u8A69\u300C\u30C9\u30F3\u30FB\u30AD\u30DB\u30FC\u30C6\u300D
+        \u821E\u8E0F\u7D44\u66F2\",\"author\":\"\",\"artistName\":\"\u30EB\u30C9\u30EB\u30D5\u30FB\u30B1\u30F3\u30DA/\u30B7\u30E5\u30BF\u30FC\u30C4\u30AB\u30DA\u30EC\u30FB\u30C9\u30EC\u30B9\u30C7\u30F3/\u30DD\u30FC\u30EB\u30FB\u30C8\u30EB\u30C8\u30A5\u30EA\u30A8/\u30EA\u30D2\u30E3\u30EB\u30C8\u30FB\u30B7\u30E5\u30C8\u30E9\u30A6\u30B9/\u30EB\u30C9\u30EB\u30D5\u30FB\u30B1\u30F3\u30DA/\u30B7\u30E5\u30BF\u30FC\u30C4\u30AB\u30DA\u30EC\u30FB\u30C9\u30EC\u30B9\u30C7\u30F3\",\"publisherName\":\"\",\"label\":\"(\u682A)\u30EF\u30FC\u30CA\u30FC\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30B8\u30E3\u30D1\u30F3\",\"isbn\":\"\",\"jan\":\"4943674240579\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7401\u670825\u65E5\",\"itemPrice\":1540,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/14279627/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0579/4943674240579.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0579/4943674240579.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0579/4943674240579.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"002104002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '3108'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:54:54 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&availability=3&formatVersion=2&hits=3&keyword=One+Piece
+  response:
+    body:
+      string: "{\"count\":149,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":50,\"Items\":[{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 19TH\u30B7\u30FC\u30BA\u30F3 \u30DB\u30FC\u30EB\u30B1\u30FC\u30AD\u30A2\u30A4\u30E9\u30F3\u30C9\u7DE8
+        PIECE.13\u3010Blu-ray\u3011\",\"author\":\"\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u5E73\u7530\u5E83\u660E\",\"publisherName\":\"\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"isbn\":\"\",\"jan\":\"4562475290264\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7409\u670805\u65E5\",\"itemPrice\":4840,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15521862/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"One
+        Piece, Vol. 1\",\"author\":\"Eiichiro Oda/Eiichiro Oda\",\"artistName\":\"\",\"publisherName\":\"VIZ
+        LLC\",\"label\":\"\",\"isbn\":\"9781569319017\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"A
+        new shonen sensation in Japan, this series features Monkey D. Luffy, whose
+        main ambition is to become a pirate.\\n\u65E5\u672C\u56FD\u5185\u3067\u306F\u6700\u65B0\u520A\u304C\u767A\u884C\u3055\u308C\u308B\u5EA6\u306B\u5927\u304D\u306A\u8A71\u984C\u3068\u306A\u308B\u300COnePiece(\u30EF\u30F3\u30D4\u30FC\u30B9)\u300D\u306E\u7B2C\u4E00\u5DFB\u3002\",\"salesDate\":\"2003\u5E74\",\"itemPrice\":752,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/4278836/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":11,\"reviewAverage\":\"4.36\",\"booksGenreId\":\"005404009\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 19TH\u30B7\u30FC\u30BA\u30F3 \u30DB\u30FC\u30EB\u30B1\u30FC\u30AD\u30A2\u30A4\u30E9\u30F3\u30C9\u7DE8
+        PIECE.4\u3010Blu-ray\u3011\",\"author\":\"\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u5E73\u7530\u5E83\u660E\",\"publisherName\":\"\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"isbn\":\"\",\"jan\":\"4562475277005\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7412\u670806\u65E5\",\"itemPrice\":5407,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15127085/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '3095'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:15:50 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&availability=3&formatVersion=2&hits=3&keyword=One+Piece
+  response:
+    body:
+      string: "{\"count\":149,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":50,\"Items\":[{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 19TH\u30B7\u30FC\u30BA\u30F3 \u30DB\u30FC\u30EB\u30B1\u30FC\u30AD\u30A2\u30A4\u30E9\u30F3\u30C9\u7DE8
+        PIECE.13\u3010Blu-ray\u3011\",\"author\":\"\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u5E73\u7530\u5E83\u660E\",\"publisherName\":\"\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"isbn\":\"\",\"jan\":\"4562475290264\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7409\u670805\u65E5\",\"itemPrice\":4840,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15521862/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"One
+        Piece, Vol. 1\",\"author\":\"Eiichiro Oda/Eiichiro Oda\",\"artistName\":\"\",\"publisherName\":\"VIZ
+        LLC\",\"label\":\"\",\"isbn\":\"9781569319017\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"A
+        new shonen sensation in Japan, this series features Monkey D. Luffy, whose
+        main ambition is to become a pirate.\\n\u65E5\u672C\u56FD\u5185\u3067\u306F\u6700\u65B0\u520A\u304C\u767A\u884C\u3055\u308C\u308B\u5EA6\u306B\u5927\u304D\u306A\u8A71\u984C\u3068\u306A\u308B\u300COnePiece(\u30EF\u30F3\u30D4\u30FC\u30B9)\u300D\u306E\u7B2C\u4E00\u5DFB\u3002\",\"salesDate\":\"2003\u5E74\",\"itemPrice\":752,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/4278836/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":11,\"reviewAverage\":\"4.36\",\"booksGenreId\":\"005404009\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 19TH\u30B7\u30FC\u30BA\u30F3 \u30DB\u30FC\u30EB\u30B1\u30FC\u30AD\u30A2\u30A4\u30E9\u30F3\u30C9\u7DE8
+        PIECE.4\u3010Blu-ray\u3011\",\"author\":\"\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u5E73\u7530\u5E83\u660E\",\"publisherName\":\"\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"isbn\":\"\",\"jan\":\"4562475277005\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7412\u670806\u65E5\",\"itemPrice\":5407,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15127085/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '3095'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:20:55 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&availability=3&formatVersion=2&hits=3&keyword=One+Piece
+  response:
+    body:
+      string: "{\"count\":149,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":50,\"Items\":[{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 19TH\u30B7\u30FC\u30BA\u30F3 \u30DB\u30FC\u30EB\u30B1\u30FC\u30AD\u30A2\u30A4\u30E9\u30F3\u30C9\u7DE8
+        PIECE.13\u3010Blu-ray\u3011\",\"author\":\"\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u5E73\u7530\u5E83\u660E\",\"publisherName\":\"\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"isbn\":\"\",\"jan\":\"4562475290264\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7409\u670805\u65E5\",\"itemPrice\":4840,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15521862/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"One
+        Piece, Vol. 1\",\"author\":\"Eiichiro Oda/Eiichiro Oda\",\"artistName\":\"\",\"publisherName\":\"VIZ
+        LLC\",\"label\":\"\",\"isbn\":\"9781569319017\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"A
+        new shonen sensation in Japan, this series features Monkey D. Luffy, whose
+        main ambition is to become a pirate.\\n\u65E5\u672C\u56FD\u5185\u3067\u306F\u6700\u65B0\u520A\u304C\u767A\u884C\u3055\u308C\u308B\u5EA6\u306B\u5927\u304D\u306A\u8A71\u984C\u3068\u306A\u308B\u300COnePiece(\u30EF\u30F3\u30D4\u30FC\u30B9)\u300D\u306E\u7B2C\u4E00\u5DFB\u3002\",\"salesDate\":\"2003\u5E74\",\"itemPrice\":752,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/4278836/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":11,\"reviewAverage\":\"4.36\",\"booksGenreId\":\"005404009\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 19TH\u30B7\u30FC\u30BA\u30F3 \u30DB\u30FC\u30EB\u30B1\u30FC\u30AD\u30A2\u30A4\u30E9\u30F3\u30C9\u7DE8
+        PIECE.4\u3010Blu-ray\u3011\",\"author\":\"\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u5E73\u7530\u5E83\u660E\",\"publisherName\":\"\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"isbn\":\"\",\"jan\":\"4562475277005\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7412\u670806\u65E5\",\"itemPrice\":5407,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15127085/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '3095'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:23:57 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksTotal/Search/20170404?applicationId=XXXXXX&availability=3&formatVersion=2&hits=3&keyword=One+Piece
+  response:
+    body:
+      string: "{\"count\":149,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":50,\"Items\":[{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 19TH\u30B7\u30FC\u30BA\u30F3 \u30DB\u30FC\u30EB\u30B1\u30FC\u30AD\u30A2\u30A4\u30E9\u30F3\u30C9\u7DE8
+        PIECE.13\u3010Blu-ray\u3011\",\"author\":\"\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u5E73\u7530\u5E83\u660E\",\"publisherName\":\"\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"isbn\":\"\",\"jan\":\"4562475290264\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7409\u670805\u65E5\",\"itemPrice\":4840,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15521862/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0264/4562475290264.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":1,\"reviewAverage\":\"5.0\",\"booksGenreId\":\"003206002001\"},{\"title\":\"One
+        Piece, Vol. 1\",\"author\":\"Eiichiro Oda/Eiichiro Oda\",\"artistName\":\"\",\"publisherName\":\"VIZ
+        LLC\",\"label\":\"\",\"isbn\":\"9781569319017\",\"jan\":\"\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"A
+        new shonen sensation in Japan, this series features Monkey D. Luffy, whose
+        main ambition is to become a pirate.\\n\u65E5\u672C\u56FD\u5185\u3067\u306F\u6700\u65B0\u520A\u304C\u767A\u884C\u3055\u308C\u308B\u5EA6\u306B\u5927\u304D\u306A\u8A71\u984C\u3068\u306A\u308B\u300COnePiece(\u30EF\u30F3\u30D4\u30FC\u30B9)\u300D\u306E\u7B2C\u4E00\u5DFB\u3002\",\"salesDate\":\"2003\u5E74\",\"itemPrice\":752,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/4278836/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9017/9781569319017.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":11,\"reviewAverage\":\"4.36\",\"booksGenreId\":\"005404009\"},{\"title\":\"ONE
+        PIECE \u30EF\u30F3\u30D4\u30FC\u30B9 19TH\u30B7\u30FC\u30BA\u30F3 \u30DB\u30FC\u30EB\u30B1\u30FC\u30AD\u30A2\u30A4\u30E9\u30F3\u30C9\u7DE8
+        PIECE.4\u3010Blu-ray\u3011\",\"author\":\"\",\"artistName\":\"\u7530\u4E2D\u771F\u5F13/\u5CA1\u6751\u660E\u7F8E/\u5E73\u7530\u5E83\u660E\",\"publisherName\":\"\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30D4\u30AF\u30C1\u30E3\u30FC\u30BA(\u682A)\",\"isbn\":\"\",\"jan\":\"4562475277005\",\"hardware\":\"\",\"os\":\"\",\"itemCaption\":\"\",\"salesDate\":\"2017\u5E7412\u670806\u65E5\",\"itemPrice\":5407,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15127085/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7005/4562475277005.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"3\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"003206002001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '3095'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:24:38 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

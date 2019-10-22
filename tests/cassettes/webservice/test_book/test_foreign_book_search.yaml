@@ -2,32 +2,196 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20130522?applicationId=XXXXXX&author=cervantes&formatVersion=2&hits=3
+    uri: https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20170404?applicationId=XXXXXX&author=cervantes&formatVersion=2&hits=3
   response:
-    body: {string: "{\"count\":82,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":28,\"Items\":[{\"title\":\"Les
-        Travaux de Persiles Et de Sigismonde, Histoire Septentrionale,: Ou, Parmy
-        Les Traverses de Ce Pr\",\"titleKana\":\"\",\"japaneseTitle\":\"Les Travaux
-        de Persiles Et de Sigismonde, Histoire Septentrionale,: Ou, Parmy Les Traverses
-        de Ce Pr\",\"author\":\"Miguel Cervantes Saavedra (De)\",\"authorKana\":\"Miguel
-        Cervantes Saavedra (De)\",\"publisherName\":\"HACHETTE LIVRE\",\"isbn\":\"9782012195097\",\"itemCaption\":\"\",\"salesDate\":\"2013\u5E74\",\"itemPrice\":10506,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14687378/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005402005\"},{\"title\":\"La
-        Senora Cornelia\",\"titleKana\":\"\",\"japaneseTitle\":\"La Senora Cornelia\",\"author\":\"Miguel
-        de Cervantes Saavedra/Miguel De Cervantes Saavedra\",\"authorKana\":\"Miguel
-        de Cervantes Saavedra/Miguel De Cervantes Saavedra\",\"publisherName\":\"LINKGUA
-        EDICIONES\",\"isbn\":\"9788498163780\",\"itemCaption\":\"\",\"salesDate\":\"2014\u5E74\",\"itemPrice\":2401,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14684118/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005402002\"},{\"title\":\"Las
-        DOS Doncellas\",\"titleKana\":\"\",\"japaneseTitle\":\"Las DOS Doncellas\",\"author\":\"Miguel
-        de Cervantes Saavedra/Miguel De Cervantes Saavedra\",\"authorKana\":\"Miguel
-        de Cervantes Saavedra/Miguel De Cervantes Saavedra\",\"publisherName\":\"LINKGUA
-        EDICIONES\",\"isbn\":\"9788498163797\",\"itemCaption\":\"\",\"salesDate\":\"2014\u5E74\",\"itemPrice\":2401,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/14684119/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005402002\"}],\"GenreInformation\":[]}"}
+    body:
+      string: "{\"count\":147,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":49,\"Items\":[{\"title\":\"Tres
+        Novelas Ejemplares\",\"titleKana\":\"\",\"japaneseTitle\":\"Tres Novelas Ejemplares\",\"author\":\"Miguel
+        de Cervantes\",\"authorKana\":\"Miguel de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789580467588\",\"itemCaption\":\"These
+        works are full of humor and perceptive reflections on human conditions.\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":4400,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16095067/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"titleKana\":\"\",\"japaneseTitle\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"author\":\"Angela Cervantes\",\"authorKana\":\"Angela
+        Cervantes\",\"publisherName\":\"SCHOLASTIC\",\"isbn\":\"9781338159325\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E74\",\"itemPrice\":1267,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16043255/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Las
+        Mejores Aventuras del Quijote\",\"titleKana\":\"\",\"japaneseTitle\":\"Las
+        Mejores Aventuras del Quijote\",\"author\":\"Miguel de Cervantes\",\"authorKana\":\"Miguel
+        de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789584520470\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":3168,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16036762/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"}],\"GenreInformation\":[]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['2863']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:33:41 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2724'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:41:04 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20170404?applicationId=XXXXXX&author=cervantes&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"count\":147,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":49,\"Items\":[{\"title\":\"Tres
+        Novelas Ejemplares\",\"titleKana\":\"\",\"japaneseTitle\":\"Tres Novelas Ejemplares\",\"author\":\"Miguel
+        de Cervantes\",\"authorKana\":\"Miguel de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789580467588\",\"itemCaption\":\"These
+        works are full of humor and perceptive reflections on human conditions.\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":4400,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16095067/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"titleKana\":\"\",\"japaneseTitle\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"author\":\"Angela Cervantes\",\"authorKana\":\"Angela
+        Cervantes\",\"publisherName\":\"SCHOLASTIC\",\"isbn\":\"9781338159325\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E74\",\"itemPrice\":1267,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16043255/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Las
+        Mejores Aventuras del Quijote\",\"titleKana\":\"\",\"japaneseTitle\":\"Las
+        Mejores Aventuras del Quijote\",\"author\":\"Miguel de Cervantes\",\"authorKana\":\"Miguel
+        de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789584520470\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":3168,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16036762/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2724'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:55:26 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20170404?applicationId=XXXXXX&author=cervantes&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"count\":147,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":49,\"Items\":[{\"title\":\"Tres
+        Novelas Ejemplares\",\"titleKana\":\"\",\"japaneseTitle\":\"Tres Novelas Ejemplares\",\"author\":\"Miguel
+        de Cervantes\",\"authorKana\":\"Miguel de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789580467588\",\"itemCaption\":\"These
+        works are full of humor and perceptive reflections on human conditions.\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":4400,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16095067/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"titleKana\":\"\",\"japaneseTitle\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"author\":\"Angela Cervantes\",\"authorKana\":\"Angela
+        Cervantes\",\"publisherName\":\"SCHOLASTIC\",\"isbn\":\"9781338159325\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E74\",\"itemPrice\":1267,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16043255/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Las
+        Mejores Aventuras del Quijote\",\"titleKana\":\"\",\"japaneseTitle\":\"Las
+        Mejores Aventuras del Quijote\",\"author\":\"Miguel de Cervantes\",\"authorKana\":\"Miguel
+        de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789584520470\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":3168,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16036762/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2724'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:16:21 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20170404?applicationId=XXXXXX&author=cervantes&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"count\":147,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":49,\"Items\":[{\"title\":\"Tres
+        Novelas Ejemplares\",\"titleKana\":\"\",\"japaneseTitle\":\"Tres Novelas Ejemplares\",\"author\":\"Miguel
+        de Cervantes\",\"authorKana\":\"Miguel de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789580467588\",\"itemCaption\":\"These
+        works are full of humor and perceptive reflections on human conditions.\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":4400,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16095067/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"titleKana\":\"\",\"japaneseTitle\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"author\":\"Angela Cervantes\",\"authorKana\":\"Angela
+        Cervantes\",\"publisherName\":\"SCHOLASTIC\",\"isbn\":\"9781338159325\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E74\",\"itemPrice\":1267,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16043255/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Las
+        Mejores Aventuras del Quijote\",\"titleKana\":\"\",\"japaneseTitle\":\"Las
+        Mejores Aventuras del Quijote\",\"author\":\"Miguel de Cervantes\",\"authorKana\":\"Miguel
+        de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789584520470\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":3168,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16036762/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2724'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:21:28 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksForeignBook/Search/20170404?applicationId=XXXXXX&author=cervantes&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"count\":147,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":49,\"Items\":[{\"title\":\"Tres
+        Novelas Ejemplares\",\"titleKana\":\"\",\"japaneseTitle\":\"Tres Novelas Ejemplares\",\"author\":\"Miguel
+        de Cervantes\",\"authorKana\":\"Miguel de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789580467588\",\"itemCaption\":\"These
+        works are full of humor and perceptive reflections on human conditions.\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":4400,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16095067/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/7588/9789580467588.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"titleKana\":\"\",\"japaneseTitle\":\"Me,
+        Frida, and the Secret of the Peacock Ring\",\"author\":\"Angela Cervantes\",\"authorKana\":\"Angela
+        Cervantes\",\"publisherName\":\"SCHOLASTIC\",\"isbn\":\"9781338159325\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E74\",\"itemPrice\":1267,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16043255/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/9325/9781338159325.jpg?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"},{\"title\":\"Las
+        Mejores Aventuras del Quijote\",\"titleKana\":\"\",\"japaneseTitle\":\"Las
+        Mejores Aventuras del Quijote\",\"author\":\"Miguel de Cervantes\",\"authorKana\":\"Miguel
+        de Cervantes\",\"publisherName\":\"NORMA\",\"isbn\":\"9789584520470\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E74\",\"itemPrice\":3168,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16036762/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/noimage_01.gif?_ex=200x200\",\"availability\":\"4\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"005407002\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '2724'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:25:10 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

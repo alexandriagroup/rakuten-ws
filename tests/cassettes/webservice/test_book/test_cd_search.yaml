@@ -2,35 +2,306 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/BooksCD/Search/20130522?applicationId=XXXXXX&artistName=Speed&formatVersion=2&hits=3
+    uri: https://app.rakuten.co.jp/services/api/BooksCD/Search/20170404?applicationId=XXXXXX&artistName=Speed&formatVersion=2&hits=3
   response:
-    body: {string: "{\"count\":70,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":24,\"Items\":[{\"title\":\"SPEEDLAND
+    body:
+      string: "{\"count\":61,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":21,\"Items\":[{\"title\":\"\u3010\u8F38\u5165\u76E4\u3011Furious
+        7\",\"titleKana\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9 \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3
+        Fito Blanko\",\"artistName\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9
+        Sky Mission\",\"artistNameKana\":\"Furious Seven \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C9
+        \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3 \u30B9\u30AB\u30A4 \u30DF\u30C3\u30B7\u30E7\u30F3
+        \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C97\",\"label\":\"Atlantic\",\"size\":\"0\",\"jan\":\"0075678670565\",\"makerCode\":\"7567.867056\",\"itemCaption\":\"\u5168\u4E16\u754C\u7D2F\u8A08\u8208\u884C\u53CE\u51652300\u5104\u5186\u7A81\u7834\u306E\u5927\u30D2\u30C3\u30C8\u30B7\u30EA\u30FC\u30BA\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300F\u6700\u65B0\u4F5C\u3001\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u3000\u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3[\u539F\u984C\uFF1AFURIOUS
+        7]\u300F\u306E\u30B5\u30A6\u30F3\u30C9\u30FB\u30C8\u30E9\u30C3\u30AF\u304C\u6620\u753B\u516C\u958B\u306B\u5148\u99C6\u3051\u3066\u767B\u5834\uFF01\uFF01\\n\\n\u4EBA\u985E\u53F2\u4E0A\u6700\u5F37\u306EDJ\u3001\u30C7\u30F4\u30A3\u30C3\u30C9\u30FB\u30B2\u30C3\u30BF\u3001
+        \u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754CNo.1 \u6FC0\u30A2\u30B2MC\u3001\u30D5\u30ED\u30FC\u30FB\u30E9\u30A4\u30C0\u30FC\u3001\u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754C\u3067\u5927\u6CE8\u76EE\u306E\u30E9\u30C3\u30D1\u30FC\u3001\u30A6\u30A3\u30BA\u30FB\u30AB\u30EA\u30D5\u30A1\u3068\u30A4\u30AE\u30FC\u30FB\u30A2\u30BC\u30EA\u30A2\u306E\u30B3\u30E9\u30DC\u66F2\u306A\u3069\u8C6A\u83EF\u306A\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u9054\u304C\u53C2\u52A0\uFF01\uFF01\u30A2\u30EB\u30D0\u30E0\u6700\u5F8C\u306B\u53CE\u9332\u3055\u308C\u3066\u3044\u308B\u300CWhip\u300D\u4EE5\u5916\u306F\u3001\u5168\u3066\u6620\u753B\u5185\u3067\u4F7F\u7528\uFF01\u3053\u306ECD\u3092\u30AB\u30FC\u30B9\u30C6\u30EC\u30AA\u306B\u5165\u308C\u308C\u3070\u3001\u3042\u306A\u305F\u306E\u8ECA\u3082\u300C\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300D\u306E\u4E16\u754C\u306B\uFF1F\uFF01\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n1.
+        Ride Out / Kid Ink Tyga Wale YG Rich Homie Quan\\n2. Off-set / T.I. & Young
+        Thug\\n3. How Bad Do You Want It (Oh Yeah) / Sevyn Streeter\\n4. Get Low /
+        Dillon Francis & DJ Snake\\n5. Go Hard or Go Home / Wiz Khalifa & Iggy Azalea\\n6.
+        My Angel / Prince Royce\\n7. See You Again / Wiz Khalifa (feat. Charlie Puth)\\n8.
+        Payback / Juicy J\u3001Kevin Gates\u3001Future\u3001Sage The Gemini\\n9. Blast
+        off / David Guetta & Kaz James\\n10. Six Days (Remix) / DJ Shadow (feat. Mos
+        Def)\\n11. Ay Vamos / J. Balvin (feat. French Montana & Nicky Jam)\\n12. GDFR
+        (Noodles Remix) / Flo Rida (feat. Sage The Gemini and Lookas)\\n13. Turn Down
+        For What / DJ Snake & Lil Jon\\n14. Meneo / Fito Blanko\\n15. I Will Return
+        / Skylar Grey\\n16. Whip / Famous To Most\",\"playList\":\"\",\"salesDate\":\"2015\u5E7403\u670817\u65E5\",\"itemPrice\":1603,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/13158918/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=200x200\",\"availability\":\"2\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":45,\"reviewAverage\":\"4.71\",\"booksGenreId\":\"002103003\"},{\"title\":\"SPEEDLAND
         The Premium Best Re Tracks\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
         \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161874\",\"makerCode\":\"AVCD-16187\",\"itemCaption\":\"\u300CBody&Soul\u300D\u300CWake
         Me Up!\u300D\u3068\u3044\u3063\u305F\u30D2\u30C3\u30C8\u30FB\u30C1\u30E5\u30FC\u30F3\u3092\u30BB\u30EB\u30D5\u30FB\u30AB\u30F4\u30A1\u30FC\u3057\u305F\u30D9\u30B9\u30C8\u3002\u6700\u5148\u7AEF\u306ER&B\u30E2\u30FC\u30C9\u3092\u968F\u6240\u306B\u53D6\u308A\u5165\u308C\u308B\u3053\u3068\u3067\u3001\u201C2009\u5E74\u306ESPEED\u201D\u3092\u8868\u73FE\u3057\u3066\u3044\u308B\u3002\u30B0\u30C3\u3068\u6D17\u7DF4\u3055\u308C\u305F\u30C8\u30E9\u30C3\u30AF\u30FB\u30E1\u30A4\u30AF\u3001\u539A\u307F\u3068\u6DF1\u307F\u3092\u5897\u3057\u305F\u30B3\u30FC\u30E9\u30B9\u30FB\u30EF\u30FC\u30AF\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u629C\u7FA4\u3002\",\"playList\":\"Long
         Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
         Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
-        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":2830,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/6075858/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":10,\"reviewAverage\":\"4.7\",\"booksGenreId\":\"002101001\"},{\"title\":\"SPEEDLAND
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3039,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075858/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":10,\"reviewAverage\":\"4.7\",\"booksGenreId\":\"002101001\"},{\"title\":\"SPEEDLAND
         \u301CThe Premium Re Tracks\u301C \uFF08CD\uFF0BDVD\uFF09\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
-        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161867\",\"makerCode\":\"AVCD-16186\",\"itemCaption\":\"2009\u5E748\u67085\u65E5\u30EA\u30EA\u30FC\u30B9\u306E\u30D9\u30B9\u30C8\u30FB\u30A2\u30EB\u30D0\u30E0\u3002\u518D\u7D50\u6210\u5F8C\u3082\u8A71\u984C\u306ESPEED\u306E\u3001\u201C\u30C8\u30A4\u30BA\u30D5\u30A1\u30AF\u30C8\u30EA\u30FC\u201D\u6642\u4EE3\u304B\u3089\u306E\u30B7\u30F3\u30B0\u30EB\u30FB\u30D2\u30C3\u30C8\u3092\u30EA\u30A2\u30EC\u30F3\u30B8\u3002\u8272\u9999\u304C\u5897\u3057\u3066\u3055\u3089\u306B\u8868\u73FE\u529B\u304C\u8C4A\u304B\u306B\u306A\u3063\u305F\u5F7C\u5973\u3089\u306E\u9B45\u529B\u3092\u8A70\u3081\u8FBC\u3093\u3060\u4E00\u679A\u3060\u3002\\n\\n\u21D2\u30A4\u30F3\u30BF\u30D3\u30E5\u30FC\u52D5\u753B\u306F\u3053\u3061\u3089\",\"playList\":\"Long
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161867\",\"makerCode\":\"AVCD-16186\",\"itemCaption\":\"2009\u5E748\u67085\u65E5\u30EA\u30EA\u30FC\u30B9\u306E\u30D9\u30B9\u30C8\u30FB\u30A2\u30EB\u30D0\u30E0\u3002\u518D\u7D50\u6210\u5F8C\u3082\u8A71\u984C\u306ESPEED\u306E\u3001\u201C\u30C8\u30A4\u30BA\u30D5\u30A1\u30AF\u30C8\u30EA\u30FC\u201D\u6642\u4EE3\u304B\u3089\u306E\u30B7\u30F3\u30B0\u30EB\u30FB\u30D2\u30C3\u30C8\u3092\u30EA\u30A2\u30EC\u30F3\u30B8\u3002\u8272\u9999\u304C\u5897\u3057\u3066\u3055\u3089\u306B\u8868\u73FE\u529B\u304C\u8C4A\u304B\u306B\u306A\u3063\u305F\u5F7C\u5973\u3089\u306E\u9B45\u529B\u3092\u8A70\u3081\u8FBC\u3093\u3060\u4E00\u679A\u3060\u3002\",\"playList\":\"Long
         Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
         Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
         MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation###Wake Me Up!
         (music clip)###\u71B1\u5E2F\u591C (music clip)###\u3042\u3057\u305F\u306E\u7A7A
         (music clip)###Wake Me Up! (music clip making)###SPEED\u306E\u300C\u7B11\u3046\u30E8\u30AC\u8B1B\u5EA7\u300D###\u71B1\u5E2F\u591C
-        (music clip making)###\u30AB\u30E1\u30E9\u30DE\u30F3\u7D75\u7406\u5B50\u306E\u300C\u30B9\u30BF\u30B8\u30AA\u63A2\u8A2A\u300D\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3693,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/6075857/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":82,\"reviewAverage\":\"4.74\",\"booksGenreId\":\"002101001\"},{\"title\":\"Straight
-        Shooter\",\"titleKana\":\"\u30B9\u30C8\u30EC\u30FC\u30C8 \u30B7\u30E5\u30FC\u30BF\u30FC\",\"artistName\":\"\u30B9\u30D4\u30FC\u30C9\u30C8\u30E9\u30C3\u30D7\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\u30C8\u30E9\u30C3\u30D7\",\"label\":\"(\u6709)\u30B9\u30D4\u30EA\u30C1\u30E5\u30A2\u30EB\u30FB\u30D3\u30FC\u30B9\u30C8\",\"size\":\"1\",\"jan\":\"4571139013095\",\"makerCode\":\"IUCP-16226\",\"itemCaption\":\"\",\"playList\":\"\u30CE\u30FC\u30FB\u30B0\u30ED\u30FC\u30EA\u30FC\u30FB\u30D5\u30A1\u30A6\u30F3\u30C9###\u30C8\u30FC\u30C1\u30BA\u30FB\u30A2\u30D6\u30EC\u30A4\u30BA###\u30E9\u30F3\u30CB\u30F3\u30B0\u30FB\u30E9\u30F3\u30D1\u30F3\u30C8###\u30A2\u30A4\u30BA\u30FB\u30D5\u30A9\u30FC\u30FB\u30B3\u30F3\u30AF\u30A8\u30B9\u30C8###\u30B5\u30FC\u30F4\u30FB\u30E6\u30A2\u30FB\u30DE\u30B9\u30BF\u30FC\u30BA###\u30B9\u30C8\u30EC\u30FC\u30C8\u30FB\u30B7\u30E5\u30FC\u30BF\u30FC###\u30D8\u30F4\u30A3\u30FB\u30A2\u30FC\u30DE\u30FC###\u30B5\u30F4\u30A7\u30FC\u30B8\u30FB\u30B6\u30FB\u30D7\u30EC\u30A4###\u30A2\u30A4\u30FB\u30A6\u30A9\u30F3\u30C8\u30FB\u30C8\u30A5\u30FB\u30B3\u30F3\u30AB\u30FC\u30FB\u30B6\u30FB\u30EF\u30FC\u30EB\u30C9
-        (\u65E5\u672C\u76E4\u30DC\u30FC\u30CA\u30B9\u30FB\u30C8\u30E9\u30C3\u30AF)\",\"salesDate\":\"2015\u5E7409\u670823\u65E5\",\"itemPrice\":2359,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"http://books.rakuten.co.jp/rb/13305613/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3095/4571139013095.jpg?_ex=64x64\",\"mediumImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3095/4571139013095.jpg?_ex=120x120\",\"largeImageUrl\":\"http://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/3095/4571139013095.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":0,\"reviewAverage\":\"0.0\",\"booksGenreId\":\"002102002\"}],\"GenreInformation\":[]}"}
+        (music clip making)###\u30AB\u30E1\u30E9\u30DE\u30F3\u7D75\u7406\u5B50\u306E\u300C\u30B9\u30BF\u30B8\u30AA\u63A2\u8A2A\u300D\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3762,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075857/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":82,\"reviewAverage\":\"4.74\",\"booksGenreId\":\"002101001\"}],\"GenreInformation\":[]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['4726']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:34:02 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '5925'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:41:02 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksCD/Search/20170404?applicationId=XXXXXX&artistName=Speed&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"count\":60,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":20,\"Items\":[{\"title\":\"\u3010\u8F38\u5165\u76E4\u3011Furious
+        7\",\"titleKana\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9 \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3
+        Fito Blanko\",\"artistName\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9
+        Sky Mission\",\"artistNameKana\":\"Furious Seven \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C9
+        \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3 \u30B9\u30AB\u30A4 \u30DF\u30C3\u30B7\u30E7\u30F3
+        \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C97\",\"label\":\"Atlantic\",\"size\":\"0\",\"jan\":\"0075678670565\",\"makerCode\":\"7567.867056\",\"itemCaption\":\"\u5168\u4E16\u754C\u7D2F\u8A08\u8208\u884C\u53CE\u51652300\u5104\u5186\u7A81\u7834\u306E\u5927\u30D2\u30C3\u30C8\u30B7\u30EA\u30FC\u30BA\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300F\u6700\u65B0\u4F5C\u3001\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u3000\u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3[\u539F\u984C\uFF1AFURIOUS
+        7]\u300F\u306E\u30B5\u30A6\u30F3\u30C9\u30FB\u30C8\u30E9\u30C3\u30AF\u304C\u6620\u753B\u516C\u958B\u306B\u5148\u99C6\u3051\u3066\u767B\u5834\uFF01\uFF01\\n\\n\u4EBA\u985E\u53F2\u4E0A\u6700\u5F37\u306EDJ\u3001\u30C7\u30F4\u30A3\u30C3\u30C9\u30FB\u30B2\u30C3\u30BF\u3001
+        \u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754CNo.1 \u6FC0\u30A2\u30B2MC\u3001\u30D5\u30ED\u30FC\u30FB\u30E9\u30A4\u30C0\u30FC\u3001\u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754C\u3067\u5927\u6CE8\u76EE\u306E\u30E9\u30C3\u30D1\u30FC\u3001\u30A6\u30A3\u30BA\u30FB\u30AB\u30EA\u30D5\u30A1\u3068\u30A4\u30AE\u30FC\u30FB\u30A2\u30BC\u30EA\u30A2\u306E\u30B3\u30E9\u30DC\u66F2\u306A\u3069\u8C6A\u83EF\u306A\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u9054\u304C\u53C2\u52A0\uFF01\uFF01\u30A2\u30EB\u30D0\u30E0\u6700\u5F8C\u306B\u53CE\u9332\u3055\u308C\u3066\u3044\u308B\u300CWhip\u300D\u4EE5\u5916\u306F\u3001\u5168\u3066\u6620\u753B\u5185\u3067\u4F7F\u7528\uFF01\u3053\u306ECD\u3092\u30AB\u30FC\u30B9\u30C6\u30EC\u30AA\u306B\u5165\u308C\u308C\u3070\u3001\u3042\u306A\u305F\u306E\u8ECA\u3082\u300C\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300D\u306E\u4E16\u754C\u306B\uFF1F\uFF01\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n1.
+        Ride Out / Kid Ink Tyga Wale YG Rich Homie Quan\\n2. Off-set / T.I. & Young
+        Thug\\n3. How Bad Do You Want It (Oh Yeah) / Sevyn Streeter\\n4. Get Low /
+        Dillon Francis & DJ Snake\\n5. Go Hard or Go Home / Wiz Khalifa & Iggy Azalea\\n6.
+        My Angel / Prince Royce\\n7. See You Again / Wiz Khalifa (feat. Charlie Puth)\\n8.
+        Payback / Juicy J\u3001Kevin Gates\u3001Future\u3001Sage The Gemini\\n9. Blast
+        off / David Guetta & Kaz James\\n10. Six Days (Remix) / DJ Shadow (feat. Mos
+        Def)\\n11. Ay Vamos / J. Balvin (feat. French Montana & Nicky Jam)\\n12. GDFR
+        (Noodles Remix) / Flo Rida (feat. Sage The Gemini and Lookas)\\n13. Turn Down
+        For What / DJ Snake & Lil Jon\\n14. Meneo / Fito Blanko\\n15. I Will Return
+        / Skylar Grey\\n16. Whip / Famous To Most\",\"playList\":\"\",\"salesDate\":\"2015\u5E7403\u670817\u65E5\",\"itemPrice\":1603,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/13158918/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=200x200\",\"availability\":\"2\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":45,\"reviewAverage\":\"4.71\",\"booksGenreId\":\"002103003\"},{\"title\":\"SPEEDLAND
+        The Premium Best Re Tracks\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161874\",\"makerCode\":\"AVCD-16187\",\"itemCaption\":\"\u300CBody&Soul\u300D\u300CWake
+        Me Up!\u300D\u3068\u3044\u3063\u305F\u30D2\u30C3\u30C8\u30FB\u30C1\u30E5\u30FC\u30F3\u3092\u30BB\u30EB\u30D5\u30FB\u30AB\u30F4\u30A1\u30FC\u3057\u305F\u30D9\u30B9\u30C8\u3002\u6700\u5148\u7AEF\u306ER&B\u30E2\u30FC\u30C9\u3092\u968F\u6240\u306B\u53D6\u308A\u5165\u308C\u308B\u3053\u3068\u3067\u3001\u201C2009\u5E74\u306ESPEED\u201D\u3092\u8868\u73FE\u3057\u3066\u3044\u308B\u3002\u30B0\u30C3\u3068\u6D17\u7DF4\u3055\u308C\u305F\u30C8\u30E9\u30C3\u30AF\u30FB\u30E1\u30A4\u30AF\u3001\u539A\u307F\u3068\u6DF1\u307F\u3092\u5897\u3057\u305F\u30B3\u30FC\u30E9\u30B9\u30FB\u30EF\u30FC\u30AF\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u629C\u7FA4\u3002\",\"playList\":\"Long
+        Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
+        Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3039,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075858/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":10,\"reviewAverage\":\"4.7\",\"booksGenreId\":\"002101001\"},{\"title\":\"SPEEDLAND
+        \u301CThe Premium Re Tracks\u301C \uFF08CD\uFF0BDVD\uFF09\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161867\",\"makerCode\":\"AVCD-16186\",\"itemCaption\":\"2009\u5E748\u67085\u65E5\u30EA\u30EA\u30FC\u30B9\u306E\u30D9\u30B9\u30C8\u30FB\u30A2\u30EB\u30D0\u30E0\u3002\u518D\u7D50\u6210\u5F8C\u3082\u8A71\u984C\u306ESPEED\u306E\u3001\u201C\u30C8\u30A4\u30BA\u30D5\u30A1\u30AF\u30C8\u30EA\u30FC\u201D\u6642\u4EE3\u304B\u3089\u306E\u30B7\u30F3\u30B0\u30EB\u30FB\u30D2\u30C3\u30C8\u3092\u30EA\u30A2\u30EC\u30F3\u30B8\u3002\u8272\u9999\u304C\u5897\u3057\u3066\u3055\u3089\u306B\u8868\u73FE\u529B\u304C\u8C4A\u304B\u306B\u306A\u3063\u305F\u5F7C\u5973\u3089\u306E\u9B45\u529B\u3092\u8A70\u3081\u8FBC\u3093\u3060\u4E00\u679A\u3060\u3002\",\"playList\":\"Long
+        Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
+        Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation###Wake Me Up!
+        (music clip)###\u71B1\u5E2F\u591C (music clip)###\u3042\u3057\u305F\u306E\u7A7A
+        (music clip)###Wake Me Up! (music clip making)###SPEED\u306E\u300C\u7B11\u3046\u30E8\u30AC\u8B1B\u5EA7\u300D###\u71B1\u5E2F\u591C
+        (music clip making)###\u30AB\u30E1\u30E9\u30DE\u30F3\u7D75\u7406\u5B50\u306E\u300C\u30B9\u30BF\u30B8\u30AA\u63A2\u8A2A\u300D\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3762,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075857/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":82,\"reviewAverage\":\"4.74\",\"booksGenreId\":\"002101001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '5925'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:55:24 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksCD/Search/20170404?applicationId=XXXXXX&artistName=Speed&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"count\":60,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":20,\"Items\":[{\"title\":\"\u3010\u8F38\u5165\u76E4\u3011Furious
+        7\",\"titleKana\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9 \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3
+        Fito Blanko\",\"artistName\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9
+        Sky Mission\",\"artistNameKana\":\"Furious Seven \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C9
+        \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3 \u30B9\u30AB\u30A4 \u30DF\u30C3\u30B7\u30E7\u30F3
+        \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C97\",\"label\":\"Atlantic\",\"size\":\"0\",\"jan\":\"0075678670565\",\"makerCode\":\"7567.867056\",\"itemCaption\":\"\u5168\u4E16\u754C\u7D2F\u8A08\u8208\u884C\u53CE\u51652300\u5104\u5186\u7A81\u7834\u306E\u5927\u30D2\u30C3\u30C8\u30B7\u30EA\u30FC\u30BA\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300F\u6700\u65B0\u4F5C\u3001\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u3000\u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3[\u539F\u984C\uFF1AFURIOUS
+        7]\u300F\u306E\u30B5\u30A6\u30F3\u30C9\u30FB\u30C8\u30E9\u30C3\u30AF\u304C\u6620\u753B\u516C\u958B\u306B\u5148\u99C6\u3051\u3066\u767B\u5834\uFF01\uFF01\\n\\n\u4EBA\u985E\u53F2\u4E0A\u6700\u5F37\u306EDJ\u3001\u30C7\u30F4\u30A3\u30C3\u30C9\u30FB\u30B2\u30C3\u30BF\u3001
+        \u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754CNo.1 \u6FC0\u30A2\u30B2MC\u3001\u30D5\u30ED\u30FC\u30FB\u30E9\u30A4\u30C0\u30FC\u3001\u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754C\u3067\u5927\u6CE8\u76EE\u306E\u30E9\u30C3\u30D1\u30FC\u3001\u30A6\u30A3\u30BA\u30FB\u30AB\u30EA\u30D5\u30A1\u3068\u30A4\u30AE\u30FC\u30FB\u30A2\u30BC\u30EA\u30A2\u306E\u30B3\u30E9\u30DC\u66F2\u306A\u3069\u8C6A\u83EF\u306A\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u9054\u304C\u53C2\u52A0\uFF01\uFF01\u30A2\u30EB\u30D0\u30E0\u6700\u5F8C\u306B\u53CE\u9332\u3055\u308C\u3066\u3044\u308B\u300CWhip\u300D\u4EE5\u5916\u306F\u3001\u5168\u3066\u6620\u753B\u5185\u3067\u4F7F\u7528\uFF01\u3053\u306ECD\u3092\u30AB\u30FC\u30B9\u30C6\u30EC\u30AA\u306B\u5165\u308C\u308C\u3070\u3001\u3042\u306A\u305F\u306E\u8ECA\u3082\u300C\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300D\u306E\u4E16\u754C\u306B\uFF1F\uFF01\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n1.
+        Ride Out / Kid Ink Tyga Wale YG Rich Homie Quan\\n2. Off-set / T.I. & Young
+        Thug\\n3. How Bad Do You Want It (Oh Yeah) / Sevyn Streeter\\n4. Get Low /
+        Dillon Francis & DJ Snake\\n5. Go Hard or Go Home / Wiz Khalifa & Iggy Azalea\\n6.
+        My Angel / Prince Royce\\n7. See You Again / Wiz Khalifa (feat. Charlie Puth)\\n8.
+        Payback / Juicy J\u3001Kevin Gates\u3001Future\u3001Sage The Gemini\\n9. Blast
+        off / David Guetta & Kaz James\\n10. Six Days (Remix) / DJ Shadow (feat. Mos
+        Def)\\n11. Ay Vamos / J. Balvin (feat. French Montana & Nicky Jam)\\n12. GDFR
+        (Noodles Remix) / Flo Rida (feat. Sage The Gemini and Lookas)\\n13. Turn Down
+        For What / DJ Snake & Lil Jon\\n14. Meneo / Fito Blanko\\n15. I Will Return
+        / Skylar Grey\\n16. Whip / Famous To Most\",\"playList\":\"\",\"salesDate\":\"2015\u5E7403\u670817\u65E5\",\"itemPrice\":1603,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/13158918/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=200x200\",\"availability\":\"2\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":45,\"reviewAverage\":\"4.71\",\"booksGenreId\":\"002103003\"},{\"title\":\"SPEEDLAND
+        The Premium Best Re Tracks\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161874\",\"makerCode\":\"AVCD-16187\",\"itemCaption\":\"\u300CBody&Soul\u300D\u300CWake
+        Me Up!\u300D\u3068\u3044\u3063\u305F\u30D2\u30C3\u30C8\u30FB\u30C1\u30E5\u30FC\u30F3\u3092\u30BB\u30EB\u30D5\u30FB\u30AB\u30F4\u30A1\u30FC\u3057\u305F\u30D9\u30B9\u30C8\u3002\u6700\u5148\u7AEF\u306ER&B\u30E2\u30FC\u30C9\u3092\u968F\u6240\u306B\u53D6\u308A\u5165\u308C\u308B\u3053\u3068\u3067\u3001\u201C2009\u5E74\u306ESPEED\u201D\u3092\u8868\u73FE\u3057\u3066\u3044\u308B\u3002\u30B0\u30C3\u3068\u6D17\u7DF4\u3055\u308C\u305F\u30C8\u30E9\u30C3\u30AF\u30FB\u30E1\u30A4\u30AF\u3001\u539A\u307F\u3068\u6DF1\u307F\u3092\u5897\u3057\u305F\u30B3\u30FC\u30E9\u30B9\u30FB\u30EF\u30FC\u30AF\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u629C\u7FA4\u3002\",\"playList\":\"Long
+        Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
+        Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3039,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075858/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":10,\"reviewAverage\":\"4.7\",\"booksGenreId\":\"002101001\"},{\"title\":\"SPEEDLAND
+        \u301CThe Premium Re Tracks\u301C \uFF08CD\uFF0BDVD\uFF09\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161867\",\"makerCode\":\"AVCD-16186\",\"itemCaption\":\"2009\u5E748\u67085\u65E5\u30EA\u30EA\u30FC\u30B9\u306E\u30D9\u30B9\u30C8\u30FB\u30A2\u30EB\u30D0\u30E0\u3002\u518D\u7D50\u6210\u5F8C\u3082\u8A71\u984C\u306ESPEED\u306E\u3001\u201C\u30C8\u30A4\u30BA\u30D5\u30A1\u30AF\u30C8\u30EA\u30FC\u201D\u6642\u4EE3\u304B\u3089\u306E\u30B7\u30F3\u30B0\u30EB\u30FB\u30D2\u30C3\u30C8\u3092\u30EA\u30A2\u30EC\u30F3\u30B8\u3002\u8272\u9999\u304C\u5897\u3057\u3066\u3055\u3089\u306B\u8868\u73FE\u529B\u304C\u8C4A\u304B\u306B\u306A\u3063\u305F\u5F7C\u5973\u3089\u306E\u9B45\u529B\u3092\u8A70\u3081\u8FBC\u3093\u3060\u4E00\u679A\u3060\u3002\",\"playList\":\"Long
+        Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
+        Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation###Wake Me Up!
+        (music clip)###\u71B1\u5E2F\u591C (music clip)###\u3042\u3057\u305F\u306E\u7A7A
+        (music clip)###Wake Me Up! (music clip making)###SPEED\u306E\u300C\u7B11\u3046\u30E8\u30AC\u8B1B\u5EA7\u300D###\u71B1\u5E2F\u591C
+        (music clip making)###\u30AB\u30E1\u30E9\u30DE\u30F3\u7D75\u7406\u5B50\u306E\u300C\u30B9\u30BF\u30B8\u30AA\u63A2\u8A2A\u300D\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3762,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075857/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":82,\"reviewAverage\":\"4.74\",\"booksGenreId\":\"002101001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '5925'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:16:19 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksCD/Search/20170404?applicationId=XXXXXX&artistName=Speed&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"count\":60,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":20,\"Items\":[{\"title\":\"\u3010\u8F38\u5165\u76E4\u3011Furious
+        7\",\"titleKana\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9 \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3
+        Fito Blanko\",\"artistName\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9
+        Sky Mission\",\"artistNameKana\":\"Furious Seven \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C9
+        \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3 \u30B9\u30AB\u30A4 \u30DF\u30C3\u30B7\u30E7\u30F3
+        \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C97\",\"label\":\"Atlantic\",\"size\":\"0\",\"jan\":\"0075678670565\",\"makerCode\":\"7567.867056\",\"itemCaption\":\"\u5168\u4E16\u754C\u7D2F\u8A08\u8208\u884C\u53CE\u51652300\u5104\u5186\u7A81\u7834\u306E\u5927\u30D2\u30C3\u30C8\u30B7\u30EA\u30FC\u30BA\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300F\u6700\u65B0\u4F5C\u3001\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u3000\u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3[\u539F\u984C\uFF1AFURIOUS
+        7]\u300F\u306E\u30B5\u30A6\u30F3\u30C9\u30FB\u30C8\u30E9\u30C3\u30AF\u304C\u6620\u753B\u516C\u958B\u306B\u5148\u99C6\u3051\u3066\u767B\u5834\uFF01\uFF01\\n\\n\u4EBA\u985E\u53F2\u4E0A\u6700\u5F37\u306EDJ\u3001\u30C7\u30F4\u30A3\u30C3\u30C9\u30FB\u30B2\u30C3\u30BF\u3001
+        \u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754CNo.1 \u6FC0\u30A2\u30B2MC\u3001\u30D5\u30ED\u30FC\u30FB\u30E9\u30A4\u30C0\u30FC\u3001\u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754C\u3067\u5927\u6CE8\u76EE\u306E\u30E9\u30C3\u30D1\u30FC\u3001\u30A6\u30A3\u30BA\u30FB\u30AB\u30EA\u30D5\u30A1\u3068\u30A4\u30AE\u30FC\u30FB\u30A2\u30BC\u30EA\u30A2\u306E\u30B3\u30E9\u30DC\u66F2\u306A\u3069\u8C6A\u83EF\u306A\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u9054\u304C\u53C2\u52A0\uFF01\uFF01\u30A2\u30EB\u30D0\u30E0\u6700\u5F8C\u306B\u53CE\u9332\u3055\u308C\u3066\u3044\u308B\u300CWhip\u300D\u4EE5\u5916\u306F\u3001\u5168\u3066\u6620\u753B\u5185\u3067\u4F7F\u7528\uFF01\u3053\u306ECD\u3092\u30AB\u30FC\u30B9\u30C6\u30EC\u30AA\u306B\u5165\u308C\u308C\u3070\u3001\u3042\u306A\u305F\u306E\u8ECA\u3082\u300C\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300D\u306E\u4E16\u754C\u306B\uFF1F\uFF01\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n1.
+        Ride Out / Kid Ink Tyga Wale YG Rich Homie Quan\\n2. Off-set / T.I. & Young
+        Thug\\n3. How Bad Do You Want It (Oh Yeah) / Sevyn Streeter\\n4. Get Low /
+        Dillon Francis & DJ Snake\\n5. Go Hard or Go Home / Wiz Khalifa & Iggy Azalea\\n6.
+        My Angel / Prince Royce\\n7. See You Again / Wiz Khalifa (feat. Charlie Puth)\\n8.
+        Payback / Juicy J\u3001Kevin Gates\u3001Future\u3001Sage The Gemini\\n9. Blast
+        off / David Guetta & Kaz James\\n10. Six Days (Remix) / DJ Shadow (feat. Mos
+        Def)\\n11. Ay Vamos / J. Balvin (feat. French Montana & Nicky Jam)\\n12. GDFR
+        (Noodles Remix) / Flo Rida (feat. Sage The Gemini and Lookas)\\n13. Turn Down
+        For What / DJ Snake & Lil Jon\\n14. Meneo / Fito Blanko\\n15. I Will Return
+        / Skylar Grey\\n16. Whip / Famous To Most\",\"playList\":\"\",\"salesDate\":\"2015\u5E7403\u670817\u65E5\",\"itemPrice\":1603,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/13158918/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=200x200\",\"availability\":\"2\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":45,\"reviewAverage\":\"4.71\",\"booksGenreId\":\"002103003\"},{\"title\":\"SPEEDLAND
+        The Premium Best Re Tracks\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161874\",\"makerCode\":\"AVCD-16187\",\"itemCaption\":\"\u300CBody&Soul\u300D\u300CWake
+        Me Up!\u300D\u3068\u3044\u3063\u305F\u30D2\u30C3\u30C8\u30FB\u30C1\u30E5\u30FC\u30F3\u3092\u30BB\u30EB\u30D5\u30FB\u30AB\u30F4\u30A1\u30FC\u3057\u305F\u30D9\u30B9\u30C8\u3002\u6700\u5148\u7AEF\u306ER&B\u30E2\u30FC\u30C9\u3092\u968F\u6240\u306B\u53D6\u308A\u5165\u308C\u308B\u3053\u3068\u3067\u3001\u201C2009\u5E74\u306ESPEED\u201D\u3092\u8868\u73FE\u3057\u3066\u3044\u308B\u3002\u30B0\u30C3\u3068\u6D17\u7DF4\u3055\u308C\u305F\u30C8\u30E9\u30C3\u30AF\u30FB\u30E1\u30A4\u30AF\u3001\u539A\u307F\u3068\u6DF1\u307F\u3092\u5897\u3057\u305F\u30B3\u30FC\u30E9\u30B9\u30FB\u30EF\u30FC\u30AF\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u629C\u7FA4\u3002\",\"playList\":\"Long
+        Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
+        Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3039,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075858/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":10,\"reviewAverage\":\"4.7\",\"booksGenreId\":\"002101001\"},{\"title\":\"SPEEDLAND
+        \u301CThe Premium Re Tracks\u301C \uFF08CD\uFF0BDVD\uFF09\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161867\",\"makerCode\":\"AVCD-16186\",\"itemCaption\":\"2009\u5E748\u67085\u65E5\u30EA\u30EA\u30FC\u30B9\u306E\u30D9\u30B9\u30C8\u30FB\u30A2\u30EB\u30D0\u30E0\u3002\u518D\u7D50\u6210\u5F8C\u3082\u8A71\u984C\u306ESPEED\u306E\u3001\u201C\u30C8\u30A4\u30BA\u30D5\u30A1\u30AF\u30C8\u30EA\u30FC\u201D\u6642\u4EE3\u304B\u3089\u306E\u30B7\u30F3\u30B0\u30EB\u30FB\u30D2\u30C3\u30C8\u3092\u30EA\u30A2\u30EC\u30F3\u30B8\u3002\u8272\u9999\u304C\u5897\u3057\u3066\u3055\u3089\u306B\u8868\u73FE\u529B\u304C\u8C4A\u304B\u306B\u306A\u3063\u305F\u5F7C\u5973\u3089\u306E\u9B45\u529B\u3092\u8A70\u3081\u8FBC\u3093\u3060\u4E00\u679A\u3060\u3002\",\"playList\":\"Long
+        Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
+        Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation###Wake Me Up!
+        (music clip)###\u71B1\u5E2F\u591C (music clip)###\u3042\u3057\u305F\u306E\u7A7A
+        (music clip)###Wake Me Up! (music clip making)###SPEED\u306E\u300C\u7B11\u3046\u30E8\u30AC\u8B1B\u5EA7\u300D###\u71B1\u5E2F\u591C
+        (music clip making)###\u30AB\u30E1\u30E9\u30DE\u30F3\u7D75\u7406\u5B50\u306E\u300C\u30B9\u30BF\u30B8\u30AA\u63A2\u8A2A\u300D\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3762,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075857/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":82,\"reviewAverage\":\"4.74\",\"booksGenreId\":\"002101001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '5925'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:21:25 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksCD/Search/20170404?applicationId=XXXXXX&artistName=Speed&formatVersion=2&hits=3
+  response:
+    body:
+      string: "{\"count\":60,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":20,\"Items\":[{\"title\":\"\u3010\u8F38\u5165\u76E4\u3011Furious
+        7\",\"titleKana\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9 \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3
+        Fito Blanko\",\"artistName\":\"\u30EF\u30A4\u30EB\u30C9 \u30B9\u30D4\u30FC\u30C9
+        Sky Mission\",\"artistNameKana\":\"Furious Seven \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C9
+        \u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3 \u30B9\u30AB\u30A4 \u30DF\u30C3\u30B7\u30E7\u30F3
+        \u30EF\u30A4\u30EB\u30C9\u30B9\u30D4\u30FC\u30C97\",\"label\":\"Atlantic\",\"size\":\"0\",\"jan\":\"0075678670565\",\"makerCode\":\"7567.867056\",\"itemCaption\":\"\u5168\u4E16\u754C\u7D2F\u8A08\u8208\u884C\u53CE\u51652300\u5104\u5186\u7A81\u7834\u306E\u5927\u30D2\u30C3\u30C8\u30B7\u30EA\u30FC\u30BA\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300F\u6700\u65B0\u4F5C\u3001\u300E\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u3000\u30B9\u30AB\u30A4\u30DF\u30C3\u30B7\u30E7\u30F3[\u539F\u984C\uFF1AFURIOUS
+        7]\u300F\u306E\u30B5\u30A6\u30F3\u30C9\u30FB\u30C8\u30E9\u30C3\u30AF\u304C\u6620\u753B\u516C\u958B\u306B\u5148\u99C6\u3051\u3066\u767B\u5834\uFF01\uFF01\\n\\n\u4EBA\u985E\u53F2\u4E0A\u6700\u5F37\u306EDJ\u3001\u30C7\u30F4\u30A3\u30C3\u30C9\u30FB\u30B2\u30C3\u30BF\u3001
+        \u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754CNo.1 \u6FC0\u30A2\u30B2MC\u3001\u30D5\u30ED\u30FC\u30FB\u30E9\u30A4\u30C0\u30FC\u3001\u30D2\u30C3\u30D7\u30DB\u30C3\u30D7\u754C\u3067\u5927\u6CE8\u76EE\u306E\u30E9\u30C3\u30D1\u30FC\u3001\u30A6\u30A3\u30BA\u30FB\u30AB\u30EA\u30D5\u30A1\u3068\u30A4\u30AE\u30FC\u30FB\u30A2\u30BC\u30EA\u30A2\u306E\u30B3\u30E9\u30DC\u66F2\u306A\u3069\u8C6A\u83EF\u306A\u30A2\u30FC\u30C6\u30A3\u30B9\u30C8\u9054\u304C\u53C2\u52A0\uFF01\uFF01\u30A2\u30EB\u30D0\u30E0\u6700\u5F8C\u306B\u53CE\u9332\u3055\u308C\u3066\u3044\u308B\u300CWhip\u300D\u4EE5\u5916\u306F\u3001\u5168\u3066\u6620\u753B\u5185\u3067\u4F7F\u7528\uFF01\u3053\u306ECD\u3092\u30AB\u30FC\u30B9\u30C6\u30EC\u30AA\u306B\u5165\u308C\u308C\u3070\u3001\u3042\u306A\u305F\u306E\u8ECA\u3082\u300C\u30EF\u30A4\u30EB\u30C9\u30FB\u30B9\u30D4\u30FC\u30C9\u300D\u306E\u4E16\u754C\u306B\uFF1F\uFF01\\n\\n\uFF1C\u53CE\u9332\u5185\u5BB9\uFF1E\\n1.
+        Ride Out / Kid Ink Tyga Wale YG Rich Homie Quan\\n2. Off-set / T.I. & Young
+        Thug\\n3. How Bad Do You Want It (Oh Yeah) / Sevyn Streeter\\n4. Get Low /
+        Dillon Francis & DJ Snake\\n5. Go Hard or Go Home / Wiz Khalifa & Iggy Azalea\\n6.
+        My Angel / Prince Royce\\n7. See You Again / Wiz Khalifa (feat. Charlie Puth)\\n8.
+        Payback / Juicy J\u3001Kevin Gates\u3001Future\u3001Sage The Gemini\\n9. Blast
+        off / David Guetta & Kaz James\\n10. Six Days (Remix) / DJ Shadow (feat. Mos
+        Def)\\n11. Ay Vamos / J. Balvin (feat. French Montana & Nicky Jam)\\n12. GDFR
+        (Noodles Remix) / Flo Rida (feat. Sage The Gemini and Lookas)\\n13. Turn Down
+        For What / DJ Snake & Lil Jon\\n14. Meneo / Fito Blanko\\n15. I Will Return
+        / Skylar Grey\\n16. Whip / Famous To Most\",\"playList\":\"\",\"salesDate\":\"2015\u5E7403\u670817\u65E5\",\"itemPrice\":1603,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/13158918/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0565/0075678670565.jpg?_ex=200x200\",\"availability\":\"2\",\"postageFlag\":1,\"limitedFlag\":0,\"reviewCount\":45,\"reviewAverage\":\"4.71\",\"booksGenreId\":\"002103003\"},{\"title\":\"SPEEDLAND
+        The Premium Best Re Tracks\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161874\",\"makerCode\":\"AVCD-16187\",\"itemCaption\":\"\u300CBody&Soul\u300D\u300CWake
+        Me Up!\u300D\u3068\u3044\u3063\u305F\u30D2\u30C3\u30C8\u30FB\u30C1\u30E5\u30FC\u30F3\u3092\u30BB\u30EB\u30D5\u30FB\u30AB\u30F4\u30A1\u30FC\u3057\u305F\u30D9\u30B9\u30C8\u3002\u6700\u5148\u7AEF\u306ER&B\u30E2\u30FC\u30C9\u3092\u968F\u6240\u306B\u53D6\u308A\u5165\u308C\u308B\u3053\u3068\u3067\u3001\u201C2009\u5E74\u306ESPEED\u201D\u3092\u8868\u73FE\u3057\u3066\u3044\u308B\u3002\u30B0\u30C3\u3068\u6D17\u7DF4\u3055\u308C\u305F\u30C8\u30E9\u30C3\u30AF\u30FB\u30E1\u30A4\u30AF\u3001\u539A\u307F\u3068\u6DF1\u307F\u3092\u5897\u3057\u305F\u30B3\u30FC\u30E9\u30B9\u30FB\u30EF\u30FC\u30AF\u306E\u30D0\u30E9\u30F3\u30B9\u304C\u629C\u7FA4\u3002\",\"playList\":\"Long
+        Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
+        Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3039,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075858/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161874.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":10,\"reviewAverage\":\"4.7\",\"booksGenreId\":\"002101001\"},{\"title\":\"SPEEDLAND
+        \u301CThe Premium Re Tracks\u301C \uFF08CD\uFF0BDVD\uFF09\",\"titleKana\":\"\u30B9\u30D4\u30FC\u30C9\u30E9\u30F3\u30C9
+        \u30B6 \u30D7\u30EC\u30DF\u30A2\u30E0 \u30D9\u30B9\u30C8 \u30EA \u30C8\u30E9\u30C3\u30AF\u30B9\",\"artistName\":\"SPEED\",\"artistNameKana\":\"\u30B9\u30D4\u30FC\u30C9\",\"label\":\"\u30A8\u30A4\u30D9\u30C3\u30AF\u30B9\u30FB\u30DF\u30E5\u30FC\u30B8\u30C3\u30AF\u30FB\u30AF\u30EA\u30A8\u30A4\u30C6\u30A3\u30F4(\u682A)\",\"size\":\"1\",\"jan\":\"4988064161867\",\"makerCode\":\"AVCD-16186\",\"itemCaption\":\"2009\u5E748\u67085\u65E5\u30EA\u30EA\u30FC\u30B9\u306E\u30D9\u30B9\u30C8\u30FB\u30A2\u30EB\u30D0\u30E0\u3002\u518D\u7D50\u6210\u5F8C\u3082\u8A71\u984C\u306ESPEED\u306E\u3001\u201C\u30C8\u30A4\u30BA\u30D5\u30A1\u30AF\u30C8\u30EA\u30FC\u201D\u6642\u4EE3\u304B\u3089\u306E\u30B7\u30F3\u30B0\u30EB\u30FB\u30D2\u30C3\u30C8\u3092\u30EA\u30A2\u30EC\u30F3\u30B8\u3002\u8272\u9999\u304C\u5897\u3057\u3066\u3055\u3089\u306B\u8868\u73FE\u529B\u304C\u8C4A\u304B\u306B\u306A\u3063\u305F\u5F7C\u5973\u3089\u306E\u9B45\u529B\u3092\u8A70\u3081\u8FBC\u3093\u3060\u4E00\u679A\u3060\u3002\",\"playList\":\"Long
+        Way Home###\u3042\u3057\u305F\u306E\u7A7A###Body & Soul###STEADY###Wake Me
+        Up!###ALIVE###White Love###Snow Kiss###Breakin' out to the morning###\u71B1\u5E2F\u591C###ALL
+        MY TRUE LOVE###Precious Time###GO!GO!Heaven###my graduation###Wake Me Up!
+        (music clip)###\u71B1\u5E2F\u591C (music clip)###\u3042\u3057\u305F\u306E\u7A7A
+        (music clip)###Wake Me Up! (music clip making)###SPEED\u306E\u300C\u7B11\u3046\u30E8\u30AC\u8B1B\u5EA7\u300D###\u71B1\u5E2F\u591C
+        (music clip making)###\u30AB\u30E1\u30E9\u30DE\u30F3\u7D75\u7406\u5B50\u306E\u300C\u30B9\u30BF\u30B8\u30AA\u63A2\u8A2A\u300D\",\"salesDate\":\"2009\u5E7408\u670805\u65E5\",\"itemPrice\":3762,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/6075857/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/4988/4988064161867.jpg?_ex=200x200\",\"availability\":\"1\",\"postageFlag\":2,\"limitedFlag\":0,\"reviewCount\":82,\"reviewAverage\":\"4.74\",\"booksGenreId\":\"002101001\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '5925'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:25:08 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1
