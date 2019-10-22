@@ -9,15 +9,15 @@ from . import parameters
 
 
 class IchibaAPI(ApiService):
-    item = ApiEndpoint(ApiMethod('search', api_version='20140222'),
-                       ApiMethod('ranking', api_version='20120927'))
+    item = ApiEndpoint(ApiMethod('search', api_version='20170706'),
+                       ApiMethod('ranking', api_version='20170628'))
     genre = ApiEndpoint(ApiMethod('search', api_version='20120723'))
     tag = ApiEndpoint(ApiMethod('search', api_version='20140222'))
-    product = ApiEndpoint(ApiMethod('search', api_version='20140305'), api_endpoint='Product')
+    product = ApiEndpoint(ApiMethod('search', api_version='20170426'), api_endpoint='Product')
 
 
 class BooksAPI(ApiService):
-    api_version = "20130522"
+    api_version = "20170404"
 
     total = ApiEndpoint(ApiMethod('search'))
     book = ApiEndpoint(ApiMethod('search'))
@@ -31,7 +31,7 @@ class BooksAPI(ApiService):
 
 
 class TravelAPI(ApiService):
-    api_version = "20131024"
+    api_version = "20170426"
 
     hotel = ApiEndpoint(ApiMethod('simple_search', 'simple_hotel_search'),
                         ApiMethod('detail_search', 'hotel_detail_search'),
@@ -39,8 +39,10 @@ class TravelAPI(ApiService):
                         ApiMethod('ranking', 'hotel_ranking'),
                         ApiMethod('get_chain_list', 'get_hotel_chain_list'),
                         ApiMethod('keyword_search', 'keyword_hotel_search'),
-                        api_endpoint="Travel")
-    area = ApiEndpoint(ApiMethod('get_class', 'get_area_class'), api_endpoint="Travel")
+                        api_endpoint="Travel", api_version="20170426")
+    area = ApiEndpoint(ApiMethod('get_class', 'get_area_class'),
+                       api_endpoint="Travel",
+                       api_version="20131024")
 
 
 class AuctionAPI(ApiService):
@@ -55,20 +57,26 @@ class AuctionAPI(ApiService):
 class KoboAPI(ApiService):
     api_version = "20131010"
 
-    genre = ApiEndpoint(ApiMethod('search', 'genre_search'), api_endpoint="Kobo", api_version="20131010")
-    ebook = ApiEndpoint(ApiMethod('search', 'ebook_search'), api_endpoint="Kobo", api_version="20140811")
+    genre = ApiEndpoint(ApiMethod('search', 'genre_search'),
+                        api_endpoint="Kobo",
+                        api_version="20131010")
+    ebook = ApiEndpoint(ApiMethod('search', 'ebook_search'),
+                        api_endpoint="Kobo",
+                        api_version="20170426")
 
 
 class GoraAPI(ApiService):
-    golf = ApiEndpoint(ApiMethod('search', 'gora_golf_course_search', api_version="20131113"),
-                       ApiMethod('detail', 'gora_golf_course_detail', api_version="20140410"),
+    api_version = "20170623"
+
+    golf = ApiEndpoint(ApiMethod('search', 'gora_golf_course_search'),
+                       ApiMethod('detail', 'gora_golf_course_detail'),
                        api_endpoint="Gora")
-    plan = ApiEndpoint(ApiMethod('search', 'gora_plan_search', api_version="20150706"),
+    plan = ApiEndpoint(ApiMethod('search', 'gora_plan_search'),
                        api_endpoint="Gora")
 
 
 class RecipeAPI(ApiService):
-    api_version = "20121121"
+    api_version = "20170426"
 
     category = ApiEndpoint(ApiMethod('ranking', 'category_ranking'),
                            ApiMethod('list', 'category_list'),
