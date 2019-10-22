@@ -1,86 +1,186 @@
 interactions:
 - request:
-    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
       \   <item>\n      <itemUrl>item-test-01</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
     headers:
-      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
-      Content-Length: ['166']
-      User-Agent: [python-requests/2.13.0]
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '166'
+      User-Agent:
+      - python-requests/2.22.0
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
   response:
-    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>47f524fd-40d5-4e1b-b11c-e996489bde44</requestId><requests/></status><itemDeleteResult><code>N000</code><item><itemUrl>item-test-01</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>ca178dd5-2c99-48e1-bdec-65651a546273</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-01</itemUrl></item></itemDeleteResult></result>'
     headers:
-      connection: [close]
-      content-length: ['331']
-      content-type: [text/xml; charset=utf-8]
-      date: ['Wed, 29 Mar 2017 08:52:06 GMT']
-      vary: [Accept-Encoding]
-      x-powered-by: [Servlet/2.5 JSP/2.1]
-    status: {code: 200, message: OK}
+      Connection:
+      - close
+      Content-Length:
+      - '331'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 12:40:19 GMT
+      RequestId:
+      - ca178dd5-2c99-48e1-bdec-65651a546273
+      Server:
+      - openresty
+      Set-Cookie:
+      - WMONID=QC0m91b9E5i; Domain=127.0.0.1; Path=/; Expires=Wed, 21-Oct-2020 21:40:19
+        GMT
+      Timestamp:
+      - '2019-10-22T12:40:19'
+      Vary:
+      - Accept-Encoding
+      http.reason:
+      - OK
+      http.status:
+      - '200'
+      x-powered-by:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
 - request:
-    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
       \   <item>\n      <itemUrl>item-test-02</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
     headers:
-      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
-      Content-Length: ['166']
-      User-Agent: [python-requests/2.13.0]
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '166'
+      User-Agent:
+      - python-requests/2.22.0
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
   response:
-    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>b6c3dd7b-6828-478c-a2a6-3e656966111e</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>5708a7a4-021e-40b1-a80b-2b47d2d6faa9</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-02</itemUrl></item></itemDeleteResult></result>'
     headers:
-      connection: [close]
-      content-length: ['331']
-      content-type: [text/xml; charset=utf-8]
-      date: ['Wed, 29 Mar 2017 08:52:08 GMT']
-      vary: [Accept-Encoding]
-      x-powered-by: [Servlet/2.5 JSP/2.1]
-    status: {code: 200, message: OK}
+      Connection:
+      - close
+      Content-Length:
+      - '331'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 12:40:20 GMT
+      RequestId:
+      - 5708a7a4-021e-40b1-a80b-2b47d2d6faa9
+      Server:
+      - openresty
+      Set-Cookie:
+      - WMONID=zFvDS8B56xL; Domain=127.0.0.1; Path=/; Expires=Wed, 21-Oct-2020 21:40:20
+        GMT
+      Timestamp:
+      - '2019-10-22T12:40:20'
+      Vary:
+      - Accept-Encoding
+      http.reason:
+      - OK
+      http.status:
+      - '200'
+      x-powered-by:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
 - request:
-    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
-      \   <item>\n      <itemUrl>item-test-04</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
-    headers:
-      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
-      Content-Length: ['166']
-      User-Agent: [python-requests/2.13.0]
-    method: POST
-    uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
-  response:
-    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
-
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>44ef5634-7000-47e0-9a4b-20e98048db84</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-04</itemUrl></item></itemDeleteResult></result>'}
-    headers:
-      connection: [close]
-      content-length: ['331']
-      content-type: [text/xml; charset=utf-8]
-      date: ['Wed, 29 Mar 2017 08:52:10 GMT']
-      vary: [Accept-Encoding]
-      x-powered-by: [Servlet/2.5 JSP/2.1]
-    status: {code: 200, message: OK}
-- request:
-    body: !!python/unicode "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
       \   <item>\n      <itemUrl>item-test-03</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
     headers:
-      !!python/unicode Authorization: [!!python/unicode ESA XXXXXX]
-      Content-Length: ['166']
-      User-Agent: [python-requests/2.13.0]
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '166'
+      User-Agent:
+      - python-requests/2.22.0
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
   response:
-    body: {string: !!python/unicode '<?xml version="1.0" encoding="UTF-8"?>
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a54eec6f-a78e-458f-8375-6e89ac2b0a71</requestId><requests/></status><itemDeleteResult><code>C001</code><item><itemUrl>item-test-03</itemUrl></item></itemDeleteResult></result>'}
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>477faf80-95bc-4a4d-8cd7-75acb77cedf6</requestId><requests/></status><itemDeleteResult><code>N000</code><item><itemUrl>item-test-03</itemUrl></item></itemDeleteResult></result>'
     headers:
-      connection: [close]
-      content-length: ['331']
-      content-type: [text/xml; charset=utf-8]
-      date: ['Wed, 29 Mar 2017 08:52:11 GMT']
-      vary: [Accept-Encoding]
-      x-powered-by: [Servlet/2.5 JSP/2.1]
-    status: {code: 200, message: OK}
+      Connection:
+      - close
+      Content-Length:
+      - '331'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 12:40:22 GMT
+      RequestId:
+      - 477faf80-95bc-4a4d-8cd7-75acb77cedf6
+      Server:
+      - openresty
+      Set-Cookie:
+      - WMONID=5aR7Jk6tuBM; Domain=127.0.0.1; Path=/; Expires=Wed, 21-Oct-2020 21:40:21
+        GMT
+      Timestamp:
+      - '2019-10-22T12:40:21'
+      Vary:
+      - Accept-Encoding
+      http.reason:
+      - OK
+      http.status:
+      - '200'
+      x-powered-by:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <itemDeleteRequest>\n
+      \   <item>\n      <itemUrl>item-test-04</itemUrl>\n    </item>\n  </itemDeleteRequest>\n</request>\n"
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '166'
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/item/delete
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>item.delete</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>a8235b71-f6e0-4ebe-8f68-c96a73ab5d36</requestId><requests/></status><itemDeleteResult><code>N000</code><item><itemUrl>item-test-04</itemUrl></item></itemDeleteResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '331'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 12:40:23 GMT
+      RequestId:
+      - a8235b71-f6e0-4ebe-8f68-c96a73ab5d36
+      Server:
+      - openresty
+      Set-Cookie:
+      - WMONID=P9LWZaN6oXR; Domain=127.0.0.1; Path=/; Expires=Wed, 21-Oct-2020 21:40:23
+        GMT
+      Timestamp:
+      - '2019-10-22T12:40:23'
+      Vary:
+      - Accept-Encoding
+      http.reason:
+      - OK
+      http.status:
+      - '200'
+      x-powered-by:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
 version: 1

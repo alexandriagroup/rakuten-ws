@@ -1,17 +1,21 @@
 # coding: utf-8
 from __future__ import unicode_literals
+import pytest
 
 
+@pytest.mark.skip(reason="Stand by")
 def test_get_categorysets(ws):
     result = ws.rms.category.get_categorysets()
     assert result['code'] == 'N000'
 
 
+@pytest.mark.skip(reason="Stand by")
 def test_get_categories(ws):
     result = ws.rms.category.get_categories(categorySetManageNumber=0)
     assert result['code'] == 'N000'
 
 
+@pytest.mark.skip(reason="Stand by")
 def insert_category(ws, name):
     params = {
         'categorySetManageNumber': 0,
@@ -21,6 +25,7 @@ def insert_category(ws, name):
     return ws.rms.category.insert_category(**params)
 
 
+@pytest.mark.skip(reason="Stand by")
 def test_category_api(ws):
     """ Tested get/insert/update/delete/move category. """
     parent_category_name = '[rakuten-ws test] Chocolate'

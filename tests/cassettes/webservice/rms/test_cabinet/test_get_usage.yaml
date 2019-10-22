@@ -2,20 +2,223 @@ interactions:
 - request:
     body: null
     headers:
-      Authorization: [ESA XXXXXX]
-      User-Agent: [python-requests/2.13.0]
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
     uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/usage/get
   response:
-    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>76cc65d9-33a5-4ca6-bbbb-af3427003e99</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>46.300</UseSpace><AvailSpace>5119953.700</AvailSpace><UseFolderCount>19</UseFolderCount><AvailFolderCount>481</AvailFolderCount></cabinetUsageGetResult></result>'}
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>58369c1d-2509-43c3-a62e-a5e25c43f4ec</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>11328.561</UseSpace><AvailSpace>5108671.439</AvailSpace><UseFolderCount>3</UseFolderCount><AvailFolderCount>497</AvailFolderCount></cabinetUsageGetResult></result>'
     headers:
-      Connection: [close]
-      Content-Length: ['513']
-      Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:32:57 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
-    status: {code: 200, message: OK}
+      Connection:
+      - close
+      Content-Length:
+      - '515'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 10:44:06 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/usage/get
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>d95d972b-2066-4ebb-9c2a-b7b71f1f3f3d</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>11328.561</UseSpace><AvailSpace>5108671.439</AvailSpace><UseFolderCount>4</UseFolderCount><AvailFolderCount>496</AvailFolderCount></cabinetUsageGetResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '515'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:16:46 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/usage/get
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>65a5c311-0f4f-4609-aa47-5a2c95a05441</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>11328.561</UseSpace><AvailSpace>5108671.439</AvailSpace><UseFolderCount>5</UseFolderCount><AvailFolderCount>495</AvailFolderCount></cabinetUsageGetResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '515'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:17:24 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/usage/get
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>2c9028cb-593a-4622-a739-94f1276abc15</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>11328.561</UseSpace><AvailSpace>5108671.439</AvailSpace><UseFolderCount>6</UseFolderCount><AvailFolderCount>494</AvailFolderCount></cabinetUsageGetResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '515'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:18:55 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/usage/get
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>1a66db3f-df9c-4160-aedb-e9ee35f7b7af</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>11328.561</UseSpace><AvailSpace>5108671.439</AvailSpace><UseFolderCount>7</UseFolderCount><AvailFolderCount>493</AvailFolderCount></cabinetUsageGetResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '515'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:19:26 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/usage/get
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>165f4daa-6262-4b8a-9044-382181772eda</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>11328.561</UseSpace><AvailSpace>5108671.439</AvailSpace><UseFolderCount>8</UseFolderCount><AvailFolderCount>492</AvailFolderCount></cabinetUsageGetResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '515'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:20:10 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/usage/get
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.usage.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>06b1c29e-6330-4e17-b5c9-5662cba6b516</requestId></status><cabinetUsageGetResult><resultCode>0</resultCode><MaxSpace>5000</MaxSpace><FolderMax>500</FolderMax><FileMax>2000</FileMax><UseSpace>11328.561</UseSpace><AvailSpace>5108671.439</AvailSpace><UseFolderCount>9</UseFolderCount><AvailFolderCount>491</AvailFolderCount></cabinetUsageGetResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '515'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:32:30 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
 version: 1

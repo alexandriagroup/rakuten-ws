@@ -1,5 +1,6 @@
 # coding: utf-8
 from __future__ import unicode_literals
+import pytest
 
 
 def test_get_usage(ws):
@@ -10,6 +11,7 @@ def test_get_usage(ws):
     assert keys == expected_keys
 
 
+@pytest.mark.skip(reason="Stand by")
 def test_folder_operations(ws):
     test_folder_name = 'H35TX4FO6J697AX'
     result = ws.rms.cabinet.insert_folder(folder={'folderName': test_folder_name})
@@ -19,10 +21,12 @@ def test_folder_operations(ws):
     assert test_folder_name in folders_names
 
 
+@pytest.mark.skip(reason="Stand by")
 def test_upload_file(ws):
     item_file = {
+        'file_path': "ZZZ.png",
         'file_name': "ZZZ",
-        'folder_id': 5503240,
+        'folder_id': 7165469,
     }
     result = ws.rms.cabinet.insert_file(file=item_file, filename="https://httpbin.org/image/png")
     assert result.status['systemStatus'] == "OK"

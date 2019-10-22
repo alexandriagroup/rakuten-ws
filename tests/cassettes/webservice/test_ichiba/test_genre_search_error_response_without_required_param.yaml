@@ -2,20 +2,61 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
     uri: https://app.rakuten.co.jp/services/api/IchibaGenre/Search/20120723?applicationId=XXXXXX&formatVersion=2&genrePath=1
   response:
-    body: {string: '{"error":"wrong_parameter","error_description":"wrong genreId
-        format"}'}
+    body:
+      string: '{"error":"wrong_parameter","error_description":"wrong genreId format"}'
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['70']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:35:43 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 400, message: Bad Request}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:43:19 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 400
+      message: Bad Request
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/IchibaGenre/Search/20120723?applicationId=XXXXXX&formatVersion=2&genrePath=1
+  response:
+    body:
+      string: '{"error":"wrong_parameter","error_description":"wrong genreId format"}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '70'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:53:38 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 400
+      message: Bad Request
 version: 1

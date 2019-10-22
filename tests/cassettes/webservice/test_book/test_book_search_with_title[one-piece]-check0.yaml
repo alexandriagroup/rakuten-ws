@@ -1,0 +1,38 @@
+interactions:
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/BooksBook/Search/20170404?applicationId=XXXXXX&formatVersion=2&hits=3&title=One+Piece
+  response:
+    body:
+      string: "{\"count\":211,\"page\":1,\"first\":1,\"last\":3,\"hits\":3,\"carrier\":0,\"pageCount\":71,\"Items\":[{\"title\":\"ONE
+        PIECE 94\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0 \u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088820545\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7410\u670804\u65E5\",\"itemPrice\":484,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/16023392/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0545/9784088820545.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0545/9784088820545.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/0545/9784088820545.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":71,\"reviewAverage\":\"4.62\",\"booksGenreId\":\"001001001008\"},{\"title\":\"ONE
+        PIECE 93\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0 \u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088818771\",\"itemCaption\":\"\",\"salesDate\":\"2019\u5E7407\u670804\u65E5\",\"itemPrice\":484,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15924166/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8771/9784088818771.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8771/9784088818771.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/8771/9784088818771.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":176,\"reviewAverage\":\"4.34\",\"booksGenreId\":\"001001001008\"},{\"title\":\"ONE
+        PIECE 91\",\"titleKana\":\"\u30EF\u30F3\u30D4\u30FC\u30B9\",\"subTitle\":\"\",\"subTitleKana\":\"\",\"seriesName\":\"\u30B8\u30E3\u30F3\u30D7\u30B3\u30DF\u30C3\u30AF\u30B9\",\"seriesNameKana\":\"\",\"contents\":\"\",\"author\":\"\u5C3E\u7530
+        \u6804\u4E00\u90CE\",\"authorKana\":\"\u30AA\u30C0 \u30A8\u30A4\u30A4\u30C1\u30ED\u30A6\",\"publisherName\":\"\u96C6\u82F1\u793E\",\"size\":\"\u30B3\u30DF\u30C3\u30AF\",\"isbn\":\"9784088816449\",\"itemCaption\":\"\",\"salesDate\":\"2018\u5E7412\u670804\u65E5\",\"itemPrice\":484,\"listPrice\":0,\"discountRate\":0,\"discountPrice\":0,\"itemUrl\":\"https://books.rakuten.co.jp/rb/15681789/\",\"affiliateUrl\":\"\",\"smallImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6449/9784088816449.jpg?_ex=64x64\",\"mediumImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6449/9784088816449.jpg?_ex=120x120\",\"largeImageUrl\":\"https://thumbnail.image.rakuten.co.jp/@0_mall/book/cabinet/6449/9784088816449.jpg?_ex=200x200\",\"chirayomiUrl\":\"\",\"availability\":\"1\",\"postageFlag\":0,\"limitedFlag\":0,\"reviewCount\":200,\"reviewAverage\":\"4.57\",\"booksGenreId\":\"001001001008\"}],\"GenreInformation\":[]}"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '3006'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 12:16:02 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+version: 1

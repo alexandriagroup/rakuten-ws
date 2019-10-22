@@ -2,21 +2,30 @@ interactions:
 - request:
     body: null
     headers:
-      Authorization: [ESA XXXXXX]
-      User-Agent: [python-requests/2.13.0]
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
     uri: https://api.rms.rakuten.co.jp/es/2.0/product/search?keyword=djshfksdhgflhskdjdsfbhdezeeeeeeeee
   response:
-    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
 
         <result><status><interfaceId>product.search</interfaceId><systemStatus>NG</systemStatus><message>Data
-        not found</message><requestId>e0d67082-d68d-4d67-8823-4a7563fa768e</requestId><requests><productId/><keyword>djshfksdhgflhskdjdsfbhdezeeeeeeeee</keyword><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status></result>'}
+        not found</message><requestId>62a5d036-5fa9-4d31-a721-da5619bfbffa</requestId><requests><productId/><keyword>djshfksdhgflhskdjdsfbhdezeeeeeeeee</keyword><genreId/><makerName/><releaseDateFrom/><releaseDateTo/><sortBy/><offset/><limit/></requests></status></result>'
     headers:
-      Connection: [close]
-      Content-Length: ['405']
-      Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:34:35 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
-    status: {code: 200, message: OK}
+      Connection:
+      - close
+      Content-Length:
+      - '405'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 12:26:06 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

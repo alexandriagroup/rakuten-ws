@@ -2,19 +2,61 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20140222?applicationId=XXXXXX&formatVersion=2&keyword=Naruto&tagId=1000943
+    uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706?applicationId=XXXXXX&formatVersion=2&keyword=Naruto&tagId=1000943
   response:
-    body: {string: '{"count":0,"page":1,"first":0,"last":0,"hits":0,"carrier":0,"pageCount":0,"Items":[],"GenreInformation":[],"TagInformation":[]}'}
+    body:
+      string: '{"Items":[],"pageCount":0,"TagInformation":[],"hits":0,"last":0,"count":0,"page":1,"carrier":0,"GenreInformation":[],"first":0}'
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['127']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:35:21 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '127'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 10:41:25 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://app.rakuten.co.jp/services/api/IchibaItem/Search/20170706?applicationId=XXXXXX&formatVersion=2&keyword=Naruto&tagId=1000943
+  response:
+    body:
+      string: '{"Items":[],"pageCount":0,"TagInformation":[],"hits":0,"last":0,"count":0,"page":1,"carrier":0,"GenreInformation":[],"first":0}'
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '127'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:52:12 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

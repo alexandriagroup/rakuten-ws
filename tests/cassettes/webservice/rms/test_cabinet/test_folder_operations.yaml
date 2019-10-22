@@ -4,59 +4,516 @@ interactions:
       \   <folder>\n      <folderName>H35TX4FO6J697AX</folderName>\n    </folder>\n
       \ </folderInsertRequest>\n</request>\n"
     headers:
-      Authorization: [ESA XXXXXX]
-      Content-Length: ['183']
-      User-Agent: [python-requests/2.13.0]
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '183'
+      User-Agent:
+      - python-requests/2.22.0
     method: POST
     uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folder/insert
   response:
-    body: {string: '<?xml version="1.0" encoding="UTF-8"?>
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
 
-        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>1b74c107-b499-4a55-a514-bf2da71d2598</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>5529032</FolderId></cabinetFolderInsertResult></result>'}
+        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>424aaf29-14be-4246-ad57-e40378aeebcc</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>7194490</FolderId></cabinetFolderInsertResult></result>'
     headers:
-      Connection: [close]
-      Content-Length: ['352']
-      Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:32:59 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
-    status: {code: 200, message: OK}
+      Connection:
+      - close
+      Content-Length:
+      - '352'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 10:44:07 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
 - request:
     body: null
     headers:
-      Authorization: [ESA XXXXXX]
-      User-Agent: [python-requests/2.13.0]
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
     uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folders/get
   response:
-    body: {string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>36af8883-2fd9-4473-87c5-ad72d8b7d906</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>21</folderAllCount><folderCount>21</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2016-12-08
-        10:55:21</TimeStamp></folder><folder><FolderId>5421913</FolderId><FolderName>\u770B\u677F</FolderName><FolderNode>1</FolderNode><FolderPath>/kanban</FolderPath><FileCount>1</FileCount><FileSize>18.204</FileSize><TimeStamp>2016-12-08
-        10:56:14</TimeStamp></folder><folder><FolderId>5491265</FolderId><FolderName>test_xcvbn</FolderName><FolderNode>1</FolderNode><FolderPath>/05491265</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-01-26
-        22:56:44</TimeStamp></folder><folder><FolderId>5503183</FolderId><FolderName>gEtHaLyflOunestroUTI</FolderName><FolderNode>1</FolderNode><FolderPath>/05503183</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
-        17:44:08</TimeStamp></folder><folder><FolderId>5503184</FolderId><FolderName>gEtHaLyflOunestroUTI</FolderName><FolderNode>1</FolderNode><FolderPath>/05503184</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
-        17:44:24</TimeStamp></folder><folder><FolderId>5503201</FolderId><FolderName>IPPRIR4ABSG5WAS</FolderName><FolderNode>1</FolderNode><FolderPath>/05503201</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
-        17:55:04</TimeStamp></folder><folder><FolderId>5503203</FolderId><FolderName>5GVIYM99ZQI7X34</FolderName><FolderNode>1</FolderNode><FolderPath>/05503203</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
-        17:57:23</TimeStamp></folder><folder><FolderId>5503209</FolderId><FolderName>FCFAR82LSX0MDCA</FolderName><FolderNode>1</FolderNode><FolderPath>/05503209</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
-        18:02:00</TimeStamp></folder><folder><FolderId>5503212</FolderId><FolderName>WNWUXMQE8ONMOKK</FolderName><FolderNode>1</FolderNode><FolderPath>/05503212</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
-        18:02:18</TimeStamp></folder><folder><FolderId>5503213</FolderId><FolderName>DpEVvgY-INwcX_sXEB6eKf-XZB3</FolderName><FolderNode>1</FolderNode><FolderPath>/05503213</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
-        18:03:47</TimeStamp></folder><folder><FolderId>5503214</FolderId><FolderName>DpEVvgY-INwcX_sXEB6eKf-XZB3</FolderName><FolderNode>1</FolderNode><FolderPath>/05503214</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-01
-        18:03:58</TimeStamp></folder><folder><FolderId>5503240</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05503240</FolderPath><FileCount>8</FileCount><FileSize>28.096</FileSize><TimeStamp>2017-02-21
-        00:28:29</TimeStamp></folder><folder><FolderId>5512543</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05512543</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-08
-        19:36:28</TimeStamp></folder><folder><FolderId>5518160</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05518160</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-13
-        23:33:37</TimeStamp></folder><folder><FolderId>5518161</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05518161</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-13
-        23:36:27</TimeStamp></folder><folder><FolderId>5519280</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05519280</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-14
-        18:19:53</TimeStamp></folder><folder><FolderId>5529025</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05529025</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-21
-        00:20:08</TimeStamp></folder><folder><FolderId>5529026</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05529026</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-21
-        00:21:05</TimeStamp></folder><folder><FolderId>5529027</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05529027</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-21
-        00:21:57</TimeStamp></folder><folder><FolderId>5529029</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05529029</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-21
-        00:28:26</TimeStamp></folder><folder><FolderId>5529032</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/05529032</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2017-02-21
-        00:32:59</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"}
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>6a522f75-c2cd-4c8b-a41f-4a1be580655c</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>5</folderAllCount><folderCount>5</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>106</FileCount><FileSize>6280.039</FileSize><TimeStamp>2019-10-22
+        00:19:05</TimeStamp></folder><folder><FolderId>7147126</FolderId><FolderName>TEST</FolderName><FolderNode>1</FolderNode><FolderPath>/07147126</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-09-23
+        23:45:45</TimeStamp></folder><folder><FolderId>7165469</FolderId><FolderName>Product
+        image</FolderName><FolderNode>1</FolderNode><FolderPath>/07165469</FolderPath><FileCount>40</FileCount><FileSize>1350.172</FileSize><TimeStamp>2019-10-18
+        17:31:31</TimeStamp></folder><folder><FolderId>7194474</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194474</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:04:38</TimeStamp></folder><folder><FolderId>7194490</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194490</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:44:07</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"
     headers:
-      Connection: [close]
-      Content-Length: ['5414']
-      Content-Type: [text/xml; charset=utf-8]
-      Date: ['Mon, 20 Feb 2017 15:33:00 GMT']
-      Vary: [Accept-Encoding]
-      X-Powered-By: [Servlet/2.5 JSP/2.1]
-    status: {code: 200, message: OK}
+      Connection:
+      - close
+      Content-Length:
+      - '1596'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 10:44:08 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <folderInsertRequest>\n
+      \   <folder>\n      <folderName>H35TX4FO6J697AX</folderName>\n    </folder>\n
+      \ </folderInsertRequest>\n</request>\n"
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '183'
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folder/insert
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>c609c5e6-a9a4-440c-907e-4a71e4aed18a</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>7194566</FolderId></cabinetFolderInsertResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '352'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:16:48 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folders/get
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>affe3a04-395d-4b85-8ade-eb5ab9e7fb88</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>6</folderAllCount><folderCount>6</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>106</FileCount><FileSize>6280.039</FileSize><TimeStamp>2019-10-22
+        00:19:05</TimeStamp></folder><folder><FolderId>7147126</FolderId><FolderName>TEST</FolderName><FolderNode>1</FolderNode><FolderPath>/07147126</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-09-23
+        23:45:45</TimeStamp></folder><folder><FolderId>7165469</FolderId><FolderName>Product
+        image</FolderName><FolderNode>1</FolderNode><FolderPath>/07165469</FolderPath><FileCount>40</FileCount><FileSize>1350.172</FileSize><TimeStamp>2019-10-18
+        17:31:31</TimeStamp></folder><folder><FolderId>7194474</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194474</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:04:38</TimeStamp></folder><folder><FolderId>7194490</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194490</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:44:07</TimeStamp></folder><folder><FolderId>7194566</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194566</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:16:48</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '1833'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:16:49 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <folderInsertRequest>\n
+      \   <folder>\n      <folderName>H35TX4FO6J697AX</folderName>\n    </folder>\n
+      \ </folderInsertRequest>\n</request>\n"
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '183'
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folder/insert
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>fd3047aa-32b4-42b3-b3ea-27bcbcb8a7dd</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>7194567</FolderId></cabinetFolderInsertResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '352'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:17:25 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folders/get
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>88b1fc65-f714-49dc-a115-92cf7192e522</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>7</folderAllCount><folderCount>7</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>106</FileCount><FileSize>6280.039</FileSize><TimeStamp>2019-10-22
+        00:19:05</TimeStamp></folder><folder><FolderId>7147126</FolderId><FolderName>TEST</FolderName><FolderNode>1</FolderNode><FolderPath>/07147126</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-09-23
+        23:45:45</TimeStamp></folder><folder><FolderId>7165469</FolderId><FolderName>Product
+        image</FolderName><FolderNode>1</FolderNode><FolderPath>/07165469</FolderPath><FileCount>40</FileCount><FileSize>1350.172</FileSize><TimeStamp>2019-10-18
+        17:31:31</TimeStamp></folder><folder><FolderId>7194474</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194474</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:04:38</TimeStamp></folder><folder><FolderId>7194490</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194490</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:44:07</TimeStamp></folder><folder><FolderId>7194566</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194566</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:16:48</TimeStamp></folder><folder><FolderId>7194567</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194567</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:17:25</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '2070'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:17:26 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <folderInsertRequest>\n
+      \   <folder>\n      <folderName>H35TX4FO6J697AX</folderName>\n    </folder>\n
+      \ </folderInsertRequest>\n</request>\n"
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '183'
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folder/insert
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>4625165c-f08f-476d-9da9-b5234ee4fd77</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>7194569</FolderId></cabinetFolderInsertResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '352'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:18:57 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folders/get
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>525b7029-4051-4170-a75d-0cb5e70d2a74</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>8</folderAllCount><folderCount>8</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>106</FileCount><FileSize>6280.039</FileSize><TimeStamp>2019-10-22
+        00:19:05</TimeStamp></folder><folder><FolderId>7147126</FolderId><FolderName>TEST</FolderName><FolderNode>1</FolderNode><FolderPath>/07147126</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-09-23
+        23:45:45</TimeStamp></folder><folder><FolderId>7165469</FolderId><FolderName>Product
+        image</FolderName><FolderNode>1</FolderNode><FolderPath>/07165469</FolderPath><FileCount>40</FileCount><FileSize>1350.172</FileSize><TimeStamp>2019-10-18
+        17:31:31</TimeStamp></folder><folder><FolderId>7194474</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194474</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:04:38</TimeStamp></folder><folder><FolderId>7194490</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194490</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:44:07</TimeStamp></folder><folder><FolderId>7194566</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194566</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:16:48</TimeStamp></folder><folder><FolderId>7194567</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194567</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:17:25</TimeStamp></folder><folder><FolderId>7194569</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194569</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:18:57</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '2307'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:18:58 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <folderInsertRequest>\n
+      \   <folder>\n      <folderName>H35TX4FO6J697AX</folderName>\n    </folder>\n
+      \ </folderInsertRequest>\n</request>\n"
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '183'
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folder/insert
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>2fe90014-d3c9-406f-a09c-71571dc41610</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>7194570</FolderId></cabinetFolderInsertResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '352'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:19:28 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folders/get
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>2187a5e4-66cb-4b7e-82ca-0231be62aa78</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>9</folderAllCount><folderCount>9</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>106</FileCount><FileSize>6280.039</FileSize><TimeStamp>2019-10-22
+        00:19:05</TimeStamp></folder><folder><FolderId>7147126</FolderId><FolderName>TEST</FolderName><FolderNode>1</FolderNode><FolderPath>/07147126</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-09-23
+        23:45:45</TimeStamp></folder><folder><FolderId>7165469</FolderId><FolderName>Product
+        image</FolderName><FolderNode>1</FolderNode><FolderPath>/07165469</FolderPath><FileCount>40</FileCount><FileSize>1350.172</FileSize><TimeStamp>2019-10-18
+        17:31:31</TimeStamp></folder><folder><FolderId>7194474</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194474</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:04:38</TimeStamp></folder><folder><FolderId>7194490</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194490</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:44:07</TimeStamp></folder><folder><FolderId>7194566</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194566</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:16:48</TimeStamp></folder><folder><FolderId>7194567</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194567</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:17:25</TimeStamp></folder><folder><FolderId>7194569</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194569</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:18:57</TimeStamp></folder><folder><FolderId>7194570</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194570</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:19:28</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '2544'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:19:29 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <folderInsertRequest>\n
+      \   <folder>\n      <folderName>H35TX4FO6J697AX</folderName>\n    </folder>\n
+      \ </folderInsertRequest>\n</request>\n"
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '183'
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folder/insert
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>d2d1ea8c-8211-4ff0-8be1-b4f9bbacdc61</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>7194571</FolderId></cabinetFolderInsertResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '352'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:20:11 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folders/get
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>92e79a34-4293-43f4-b4ba-3ae5764b2186</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>10</folderAllCount><folderCount>10</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>106</FileCount><FileSize>6280.039</FileSize><TimeStamp>2019-10-22
+        00:19:05</TimeStamp></folder><folder><FolderId>7147126</FolderId><FolderName>TEST</FolderName><FolderNode>1</FolderNode><FolderPath>/07147126</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-09-23
+        23:45:45</TimeStamp></folder><folder><FolderId>7165469</FolderId><FolderName>Product
+        image</FolderName><FolderNode>1</FolderNode><FolderPath>/07165469</FolderPath><FileCount>40</FileCount><FileSize>1350.172</FileSize><TimeStamp>2019-10-18
+        17:31:31</TimeStamp></folder><folder><FolderId>7194474</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194474</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:04:38</TimeStamp></folder><folder><FolderId>7194490</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194490</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:44:07</TimeStamp></folder><folder><FolderId>7194566</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194566</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:16:48</TimeStamp></folder><folder><FolderId>7194567</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194567</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:17:25</TimeStamp></folder><folder><FolderId>7194569</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194569</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:18:57</TimeStamp></folder><folder><FolderId>7194570</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194570</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:19:28</TimeStamp></folder><folder><FolderId>7194571</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194571</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:20:11</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '2783'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:20:12 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: "<?xml version='1.0' encoding='utf-8'?>\n<request>\n  <folderInsertRequest>\n
+      \   <folder>\n      <folderName>H35TX4FO6J697AX</folderName>\n    </folder>\n
+      \ </folderInsertRequest>\n</request>\n"
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '183'
+      User-Agent:
+      - python-requests/2.22.0
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folder/insert
+  response:
+    body:
+      string: '<?xml version="1.0" encoding="UTF-8"?>
+
+        <result><status><interfaceId>cabinet.folder.insert</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>05dea076-e77f-467c-a791-5f09a90ac715</requestId><requests/></status><cabinetFolderInsertResult><resultCode>0</resultCode><FolderId>7194783</FolderId></cabinetFolderInsertResult></result>'
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '352'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:32:31 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.rms.rakuten.co.jp/es/1.0/cabinet/folders/get
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<result><status><interfaceId>cabinet.folders.get</interfaceId><systemStatus>OK</systemStatus><message>OK</message><requestId>50b107fe-c826-4323-8377-be97fb10de65</requestId><requests><offset/><limit/></requests></status><cabinetFoldersGetResult><resultCode>0</resultCode><folderAllCount>11</folderAllCount><folderCount>11</folderCount><folders><folder><FolderId>0</FolderId><FolderName>\u57FA\u672C\u30D5\u30A9\u30EB\u30C0</FolderName><FolderNode>0</FolderNode><FolderPath>/</FolderPath><FileCount>106</FileCount><FileSize>6280.039</FileSize><TimeStamp>2019-10-22
+        00:19:05</TimeStamp></folder><folder><FolderId>7147126</FolderId><FolderName>TEST</FolderName><FolderNode>1</FolderNode><FolderPath>/07147126</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-09-23
+        23:45:45</TimeStamp></folder><folder><FolderId>7165469</FolderId><FolderName>Product
+        image</FolderName><FolderNode>1</FolderNode><FolderPath>/07165469</FolderPath><FileCount>40</FileCount><FileSize>1350.172</FileSize><TimeStamp>2019-10-18
+        17:31:31</TimeStamp></folder><folder><FolderId>7194474</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194474</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:04:38</TimeStamp></folder><folder><FolderId>7194490</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194490</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        19:44:07</TimeStamp></folder><folder><FolderId>7194566</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194566</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:16:48</TimeStamp></folder><folder><FolderId>7194567</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194567</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:17:25</TimeStamp></folder><folder><FolderId>7194569</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194569</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:18:57</TimeStamp></folder><folder><FolderId>7194570</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194570</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:19:28</TimeStamp></folder><folder><FolderId>7194571</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194571</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:20:11</TimeStamp></folder><folder><FolderId>7194783</FolderId><FolderName>H35TX4FO6J697AX</FolderName><FolderNode>1</FolderNode><FolderPath>/07194783</FolderPath><FileCount>0</FileCount><FileSize>0.000</FileSize><TimeStamp>2019-10-22
+        22:32:31</TimeStamp></folder></folders></cabinetFoldersGetResult></result>"
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '3020'
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 13:32:33 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - Servlet/2.5 JSP/2.1
+    status:
+      code: 200
+      message: OK
 version: 1

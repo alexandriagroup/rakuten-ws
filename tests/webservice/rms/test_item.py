@@ -25,8 +25,9 @@ def insert_item(ws, item_url):
         'itemUrl': '%s' % item_url,
         'itemNumber': item_url,
         'itemName': '%s name' % item_url,
-        'itemPrice': '298000',
+        'itemPrice': '999999999',
         'genreId': 409148,
+        'catalogId': '9784088820811',
         'itemInventory': {'inventoryType': 1,
                           'inventories': {'inventory': {'inventoryCount': 11}}},
     }

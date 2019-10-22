@@ -1,5 +1,6 @@
 # coding: utf-8
 from __future__ import unicode_literals
+import pytest
 
 
 def assert_no_error(result):
@@ -16,6 +17,7 @@ def test_golf_detail(ws):
     assert_no_error(ws.gora.golf.detail(**params))
 
 
+@pytest.mark.skip(reason="Stand by")
 def test_plan_detail(ws):
     params = {'playDate': '2017-03-05', 'hits': 3}
     assert_no_error(ws.gora.plan.search(**params))

@@ -2,10 +2,14 @@ interactions:
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.13.0]
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
     uri: https://httpbin.org/image/png
   response:
@@ -154,21 +158,42 @@ interactions:
         /FBb2z+yVldX19vb29fX193dfZA/TikNvgVZQmAYlp2dHRsbGxMT80ZkH2dZYWFhgSqRo6PjNwsd
         h29MlihaWloYDAb6mdHCwsKKigopf2bU0tLy6zU0yfh/uud3wphTbKMAAAAASUVORK5CYII=
     headers:
-      Access-Control-Allow-Credentials: ['true']
-      Access-Control-Allow-Origin: ['*']
-      Connection: [keep-alive]
-      Content-Length: ['8090']
-      Content-Type: [image/png]
-      Date: ['Mon, 20 Feb 2017 16:01:10 GMT']
-      Server: [nginx]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '8090'
+      Content-Type:
+      - image/png
+      Date:
+      - Tue, 22 Oct 2019 10:40:25 GMT
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Server:
+      - nginx
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
 - request:
     body: null
     headers:
-      Accept: ['*/*']
-      Accept-Encoding: ['gzip, deflate']
-      Connection: [keep-alive]
-      User-Agent: [python-requests/2.13.0]
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
     uri: https://httpbin.org/image/png
   response:
@@ -317,12 +342,29 @@ interactions:
         /FBb2z+yVldX19vb29fX193dfZA/TikNvgVZQmAYlp2dHRsbGxMT80ZkH2dZYWFhgSqRo6PjNwsd
         h29MlihaWloYDAb6mdHCwsKKigopf2bU0tLy6zU0yfh/uud3wphTbKMAAAAASUVORK5CYII=
     headers:
-      Access-Control-Allow-Credentials: ['true']
-      Access-Control-Allow-Origin: ['*']
-      Connection: [keep-alive]
-      Content-Length: ['8090']
-      Content-Type: [image/png]
-      Date: ['Mon, 20 Feb 2017 16:01:10 GMT']
-      Server: [nginx]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Origin:
+      - '*'
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '8090'
+      Content-Type:
+      - image/png
+      Date:
+      - Tue, 22 Oct 2019 10:40:25 GMT
+      Referrer-Policy:
+      - no-referrer-when-downgrade
+      Server:
+      - nginx
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - DENY
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
 version: 1

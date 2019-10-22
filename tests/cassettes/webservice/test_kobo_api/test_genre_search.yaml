@@ -2,19 +2,31 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
     uri: https://app.rakuten.co.jp/services/api/Kobo/GenreSearch/20131010?applicationId=XXXXXX&formatVersion=2&koboGenreId=101901
   response:
-    body: {string: "{\"current\":{\"koboGenreId\":\"101901\",\"koboGenreName\":\"\u5C0F\u8AAC\u30FB\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":2},\"children\":[{\"koboGenreId\":\"101901001\",\"koboGenreName\":\"\u5C0F\u8AAC\",\"genreLevel\":3},{\"koboGenreId\":\"101901002\",\"koboGenreName\":\"\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":3},{\"koboGenreId\":\"101901003\",\"koboGenreName\":\"\u30ED\u30DE\u30F3\u30B9\",\"genreLevel\":3},{\"koboGenreId\":\"101901004\",\"koboGenreName\":\"\u30DB\u30E9\u30FC\",\"genreLevel\":3},{\"koboGenreId\":\"101901005\",\"koboGenreName\":\"SF\",\"genreLevel\":3},{\"koboGenreId\":\"101901006\",\"koboGenreName\":\"\u30D5\u30A1\u30F3\u30BF\u30B8\u30FC\",\"genreLevel\":3},{\"koboGenreId\":\"101901007\",\"koboGenreName\":\"\u305D\u306E\u4ED6\",\"genreLevel\":3}],\"parents\":[{\"koboGenreId\":\"101\",\"koboGenreName\":\"\u96FB\u5B50\u66F8\u7C4D\",\"genreLevel\":1}]}"}
+    body:
+      string: "{\"current\":{\"koboGenreId\":\"101901\",\"koboGenreName\":\"\u5C0F\u8AAC\u30FB\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":2},\"children\":[{\"koboGenreId\":\"101901001\",\"koboGenreName\":\"\u5C0F\u8AAC\",\"genreLevel\":3},{\"koboGenreId\":\"101901002\",\"koboGenreName\":\"\u30A8\u30C3\u30BB\u30A4\",\"genreLevel\":3},{\"koboGenreId\":\"101901003\",\"koboGenreName\":\"\u30ED\u30DE\u30F3\u30B9\",\"genreLevel\":3},{\"koboGenreId\":\"101901004\",\"koboGenreName\":\"\u30DB\u30E9\u30FC\",\"genreLevel\":3},{\"koboGenreId\":\"101901005\",\"koboGenreName\":\"SF\",\"genreLevel\":3},{\"koboGenreId\":\"101901006\",\"koboGenreName\":\"\u30D5\u30A1\u30F3\u30BF\u30B8\u30FC\",\"genreLevel\":3},{\"koboGenreId\":\"101901007\",\"koboGenreName\":\"\u305D\u306E\u4ED6\",\"genreLevel\":3}],\"parents\":[{\"koboGenreId\":\"101\",\"koboGenreName\":\"\u96FB\u5B50\u66F8\u7C4D\",\"genreLevel\":1}]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['686']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:36:37 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '686'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:49:46 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1

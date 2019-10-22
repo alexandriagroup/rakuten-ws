@@ -2,20 +2,32 @@ interactions:
 - request:
     body: null
     headers:
-      User-Agent: [python-requests/2.13.0]
+      User-Agent:
+      - python-requests/2.22.0
     method: GET
-    uri: https://app.rakuten.co.jp/services/api/Travel/HotelDetailSearch/20131024?applicationId=XXXXXX&formatVersion=2&hotelNo=136197
+    uri: https://app.rakuten.co.jp/services/api/Travel/HotelDetailSearch/20170426?applicationId=XXXXXX&formatVersion=2&hotelNo=136197
   response:
-    body: {string: "{\"hotels\":[[{\"hotelBasicInfo\":{\"hotelNo\":136197,\"hotelName\":\"\u8475\u3000KYOTO\u3000STAY\",\"hotelInformationUrl\":\"http://img.travel.rakuten.co.jp/image/tr/api/if/uPw0Q/?f_no=136197\",\"planListUrl\":\"http://img.travel.rakuten.co.jp/image/tr/api/if/ZwI4Q/?f_no=136197&f_flg=PLAN\",\"dpPlanListUrl\":\"http://img.travel.rakuten.co.jp/image/tr/api/if/G02wZ/?noTomariHotel=136197\",\"reviewUrl\":\"http://img.travel.rakuten.co.jp/image/tr/api/if/50xNk/?f_hotel_no=136197\",\"hotelKanaName\":\"\u3042\u304A\u3044\u3000\u304D\u3087\u3046\u3068\u3000\u3059\u3066\u3044\",\"hotelSpecial\":\"\u5DDD\u9762\u306E\u304D\u3089\u3081\u304F\u5149\u3002\u9078\u3073\u629C\u304B\u308C\u305F\u9AA8\u8463\u304C\u53E4\u304D\u826F\u304D\u6642\u4EE3\u3078\u8A98\u3044\u307E\u3059\u3002\u30E9\u30A4\u30D6\u30E9\u30EA\u30FC\u3067\u8AAD\u66F8\u3001\u5DDD\u5E8A\u30C6\u30E9\u30B9\u3067\u304A\u8336\u3092\u3002\",\"hotelMinCharge\":14400,\"latitude\":125994.28,\"longitude\":488781.51,\"postalCode\":\"600-8013\",\"address1\":\"\u4EAC\u90FD\u5E9C\",\"address2\":\"\u4EAC\u90FD\u5E02\u4E0B\u4EAC\u533A\u6728\u5C4B\u753A\u901A\u4ECF\u5149\u5BFA\u4E0A\u308B\u5929\u738B\u753A145-1
-        (\u30AA\u30D5\u30A3\u30B9)\u203B\u753A\u5BB6\u306F\u5225\u306E\u5834\u6240\u306B\u306A\u308A\u307E\u3059\u3002\",\"telephoneNo\":\"075-354-7770\",\"faxNo\":\"075-354-7772\",\"access\":\"\u4EAC\u962A\u300C\u6E05\u6C34\u4E94\u6761\u99C5\u300D\u5F92\u6B695\u5206/\u962A\u6025\u300C\u6CB3\u539F\u753A\u99C5\u300D\u3001\u4EAC\u962A\u300C\u7947\u5712\u56DB\u6761\u99C5\u300D\u5F92\u6B6910\u5206/\uFF2A\uFF32\u300C\u4EAC\u90FD\u99C5\u300D\u30BF\u30AF\u30B7\u30FC\u306710\u5206\",\"parkingInformation\":\"\u7121\u3057\uFF1A\u304A\u8FD1\u304F\u306E\u30B3\u30A4\u30F3\u30D1\u30FC\u30AD\u30F3\u30B0\u3092\u3054\u6848\u5185\u81F4\u3057\u307E\u3059\u3002\",\"nearestStation\":null,\"hotelImageUrl\":\"http://img.travel.rakuten.co.jp/share/HOTEL/136197/136197.jpg\",\"hotelThumbnailUrl\":\"http://img.travel.rakuten.co.jp/HIMG/90/136197.jpg\",\"roomImageUrl\":\"http://img.travel.rakuten.co.jp/share/HOTEL/136197/136197_1f.jpg\",\"roomThumbnailUrl\":\"http://img.travel.rakuten.co.jp/HIMG/INTERIOR/136197.jpg\",\"hotelMapImageUrl\":\"http://img.travel.rakuten.co.jp/share/HOTEL/136197/136197map.gif\",\"reviewCount\":null,\"reviewAverage\":null,\"userReview\":null}},{\"hotelRatingInfo\":{\"serviceAverage\":null,\"locationAverage\":null,\"roomAverage\":null,\"equipmentAverage\":null,\"bathAverage\":null,\"mealAverage\":null}}]]}"}
+    body:
+      string: "{\"hotels\":[[{\"hotelBasicInfo\":{\"hotelNo\":136197,\"hotelName\":\"\u8475\u3000KYOTO\u3000STAY\",\"hotelInformationUrl\":\"https://img.travel.rakuten.co.jp/image/tr/api/if/uPw0Q/?f_no=136197\",\"planListUrl\":\"https://img.travel.rakuten.co.jp/image/tr/api/if/ZwI4Q/?f_no=136197&f_flg=PLAN\",\"dpPlanListUrl\":\"https://img.travel.rakuten.co.jp/image/tr/api/if/G02wZ/?noTomariHotel=136197\",\"reviewUrl\":\"https://img.travel.rakuten.co.jp/image/tr/api/if/50xNk/?f_hotel_no=136197\",\"hotelKanaName\":\"\u3042\u304A\u3044\u3000\u304D\u3087\u3046\u3068\u3000\u3059\u3066\u3044\",\"hotelSpecial\":\"\u5DDD\u9762\u306E\u304D\u3089\u3081\u304F\u5149\u3002\u9078\u3073\u629C\u304B\u308C\u305F\u9AA8\u8463\u304C\u53E4\u304D\u826F\u304D\u6642\u4EE3\u3078\u8A98\u3044\u307E\u3059\u3002\u30E9\u30A4\u30D6\u30E9\u30EA\u30FC\u3067\u8AAD\u66F8\u3001\u5DDD\u5E8A\u30C6\u30E9\u30B9\u3067\u304A\u8336\u3092\u3002\",\"hotelMinCharge\":20040,\"latitude\":125994.28,\"longitude\":488781.51,\"postalCode\":\"600-8013\",\"address1\":\"\u4EAC\u90FD\u5E9C\",\"address2\":\"\u4EAC\u90FD\u5E02\u4E0B\u4EAC\u533A\u6728\u5C4B\u753A\u901A\u4ECF\u5149\u5BFA\u4E0A\u308B\u5929\u738B\u753A145-1
+        (\u30AA\u30D5\u30A3\u30B9)\u203B\u753A\u5BB6\u306F\u5225\u306E\u5834\u6240\u306B\u306A\u308A\u307E\u3059\u3002\",\"telephoneNo\":\"075-354-7770\",\"faxNo\":\"075-354-7772\",\"access\":\"\u4EAC\u962A\u300C\u6E05\u6C34\u4E94\u6761\u99C5\u300D\u5F92\u6B695\u5206/\u962A\u6025\u300C\u6CB3\u539F\u753A\u99C5\u300D\u3001\u4EAC\u962A\u300C\u7947\u5712\u56DB\u6761\u99C5\u300D\u5F92\u6B6910\u5206/\uFF2A\uFF32\u300C\u4EAC\u90FD\u99C5\u300D\u30BF\u30AF\u30B7\u30FC\u306710\u5206\",\"parkingInformation\":\"\u7121\u3057\uFF1A\u304A\u8FD1\u304F\u306E\u30B3\u30A4\u30F3\u30D1\u30FC\u30AD\u30F3\u30B0\u3092\u3054\u6848\u5185\u81F4\u3057\u307E\u3059\u3002\",\"nearestStation\":null,\"hotelImageUrl\":\"https://img.travel.rakuten.co.jp/share/HOTEL/136197/136197.jpg\",\"hotelThumbnailUrl\":\"https://img.travel.rakuten.co.jp/HIMG/90/136197.jpg\",\"roomImageUrl\":\"https://img.travel.rakuten.co.jp/share/HOTEL/136197/136197_1f.jpg\",\"roomThumbnailUrl\":\"https://img.travel.rakuten.co.jp/HIMG/INTERIOR/136197.jpg\",\"hotelMapImageUrl\":\"https://img.travel.rakuten.co.jp/share/HOTEL/136197/136197map.gif\",\"reviewCount\":null,\"reviewAverage\":null,\"userReview\":null}},{\"hotelRatingInfo\":{\"serviceAverage\":null,\"locationAverage\":null,\"roomAverage\":null,\"equipmentAverage\":null,\"bathAverage\":null,\"mealAverage\":null}}]]}"
     headers:
-      Access-Control-Allow-Origin: ['*']
-      Cache-Control: [no-store]
-      Connection: [close]
-      Content-Language: [ja-JP]
-      Content-Length: ['1849']
-      Content-Type: [application/json;charset=UTF-8]
-      Date: ['Mon, 20 Feb 2017 15:32:52 GMT']
-      Vary: [Accept-Encoding]
-    status: {code: 200, message: OK}
+      Access-Control-Allow-Origin:
+      - '*'
+      Cache-Control:
+      - no-store
+      Connection:
+      - close
+      Content-Language:
+      - ja-JP
+      Content-Length:
+      - '1858'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 22 Oct 2019 11:49:14 GMT
+      Vary:
+      - Accept-Encoding
+    status:
+      code: 200
+      message: OK
 version: 1
