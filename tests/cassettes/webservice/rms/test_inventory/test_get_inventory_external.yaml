@@ -13,7 +13,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1124'
+      - '1122'
       Content-Type:
       - text/xml; charset=utf-8
       SOAPAction:
@@ -29,25 +29,27 @@ interactions:
         xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:getInventoryExternalResponse
         xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
         xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
-        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>W21-202</n2:errCode><n2:errMessage>\u691C\u7D22\u7D50\u679C\u304C0\u4EF6\u3067\u3059</n2:errMessage><n2:getResponseExternalItem
-        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"/></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:getResponseExternalItem
+        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>43</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>46953127</n2:itemNumber><n2:itemUrl>83620_098235830x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem></n2:getResponseExternalItem></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"
     headers:
       Connection:
       - close
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 22 Oct 2019 10:44:14 GMT
+      - Tue, 22 Oct 2019 15:31:12 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       content-length:
-      - '829'
+      - '1591'
       requestId:
-      - c18603cc-0156-4ae7-a3b9-6aca7a1d45e2
+      - b71227b5-25e9-498c-b2b8-6ca81ef65556
       timeStamp:
-      - '2019-10-22T10:44:14'
+      - '2019-10-22T15:31:12'
     status:
       code: 200
       message: OK

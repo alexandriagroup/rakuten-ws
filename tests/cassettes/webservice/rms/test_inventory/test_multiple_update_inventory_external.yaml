@@ -4,7 +4,7 @@ interactions:
 
       <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Body><ns0:getInventoryExternal
       xmlns:ns0="https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi"><ns0:externalUserAuthModel><ns1:authKey
-      xmlns:ns1="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity">ESA XXXXXX<>/soap-env:Envelope>'
+      xmlns:ns1="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity">ESA XXXXXX<>>/soap-env:Envelope>'
     headers:
       Accept:
       - '*/*'
@@ -13,7 +13,7 @@ interactions:
       Connection:
       - keep-alive
       Content-Length:
-      - '1207'
+      - '1203'
       Content-Type:
       - text/xml; charset=utf-8
       SOAPAction:
@@ -29,25 +29,301 @@ interactions:
         xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:getInventoryExternalResponse
         xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
         xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
-        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>W21-202</n2:errCode><n2:errMessage>\u691C\u7D22\u7D50\u679C\u304C0\u4EF6\u3067\u3059</n2:errMessage><n2:getResponseExternalItem
-        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"/></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:getResponseExternalItem
+        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>33</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>46953127</n2:itemNumber><n2:itemUrl>83620_098235830x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>21</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>65324781</n2:itemNumber><n2:itemUrl>81611_907930400x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem></n2:getResponseExternalItem></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"
     headers:
       Connection:
       - close
       Content-Type:
       - text/xml; charset=utf-8
       Date:
-      - Tue, 22 Oct 2019 10:44:17 GMT
+      - Tue, 22 Oct 2019 15:31:05 GMT
       Server:
       - nginx
       Vary:
       - Accept-Encoding
       content-length:
-      - '829'
+      - '2338'
       requestId:
-      - 28741f15-793d-4b6d-a221-e6d60f62b332
+      - 30828ae7-b2fe-4d58-ac33-ea3732cbe4a5
       timeStamp:
-      - '2019-10-22T10:44:17'
+      - '2019-10-22T15:31:05'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Body><ns0:updateInventoryExternal
+      xmlns:ns0="https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi"><ns0:externalUserAuthModel><ns1:authKey
+      xmlns:ns1="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity">ESA XXXXXX<>>/soap-env:Envelope>'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2574'
+      Content-Type:
+      - text/xml; charset=utf-8
+      SOAPAction:
+      - '""'
+      User-Agent:
+      - Zeep/3.4.0 (www.python-zeep.org)
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/inventory/ws
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><env:Envelope
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:updateInventoryExternalResponse
+        xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
+        xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:UpdateResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:updateResponseExternalItem
+        xsi:nil=\"true\"/></n1:result></m:updateInventoryExternalResponse></env:Body></env:Envelope>"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 15:31:06 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      content-length:
+      - '798'
+      requestId:
+      - 3f7fe2aa-72a6-40a4-bb8a-eba153a9e221
+      timeStamp:
+      - '2019-10-22T15:31:06'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Body><ns0:getInventoryExternal
+      xmlns:ns0="https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi"><ns0:externalUserAuthModel><ns1:authKey
+      xmlns:ns1="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity">ESA XXXXXX<>>/soap-env:Envelope>'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1203'
+      Content-Type:
+      - text/xml; charset=utf-8
+      SOAPAction:
+      - '""'
+      User-Agent:
+      - Zeep/3.4.0 (www.python-zeep.org)
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/inventory/ws
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><env:Envelope
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:getInventoryExternalResponse
+        xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
+        xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:getResponseExternalItem
+        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>43</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>46953127</n2:itemNumber><n2:itemUrl>83620_098235830x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>31</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>65324781</n2:itemNumber><n2:itemUrl>81611_907930400x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem></n2:getResponseExternalItem></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 15:31:08 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      content-length:
+      - '2338'
+      requestId:
+      - 97d95d16-64aa-4b81-a8b5-a98ac77d993e
+      timeStamp:
+      - '2019-10-22T15:31:08'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Body><ns0:getInventoryExternal
+      xmlns:ns0="https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi"><ns0:externalUserAuthModel><ns1:authKey
+      xmlns:ns1="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity">ESA XXXXXX<>/soap-env:Envelope>'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1203'
+      Content-Type:
+      - text/xml; charset=utf-8
+      SOAPAction:
+      - '""'
+      User-Agent:
+      - Zeep/3.4.0 (www.python-zeep.org)
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/inventory/ws
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><env:Envelope
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:getInventoryExternalResponse
+        xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
+        xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:getResponseExternalItem
+        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>44</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>46953127</n2:itemNumber><n2:itemUrl>83620_098235830x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>31</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>65324781</n2:itemNumber><n2:itemUrl>81611_907930400x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem></n2:getResponseExternalItem></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 15:31:17 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      content-length:
+      - '2338'
+      requestId:
+      - 729352d2-45f3-4aff-bc9c-1a9e395c8228
+      timeStamp:
+      - '2019-10-22T15:31:17'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Body><ns0:updateInventoryExternal
+      xmlns:ns0="https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi"><ns0:externalUserAuthModel><ns1:authKey
+      xmlns:ns1="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity">ESA XXXXXX<>/soap-env:Envelope>'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '2574'
+      Content-Type:
+      - text/xml; charset=utf-8
+      SOAPAction:
+      - '""'
+      User-Agent:
+      - Zeep/3.4.0 (www.python-zeep.org)
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/inventory/ws
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><env:Envelope
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:updateInventoryExternalResponse
+        xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
+        xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:UpdateResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:updateResponseExternalItem
+        xsi:nil=\"true\"/></n1:result></m:updateInventoryExternalResponse></env:Body></env:Envelope>"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 15:31:18 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      content-length:
+      - '798'
+      requestId:
+      - a5e62e12-343d-46f4-9f8f-b6f586b343d9
+      timeStamp:
+      - '2019-10-22T15:31:18'
+    status:
+      code: 200
+      message: OK
+- request:
+    body: '<?xml version=''1.0'' encoding=''utf-8''?>
+
+      <soap-env:Envelope xmlns:soap-env="http://schemas.xmlsoap.org/soap/envelope/"><soap-env:Body><ns0:getInventoryExternal
+      xmlns:ns0="https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi"><ns0:externalUserAuthModel><ns1:authKey
+      xmlns:ns1="java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity">ESA XXXXXX<>/soap-env:Envelope>'
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '1203'
+      Content-Type:
+      - text/xml; charset=utf-8
+      SOAPAction:
+      - '""'
+      User-Agent:
+      - Zeep/3.4.0 (www.python-zeep.org)
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/1.0/inventory/ws
+  response:
+    body:
+      string: "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?><env:Envelope
+        xmlns:soapenc=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
+        xmlns:env=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"><env:Header/><env:Body><m:getInventoryExternalResponse
+        xmlns:m=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"><n1:result
+        xmlns:n1=\"https://inventoryapi.rms.rakuten.co.jp/rms/mall/inventoryapi\"
+        xmlns:n2=\"java:jp.co.rakuten.rms.mall.inventoryapi.v1.model.entity\" xsi:type=\"n2:GetResponseExternalModel\"><n2:errCode>N00-000</n2:errCode><n2:errMessage>\u6B63\u5E38\u7D42\u4E86</n2:errMessage><n2:getResponseExternalItem
+        xsi:type=\"n2:ArrayOfGetResponseExternalItem\"><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>54</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>46953127</n2:itemNumber><n2:itemUrl>83620_098235830x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem><n2:GetResponseExternalItem><n2:getResponseExternalItemDetail
+        xsi:type=\"n2:ArrayOfGetResponseExternalItemDetail\"><n2:GetResponseExternalItemDetail><n2:HChoiceName
+        xsi:nil=\"true\"/><n2:VChoiceName xsi:nil=\"true\"/><n2:inventoryBackFlag>1</n2:inventoryBackFlag><n2:inventoryCount>41</n2:inventoryCount><n2:lackDeliveryId>0</n2:lackDeliveryId><n2:normalDeliveryId>0</n2:normalDeliveryId><n2:orderFlag>0</n2:orderFlag><n2:orderSalesFlag>1</n2:orderSalesFlag></n2:GetResponseExternalItemDetail></n2:getResponseExternalItemDetail><n2:inventoryType>2</n2:inventoryType><n2:itemNumber>65324781</n2:itemNumber><n2:itemUrl>81611_907930400x</n2:itemUrl><n2:nokoriThreshold>0</n2:nokoriThreshold><n2:restTypeFlag>1</n2:restTypeFlag></n2:GetResponseExternalItem></n2:getResponseExternalItem></n1:result></m:getInventoryExternalResponse></env:Body></env:Envelope>"
+    headers:
+      Connection:
+      - close
+      Content-Type:
+      - text/xml; charset=utf-8
+      Date:
+      - Tue, 22 Oct 2019 15:31:19 GMT
+      Server:
+      - nginx
+      Vary:
+      - Accept-Encoding
+      content-length:
+      - '2338'
+      requestId:
+      - c5c85ab5-4dfb-4122-b10f-86f6bb67cc00
+      timeStamp:
+      - '2019-10-22T15:31:19'
     status:
       code: 200
       message: OK
