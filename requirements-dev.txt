@@ -1,5 +1,5 @@
 pip
-httpie==0.9.6
+httpie==1.0.3
 vcrpy
 jedi==0.15.1
 pdbpp==0.8.3
