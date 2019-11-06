@@ -3,6 +3,14 @@
 Python Rakuten Web Service changelog
 ==================================================
 
+Version 0.4.4
+-------------
+
+Release on November 6th 2019
+
+- Fixed the parameters for `RmsService.items.update`
+- Updated the API version of some endpoints
+
 Version 0.4.3
 -------------
 
