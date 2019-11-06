@@ -2,10 +2,16 @@
 Credits
 =======
 
-Development Lead
-----------------
+Current maintainer
+------------------
 
-* Salem Harrache <salem.harrache@abc-culture.fr>
+* Damien Rabois <damien.rabois@abc-culture.fr>
+
+* Previous Developers
+---------------------
+
+* Salem Harrache (original author)
+* Quentin Vaudaine
 
 Contributors
 ------------
