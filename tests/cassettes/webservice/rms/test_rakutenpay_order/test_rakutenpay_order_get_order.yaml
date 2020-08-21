@@ -1,0 +1,101 @@
+interactions:
+- request:
+    body: '{"orderNumberList": ["375055-20200802-00000845"], "version": 1}'
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '63'
+      Content-Type:
+      - application/json; charset=utf-8
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/2.0/order/getOrder
+  response:
+    body:
+      string: "{\"MessageModelList\": [{\"messageType\": \"INFO\", \"messageCode\":
+        \"ORDER_EXT_API_GET_ORDER_INFO_101\", \"message\": \"\u53D7\u6CE8\u60C5\u5831\u53D6\u5F97\u306B\u6210\u529F\u3057\u307E\u3057\u305F\u3002(\u53D6\u5F97\u4EF6\u65701\u4EF6)\"}],
+        \"OrderModelList\": [{\"orderNumber\": \"375055-20200802-00000845\", \"orderProgress\":
+        500, \"subStatusId\": null, \"subStatusName\": null, \"orderDatetime\": \"2020-08-02T21:13:56+0900\",
+        \"shopOrderCfmDatetime\": \"2020-08-10T17:00:58+0900\", \"orderFixDatetime\":
+        \"2020-08-13T19:57:16+0900\", \"shippingInstDatetime\": \"2020-08-13T19:57:16+0900\",
+        \"shippingCmplRptDatetime\": \"2020-08-15T00:07:43+0900\", \"cancelDueDate\":
+        null, \"deliveryDate\": null, \"shippingTerm\": 0, \"remarks\": \"[\u914D\u9001\u65E5\u6642\u6307\u5B9A:]\\n\\n\\n[\u3010\u91CD\u8981\u3011\u6CE8\u610F\u4E8B\u9805\uFF08\u3054\u8CFC\u5165\u524D\u306B\u5FC5\u305A\u304A\u8AAD\u307F\u304F\u3060\u3055\u3044\u3002\uFF09:]\\n\u5F53\u5E97\u306F\u3001\u30A2\u30E1\u30EA\u30AB\u3092\u672C\u5E97\u3068\u3059\u308B\u6D77\u5916\u30B7\u30E7\u30C3\u30D7\u3067\u3059\u3002\\n\u901A\u95A2\u6642\u306B\u95A2\u7A0E\u30FB\u8F38\u5165\u6D88\u8CBB\u7A0E\u304C\u8AB2\u7A0E\u3055\u308C\u308B\u53EF\u80FD\u6027\u304C\u3042\u308A\u307E\u3059\u3002\\n\u5546\u54C1\u304A\u5C4A\u3051\u307E\u3067\u306B\u3001\uFF12\u9031\u9593\u7A0B\u5EA6\u304B\u304B\u308A\u307E\u3059\u3002\\n\u5F53\u5E97\u306E\u30AB\u30FC\u30C9\u6C7A\u6E08\u4EE3\u884C\u4F1A\u793E\u306F
+        Rakuten Commerce LLC \u3067\u3059\u3002\\n\", \"giftCheckFlag\": 0, \"severalSenderFlag\":
+        0, \"equalSenderFlag\": 1, \"isolatedIslandFlag\": 0, \"rakutenMemberFlag\":
+        1, \"carrierCode\": 11, \"emailCarrierCode\": 0, \"orderType\": 1, \"reserveNumber\":
+        null, \"reserveDeliveryCount\": null, \"cautionDisplayType\": 0, \"rakutenConfirmFlag\":
+        0, \"goodsPrice\": 15434, \"goodsTax\": 0, \"postagePrice\": 0, \"deliveryPrice\":
+        0, \"totalPrice\": 15434, \"requestPrice\": 15340, \"couponAllTotalPrice\":
+        0, \"couponShopPrice\": 0, \"couponOtherPrice\": 0, \"asurakuFlag\": 0, \"drugFlag\":
+        0, \"dealFlag\": 0, \"membershipType\": 0, \"memo\": null, \"operator\": null,
+        \"mailPlugSentence\": null, \"modifyFlag\": 0, \"isTaxRecalc\": 1, \"OrdererModel\":
+        {\"zipCode1\": \"XXXXXX\", \"zipCode2\": \"XXXXXX\", \"prefecture\": \"XXXXXX\",
+        \"city\": \"XXXXXX\", \"subAddress\": \"XXXXXX\", \"familyName\": \"XXXXXX\",
+        \"firstName\": \"XXXXXX\", \"familyNameKana\": \"XXXXXX\", \"firstNameKana\":
+        \"XXXXXX\", \"phoneNumber1\": \"XXXXXX\", \"phoneNumber2\": \"XXXXXX\", \"phoneNumber3\":
+        \"XXXXXX\", \"emailAddress\": \"XXXXXX\", \"sex\": \"XXXXXX\", \"birthYear\":
+        \"XXXXXX\", \"birthMonth\": \"XXXXXX\", \"birthDay\": \"XXXXXX\"}, \"SettlementModel\":
+        {\"settlementMethod\": \"\u30BB\u30D6\u30F3\u30A4\u30EC\u30D6\u30F3\uFF08\u524D\u6255\uFF09\",
+        \"cardName\": null, \"cardNumber\": null, \"cardOwner\": null, \"cardYm\":
+        null, \"cardPayType\": null, \"cardInstallmentDesc\": null}, \"DeliveryModel\":
+        {\"deliveryName\": \"\u56FD\u969B\u914D\u9001\", \"deliveryClass\": null},
+        \"PointModel\": {\"usedPoint\": 94}, \"WrappingModel1\": null, \"WrappingModel2\":
+        null, \"PackageModelList\": [{\"basketId\": 1258237841, \"postagePrice\":
+        0, \"deliveryPrice\": 0, \"goodsTax\": 0, \"goodsPrice\": 15434, \"totalPrice\":
+        15434, \"noshi\": null, \"packageDeleteFlag\": 0, \"SenderModel\": {\"zipCode1\":
+        \"XXXXXX\", \"zipCode2\": \"XXXXXX\", \"prefecture\": \"XXXXXX\", \"city\":
+        \"XXXXXX\", \"subAddress\": \"XXXXXX\", \"familyName\": \"XXXXXX\", \"firstName\":
+        \"XXXXXX\", \"familyNameKana\": \"XXXXXX\", \"firstNameKana\": \"XXXXXX\",
+        \"phoneNumber1\": \"XXXXXX\", \"phoneNumber2\": \"XXXXXX\", \"phoneNumber3\":
+        \"XXXXXX\"}, \"ItemModelList\": [{\"itemDetailId\": 1258237841, \"itemName\":
+        \"The Art of Cuphead Limited Edition\", \"itemId\": 10084160, \"itemNumber\":
+        \"225678787\", \"manageNumber\": \"14491_1506713513\", \"price\": 15434, \"units\":
+        1, \"includePostageFlag\": 0, \"includeTaxFlag\": 1, \"includeCashOnDeliveryPostageFlag\":
+        0, \"selectedChoice\": null, \"pointRate\": 1, \"inventoryType\": 1, \"delvdateInfo\":
+        \"2\u301C3\u55B6\u696D\u65E5\u4EE5\u5185\u306B\u767A\u9001\u3057\u307E\u3059\u3002\",
+        \"restoreInventoryFlag\": 0, \"deleteItemFlag\": 0}], \"ShippingModelList\":
+        [{\"shippingDetailId\": 658419278, \"shippingNumber\": \"CC963059157FR\",
+        \"deliveryCompany\": \"1000\", \"deliveryCompanyName\": \"\u305D\u306E\u4ED6\",
+        \"shippingDate\": \"2020-08-10\"}], \"DeliveryCvsModel\": null}], \"CouponModelList\":
+        null, \"ChangeReasonModelList\": [{\"changeId\": 732108200, \"changeType\":
+        8, \"changeTypeDetail\": null, \"changeReason\": null, \"changeReasonDetail\":
+        null, \"changeApplyDatetime\": \"2020-08-10T17:00:58+0900\", \"changeFixDatetime\":
+        \"2020-08-10T17:00:58+0900\", \"changeCmplDatetime\": \"2020-08-10T17:00:58+0900\"}]}]}"
+    headers:
+      Cache-Control:
+      - no-cache,no-store
+      Connection:
+      - close
+      Content-Length:
+      - '3734'
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 21 Aug 2020 11:10:51 GMT
+      Pragma:
+      - no-cache
+      RequestId:
+      - 04cb22c4-cfb6-4278-8009-a2744220690e
+      Server:
+      - openresty
+      Set-Cookie:
+      - WMONID=zqYgE_Q19pk; Domain=localhost; Path=/; Expires=Sat, 21-Aug-2021 20:10:51
+        GMT
+      Timestamp:
+      - '2020-08-21T11:10:51'
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-XSS-Protection:
+      - 1; mode=block
+      http.method:
+      - POST
+      http.status:
+      - '200'
+      http.version:
+      - HTTP/1.1
+    status:
+      code: 200
+      message: OK
+version: 1

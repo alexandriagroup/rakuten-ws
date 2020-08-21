@@ -1,0 +1,53 @@
+interactions:
+- request:
+    body: '{"orderNumberList": ["375055-20200821-00002833"]}'
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '49'
+      Content-Type:
+      - application/json; charset=utf-8
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/2.0/order/confirmOrder
+  response:
+    body:
+      string: "{\"MessageModelList\":[{\"messageType\":\"INFO\",\"messageCode\":\"ORDER_EXT_API_CONFIRM_ORDER_INFO_101\",\"message\":\"\u6CE8\u6587\u78BA\u8A8D\u306B\u6210\u529F\u3057\u307E\u3057\u305F\u3002\",\"orderNumber\":\"375055-20200821-00002833\"}]}"
+    headers:
+      Cache-Control:
+      - no-cache,no-store
+      Connection:
+      - close
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 21 Aug 2020 11:12:53 GMT
+      Pragma:
+      - no-cache
+      RequestId:
+      - 621f21e8-04ce-4060-9349-76e8d9a9363e
+      Server:
+      - openresty
+      Set-Cookie:
+      - WMONID=jjhBWDwVNvi; Domain=localhost; Path=/; Expires=Sat, 21-Aug-2021 20:12:53
+        GMT
+      Timestamp:
+      - '2020-08-21T11:12:53'
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-XSS-Protection:
+      - 1; mode=block
+      http.method:
+      - POST
+      http.status:
+      - '200'
+      http.version:
+      - HTTP/1.1
+    status:
+      code: 200
+      message: OK
+version: 1

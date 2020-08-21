@@ -4,6 +4,7 @@ from __future__ import unicode_literals
 import re
 import os
 import sys
+import json
 
 import mock
 import pytest
@@ -28,10 +29,26 @@ def before_record_cb(request):
     return request
 
 
+def before_record_response(response):
+    if response["body"]["string"]:
+        data = json.loads(response["body"]["string"])
+
+        if "OrderModelList" in data:
+            for order_model in data["OrderModelList"]:
+                for k in order_model["OrdererModel"]:
+                    order_model["OrdererModel"][k] = "XXXXXX"
+
+                for package_model in order_model["PackageModelList"]:
+                    for k in package_model["SenderModel"]:
+                        package_model["SenderModel"][k] = "XXXXXX"
+            response["body"]["string"] = json.dumps(data, ensure_ascii=False).encode()
+    return response
+
 vcr = VCR(
     cassette_library_dir=VCR_CASSETTE_DIR,
     record_mode=VCR_RECORD_MODE,
-    before_record=before_record_cb,
+    before_record_request=before_record_cb,
+    before_record_response=before_record_response,
 )
 
 

@@ -1,0 +1,56 @@
+interactions:
+- request:
+    body: '{"dateType": 1, "startDatetime": "2020-08-01T00:00:00+0900", "endDatetime":
+      "2020-08-03T00:00:00+0900", "PaginationRequestModel": {"requestRecordsAmount":
+      1000, "requestPage": 1, "SortModelList": [{"sortColumn": 1, "sortDirection":
+      1}]}}'
+    headers:
+      Authorization:
+      - ESA XXXXXX
+      Content-Length:
+      - '237'
+      Content-Type:
+      - application/json; charset=utf-8
+    method: POST
+    uri: https://api.rms.rakuten.co.jp/es/2.0/order/searchOrder
+  response:
+    body:
+      string: "{\"orderNumberList\":[\"375055-20200801-00001812\",\"375055-20200802-00000845\",\"375055-20200802-00001821\"],\"MessageModelList\":[{\"messageType\":\"INFO\",\"messageCode\":\"ORDER_EXT_API_SEARCH_ORDER_INFO_101\",\"message\":\"\u6CE8\u6587\u691C\u7D22\u306B\u6210\u529F\u3057\u307E\u3057\u305F\u3002\"}],\"PaginationResponseModel\":{\"totalRecordsAmount\":3,\"totalPages\":1,\"requestPage\":1}}"
+    headers:
+      Cache-Control:
+      - no-cache,no-store
+      Connection:
+      - close
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Fri, 21 Aug 2020 11:10:49 GMT
+      Pragma:
+      - no-cache
+      RequestId:
+      - e3bb8bda-f5f3-496f-be58-e3391bbe1e61
+      Server:
+      - openresty
+      Set-Cookie:
+      - WMONID=MQWZOGw3PTU; Domain=localhost; Path=/; Expires=Sat, 21-Aug-2021 20:10:49
+        GMT
+      Timestamp:
+      - '2020-08-21T11:10:49'
+      Transfer-Encoding:
+      - chunked
+      Vary:
+      - Accept-Encoding
+      X-Content-Type-Options:
+      - nosniff
+      X-XSS-Protection:
+      - 1; mode=block
+      http.method:
+      - POST
+      http.status:
+      - '200'
+      http.version:
+      - HTTP/1.1
+    status:
+      code: 200
+      message: OK
+version: 1
