@@ -2,10 +2,20 @@
 from __future__ import unicode_literals
 
 import os.path as op
+import json
 
 from .baseapi import ApiEndpoint, ApiService, BaseWebService, ApiMethod
-from .baserms import BaseRmsService, ZeepClient, RestClient, RestMethod
+from .baserms import (
+    BaseRmsService,
+    ZeepClient,
+    RestClient,
+    RestMethod,
+    RmsServiceClient
+)
 from . import parameters
+
+# Third-party imports
+import requests
 
 
 class IchibaAPI(ApiService):
@@ -218,6 +228,41 @@ class RmsCategoryAPI(RestClient):
                                params=parameters.category_move, root_xml_key='categoryMove')
 
 
+# Documentation:
+# https://webservice.rms.rakuten.co.jp/merchant-portal/
+# view?contents=/en/common/1-1_service_index/rakutenpayorderapi/
+class RmsRakutenPayOrderAPI(RmsServiceClient):
+    endpoint = 'https://api.rms.rakuten.co.jp/es/2.0/order'
+    session = requests.Session()
+
+    def prepare_request(self, name, data):
+        headers = {
+            "Authorization": self.service.esa_key,
+            "Content-Type": "application/json; charset=utf-8"
+        }
+        req = requests.Request("POST", self.endpoint + "/" + name, json=data, headers=headers)
+        return req.prepare()
+
+    def send_request(self, name, data):
+        response = self.session.send(self.prepare_request(name, data))
+        return json.loads(response.text)
+
+    def searchOrder(self, **kwargs):
+        return self.send_request("searchOrder", kwargs)
+
+    def getOrder(self, orderNumberList, version=1):
+        """
+        Retrieve the orders specified by `orderNumberList`
+
+        Usage:
+        orders = rws.rms.order.getOrder(orderNumberList=orderNumberList, version=version)
+        """
+        return self.send_request("getOrder", {"orderNumberList": orderNumberList, "version": version})
+
+    def confirmOrder(self, orderNumberList):
+        return self.send_request("confirmOrder", {"orderNumberList": orderNumberList})
+
+
 class RmsService(BaseRmsService):
     item = RmsItemAPI()
     items = RmsItemsAPI()
@@ -227,6 +272,7 @@ class RmsService(BaseRmsService):
     category = RmsCategoryAPI()
 
     order = RmsOrderAPI()
+    rakutenpay_order = RmsRakutenPayOrderAPI()
     inventory = RmsInventoryAPI()
 
 
