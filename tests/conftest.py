@@ -30,7 +30,9 @@ def before_record_cb(request):
 
 
 def before_record_response(response):
-    if response["body"]["string"]:
+    # Used mainly for RakutenPayOrder.getOrder
+    if (response["body"]["string"] and
+            "application/json; charset=utf-8" in response["headers"]["Content-Type"]):
         data = json.loads(response["body"]["string"])
 
         if "OrderModelList" in data:
