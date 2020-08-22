@@ -3,6 +3,13 @@
 Python Rakuten Web Service changelog
 ==================================================
 
+Version 0.5.1
+-------------
+
+Release on August 22th 2020
+
+- Fixed the recording of the response by scrubbing more information
+
 Version 0.5.0
 -------------
 
