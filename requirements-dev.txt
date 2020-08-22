@@ -21,3 +21,4 @@ ptpython
 freezegun
 pytz
 konch
+twine==3.2.0
