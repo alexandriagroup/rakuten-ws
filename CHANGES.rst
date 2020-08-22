@@ -3,6 +3,13 @@
 Python Rakuten Web Service changelog
 ==================================================
 
+Version 0.5.0
+-------------
+
+Release on August 22th 2020
+
+- Added the new API RakutenPayOrder
+
 Version 0.4.4
 -------------
 
