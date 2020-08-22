@@ -34,6 +34,7 @@ Supported APIs
 -  `Rakuten Ichiba RMS Item API`_
 -  `Rakuten Ichiba RMS Product API`_
 -  `Rakuten Ichiba RMS Order API`_
+-  `Rakuten Ichiba RMS RakutenPayOrder API`_
 -  `Rakuten Ichiba RMS Inventory API`_
 -  `Rakuten Ichiba RMS Cabinet API`_
 -  `Rakuten Ichiba RMS Navigation API`_
@@ -51,6 +52,7 @@ Supported APIs
 .. _Rakuten Ichiba RMS Item API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/itemapi
 .. _Rakuten Ichiba RMS Product API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/productapi
 .. _Rakuten Ichiba RMS Order API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/orderapi
+.. _Rakuten Ichiba RMS RakutenPayOrder API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/rakutenpayorderapi
 .. _Rakuten Ichiba RMS Inventory API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/inventoryapi
 .. _Rakuten Ichiba RMS Cabinet API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/cabinetapi
 .. _Rakuten Ichiba RMS Navigation API: https://webservice.rms.rakuten.co.jp/merchant-portal/view?contents=/en/common/1-1_service_index/navigationapi
