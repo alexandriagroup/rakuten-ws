@@ -35,18 +35,17 @@ interactions:
         \"XXXXXX\", \"phoneNumber1\": \"XXXXXX\", \"phoneNumber2\": \"XXXXXX\", \"phoneNumber3\":
         \"XXXXXX\", \"emailAddress\": \"XXXXXX\", \"sex\": \"XXXXXX\", \"birthYear\":
         \"XXXXXX\", \"birthMonth\": \"XXXXXX\", \"birthDay\": \"XXXXXX\"}, \"SettlementModel\":
-        {\"settlementMethod\": \"\u30BB\u30D6\u30F3\u30A4\u30EC\u30D6\u30F3\uFF08\u524D\u6255\uFF09\",
-        \"cardName\": null, \"cardNumber\": null, \"cardOwner\": null, \"cardYm\":
-        null, \"cardPayType\": null, \"cardInstallmentDesc\": null}, \"DeliveryModel\":
-        {\"deliveryName\": \"\u56FD\u969B\u914D\u9001\", \"deliveryClass\": null},
-        \"PointModel\": {\"usedPoint\": 94}, \"WrappingModel1\": null, \"WrappingModel2\":
-        null, \"PackageModelList\": [{\"basketId\": 1258237841, \"postagePrice\":
-        0, \"deliveryPrice\": 0, \"goodsTax\": 0, \"goodsPrice\": 15434, \"totalPrice\":
-        15434, \"noshi\": null, \"packageDeleteFlag\": 0, \"SenderModel\": {\"zipCode1\":
-        \"XXXXXX\", \"zipCode2\": \"XXXXXX\", \"prefecture\": \"XXXXXX\", \"city\":
-        \"XXXXXX\", \"subAddress\": \"XXXXXX\", \"familyName\": \"XXXXXX\", \"firstName\":
-        \"XXXXXX\", \"familyNameKana\": \"XXXXXX\", \"firstNameKana\": \"XXXXXX\",
-        \"phoneNumber1\": \"XXXXXX\", \"phoneNumber2\": \"XXXXXX\", \"phoneNumber3\":
+        {\"settlementMethod\": \"XXXXXX\", \"cardName\": \"XXXXXX\", \"cardNumber\":
+        \"XXXXXX\", \"cardOwner\": \"XXXXXX\", \"cardYm\": \"XXXXXX\", \"cardPayType\":
+        \"XXXXXX\", \"cardInstallmentDesc\": \"XXXXXX\"}, \"DeliveryModel\": {\"deliveryName\":
+        \"\u56FD\u969B\u914D\u9001\", \"deliveryClass\": null}, \"PointModel\": {\"usedPoint\":
+        94}, \"WrappingModel1\": null, \"WrappingModel2\": null, \"PackageModelList\":
+        [{\"basketId\": 1258237841, \"postagePrice\": 0, \"deliveryPrice\": 0, \"goodsTax\":
+        0, \"goodsPrice\": 15434, \"totalPrice\": 15434, \"noshi\": null, \"packageDeleteFlag\":
+        0, \"SenderModel\": {\"zipCode1\": \"XXXXXX\", \"zipCode2\": \"XXXXXX\", \"prefecture\":
+        \"XXXXXX\", \"city\": \"XXXXXX\", \"subAddress\": \"XXXXXX\", \"familyName\":
+        \"XXXXXX\", \"firstName\": \"XXXXXX\", \"familyNameKana\": \"XXXXXX\", \"firstNameKana\":
+        \"XXXXXX\", \"phoneNumber1\": \"XXXXXX\", \"phoneNumber2\": \"XXXXXX\", \"phoneNumber3\":
         \"XXXXXX\"}, \"ItemModelList\": [{\"itemDetailId\": 1258237841, \"itemName\":
         \"The Art of Cuphead Limited Edition\", \"itemId\": 10084160, \"itemNumber\":
         \"225678787\", \"manageNumber\": \"14491_1506713513\", \"price\": 15434, \"units\":
@@ -71,18 +70,18 @@ interactions:
       Content-Type:
       - application/json;charset=UTF-8
       Date:
-      - Fri, 21 Aug 2020 11:10:51 GMT
+      - Sat, 22 Aug 2020 11:59:17 GMT
       Pragma:
       - no-cache
       RequestId:
-      - 04cb22c4-cfb6-4278-8009-a2744220690e
+      - d2ab294a-5c4c-4312-adc0-76df37498705
       Server:
       - openresty
       Set-Cookie:
-      - WMONID=zqYgE_Q19pk; Domain=localhost; Path=/; Expires=Sat, 21-Aug-2021 20:10:51
+      - WMONID=NVPcDdbh8uR; Domain=localhost; Path=/; Expires=Sun, 22-Aug-2021 20:59:17
         GMT
       Timestamp:
-      - '2020-08-21T11:10:51'
+      - '2020-08-22T11:59:17'
       Vary:
       - Accept-Encoding
       X-Content-Type-Options:
