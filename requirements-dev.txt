@@ -13,7 +13,7 @@ pytest==3.0.3
 pytest-cov==2.4.0
 pytest-sugar==0.7.1
 cryptography==2.8
-PyYAML==5.1.2
+PyYAML==5.4
 mock==2.0.0
 httpretty
 unidecode
