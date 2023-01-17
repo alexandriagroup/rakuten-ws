@@ -1,6 +1,4 @@
 # coding: utf-8
-from __future__ import unicode_literals
-
 import re
 import json
 
@@ -19,10 +17,15 @@ import zeep.transports
 from lxml import etree
 from requests import Request
 
-from rakuten_ws.utils import xml2dict, dict2xml, unflatten_dict, sorted_dict, flatten_dict
+from rakuten_ws.utils import (
+    xml2dict,
+    dict2xml,
+    unflatten_dict,
+    sorted_dict,
+    flatten_dict,
+)
 
 from .utils import camelize_dict, PrettyStringRepr, load_file
-from .compat import to_unicode
 
 
 class RmsServiceClient(object):
@@ -44,30 +47,34 @@ class ZeepClient(RmsServiceClient):
 
     @property
     def zeep_client(self):
-        _zeep_client = getattr(self, '_zeep_client', None)
+        _zeep_client = getattr(self, "_zeep_client", None)
         if _zeep_client is None:
-            self._zeep_client = _zeep_client = zeep.Client(wsdl=self.wsdl, transport=zeep.transports.Transport())
+            self._zeep_client = _zeep_client = zeep.Client(
+                wsdl=self.wsdl, transport=zeep.transports.Transport()
+            )
         return _zeep_client
 
     @property
     def xsd_types(self):
-        _xsd_types = getattr(self, '_xsd_types', None)
+        _xsd_types = getattr(self, "_xsd_types", None)
         if _xsd_types is None:
-            self._xsd_types = _xsd_types = dict(((t.name, t) for t in self.zeep_client.wsdl.types.types))
+            self._xsd_types = _xsd_types = dict(
+                ((t.name, t) for t in self.zeep_client.wsdl.types.types)
+            )
         return _xsd_types
 
     def _send_request(self, name, **proxy_kwargs):
-        address = self.zeep_client.service._binding_options['address']
+        address = self.zeep_client.service._binding_options["address"]
         arg0 = self.service.soap_user_auth_model
         method = getattr(self.zeep_client.service, name)
 
-        if address.endswith('inventory/ws'):
-            kwargs = {'externalUserAuthModel': arg0}
+        if address.endswith("inventory/ws"):
+            kwargs = {"externalUserAuthModel": arg0}
             kwargs.update(proxy_kwargs)
         else:
-            kwargs = {'arg0': arg0}
+            kwargs = {"arg0": arg0}
             if proxy_kwargs:
-                kwargs['arg1'] = proxy_kwargs
+                kwargs["arg1"] = proxy_kwargs
         response = method(**kwargs)
         return response
 
@@ -85,8 +92,8 @@ class RestMethodResult(OrderedDict):
 
     def parse_result(self, response):
         xml = etree.fromstring(response.content)
-        _status = xml.xpath('//status')
-        _result = xml.xpath('//%s' % self.method.result_xml_key)
+        _status = xml.xpath("//status")
+        _result = xml.xpath("//%s" % self.method.result_xml_key)
         result_data = {}
         if _status:
             status = xml2dict(etree.tostring(_status[0]))
@@ -102,17 +109,31 @@ class RestMethodResult(OrderedDict):
 
     @property
     def json(self):
-        data = {'status': self.status, 'result': self}
-        return PrettyStringRepr(json.dumps(data, ensure_ascii=False, sort_keys=True,
-                                           indent=4, separators=(',', ': ')))
+        data = {"status": self.status, "result": self}
+        return PrettyStringRepr(
+            json.dumps(
+                data,
+                ensure_ascii=False,
+                sort_keys=True,
+                indent=4,
+                separators=(",", ": "),
+            )
+        )
 
     def __repr__(self):
-        return "<RestMethodResult [%s]>" % self.status.get('systemStatus', 'Error')
+        return "<RestMethodResult [%s]>" % self.status.get("systemStatus", "Error")
 
 
 class RestMethod(object):
-
-    def __init__(self, name=None, http_method="GET", params=[], custom_headers={}, form_data=None, root_xml_key=None):
+    def __init__(
+        self,
+        name=None,
+        http_method="GET",
+        params=[],
+        custom_headers={},
+        form_data=None,
+        root_xml_key=None,
+    ):
         self.name = name
         self.http_method = http_method
         self.custom_headers = custom_headers
@@ -126,7 +147,9 @@ class RestMethod(object):
         if self._root_xml_key:
             return camelize(self._root_xml_key, False)
         else:
-            return camelize("%s_%s" % (self.client.name, '_'.join(self.name.split('/'))), False)
+            return camelize(
+                "%s_%s" % (self.client.name, "_".join(self.name.split("/"))), False
+            )
 
     @property
     def result_xml_key(self):
@@ -139,18 +162,18 @@ class RestMethod(object):
     def prepare_xml_post(self, params):
         camelcase_params = camelize_dict(params)
         if self.params:
+
             def key(x):
-                k = re.sub('.@\d+.', '.', x[0])
+                k = re.sub(r".@\d+.", ".", x[0])
                 try:
                     return self.params.index(k)
-                except:
-                    warnings.warn(
-                        "Given invalid parameter '%s'." % k,
-                        SyntaxWarning
-                    )
+                except Exception:
+                    warnings.warn("Given invalid parameter '%s'." % k, SyntaxWarning)
                     return len(self.params) + 1
 
-            sorted_params = unflatten_dict(sorted_dict(flatten_dict(camelcase_params), key=key))
+            sorted_params = unflatten_dict(
+                sorted_dict(flatten_dict(camelcase_params), key=key)
+            )
         else:
             sorted_params = camelcase_params
         return dict2xml({self.request_xml_key: sorted_params}, root="request") + "\n"
@@ -159,32 +182,43 @@ class RestMethod(object):
         api_request = furl(self.client.api_url)
         api_request.path.segments.append(self.client.api_version)
         api_request.path.segments.append(self.client.api_endpoint or self.client.name)
-        api_request.path.segments.extend(self.name.split('/'))
+        api_request.path.segments.extend(self.name.split("/"))
         api_request.path.normalize()
 
         headers = self.client.service.webservice.session.headers.copy()
-        headers['Authorization'] = self.client.service.esa_key
+        headers["Authorization"] = self.client.service.esa_key
         if self.custom_headers:
             headers.update(self.custom_headers)
 
-        filename = params.pop('filename', None)
+        filename = params.pop("filename", None)
 
         if self.http_method == "POST":
             data = self.prepare_xml_post(params)
             if filename:
                 fileobj, mimetype = load_file(filename)
-                files = {'xml': (None, data), 'file': ('filename', fileobj, mimetype)}
-                req = Request(self.http_method, api_request.url, files=files, headers=headers)
+                files = {"xml": (None, data), "file": ("filename", fileobj, mimetype)}
+                req = Request(
+                    self.http_method, api_request.url, files=files, headers=headers
+                )
             else:
-                req = Request(self.http_method, api_request.url, data=data, headers=headers)
+                req = Request(
+                    self.http_method, api_request.url, data=data, headers=headers
+                )
         else:
-            req = Request(self.http_method, api_request.url, headers=headers, params=camelize_dict(params))
+            req = Request(
+                self.http_method,
+                api_request.url,
+                headers=headers,
+                params=camelize_dict(params),
+            )
 
         prepped_request = req.prepare()
         return prepped_request
 
     def __call__(self, *args, **kwargs):
-        raise_for_status = kwargs.pop('raise_for_status', not self.client.service.webservice.debug)
+        raise_for_status = kwargs.pop(
+            "raise_for_status", not self.client.service.webservice.debug
+        )
         prepped_request = self.prepare_request(kwargs)
         response = self.client.service.webservice.session.send(prepped_request)
         if raise_for_status:
@@ -201,14 +235,14 @@ class RestMethod(object):
 class RestClient(RmsServiceClient):
     api_url = "https://api.rms.rakuten.co.jp/es"
     api_endpoint = None
-    api_version = '1.0'
+    api_version = "1.0"
 
     def __new__(cls, *args, **kwargs):
         instance = super(RestClient, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
             if isinstance(attr, RestMethod):
-                if getattr(attr, 'name', None) is None:
-                    setattr(attr, 'name', name)
+                if getattr(attr, "name", None) is None:
+                    setattr(attr, "name", name)
         return instance
 
     def __init__(self, name=None):
@@ -221,8 +255,8 @@ class BaseRmsService(object):
         instance = super(BaseRmsService, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
             if isinstance(attr, RmsServiceClient):
-                if getattr(attr, 'name', None) is None:
-                    setattr(attr, 'name', name)
+                if getattr(attr, "name", None) is None:
+                    setattr(attr, "name", name)
         return instance
 
     @property
@@ -231,8 +265,10 @@ class BaseRmsService(object):
         secret_service = self.webservice.secret_service
         if license_key is None or secret_service is None:
             raise Exception("A 'license_key' and 'secret_service' must be provided")
-        key = b"ESA " + base64.b64encode((secret_service + ":" + license_key).encode('utf-8'))
-        return to_unicode(key)
+        key = "ESA " + base64.b64encode(
+            secret_service.encode("utf-8") + b":" + license_key.encode("utf-8")
+        ).decode("utf8")
+        return key
 
     @property
     def shop_url(self):
@@ -240,11 +276,7 @@ class BaseRmsService(object):
 
     @property
     def soap_user_auth_model(self):
-        return {
-            "authKey": self.esa_key,
-            "shopUrl": self.shop_url,
-            "userName": ""
-        }
+        return {"authKey": self.esa_key, "shopUrl": self.shop_url, "userName": ""}
 
     def __get__(self, webservice, cls):
         if webservice is not None:

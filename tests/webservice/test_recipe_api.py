@@ -1,9 +1,6 @@
 # coding: utf-8
-from __future__ import unicode_literals
-
-
 def assert_no_error(result):
-    assert 'error' not in result, result['error_description']
+    assert "error" not in result, result["error_description"]
 
 
 def test_category_ranking(ws):
