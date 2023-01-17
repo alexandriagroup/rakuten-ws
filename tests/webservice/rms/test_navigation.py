@@ -1,15 +1,12 @@
 # coding: utf-8
-from __future__ import unicode_literals
-
-
 def test_get_genre(ws):
     result = ws.rms.navigation.get_genre(genre_id=0)
-    assert 'genre' in result
+    assert "genre" in result
 
 
 def test_get_tag(ws):
     result = ws.rms.navigation.get_tag(genre_id=101240)
-    assert 'tagLastUpdateDate' in result
+    assert "tagLastUpdateDate" in result
 
 
 def test_get_header(ws):
@@ -18,4 +15,4 @@ def test_get_header(ws):
     assert "status" in result
     assert "tagLastUpdateDate" in result
 
-    assert result['status'] == "Success"
+    assert result["status"] == "Success"

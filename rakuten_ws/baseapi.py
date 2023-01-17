@@ -1,14 +1,18 @@
 # coding: utf-8
-from __future__ import unicode_literals
-
 import json
 import requests
 
 from furl import furl
 
-from .utils import (camelize, camelize_dict, sorted_dict, clean_python_variable_name, PrettyStringRepr)
+from .utils import (
+    camelize,
+    camelize_dict,
+    sorted_dict,
+    clean_python_variable_name,
+    PrettyStringRepr,
+)
 
-from .compat import UserDict
+from collections import UserDict
 
 
 class ApiMethod(object):
@@ -27,21 +31,27 @@ class ApiResponse(UserDict):
 
     @property
     def json(self):
-        return PrettyStringRepr(json.dumps(self.data, ensure_ascii=False, sort_keys=True,
-                                           indent=4, separators=(',', ': ')))
+        return PrettyStringRepr(
+            json.dumps(
+                self.data,
+                ensure_ascii=False,
+                sort_keys=True,
+                indent=4,
+                separators=(",", ": "),
+            )
+        )
 
     def pages(self):
         yield self.response
-        page_number = int(self.response['page']) + 1
-        while page_number <= self.response['pageCount']:
+        page_number = int(self.response["page"]) + 1
+        while page_number <= self.response["pageCount"]:
             api_request = furl(self.url)
-            api_request.args['page'] = page_number
+            api_request.args["page"] = page_number
             page_number += 1
             yield self.session.get(api_request.url).json()
 
 
 class ApiRequest(object):
-
     def __init__(self, endpoint, method):
         self.endpoint = endpoint
         self.method = method
@@ -58,7 +68,11 @@ class ApiRequest(object):
         api_request = furl(self.endpoint.service.api_url)
         api_endpoint = self.endpoint.api_endpoint
         method_endpoint = camelize(self.method.alias)
-        api_version = self.method.api_version or self.endpoint.api_version or self.endpoint.service.api_version
+        api_version = (
+            self.method.api_version
+            or self.endpoint.api_version
+            or self.endpoint.service.api_version
+        )
 
         api_request.path.segments.append(api_endpoint)
         api_request.path.segments.append(method_endpoint)
@@ -66,11 +80,11 @@ class ApiRequest(object):
         api_request.path.normalize()
 
         request_params = {
-            'applicationId': self.application_id,
-            'formatVersion': self.endpoint.service.format_version,
+            "applicationId": self.application_id,
+            "formatVersion": self.endpoint.service.format_version,
         }
-        if 'page' in kwargs:
-            request_params.update(page=kwargs['page'])
+        if "page" in kwargs:
+            request_params.update(page=kwargs["page"])
 
         request_params.update(camelize_dict(kwargs))
         api_request.add(sorted_dict(request_params))
@@ -87,8 +101,8 @@ class ApiEndpoint(object):
 
     def __init__(self, *methods, **kwargs):
         self.service = None
-        self.name = kwargs.get('name', None)
-        self.api_endpoint = kwargs.get('api_endpoint', None)
+        self.name = kwargs.get("name", None)
+        self.api_endpoint = kwargs.get("api_endpoint", None)
 
         for method in methods:
             method_name = clean_python_variable_name(method.name)
@@ -97,7 +111,7 @@ class ApiEndpoint(object):
     def __get__(self, service, cls):
         if service is not None:
             self.service = service
-            if getattr(self, 'api_endpoint', None) is None:
+            if getattr(self, "api_endpoint", None) is None:
                 self.api_endpoint = camelize("%s_%s" % (self.service.name, self.name))
             return self
         return self.__class__
@@ -111,8 +125,8 @@ class ApiService(object):
         instance = super(ApiService, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
             if isinstance(attr, ApiEndpoint):
-                if getattr(attr, 'name', None) is None:
-                    setattr(attr, 'name', name)
+                if getattr(attr, "name", None) is None:
+                    setattr(attr, "name", name)
         return instance
 
     def __init__(self, name=None, **kwargs):
@@ -127,20 +141,25 @@ class ApiService(object):
 
 
 class BaseWebService(object):
-
     def __new__(cls, *args, **kwargs):
         instance = super(BaseWebService, cls).__new__(cls)
         for name, attr in sorted(list(cls.__dict__.items())):
-            if isinstance(attr, ApiService) \
-                    and getattr(attr, 'name', None) is None:
-                setattr(attr, 'name', name)
+            if isinstance(attr, ApiService) and getattr(attr, "name", None) is None:
+                setattr(attr, "name", name)
         return instance
 
-    def __init__(self, application_id=None, license_key=None, secret_service=None, shop_url=None, debug=False):
+    def __init__(
+        self,
+        application_id=None,
+        license_key=None,
+        secret_service=None,
+        shop_url=None,
+        debug=False,
+    ):
         self.application_id = application_id
         self.license_key = license_key
         self.secret_service = secret_service
         self.shop_url = shop_url
         self.debug = debug
         self.session = requests.Session()
-        self.session.headers = {"User-Agent": self.session.headers['User-Agent']}
+        self.session.headers = {"User-Agent": self.session.headers["User-Agent"]}

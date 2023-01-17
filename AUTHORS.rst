@@ -2,10 +2,11 @@
 Credits
 =======
 
-Current maintainer
+Current maintainers
 ------------------
 
 * Damien Rabois <damien.rabois@abc-culture.fr>
+* Nicolas Baccelli <nicolas.baccelli@abc-culture.fr>
 
 * Previous Developers
 ---------------------

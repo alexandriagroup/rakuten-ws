@@ -3,6 +3,15 @@
 Python Rakuten Web Service changelog
 ==================================================
 
+Version 0.5.2
+-------------
+
+Release on January 20th 2023
+
+- Add python 3.11 compatibility
+- Remove python 2 compat code
+- Black code
+
 Version 0.5.1
 -------------
 
